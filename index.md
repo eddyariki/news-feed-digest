@@ -1,6 +1,5 @@
 ---
 title: AI News Digest
-layout: page
 ---
 
 Daily curated digest of AI research papers, news, and security articles.

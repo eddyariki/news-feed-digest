@@ -3,8 +3,6 @@ description: Daily curated digest of AI research papers, news, and security arti
 url: "https://eddyariki.github.io"
 baseurl: "/news-feed-digest"
 
-theme: minima
-
 plugins:
   - jekyll-optional-front-matter
   - jekyll-relative-links
@@ -12,8 +10,12 @@ plugins:
   - jekyll-seo-tag
   - jekyll-feed
 
-minima:
-  skin: classic
+# Apply the custom layout to every page by default
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
 
 # Don't publish fact-check reports publicly
 exclude:

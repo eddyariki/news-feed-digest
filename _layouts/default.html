@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title and page.title != site.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ site.description }}">
+  <style>
+    /* ── Variables ─────────────────────────────────────────── */
+    :root {
+      --bg:           #ffffff;
+      --bg-subtle:    #f6f8fa;
+      --border:       #d0d7de;
+      --border-muted: #eaeef2;
+      --text:         #1f2328;
+      --text-muted:   #636c76;
+      --link:         #0969da;
+      --link-hover:   #0550ae;
+      --accent-bg:    #ddf4ff;
+      --accent-border:#54aeff;
+      --tag-bg:       #ddf4ff;
+      --tag-text:     #0550ae;
+      --highlight-bg: #fffbdd;
+      --highlight-bd: #d4a72c;
+      --code-bg:      #f6f8fa;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg:           #0d1117;
+        --bg-subtle:    #161b22;
+        --border:       #30363d;
+        --border-muted: #21262d;
+        --text:         #e6edf3;
+        --text-muted:   #8b949e;
+        --link:         #58a6ff;
+        --link-hover:   #79c0ff;
+        --accent-bg:    #1c2d3e;
+        --accent-border:#1f6feb;
+        --tag-bg:       #1c2d3e;
+        --tag-text:     #79c0ff;
+        --highlight-bg: #272115;
+        --highlight-bd: #9e6a03;
+        --code-bg:      #161b22;
+      }
+    }
+
+    /* ── Reset ─────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
+                   Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--text);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Header ────────────────────────────────────────────── */
+    .site-header {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      padding: 0 1.5rem;
+    }
+    .header-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      height: 54px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .site-logo {
+      display: flex; align-items: center; gap: 0.5rem;
+      font-weight: 700; font-size: 0.9375rem;
+      color: var(--text); text-decoration: none;
+      letter-spacing: -0.01em;
+    }
+    .site-logo .pip {
+      width: 8px; height: 8px;
+      background: var(--link);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .site-logo:hover { color: var(--link); }
+    .back-link {
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      padding: 0.25rem 0.625rem;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      transition: border-color 0.15s, color 0.15s;
+      white-space: nowrap;
+    }
+    .back-link:hover { color: var(--link); border-color: var(--link); }
+
+    /* ── Main layout ───────────────────────────────────────── */
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 5rem;
+    }
+
+    /* ── Typography ────────────────────────────────────────── */
+    h1 {
+      font-size: clamp(1.625rem, 4vw, 2.25rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      margin: 0 0 1.25rem;
+      color: var(--text);
+    }
+    h2 {
+      font-size: 1.1875rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 3rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+      color: var(--text);
+    }
+    h3 {
+      font-size: 0.6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      margin: 2rem 0 0.625rem;
+    }
+    p { margin: 0 0 1rem; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; color: var(--link-hover); }
+    strong { font-weight: 600; }
+    hr {
+      border: none;
+      border-top: 1px solid var(--border-muted);
+      margin: 2.5rem 0;
+    }
+
+    /* ── Blockquote — digest subtitle ──────────────────────── */
+    blockquote {
+      margin: 0 0 2rem;
+      padding: 0.875rem 1.125rem;
+      background: var(--accent-bg);
+      border-left: 3px solid var(--accent-border);
+      border-radius: 0 6px 6px 0;
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      line-height: 1.65;
+    }
+    blockquote p { margin: 0; }
+
+    /* ── Lists ─────────────────────────────────────────────── */
+    ul, ol { padding-left: 1.375rem; margin: 0 0 1rem; }
+    li { margin: 0.4rem 0; }
+
+    /* Article entries: **[Title](url)** — desc *(Source)* */
+    li > strong:first-child > a {
+      font-weight: 700;
+      font-size: 0.9625rem;
+    }
+    /* Source tag — the trailing *(Source)* */
+    li > em:last-child,
+    li > p > em:last-child {
+      font-style: normal;
+      font-size: 0.72rem;
+      font-weight: 500;
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      padding: 0.15em 0.55em;
+      border-radius: 20px;
+      margin-left: 0.2rem;
+      white-space: nowrap;
+      display: inline-block;
+    }
+
+    /* Highlights list — bold key:value bullets */
+    h2:has(+ ul) + ul > li,
+    h2 + ul > li {
+      padding: 0.1rem 0;
+    }
+
+    /* Italic note at page bottom (links to papers.md) */
+    p > em:only-child {
+      font-style: italic;
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+
+    /* ── Inline code ───────────────────────────────────────── */
+    code {
+      font-family: "SFMono-Regular", "Fira Code", "Cascadia Code",
+                   Consolas, monospace;
+      font-size: 0.825em;
+      background: var(--code-bg);
+      border: 1px solid var(--border-muted);
+      padding: 0.15em 0.4em;
+      border-radius: 4px;
+    }
+
+    /* ── Tables ────────────────────────────────────────────── */
+    .content table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.875rem;
+      margin: 1.25rem 0;
+      display: block;
+      overflow-x: auto;
+    }
+    .content th {
+      background: var(--bg-subtle);
+      font-weight: 600;
+      text-align: left;
+      padding: 0.5rem 0.75rem;
+      border: 1px solid var(--border);
+    }
+    .content td {
+      padding: 0.5rem 0.75rem;
+      border: 1px solid var(--border);
+      vertical-align: top;
+    }
+    .content tr:nth-child(even) td { background: var(--bg-subtle); }
+
+    /* ── Index page ────────────────────────────────────────── */
+    .is-index .content > ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .is-index .content > ul > li {
+      margin: 0;
+      padding: 0.875rem 1rem;
+      border: 1px solid var(--border-muted);
+      border-radius: 8px;
+      margin-bottom: 0.625rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .is-index .content > ul > li:hover {
+      border-color: var(--link);
+      background: var(--bg-subtle);
+    }
+    .is-index .content > ul > li > strong {
+      font-size: 0.9375rem;
+      font-variant-numeric: tabular-nums;
+      flex-shrink: 0;
+    }
+    .is-index .content > ul > li > em:last-child {
+      /* override the source-tag style for index items */
+      background: none;
+      color: var(--text-muted);
+      font-size: inherit;
+      padding: 0;
+      margin: 0;
+      border-radius: 0;
+    }
+    .is-index .content > ul > li a {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      padding: 0.25rem 0.625rem;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      transition: color 0.15s, border-color 0.15s;
+      white-space: nowrap;
+    }
+    .is-index .content > ul > li a:hover {
+      color: var(--link);
+      border-color: var(--link);
+      text-decoration: none;
+    }
+    .is-index .content > ul > li .digest-links {
+      display: flex; gap: 0.5rem; flex-shrink: 0;
+    }
+
+    /* ── Footer ────────────────────────────────────────────── */
+    .site-footer {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.8125rem;
+    }
+    .site-footer a { color: var(--text-muted); }
+    .site-footer a:hover { color: var(--link); }
+
+    /* ── Responsive ────────────────────────────────────────── */
+    @media (max-width: 600px) {
+      main { padding: 1.5rem 1rem 4rem; }
+      .site-header { padding: 0 1rem; }
+      .is-index .content > ul > li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="{{ site.baseurl }}/" class="site-logo">
+      <span class="pip"></span>AI News Digest
+    </a>
+    {% assign url = page.url | remove: 'index.html' %}
+    {% if url != '/' and url != '' %}
+    <a href="{{ site.baseurl }}/" class="back-link">← All digests</a>
+    {% endif %}
+  </div>
+</header>
+
+<main>
+  {% assign url = page.url | remove: 'index.html' %}
+  <div class="content {% if url == '/' or url == '' %}is-index{% endif %}">
+    {{ content }}
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>Generated automatically each morning &middot;
+     <a href="https://github.com/eddyariki/news-feed-digest">GitHub</a></p>
+</footer>
+
+</body>
+</html>
