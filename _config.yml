@@ -3,6 +3,9 @@ description: Daily curated digest of AI research papers, news, and security arti
 url: "https://eddyariki.github.io"
 baseurl: "/news-feed-digest"
 
+kramdown:
+  input: GFM
+
 plugins:
   - jekyll-optional-front-matter
   - jekyll-relative-links
