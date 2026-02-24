@@ -107,7 +107,7 @@
 
     /* ── Typography ────────────────────────────────────────── */
     h1 {
-      font-size: clamp(1.625rem, 4vw, 2.25rem);
+      font-size: clamp(1.75rem, 4vw, 2.375rem);
       font-weight: 800;
       letter-spacing: -0.03em;
       line-height: 1.2;
@@ -115,7 +115,7 @@
       color: var(--text);
     }
     h2 {
-      font-size: 1.1875rem;
+      font-size: 1.375rem;
       font-weight: 700;
       letter-spacing: -0.02em;
       margin: 3rem 0 1rem;
@@ -124,7 +124,7 @@
       color: var(--text);
     }
     h3 {
-      font-size: 0.6875rem;
+      font-size: 0.75rem;
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 0.1em;
@@ -329,5 +329,12 @@
      <a href="https://github.com/eddyariki/news-feed-digest">GitHub</a></p>
 </footer>
 
+<script>
+  // Open all external links inside article content in a new tab
+  document.querySelectorAll('.content a[href^="http"]').forEach(function(a) {
+    a.setAttribute('target', '_blank');
+    a.setAttribute('rel', 'noopener noreferrer');
+  });
+</script>
 </body>
 </html>
