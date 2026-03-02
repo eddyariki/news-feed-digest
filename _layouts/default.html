@@ -632,15 +632,21 @@
   }
 
   if (!isIndex) {
-    // Digest pages — news article list items: li > strong > a
+    // Digest pages — news article list items.
+    // Tight lists: li > strong > a
+    // Loose lists (blank lines between items): li > p > strong > a
     document.querySelectorAll('.content li').forEach(function (li) {
       var firstChild = li.children[0];
-      if (!firstChild || firstChild.tagName !== 'STRONG') return;
-      var link = firstChild.querySelector('a');
+      if (!firstChild) return;
+      // Unwrap loose-list <p> wrapper if present
+      var container = (firstChild.tagName === 'P') ? firstChild : li;
+      var strong = container.children[0];
+      if (!strong || strong.tagName !== 'STRONG') return;
+      var link = strong.querySelector('a');
       if (!link) return;
       var sourceEl = li.querySelector('em');
       var source = sourceEl ? sourceEl.textContent.trim() : '';
-      li.appendChild(makeSaveBtn(link.href, link.textContent.trim(), source));
+      container.appendChild(makeSaveBtn(link.href, link.textContent.trim(), source));
     });
 
     // Papers pages — "**Link:** [Title](url)" paragraphs
