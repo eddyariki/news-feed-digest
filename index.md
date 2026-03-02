@@ -2,9 +2,9 @@
 title: AI News Digest
 layout: home
 hero_date: "March 2, 2026"
-hero_primary_label: "Read Today's Papers"
-hero_primary_link: "2026-03-02/papers"
-hero_secondary: "[Read Digest](2026-03-02/digest)"
+hero_primary_label: "Read Today's News Digest"
+hero_primary_link: "2026-03-02/digest"
+hero_secondary: "[Read Papers](2026-03-02/papers)"
 issue_count: 10
 highlights: |
   - **The Anthropic-Pentagon breakdown is the AI policy story of the moment.** Negotiations over a $2 billion classified AI contract collapsed after the DoD demanded unrestricted use of Claude for mass surveillance of American citizens and autonomous weapons systems; Anthropic refused and was labeled a supply-chain risk, while OpenAI quickly stepped in with a rival deal. The fallout is reshaping how AI companies relate to US national security infrastructure.
