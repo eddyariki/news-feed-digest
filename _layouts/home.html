@@ -1,0 +1,20 @@
+---
+layout: default
+---
+{% if page.hero_date %}
+<div class="hero-block">
+  <p class="hero-badge">Latest &middot; {{ page.hero_date }}</p>
+  <div class="hero-highlights">
+    {{ page.highlights | markdownify }}
+  </div>
+  <div class="hero-ctas">
+    <a class="hero-cta-primary" href="{{ site.baseurl }}/{{ page.hero_primary_link }}">{{ page.hero_primary_label }} &rarr;</a>
+    {% if page.hero_secondary and page.hero_secondary != '' %}
+    <span class="hero-cta-secondary-wrap">{{ page.hero_secondary | markdownify | strip }}</span>
+    {% endif %}
+  </div>
+  <p class="hero-meta">Published daily &middot; {{ page.issue_count }} issues</p>
+</div>
+{% endif %}
+
+{{ content }}
