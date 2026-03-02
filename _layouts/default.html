@@ -164,8 +164,8 @@
       font-size: 0.9625rem;
     }
     /* Source tag — the trailing *(Source)* */
-    li > em:last-child,
-    li > p > em:last-child {
+    li > em:last-of-type,
+    li > p > em:last-of-type {
       font-style: normal;
       font-size: 0.72rem;
       font-weight: 500;
@@ -252,7 +252,7 @@
       font-variant-numeric: tabular-nums;
       flex-shrink: 0;
     }
-    .is-index .content > ul > li > em:last-child {
+    .is-index .content > ul > li > em:last-of-type {
       /* override the source-tag style for index items */
       background: none;
       color: var(--text-muted);
@@ -290,6 +290,176 @@
     }
     .site-footer a { color: var(--text-muted); }
     .site-footer a:hover { color: var(--link); }
+
+    /* ── Save / Bookmarks ───────────────────────────────────── */
+    .saved-count-btn {
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      padding: 0.25rem 0.625rem;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: none;
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+      white-space: nowrap;
+      font-family: inherit;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .saved-count-btn:hover { color: var(--link); border-color: var(--link); }
+    .saved-badge {
+      background: var(--link);
+      color: white;
+      border-radius: 10px;
+      padding: 0 5px;
+      font-size: 0.68rem;
+      font-weight: 700;
+      line-height: 1.5;
+      display: none;
+    }
+    .save-btn {
+      border: 1px solid var(--border-muted);
+      background: none;
+      cursor: pointer;
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      padding: 0.1em 0.5em;
+      border-radius: 12px;
+      margin-left: 0.4rem;
+      font-family: inherit;
+      transition: color 0.15s, border-color 0.15s, background 0.15s;
+      vertical-align: middle;
+      line-height: 1.5;
+    }
+    .save-btn:hover { color: var(--link); border-color: var(--link); }
+    .save-btn.is-saved {
+      color: var(--link);
+      border-color: var(--accent-border);
+      background: var(--accent-bg);
+    }
+    /* Saved panel */
+    .saved-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 200;
+      backdrop-filter: blur(2px);
+    }
+    .saved-overlay.open { display: block; }
+    .saved-panel {
+      position: fixed;
+      top: 0; right: 0;
+      width: min(460px, 96vw);
+      height: 100%;
+      background: var(--bg);
+      border-left: 1px solid var(--border);
+      overflow-y: auto;
+      z-index: 201;
+      display: flex;
+      flex-direction: column;
+    }
+    .saved-panel-header {
+      position: sticky;
+      top: 0;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .saved-panel-title {
+      font-size: 0.9375rem;
+      font-weight: 700;
+    }
+    .saved-panel-close {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--text-muted);
+      font-size: 1rem;
+      padding: 0.25rem 0.375rem;
+      border-radius: 4px;
+      line-height: 1;
+      transition: color 0.15s, background 0.15s;
+    }
+    .saved-panel-close:hover { color: var(--text); background: var(--bg-subtle); }
+    #saved-list {
+      padding: 1rem 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.625rem;
+      flex: 1;
+    }
+    .saved-empty {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      text-align: center;
+      margin-top: 2rem;
+      line-height: 1.7;
+    }
+    .saved-article-item {
+      padding: 0.75rem;
+      border: 1px solid var(--border-muted);
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+      transition: border-color 0.15s;
+    }
+    .saved-article-item:hover { border-color: var(--border); }
+    .saved-article-title {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--link);
+      text-decoration: none;
+      line-height: 1.45;
+    }
+    .saved-article-title:hover { text-decoration: underline; }
+    .saved-article-source {
+      font-size: 0.7rem;
+      font-weight: 500;
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      padding: 0.1em 0.5em;
+      border-radius: 20px;
+      align-self: flex-start;
+    }
+    .saved-article-meta {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 0.2rem;
+    }
+    .saved-remove-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--text-muted);
+      font-size: 0.72rem;
+      padding: 0;
+      font-family: inherit;
+      transition: color 0.15s;
+    }
+    .saved-remove-btn:hover { color: #cf222e; }
+    .saved-clear-btn {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      background: none;
+      border: 1px solid var(--border-muted);
+      border-radius: 6px;
+      padding: 0.375rem 0.75rem;
+      cursor: pointer;
+      font-family: inherit;
+      margin-top: 0.5rem;
+      transition: color 0.15s, border-color 0.15s;
+      align-self: flex-start;
+    }
+    .saved-clear-btn:hover { color: #cf222e; border-color: #cf222e; }
 
     /* ── Responsive ────────────────────────────────────────── */
     @media (max-width: 600px) {
@@ -330,11 +500,167 @@
 </footer>
 
 <script>
-  // Open all external links inside article content in a new tab
-  document.querySelectorAll('.content a[href^="http"]').forEach(function(a) {
+(function () {
+  'use strict';
+
+  /* ── localStorage helpers ───────────────────────────── */
+  var KEY = 'nc_saved';
+  function getSaved() {
+    try { return JSON.parse(localStorage.getItem(KEY) || '[]'); } catch (e) { return []; }
+  }
+  function setSaved(arr) { localStorage.setItem(KEY, JSON.stringify(arr)); }
+  function isSaved(url) { return getSaved().some(function (a) { return a.url === url; }); }
+  function saveArticle(url, title, source) {
+    var arr = getSaved().filter(function (a) { return a.url !== url; });
+    arr.unshift({ url: url, title: title, source: source || '', savedAt: new Date().toISOString() });
+    setSaved(arr);
+  }
+  function unsaveArticle(url) { setSaved(getSaved().filter(function (a) { return a.url !== url; })); }
+
+  /* ── Utilities ──────────────────────────────────────── */
+  function esc(s) {
+    return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+  function fmtDate(iso) {
+    return new Date(iso).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
+  }
+
+  /* ── Build saved panel overlay ──────────────────────── */
+  var overlay = document.createElement('div');
+  overlay.className = 'saved-overlay';
+  overlay.innerHTML =
+    '<div class="saved-panel">' +
+      '<div class="saved-panel-header">' +
+        '<span class="saved-panel-title">Saved Articles</span>' +
+        '<button class="saved-panel-close" aria-label="Close">&#x2715;</button>' +
+      '</div>' +
+      '<div id="saved-list"></div>' +
+    '</div>';
+  document.body.appendChild(overlay);
+
+  function openPanel()  { overlay.classList.add('open'); renderSavedList(); }
+  function closePanel() { overlay.classList.remove('open'); }
+
+  overlay.addEventListener('click', function (e) { if (e.target === overlay) closePanel(); });
+  overlay.querySelector('.saved-panel-close').addEventListener('click', closePanel);
+
+  function renderSavedList() {
+    var list = document.getElementById('saved-list');
+    var saved = getSaved();
+    if (saved.length === 0) {
+      list.innerHTML = '<p class="saved-empty">No saved articles yet.<br>Click <strong>Save</strong> on any article.</p>';
+      return;
+    }
+    var html = saved.map(function (a) {
+      return '<div class="saved-article-item">' +
+        '<a class="saved-article-title" href="' + esc(a.url) + '" target="_blank" rel="noopener noreferrer">' + esc(a.title) + '</a>' +
+        (a.source ? '<span class="saved-article-source">' + esc(a.source) + '</span>' : '') +
+        '<div class="saved-article-meta">' +
+          '<span>Saved ' + fmtDate(a.savedAt) + '</span>' +
+          '<button class="saved-remove-btn" data-url="' + esc(a.url) + '">Remove</button>' +
+        '</div>' +
+      '</div>';
+    }).join('') + '<button class="saved-clear-btn" id="saved-clear-btn">Clear all</button>';
+    list.innerHTML = html;
+
+    list.querySelectorAll('.saved-remove-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        unsaveArticle(btn.dataset.url);
+        updateAllSaveBtns();
+        updateHeaderCount();
+        renderSavedList();
+      });
+    });
+    var clearBtn = document.getElementById('saved-clear-btn');
+    if (clearBtn) {
+      clearBtn.addEventListener('click', function () {
+        setSaved([]);
+        updateAllSaveBtns();
+        updateHeaderCount();
+        renderSavedList();
+      });
+    }
+  }
+
+  /* ── Header "Saved" button ──────────────────────────── */
+  var headerInner = document.querySelector('.header-inner');
+  var savedBtn = document.createElement('button');
+  savedBtn.className = 'saved-count-btn';
+  savedBtn.innerHTML = 'Saved <span class="saved-badge" id="saved-badge"></span>';
+  savedBtn.addEventListener('click', openPanel);
+  var backLink = headerInner && headerInner.querySelector('.back-link');
+  if (backLink) { headerInner.insertBefore(savedBtn, backLink); }
+  else if (headerInner) { headerInner.appendChild(savedBtn); }
+
+  function updateHeaderCount() {
+    var count = getSaved().length;
+    var badge = document.getElementById('saved-badge');
+    if (!badge) return;
+    badge.textContent = count > 0 ? String(count) : '';
+    badge.style.display = count > 0 ? 'inline' : 'none';
+  }
+
+  function updateAllSaveBtns() {
+    document.querySelectorAll('.save-btn').forEach(function (btn) {
+      var saved = isSaved(btn.dataset.url);
+      btn.textContent = saved ? '\u2713 Saved' : 'Save';
+      btn.classList.toggle('is-saved', saved);
+    });
+  }
+
+  /* ── Inject save buttons ────────────────────────────── */
+  var isIndex = document.querySelector('.content.is-index');
+
+  function makeSaveBtn(url, title, source) {
+    var btn = document.createElement('button');
+    btn.className = 'save-btn' + (isSaved(url) ? ' is-saved' : '');
+    btn.dataset.url = url;
+    btn.textContent = isSaved(url) ? '\u2713 Saved' : 'Save';
+    btn.addEventListener('click', function () {
+      if (isSaved(url)) {
+        unsaveArticle(url);
+        btn.textContent = 'Save';
+        btn.classList.remove('is-saved');
+      } else {
+        saveArticle(url, title, source);
+        btn.textContent = '\u2713 Saved';
+        btn.classList.add('is-saved');
+      }
+      updateHeaderCount();
+    });
+    return btn;
+  }
+
+  if (!isIndex) {
+    // Digest pages — news article list items: li > strong > a
+    document.querySelectorAll('.content li').forEach(function (li) {
+      var firstChild = li.children[0];
+      if (!firstChild || firstChild.tagName !== 'STRONG') return;
+      var link = firstChild.querySelector('a');
+      if (!link) return;
+      var sourceEl = li.querySelector('em');
+      var source = sourceEl ? sourceEl.textContent.trim() : '';
+      li.appendChild(makeSaveBtn(link.href, link.textContent.trim(), source));
+    });
+
+    // Papers pages — "**Link:** [Title](url)" paragraphs
+    document.querySelectorAll('.content p').forEach(function (p) {
+      var strong = p.querySelector('strong');
+      if (!strong || strong.textContent.trim() !== 'Link:') return;
+      var link = p.querySelector('a');
+      if (!link) return;
+      p.appendChild(makeSaveBtn(link.href, link.textContent.trim(), 'ArXiv'));
+    });
+  }
+
+  /* ── External links ─────────────────────────────────── */
+  document.querySelectorAll('.content a[href^="http"]').forEach(function (a) {
     a.setAttribute('target', '_blank');
     a.setAttribute('rel', 'noopener noreferrer');
   });
+
+  updateHeaderCount();
+}());
 </script>
 </body>
 </html>
