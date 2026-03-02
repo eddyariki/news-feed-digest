@@ -16,12 +16,12 @@ highlights: |
 
 ## Archive
 
-- **2026-03-01** — [Digest](2026-03-01/digest)
-- **2026-02-28** — [Papers](2026-02-28/papers) · [Digest](2026-02-28/digest)
-- **2026-02-27** — [Papers](2026-02-27/papers) · [Digest](2026-02-27/digest)
-- **2026-02-26** — [Papers](2026-02-26/papers) · [Digest](2026-02-26/digest)
-- **2026-02-25** — [Papers](2026-02-25/papers) · [Digest](2026-02-25/digest)
-- **2026-02-24** — [Papers](2026-02-24/papers) · [Digest](2026-02-24/digest)
-- **2026-02-23** — [Digest](2026-02-23/digest)
-- **2026-02-21** — [Papers](2026-02-21/papers) · [Digest](2026-02-21/digest)
-- **2026-02-20** — [Digest](2026-02-20/digest)
+- **2026-03-01** [Digest](2026-03-01/digest)
+- **2026-02-28** [Papers](2026-02-28/papers) [Digest](2026-02-28/digest)
+- **2026-02-27** [Papers](2026-02-27/papers) [Digest](2026-02-27/digest)
+- **2026-02-26** [Papers](2026-02-26/papers) [Digest](2026-02-26/digest)
+- **2026-02-25** [Papers](2026-02-25/papers) [Digest](2026-02-25/digest)
+- **2026-02-24** [Papers](2026-02-24/papers) [Digest](2026-02-24/digest)
+- **2026-02-23** [Digest](2026-02-23/digest)
+- **2026-02-21** [Papers](2026-02-21/papers) [Digest](2026-02-21/digest)
+- **2026-02-20** [Digest](2026-02-20/digest)
