@@ -319,24 +319,29 @@
       display: none;
     }
     .save-btn {
-      border: 1px solid var(--border-muted);
-      background: none;
+      border: 1px solid var(--accent-border);
+      background: var(--accent-bg);
       cursor: pointer;
-      font-size: 0.7rem;
-      color: var(--text-muted);
-      padding: 0.1em 0.5em;
-      border-radius: 12px;
-      margin-left: 0.4rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--link);
+      padding: 0.2em 0.65em;
+      border-radius: 6px;
+      margin-left: 0.5rem;
       font-family: inherit;
       transition: color 0.15s, border-color 0.15s, background 0.15s;
       vertical-align: middle;
-      line-height: 1.5;
+      line-height: 1.6;
     }
-    .save-btn:hover { color: var(--link); border-color: var(--link); }
+    .save-btn:hover {
+      background: var(--link);
+      border-color: var(--link);
+      color: white;
+    }
     .save-btn.is-saved {
-      color: var(--link);
-      border-color: var(--accent-border);
-      background: var(--accent-bg);
+      background: var(--link);
+      border-color: var(--link);
+      color: white;
     }
     /* Saved panel */
     .saved-overlay {
@@ -615,11 +620,11 @@
     var btn = document.createElement('button');
     btn.className = 'save-btn' + (isSaved(url) ? ' is-saved' : '');
     btn.dataset.url = url;
-    btn.textContent = isSaved(url) ? '\u2713 Saved' : 'Save';
+    btn.textContent = isSaved(url) ? '\u2713 Saved' : '\uD83D\uDD16 Save';
     btn.addEventListener('click', function () {
       if (isSaved(url)) {
         unsaveArticle(url);
-        btn.textContent = 'Save';
+        btn.textContent = '\uD83D\uDD16 Save';
         btn.classList.remove('is-saved');
       } else {
         saveArticle(url, title, source);
@@ -649,13 +654,18 @@
       container.appendChild(makeSaveBtn(link.href, link.textContent.trim(), source));
     });
 
-    // Papers pages — "**Link:** [Title](url)" paragraphs
-    document.querySelectorAll('.content p').forEach(function (p) {
-      var strong = p.querySelector('strong');
-      if (!strong || strong.textContent.trim() !== 'Link:') return;
-      var link = p.querySelector('a');
-      if (!link) return;
-      p.appendChild(makeSaveBtn(link.href, link.textContent.trim(), 'ArXiv'));
+    // Papers pages — find every <strong>Link:</strong> and get the adjacent <a>.
+    // Authors/Link/Tags are on consecutive lines so kramdown merges them into
+    // one <p>; p.querySelector('strong') would return Authors, not Link.
+    document.querySelectorAll('.content strong').forEach(function (strong) {
+      if (strong.textContent.trim() !== 'Link:') return;
+      // Walk forward past text nodes to find the <a>
+      var node = strong.nextSibling;
+      while (node && node.nodeType !== 1) node = node.nextSibling;
+      if (!node || node.tagName !== 'A') return;
+      // Avoid double-injection
+      if (strong.parentNode.querySelector('.save-btn')) return;
+      strong.parentNode.appendChild(makeSaveBtn(node.href, node.textContent.trim(), 'ArXiv'));
     });
   }
 
