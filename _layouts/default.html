@@ -5,486 +5,458 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if page.title and page.title != site.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{{ site.description }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style>
-    /* ── Variables ─────────────────────────────────────────── */
+    /* ── MD3 Color Tokens ───────────────────────────────── */
     :root {
-      --bg:           #ffffff;
-      --bg-subtle:    #f6f8fa;
-      --border:       #d0d7de;
-      --border-muted: #eaeef2;
-      --text:         #1f2328;
-      --text-muted:   #636c76;
-      --link:         #0969da;
-      --link-hover:   #0550ae;
-      --accent-bg:    #ddf4ff;
-      --accent-border:#54aeff;
-      --tag-bg:       #ddf4ff;
-      --tag-text:     #0550ae;
-      --highlight-bg: #fffbdd;
-      --highlight-bd: #d4a72c;
-      --code-bg:      #f6f8fa;
+      --primary:            #1A73E8;
+      --on-primary:         #FFFFFF;
+      --primary-container:  #D2E3FC;
+      --on-primary-cont:    #001D36;
+      --bg:                 #F8F9FA;
+      --surface:            #FFFFFF;
+      --surface-var:        #F1F3F4;
+      --on-surface:         #202124;
+      --on-surface-var:     #5F6368;
+      --outline:            #DADCE0;
+      --outline-strong:     #80868B;
+      --error:              #D93025;
+      --scrim:              rgba(0, 0, 0, 0.32);
+      --chip-bg:            #E8F0FE;
+      --chip-text:          #1558D6;
+      --hover-state:        rgba(26, 115, 232, 0.08);
+      --elev-1: 0 1px 2px rgba(0,0,0,.18), 0 1px 3px 1px rgba(0,0,0,.10);
+      --elev-2: 0 1px 2px rgba(0,0,0,.18), 0 2px 6px 2px rgba(0,0,0,.10);
+      --elev-3: 0 4px 8px 3px rgba(0,0,0,.10), 0 1px 3px rgba(0,0,0,.18);
+      --elev-5: 0 8px 12px 6px rgba(0,0,0,.10), 0 4px 4px rgba(0,0,0,.18);
     }
     @media (prefers-color-scheme: dark) {
       :root {
-        --bg:           #0d1117;
-        --bg-subtle:    #161b22;
-        --border:       #30363d;
-        --border-muted: #21262d;
-        --text:         #e6edf3;
-        --text-muted:   #8b949e;
-        --link:         #58a6ff;
-        --link-hover:   #79c0ff;
-        --accent-bg:    #1c2d3e;
-        --accent-border:#1f6feb;
-        --tag-bg:       #1c2d3e;
-        --tag-text:     #79c0ff;
-        --highlight-bg: #272115;
-        --highlight-bd: #9e6a03;
-        --code-bg:      #161b22;
+        --primary:            #8AB4F8;
+        --on-primary:         #003062;
+        --primary-container:  #004487;
+        --on-primary-cont:    #D2E3FC;
+        --bg:                 #121212;
+        --surface:            #1E1E1E;
+        --surface-var:        #2A2A2A;
+        --on-surface:         #E3E3E3;
+        --on-surface-var:     #ADADAD;
+        --outline:            #3C4043;
+        --outline-strong:     #80868B;
+        --error:              #F28B82;
+        --scrim:              rgba(0, 0, 0, 0.5);
+        --chip-bg:            #1A3558;
+        --chip-text:          #8AB4F8;
+        --hover-state:        rgba(138, 180, 248, 0.08);
+        --elev-1: 0 1px 3px 1px rgba(0,0,0,.45), 0 1px 2px rgba(0,0,0,.45);
+        --elev-2: 0 2px 6px 2px rgba(0,0,0,.45), 0 1px 2px rgba(0,0,0,.45);
+        --elev-3: 0 4px 8px 3px rgba(0,0,0,.45), 0 1px 3px rgba(0,0,0,.45);
+        --elev-5: 0 8px 12px 6px rgba(0,0,0,.45), 0 4px 4px rgba(0,0,0,.45);
       }
     }
 
-    /* ── Reset ─────────────────────────────────────────────── */
+    /* ── Reset ──────────────────────────────────────────── */
     *, *::before, *::after { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
-                   Helvetica, Arial, sans-serif;
+      font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
       font-size: 16px;
       line-height: 1.75;
-      color: var(--text);
+      color: var(--on-surface);
       background: var(--bg);
       -webkit-font-smoothing: antialiased;
     }
 
-    /* ── Header ────────────────────────────────────────────── */
+    /* ── Top App Bar (MD3) ──────────────────────────────── */
     .site-header {
       position: sticky; top: 0; z-index: 100;
-      background: var(--bg);
-      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+      box-shadow: var(--elev-2);
       padding: 0 1.5rem;
     }
     .header-inner {
-      max-width: 800px;
+      max-width: 860px;
       margin: 0 auto;
-      height: 54px;
+      height: 64px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 1rem;
     }
     .site-logo {
-      display: flex; align-items: center; gap: 0.5rem;
-      font-weight: 700; font-size: 0.9375rem;
-      color: var(--text); text-decoration: none;
-      letter-spacing: -0.01em;
+      display: flex; align-items: center; gap: 0.625rem;
+      font-weight: 500; font-size: 1.25rem;
+      color: var(--on-surface); text-decoration: none;
+      letter-spacing: 0;
     }
     .site-logo .pip {
-      width: 8px; height: 8px;
-      background: var(--link);
+      width: 10px; height: 10px;
+      background: var(--primary);
       border-radius: 50%;
       flex-shrink: 0;
     }
-    .site-logo:hover { color: var(--link); }
+    .site-logo:hover { color: var(--primary); text-decoration: none; }
+
+    /* Text Button style for back link */
     .back-link {
-      font-size: 0.8125rem;
-      color: var(--text-muted);
+      font-size: 0.875rem; font-weight: 500;
+      letter-spacing: 0.00625em;
+      color: var(--primary);
       text-decoration: none;
-      padding: 0.25rem 0.625rem;
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      transition: border-color 0.15s, color 0.15s;
+      padding: 0.5rem 0.875rem;
+      border-radius: 9999px;
+      transition: background 0.2s;
       white-space: nowrap;
     }
-    .back-link:hover { color: var(--link); border-color: var(--link); }
+    .back-link:hover { background: var(--hover-state); text-decoration: none; color: var(--primary); }
 
-    /* ── Main layout ───────────────────────────────────────── */
+    /* ── Main layout ────────────────────────────────────── */
     main {
-      max-width: 800px;
+      max-width: 860px;
       margin: 0 auto;
-      padding: 2.5rem 1.5rem 5rem;
+      padding: 1.5rem 1.5rem 5rem;
     }
 
-    /* ── Typography ────────────────────────────────────────── */
+    /* Content card — elevated surface */
+    .content {
+      background: var(--surface);
+      border-radius: 12px;
+      padding: 2rem 2.5rem;
+      box-shadow: var(--elev-1);
+    }
+
+    /* ── Typography (MD3 type scale) ────────────────────── */
     h1 {
-      font-size: clamp(1.75rem, 4vw, 2.375rem);
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      line-height: 1.2;
+      font-size: clamp(1.625rem, 4vw, 2rem);
+      font-weight: 400;
+      letter-spacing: -0.25px;
+      line-height: 1.25;
       margin: 0 0 1.25rem;
-      color: var(--text);
+      color: var(--on-surface);
     }
     h2 {
-      font-size: 1.375rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      margin: 3rem 0 1rem;
+      font-size: 1.25rem;
+      font-weight: 500;
+      letter-spacing: 0;
+      margin: 2.5rem 0 1rem;
       padding-bottom: 0.5rem;
-      border-bottom: 1px solid var(--border);
-      color: var(--text);
+      border-bottom: 1px solid var(--outline);
+      color: var(--on-surface);
     }
     h3 {
-      font-size: 0.75rem;
-      font-weight: 600;
+      font-size: 0.6875rem;
+      font-weight: 500;
       text-transform: uppercase;
       letter-spacing: 0.1em;
-      color: var(--text-muted);
-      margin: 2rem 0 0.625rem;
+      color: var(--on-surface-var);
+      margin: 1.75rem 0 0.5rem;
     }
     p { margin: 0 0 1rem; }
-    a { color: var(--link); text-decoration: none; }
-    a:hover { text-decoration: underline; color: var(--link-hover); }
-    strong { font-weight: 600; }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; color: var(--primary); }
+    strong { font-weight: 500; }
     hr {
       border: none;
-      border-top: 1px solid var(--border-muted);
-      margin: 2.5rem 0;
+      border-top: 1px solid var(--outline);
+      margin: 2rem 0;
     }
 
-    /* ── Blockquote — digest subtitle ──────────────────────── */
+    /* ── Blockquote ─────────────────────────────────────── */
     blockquote {
       margin: 0 0 2rem;
-      padding: 0.875rem 1.125rem;
-      background: var(--accent-bg);
-      border-left: 3px solid var(--accent-border);
-      border-radius: 0 6px 6px 0;
-      color: var(--text-muted);
-      font-size: 0.875rem;
+      padding: 1rem 1.25rem;
+      background: var(--primary-container);
+      border-left: 4px solid var(--primary);
+      border-radius: 0 8px 8px 0;
+      color: var(--on-primary-cont);
+      font-size: 0.9375rem;
       line-height: 1.65;
     }
     blockquote p { margin: 0; }
 
-    /* ── Lists ─────────────────────────────────────────────── */
+    /* ── Lists ──────────────────────────────────────────── */
     ul, ol { padding-left: 1.375rem; margin: 0 0 1rem; }
     li { margin: 0.4rem 0; }
 
-    /* Article entries: **[Title](url)** — desc *(Source)* */
-    li > strong:first-child > a {
-      font-weight: 700;
+    /* Article link — Body Medium (500) */
+    li > strong:first-child > a,
+    li > p > strong:first-child > a {
+      font-weight: 500;
       font-size: 0.9625rem;
+      color: var(--primary);
     }
-    /* Source tag — the trailing *(Source)* */
+
+    /* Source chip — MD3 Assist Chip style */
     li > em:last-of-type,
     li > p > em:last-of-type {
       font-style: normal;
-      font-size: 0.72rem;
+      font-size: 0.6875rem;
       font-weight: 500;
-      background: var(--tag-bg);
-      color: var(--tag-text);
-      padding: 0.15em 0.55em;
-      border-radius: 20px;
-      margin-left: 0.2rem;
+      background: var(--chip-bg);
+      color: var(--chip-text);
+      padding: 0.15em 0.6em;
+      border-radius: 8px;
+      margin-left: 0.25rem;
       white-space: nowrap;
       display: inline-block;
+      letter-spacing: 0.005em;
     }
 
-    /* Highlights list — bold key:value bullets */
-    h2:has(+ ul) + ul > li,
-    h2 + ul > li {
-      padding: 0.1rem 0;
-    }
-
-    /* Italic note at page bottom (links to papers.md) */
+    /* Italic note at page bottom */
     p > em:only-child {
       font-style: italic;
-      color: var(--text-muted);
+      color: var(--on-surface-var);
       font-size: 0.875rem;
     }
 
-    /* ── Inline code ───────────────────────────────────────── */
+    /* ── Code ───────────────────────────────────────────── */
     code {
-      font-family: "SFMono-Regular", "Fira Code", "Cascadia Code",
-                   Consolas, monospace;
+      font-family: 'Roboto Mono', "SFMono-Regular", Consolas, monospace;
       font-size: 0.825em;
-      background: var(--code-bg);
-      border: 1px solid var(--border-muted);
+      background: var(--surface-var);
+      border: 1px solid var(--outline);
       padding: 0.15em 0.4em;
       border-radius: 4px;
     }
 
-    /* ── Tables ────────────────────────────────────────────── */
+    /* ── Tables ─────────────────────────────────────────── */
     .content table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.875rem;
-      margin: 1.25rem 0;
-      display: block;
-      overflow-x: auto;
+      width: 100%; border-collapse: collapse;
+      font-size: 0.875rem; margin: 1.25rem 0;
+      display: block; overflow-x: auto;
     }
     .content th {
-      background: var(--bg-subtle);
-      font-weight: 600;
-      text-align: left;
-      padding: 0.5rem 0.75rem;
-      border: 1px solid var(--border);
+      background: var(--surface-var); font-weight: 500;
+      text-align: left; padding: 0.5rem 0.75rem;
+      border: 1px solid var(--outline);
     }
     .content td {
       padding: 0.5rem 0.75rem;
-      border: 1px solid var(--border);
+      border: 1px solid var(--outline);
       vertical-align: top;
     }
-    .content tr:nth-child(even) td { background: var(--bg-subtle); }
+    .content tr:nth-child(even) td { background: var(--surface-var); }
 
-    /* ── Index page ────────────────────────────────────────── */
-    .is-index .content > ul {
-      list-style: none;
+    /* ── Index page ─────────────────────────────────────── */
+    .is-index .content {
+      background: transparent;
+      box-shadow: none;
       padding: 0;
-      margin: 0;
+    }
+    .is-index .content > ul {
+      list-style: none; padding: 0; margin: 0;
+      display: flex; flex-direction: column; gap: 0.75rem;
     }
     .is-index .content > ul > li {
       margin: 0;
-      padding: 0.875rem 1rem;
-      border: 1px solid var(--border-muted);
-      border-radius: 8px;
-      margin-bottom: 0.625rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      transition: border-color 0.15s, background 0.15s;
+      padding: 1rem 1.25rem;
+      background: var(--surface);
+      border-radius: 12px;
+      box-shadow: var(--elev-1);
+      display: flex; align-items: center;
+      justify-content: space-between; gap: 1rem;
+      transition: box-shadow 0.2s;
     }
-    .is-index .content > ul > li:hover {
-      border-color: var(--link);
-      background: var(--bg-subtle);
-    }
+    .is-index .content > ul > li:hover { box-shadow: var(--elev-3); }
     .is-index .content > ul > li > strong {
-      font-size: 0.9375rem;
+      font-size: 0.9375rem; font-weight: 500;
       font-variant-numeric: tabular-nums;
-      flex-shrink: 0;
+      flex-shrink: 0; color: var(--on-surface);
     }
     .is-index .content > ul > li > em:last-of-type {
-      /* override the source-tag style for index items */
-      background: none;
-      color: var(--text-muted);
-      font-size: inherit;
-      padding: 0;
-      margin: 0;
-      border-radius: 0;
+      background: none; color: var(--on-surface-var);
+      font-size: inherit; padding: 0; margin: 0; border-radius: 0;
     }
+    /* Outlined pill buttons for digest/papers links */
     .is-index .content > ul > li a {
-      font-size: 0.875rem;
-      color: var(--text-muted);
-      text-decoration: none;
-      padding: 0.25rem 0.625rem;
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      transition: color 0.15s, border-color 0.15s;
-      white-space: nowrap;
+      font-size: 0.8125rem; font-weight: 500;
+      letter-spacing: 0.00625em;
+      color: var(--primary); text-decoration: none;
+      padding: 0.375rem 0.875rem;
+      border: 1px solid var(--primary);
+      border-radius: 9999px;
+      transition: background 0.2s; white-space: nowrap;
     }
     .is-index .content > ul > li a:hover {
-      color: var(--link);
-      border-color: var(--link);
-      text-decoration: none;
+      background: var(--primary-container); text-decoration: none;
     }
     .is-index .content > ul > li .digest-links {
       display: flex; gap: 0.5rem; flex-shrink: 0;
     }
 
-    /* ── Footer ────────────────────────────────────────────── */
+    /* ── Footer ─────────────────────────────────────────── */
     .site-footer {
-      border-top: 1px solid var(--border);
-      padding: 1.5rem;
-      text-align: center;
-      color: var(--text-muted);
-      font-size: 0.8125rem;
+      padding: 1.5rem; text-align: center;
+      color: var(--on-surface-var); font-size: 0.8125rem;
     }
-    .site-footer a { color: var(--text-muted); }
-    .site-footer a:hover { color: var(--link); }
+    .site-footer a { color: var(--on-surface-var); }
+    .site-footer a:hover { color: var(--primary); text-decoration: none; }
 
-    /* ── Save / Bookmarks ───────────────────────────────────── */
+    /* ══ Save / Bookmarks (MD3) ════════════════════════════ */
+
+    /* Header "Saved" — Text Button */
     .saved-count-btn {
-      font-size: 0.8125rem;
-      color: var(--text-muted);
-      padding: 0.25rem 0.625rem;
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      background: none;
-      cursor: pointer;
-      transition: border-color 0.15s, color 0.15s;
-      white-space: nowrap;
-      font-family: inherit;
-      display: flex;
-      align-items: center;
-      gap: 4px;
+      font-size: 0.875rem; font-weight: 500;
+      font-family: 'Roboto', sans-serif;
+      letter-spacing: 0.00625em;
+      color: var(--primary); padding: 0.5rem 0.875rem;
+      border: none; border-radius: 9999px;
+      background: none; cursor: pointer;
+      transition: background 0.2s; white-space: nowrap;
+      display: flex; align-items: center; gap: 6px;
     }
-    .saved-count-btn:hover { color: var(--link); border-color: var(--link); }
+    .saved-count-btn:hover { background: var(--hover-state); }
     .saved-badge {
-      background: var(--link);
-      color: white;
-      border-radius: 10px;
-      padding: 0 5px;
-      font-size: 0.68rem;
-      font-weight: 700;
-      line-height: 1.5;
-      display: none;
+      background: var(--primary); color: var(--on-primary);
+      border-radius: 9999px; padding: 0 6px;
+      font-size: 0.6875rem; font-weight: 700;
+      line-height: 1.6; min-width: 18px;
+      text-align: center; display: none;
     }
+
+    /* Inline Save button — Tonal Filled Button (MD3) */
     .save-btn {
-      border: 1px solid var(--accent-border);
-      background: var(--accent-bg);
+      border: none;
+      background: var(--primary-container);
       cursor: pointer;
-      font-size: 0.75rem;
-      font-weight: 600;
-      color: var(--link);
-      padding: 0.2em 0.65em;
-      border-radius: 6px;
+      font-size: 0.75rem; font-weight: 500;
+      font-family: 'Roboto', sans-serif;
+      letter-spacing: 0.00625em;
+      color: var(--on-primary-cont);
+      padding: 0.25em 0.875em;
+      border-radius: 9999px;
       margin-left: 0.5rem;
-      font-family: inherit;
-      transition: color 0.15s, border-color 0.15s, background 0.15s;
-      vertical-align: middle;
-      line-height: 1.6;
+      transition: box-shadow 0.2s, filter 0.2s;
+      vertical-align: middle; line-height: 1.7;
     }
-    .save-btn:hover {
-      background: var(--link);
-      border-color: var(--link);
-      color: white;
-    }
+    .save-btn:hover { box-shadow: var(--elev-1); filter: brightness(0.96); }
     .save-btn.is-saved {
-      background: var(--link);
-      border-color: var(--link);
-      color: white;
+      background: var(--primary); color: var(--on-primary);
     }
-    /* Saved panel */
+    .save-btn.is-saved:hover { filter: brightness(1.08); }
+
+    /* Modal Navigation Drawer scrim */
     .saved-overlay {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.4);
+      visibility: hidden; opacity: 0;
+      position: fixed; inset: 0;
+      background: var(--scrim);
       z-index: 200;
-      backdrop-filter: blur(2px);
+      transition: opacity 0.25s cubic-bezier(0.4,0,0.2,1),
+                  visibility 0s linear 0.25s;
     }
-    .saved-overlay.open { display: block; }
+    .saved-overlay.open {
+      visibility: visible; opacity: 1;
+      transition: opacity 0.25s cubic-bezier(0.4,0,0.2,1),
+                  visibility 0s linear 0s;
+    }
+
+    /* Modal Navigation Drawer panel */
     .saved-panel {
-      position: fixed;
-      top: 0; right: 0;
-      width: min(460px, 96vw);
-      height: 100%;
-      background: var(--bg);
-      border-left: 1px solid var(--border);
-      overflow-y: auto;
-      z-index: 201;
-      display: flex;
-      flex-direction: column;
+      position: fixed; top: 0; right: 0;
+      width: min(400px, 96vw); height: 100%;
+      background: var(--surface);
+      box-shadow: var(--elev-5);
+      border-radius: 16px 0 0 16px;
+      overflow-y: auto; z-index: 201;
+      display: flex; flex-direction: column;
+      transform: translateX(100%);
+      transition: transform 0.25s cubic-bezier(0.4,0,0.2,1);
     }
+    .saved-overlay.open .saved-panel { transform: translateX(0); }
+
     .saved-panel-header {
-      position: sticky;
-      top: 0;
-      background: var(--bg);
-      border-bottom: 1px solid var(--border);
-      padding: 1rem 1.25rem;
-      display: flex;
-      align-items: center;
+      position: sticky; top: 0;
+      background: var(--surface);
+      border-bottom: 1px solid var(--outline);
+      padding: 1.25rem 1.5rem 1rem;
+      display: flex; align-items: center;
       justify-content: space-between;
     }
     .saved-panel-title {
-      font-size: 0.9375rem;
-      font-weight: 700;
+      font-size: 1.25rem; font-weight: 400;
+      letter-spacing: 0; color: var(--on-surface);
     }
     .saved-panel-close {
-      background: none;
-      border: none;
-      cursor: pointer;
-      color: var(--text-muted);
-      font-size: 1rem;
-      padding: 0.25rem 0.375rem;
-      border-radius: 4px;
-      line-height: 1;
-      transition: color 0.15s, background 0.15s;
+      background: none; border: none; cursor: pointer;
+      color: var(--on-surface-var); font-size: 1.125rem;
+      width: 40px; height: 40px; border-radius: 9999px;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.2s; flex-shrink: 0;
     }
-    .saved-panel-close:hover { color: var(--text); background: var(--bg-subtle); }
+    .saved-panel-close:hover { background: var(--surface-var); }
+
     #saved-list {
-      padding: 1rem 1.25rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.625rem;
-      flex: 1;
+      padding: 0.75rem 0.75rem 1.5rem;
+      display: flex; flex-direction: column;
+      gap: 2px; flex: 1;
     }
     .saved-empty {
-      color: var(--text-muted);
-      font-size: 0.875rem;
-      text-align: center;
-      margin-top: 2rem;
-      line-height: 1.7;
+      color: var(--on-surface-var); font-size: 0.9375rem;
+      text-align: center; margin-top: 2.5rem; line-height: 1.75;
     }
+
+    /* Saved article — MD3 List Item */
     .saved-article-item {
-      padding: 0.75rem;
-      border: 1px solid var(--border-muted);
-      border-radius: 8px;
-      display: flex;
-      flex-direction: column;
-      gap: 0.3rem;
-      transition: border-color 0.15s;
+      padding: 0.875rem 1rem;
+      border-radius: 12px;
+      display: flex; flex-direction: column; gap: 0.25rem;
+      transition: background 0.15s; cursor: default;
     }
-    .saved-article-item:hover { border-color: var(--border); }
+    .saved-article-item:hover { background: var(--surface-var); }
     .saved-article-title {
-      font-size: 0.875rem;
-      font-weight: 600;
-      color: var(--link);
-      text-decoration: none;
+      font-size: 0.9375rem; font-weight: 500;
+      color: var(--primary); text-decoration: none;
       line-height: 1.45;
     }
     .saved-article-title:hover { text-decoration: underline; }
     .saved-article-summary {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      line-height: 1.55;
-      margin: 0.2rem 0 0;
+      font-size: 0.8125rem; color: var(--on-surface-var);
+      line-height: 1.5; margin: 0.1rem 0 0;
     }
     .saved-article-source {
-      font-size: 0.68rem;
-      font-weight: 500;
-      background: var(--tag-bg);
-      color: var(--tag-text);
-      padding: 0.1em 0.5em;
-      border-radius: 20px;
+      font-size: 0.6875rem; font-weight: 500;
+      letter-spacing: 0.005em;
+      background: var(--chip-bg); color: var(--chip-text);
+      padding: 0.1em 0.55em; border-radius: 8px;
     }
     .saved-article-meta {
-      font-size: 0.72rem;
-      color: var(--text-muted);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 0.35rem;
-      gap: 0.5rem;
+      font-size: 0.75rem; color: var(--on-surface-var);
+      display: flex; justify-content: space-between;
+      align-items: center; margin-top: 0.35rem; gap: 0.5rem;
     }
     .saved-article-meta-left {
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
+      display: flex; align-items: center; gap: 0.4rem;
     }
-    .saved-remove-btn {
-      background: none;
-      border: none;
-      cursor: pointer;
-      color: var(--text-muted);
-      font-size: 0.72rem;
-      padding: 0;
-      font-family: inherit;
-      transition: color 0.15s;
-    }
-    .saved-remove-btn:hover { color: #cf222e; }
-    .saved-clear-btn {
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      background: none;
-      border: 1px solid var(--border-muted);
-      border-radius: 6px;
-      padding: 0.375rem 0.75rem;
-      cursor: pointer;
-      font-family: inherit;
-      margin-top: 0.5rem;
-      transition: color 0.15s, border-color 0.15s;
-      align-self: flex-start;
-    }
-    .saved-clear-btn:hover { color: #cf222e; border-color: #cf222e; }
 
-    /* ── Responsive ────────────────────────────────────────── */
-    @media (max-width: 600px) {
-      main { padding: 1.5rem 1rem 4rem; }
+    /* Remove / Clear — Text Buttons */
+    .saved-remove-btn {
+      background: none; border: none; cursor: pointer;
+      color: var(--error); font-size: 0.75rem; font-weight: 500;
+      font-family: 'Roboto', sans-serif; letter-spacing: 0.00625em;
+      padding: 0.25rem 0.5rem; border-radius: 9999px;
+      transition: background 0.2s;
+    }
+    .saved-remove-btn:hover { background: rgba(217,48,37,0.08); }
+    .saved-clear-btn {
+      font-size: 0.8125rem; font-weight: 500;
+      font-family: 'Roboto', sans-serif; letter-spacing: 0.00625em;
+      color: var(--error); background: none;
+      border: 1px solid var(--outline); border-radius: 9999px;
+      padding: 0.4rem 1rem; cursor: pointer;
+      margin-top: 0.75rem; align-self: flex-start;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .saved-clear-btn:hover { background: rgba(217,48,37,0.08); border-color: var(--error); }
+
+    /* ── Responsive ─────────────────────────────────────── */
+    @media (max-width: 640px) {
+      main { padding: 0.75rem 0.75rem 4rem; }
+      .content { padding: 1.25rem 1rem; border-radius: 8px; }
       .site-header { padding: 0 1rem; }
       .is-index .content > ul > li {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
+        flex-direction: column; align-items: flex-start; gap: 0.5rem;
       }
     }
   </style>
@@ -622,7 +594,7 @@
   function updateAllSaveBtns() {
     document.querySelectorAll('.save-btn').forEach(function (btn) {
       var saved = isSaved(btn.dataset.url);
-      btn.textContent = saved ? '\u2713 Saved' : 'Save';
+      btn.textContent = saved ? '\u2713 Saved' : '\uD83D\uDD16 Save';
       btn.classList.toggle('is-saved', saved);
     });
   }
@@ -631,7 +603,6 @@
   var isIndex = document.querySelector('.content.is-index');
 
   /* ── Description extractors ────────────────────────── */
-  // News: grab text between <strong> and <em> (the "— description" part)
   function getArticleDesc(container, strongEl, emEl) {
     var buf = '', past = false;
     container.childNodes.forEach(function (node) {
@@ -642,7 +613,6 @@
     return buf.replace(/^\s*[—–\-]\s*/, '').replace(/\([^)]*\)\s*$/, '').trim().slice(0, 220);
   }
 
-  // Papers: find the ### Summary h3 after the Link paragraph, grab first sentence
   function getPaperSummary(linkStrong) {
     var el = linkStrong.parentNode.nextElementSibling;
     while (el) {
@@ -650,7 +620,6 @@
         var p = el.nextElementSibling;
         if (p && p.textContent) {
           var text = p.textContent.trim();
-          // Take up to first sentence break or 220 chars
           var cut = text.search(/[.!?]\s/);
           return (cut > 0 && cut < 220 ? text.slice(0, cut + 1) : text.slice(0, 220)).trim();
         }
@@ -688,7 +657,6 @@
     document.querySelectorAll('.content li').forEach(function (li) {
       var firstChild = li.children[0];
       if (!firstChild) return;
-      // Unwrap loose-list <p> wrapper if present
       var container = (firstChild.tagName === 'P') ? firstChild : li;
       var strong = container.children[0];
       if (!strong || strong.tagName !== 'STRONG') return;
@@ -705,11 +673,9 @@
     // one <p>; p.querySelector('strong') would return Authors, not Link.
     document.querySelectorAll('.content strong').forEach(function (strong) {
       if (strong.textContent.trim() !== 'Link:') return;
-      // Walk forward past text nodes to find the <a>
       var node = strong.nextSibling;
       while (node && node.nodeType !== 1) node = node.nextSibling;
       if (!node || node.tagName !== 'A') return;
-      // Avoid double-injection
       if (strong.parentNode.querySelector('.save-btn')) return;
       var summary = getPaperSummary(strong);
       strong.parentNode.appendChild(makeSaveBtn(node.href, node.textContent.trim(), 'ArXiv', summary));
