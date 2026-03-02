@@ -3,7 +3,7 @@ layout: default
 ---
 {% if page.hero_date %}
 <div class="hero-block">
-  <p class="hero-badge">Latest &middot; {{ page.hero_date }}</p>
+  <p class="hero-badge"><a href="{{ site.baseurl }}/{{ page.hero_primary_link }}">Latest &middot; {{ page.hero_date }}</a></p>
   <div class="hero-highlights">
     {{ page.highlights | markdownify }}
   </div>
