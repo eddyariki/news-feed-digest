@@ -647,11 +647,16 @@
     {% assign page_type = path_parts[1] %}
     {% if page_date contains '-' %}
     <nav class="sibling-nav">
-      {% assign digest_url = site.baseurl | append: '/' | append: page_date | append: '/digest' %}
-      {% assign papers_url = site.baseurl | append: '/' | append: page_date | append: '/papers' %}
+      {% assign digest_url   = site.baseurl | append: '/' | append: page_date | append: '/digest' %}
+      {% assign papers_url   = site.baseurl | append: '/' | append: page_date | append: '/papers' %}
       {% assign security_url = site.baseurl | append: '/' | append: page_date | append: '/security' %}
-      {% assign has_papers   = site.pages | where: 'url', papers_url   | first %}
-      {% assign has_security = site.pages | where: 'url', security_url | first %}
+      {% assign weekly_url   = site.baseurl | append: '/' | append: page_date | append: '/weekly' %}
+      {% assign papers_path   = page_date | append: '/papers.md' %}
+      {% assign security_path = page_date | append: '/security.md' %}
+      {% assign weekly_path   = page_date | append: '/weekly.md' %}
+      {% assign has_papers   = site.pages | where: 'path', papers_path   | first %}
+      {% assign has_security = site.pages | where: 'path', security_path | first %}
+      {% assign has_weekly   = site.pages | where: 'path', weekly_path   | first %}
       {% if page_type == 'digest' %}
         <span class="sibling-current">Digest</span>
       {% else %}
@@ -665,8 +670,6 @@
         {% if page_type == 'security' %}<span class="sibling-current">Security</span>
         {% else %}<a href="{{ security_url }}" class="sibling-link">Security</a>{% endif %}
       {% endif %}
-      {% assign weekly_url = site.baseurl | append: '/' | append: page_date | append: '/weekly' %}
-      {% assign has_weekly = site.pages | where: 'url', weekly_url | first %}
       {% if has_weekly %}
         {% if page_type == 'weekly' %}<span class="sibling-current">Weekly</span>
         {% else %}<a href="{{ weekly_url }}" class="sibling-link">Weekly</a>{% endif %}
