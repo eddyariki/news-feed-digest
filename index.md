@@ -12,18 +12,49 @@ highlights: |
   - **AI companies are spending $125M** via tech-billionaire-backed super PACs to defeat congressional candidates pushing for AI regulation, raising concerns about the industry's influence over AI governance.
   - **Apple launched MacBook Pro with M5 Pro and M5 Max**, delivering a claimed 4× AI performance boost over M4, with 1TB storage now standard — signaling hardware-accelerated inference moving into the mainstream.
   - **Anthropic pitched Claude for a Pentagon drone swarm competition** but lost to SpaceX/xAI and OpenAI-partnered defense contractors, as the US State Department separately replaced Claude with GPT-4.1 in federal deployments.
+archive:
+  - date: "2026-03-03"
+    has_papers: true
+    has_security: false
+    highlight: "OpenAI and Google both shipped new models on the same day: GPT-5.3 Instant targets smoother everyday conversation with less 'cringe' over-caution, while Gemini"
+  - date: "2026-03-02"
+    has_papers: true
+    has_security: false
+    highlight: "The Anthropic-Pentagon breakdown is the AI policy story of the moment. Negotiations over a $2 billion classified AI contract collapsed after the DoD demanded unrestricted use of Claude."
+  - date: "2026-03-01"
+    has_papers: false
+    has_security: false
+    highlight: "Iran conflict escalates: U.S. and Israeli strikes killed Supreme Leader Khamenei, prompting Iranian missile and drone retaliation; Trump signals a goal of regime change."
+  - date: "2026-02-28"
+    has_papers: true
+    has_security: false
+    highlight: "Anthropic vs. Pentagon standoff escalates: The Trump administration banned Anthropic products from all federal agencies and the Pentagon designated the company a supply-chain risk."
+  - date: "2026-02-27"
+    has_papers: true
+    has_security: false
+    highlight: "Anthropic vs. Pentagon escalates to executive order — Trump ordered all federal agencies to immediately cease using Anthropic products after the company refused DoD terms."
+  - date: "2026-02-26"
+    has_papers: true
+    has_security: false
+    highlight: "Block (Square/Cash App) slashes ~4,000 jobs — Jack Dorsey explicitly cites AI as the reason, cutting the workforce from 10,000+ to under 6,000 in one of the most significant AI-driven layoffs yet."
+  - date: "2026-02-25"
+    has_papers: true
+    has_security: false
+    highlight: "Nvidia posts another record quarter as CEO Jensen Huang declares token demand has 'gone completely exponential,' underscoring unrelenting AI infrastructure investment."
+  - date: "2026-02-24"
+    has_papers: true
+    has_security: false
+    highlight: "Anthropic vs. the Pentagon: The DoD gave Anthropic until Friday to accept 'any lawful use' terms in its AI contract — the same language OpenAI and xAI have already agreed to."
+  - date: "2026-02-23"
+    has_papers: true
+    has_security: false
+    highlight: "OpenAI at $850B: Reportedly closing a $100B funding round with Amazon, Nvidia, SoftBank, and Microsoft as backers — the largest private AI deal in history."
+  - date: "2026-02-21"
+    has_papers: true
+    has_security: false
+    highlight: "AI Safety Gap Exposed: New research shows that text-based alignment does not transfer to tool-call safety in LLM agents — a critical blind spot as agents become more capable."
+  - date: "2026-02-20"
+    has_papers: false
+    has_security: false
+    highlight: "Cline CLI supply chain attack — The popular AI coding assistant was compromised via a hijacked npm token, silently installing autonomous agent 'OpenClaw' on developer machines."
 ---
-
-## Archive
-
-- **2026-03-03** [Papers](2026-03-03/papers) [Digest](2026-03-03/digest)
-- **2026-03-02** [Papers](2026-03-02/papers) [Digest](2026-03-02/digest)
-- **2026-03-01** [Digest](2026-03-01/digest)
-- **2026-02-28** [Papers](2026-02-28/papers) [Digest](2026-02-28/digest)
-- **2026-02-27** [Papers](2026-02-27/papers) [Digest](2026-02-27/digest)
-- **2026-02-26** [Papers](2026-02-26/papers) [Digest](2026-02-26/digest)
-- **2026-02-25** [Papers](2026-02-25/papers) [Digest](2026-02-25/digest)
-- **2026-02-24** [Papers](2026-02-24/papers) [Digest](2026-02-24/digest)
-- **2026-02-23** [Papers](2026-02-23/papers) [Digest](2026-02-23/digest)
-- **2026-02-21** [Papers](2026-02-21/papers) [Digest](2026-02-21/digest)
-- **2026-02-20** [Digest](2026-02-20/digest)
