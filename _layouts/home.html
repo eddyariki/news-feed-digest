@@ -4,8 +4,7 @@ layout: default
 {% if page.hero_date %}
 <div class="hero-block">
   <p class="hero-badge">Latest &middot; {{ page.hero_date }}</p>
-  <h1 class="hero-title"><a href="{{ site.baseurl }}/{{ page.hero_primary_link }}">{{ page.hero_date }}</a></h1>
-  <div class="hero-highlights" data-href="{{ site.baseurl }}/{{ page.hero_primary_link }}">
+<div class="hero-highlights" data-href="{{ site.baseurl }}/{{ page.hero_primary_link }}">
     {{ page.highlights | markdownify }}
   </div>
   <div class="hero-ctas">
