@@ -331,20 +331,26 @@
       letter-spacing: 0.04em;
     }
 
-    /* ── Archive list (home page) ────────────────────────── */
-    .content.is-index > ul {
-      list-style: none; padding: 0; margin: 0;
+    /* ── Archive (home page) ─────────────────────────────── */
+    .archive-section h2 {
+      font-family: var(--serif);
+      font-size: 1.4375rem;
+      font-weight: 700;
+      margin: 3rem 0 0;
+      padding-top: 1rem;
+      border-top: 2px solid var(--text);
     }
-    .content.is-index > ul > li {
-      margin: 0;
+    .archive-row {
       padding: 1.125rem 0;
       border-bottom: 1px solid var(--border);
+    }
+    .archive-row:first-of-type { border-top: 1px solid var(--border); }
+    .archive-row-header {
       display: flex;
       align-items: baseline;
       gap: 0.75rem;
     }
-    .content.is-index > ul > li:first-child { border-top: 1px solid var(--border); }
-    .content.is-index > ul > li > strong {
+    .archive-date {
       font-family: var(--sans);
       font-size: 0.9375rem;
       font-weight: 600;
@@ -354,7 +360,8 @@
       margin-right: auto;
       color: var(--text-muted);
     }
-    .content.is-index > ul > li a {
+    .archive-links { display: flex; gap: 0.75rem; }
+    .archive-links a {
       font-family: var(--sans);
       font-size: 0.6875rem;
       font-weight: 700;
@@ -364,12 +371,16 @@
       text-decoration: underline;
       text-underline-offset: 2px;
       text-decoration-color: color-mix(in srgb, var(--accent) 40%, transparent);
-      transition: color 0.15s, text-decoration-color 0.15s;
+      transition: text-decoration-color 0.15s;
       white-space: nowrap;
-      padding: 0; border: none; border-radius: 0;
     }
-    .content.is-index > ul > li a:hover {
-      text-decoration-color: var(--accent);
+    .archive-links a:hover { text-decoration-color: var(--accent); }
+    .archive-preview {
+      font-family: var(--sans);
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      margin: 0.4rem 0 0;
+      line-height: 1.55;
     }
 
     /* ── Footer ─────────────────────────────────────────── */
@@ -568,8 +579,8 @@
       main { padding: 1.75rem 1.25rem 4rem; }
       .site-header { padding: 0 1.25rem; }
       h1 { font-size: 1.875rem; }
-      .is-index .content > ul > li {
-        flex-direction: column; align-items: flex-start; gap: 0.5rem;
+      .archive-row-header {
+        flex-direction: column; align-items: flex-start; gap: 0.35rem;
       }
     }
   </style>
