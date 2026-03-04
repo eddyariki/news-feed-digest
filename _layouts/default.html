@@ -409,6 +409,28 @@
       line-height: 1.55;
     }
 
+    /* ── Issue prev/next navigation ─────────────────────── */
+    .issue-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+    }
+    .issue-nav-link {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .issue-nav-link:hover { color: var(--accent); text-decoration: none; }
+    .issue-nav-placeholder { display: block; }
+
     /* ── Footer ─────────────────────────────────────────── */
     .site-footer {
       max-width: 780px;
@@ -656,6 +678,23 @@
   <div class="content {% if url == '/' or url == '' %}is-index{% endif %}">
     {{ content }}
   </div>
+  {% if page_date contains '-' and site.data.archive %}
+  {% assign dates_asc = site.data.archive | sort %}
+  {% assign prev_date = '' %}{% assign next_date = '' %}{% assign _found = false %}
+  {% for _d in dates_asc %}
+    {% if _found and next_date == '' %}{% assign next_date = _d %}{% endif %}
+    {% if _d == page_date %}{% assign _found = true %}{% endif %}
+    {% unless _found %}{% assign prev_date = _d %}{% endunless %}
+  {% endfor %}
+  <nav class="issue-nav">
+    {% if prev_date != '' %}
+    <a href="{{ site.baseurl }}/{{ prev_date }}/{{ page_type }}" class="issue-nav-link issue-nav-prev">← {{ prev_date }}</a>
+    {% else %}<span class="issue-nav-placeholder"></span>{% endif %}
+    {% if next_date != '' %}
+    <a href="{{ site.baseurl }}/{{ next_date }}/{{ page_type }}" class="issue-nav-link issue-nav-next">{{ next_date }} →</a>
+    {% else %}<span class="issue-nav-placeholder"></span>{% endif %}
+  </nav>
+  {% endif %}
 </main>
 
 <footer class="site-footer">
