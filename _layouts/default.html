@@ -665,6 +665,12 @@
         {% if page_type == 'security' %}<span class="sibling-current">Security</span>
         {% else %}<a href="{{ security_url }}" class="sibling-link">Security</a>{% endif %}
       {% endif %}
+      {% assign weekly_url = site.baseurl | append: '/' | append: page_date | append: '/weekly' %}
+      {% assign has_weekly = site.pages | where: 'url', weekly_url | first %}
+      {% if has_weekly %}
+        {% if page_type == 'weekly' %}<span class="sibling-current">Weekly</span>
+        {% else %}<a href="{{ weekly_url }}" class="sibling-link">Weekly</a>{% endif %}
+      {% endif %}
     </nav>
     {% else %}
     <a href="{{ site.baseurl }}/" class="back-link">← All digests</a>
