@@ -112,6 +112,29 @@
     }
     .back-link:hover { color: var(--accent); text-decoration: none; }
 
+    .sibling-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .sibling-link, .sibling-current {
+      font-family: var(--sans);
+      font-size: 0.6875rem;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .sibling-link {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .sibling-link:hover { color: var(--accent); text-decoration: none; }
+    .sibling-current {
+      color: var(--accent);
+    }
+
     /* ── Main layout ────────────────────────────────────── */
     main {
       max-width: 780px;
@@ -583,7 +606,33 @@
     </a>
     {% assign url = page.url | remove: 'index.html' %}
     {% if url != '/' and url != '' %}
+    {% assign path_parts = page.url | remove_first: '/' | split: '/' %}
+    {% assign page_date = path_parts[0] %}
+    {% assign page_type = path_parts[1] %}
+    {% if page_date contains '-' %}
+    <nav class="sibling-nav">
+      {% assign digest_url = site.baseurl | append: '/' | append: page_date | append: '/digest' %}
+      {% assign papers_url = site.baseurl | append: '/' | append: page_date | append: '/papers' %}
+      {% assign security_url = site.baseurl | append: '/' | append: page_date | append: '/security' %}
+      {% assign has_papers   = site.pages | where: 'url', papers_url   | first %}
+      {% assign has_security = site.pages | where: 'url', security_url | first %}
+      {% if page_type == 'digest' %}
+        <span class="sibling-current">Digest</span>
+      {% else %}
+        <a href="{{ digest_url }}" class="sibling-link">Digest</a>
+      {% endif %}
+      {% if has_papers %}
+        {% if page_type == 'papers' %}<span class="sibling-current">Papers</span>
+        {% else %}<a href="{{ papers_url }}" class="sibling-link">Papers</a>{% endif %}
+      {% endif %}
+      {% if has_security %}
+        {% if page_type == 'security' %}<span class="sibling-current">Security</span>
+        {% else %}<a href="{{ security_url }}" class="sibling-link">Security</a>{% endif %}
+      {% endif %}
+    </nav>
+    {% else %}
     <a href="{{ site.baseurl }}/" class="back-link">← All digests</a>
+    {% endif %}
     {% endif %}
   </div>
 </header>
@@ -692,8 +741,8 @@
   savedBtn.className = 'saved-count-btn';
   savedBtn.innerHTML = 'Saved <span class="saved-badge" id="saved-badge"></span>';
   savedBtn.addEventListener('click', openPanel);
-  var backLink = headerInner && headerInner.querySelector('.back-link');
-  if (backLink) { headerInner.insertBefore(savedBtn, backLink); }
+  var navEl = headerInner && (headerInner.querySelector('.sibling-nav') || headerInner.querySelector('.back-link'));
+  if (navEl) { headerInner.insertBefore(savedBtn, navEl); }
   else if (headerInner) { headerInner.appendChild(savedBtn); }
 
   function updateHeaderCount() {
