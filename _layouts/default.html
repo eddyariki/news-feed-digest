@@ -307,11 +307,14 @@
       padding: 0.7rem 0;
       border-bottom: 1px solid var(--border);
       margin: 0;
-      cursor: pointer;
+    }
+    .hero-highlights ul li strong { font-weight: 700; }
+    .hero-highlights ul li a {
+      color: inherit;
+      text-decoration: none;
       transition: color 0.15s;
     }
-    .hero-highlights ul li:hover { color: var(--accent); }
-    .hero-highlights ul li strong { font-weight: 700; }
+    .hero-highlights ul li a:hover { color: var(--accent); }
     .hero-ctas {
       display: flex;
       align-items: center;
@@ -845,15 +848,6 @@
       if (strong.parentNode.querySelector('.save-btn')) return;
       var summary = getPaperSummary(strong);
       strong.parentNode.appendChild(makeSaveBtn(node.href, node.textContent.trim(), 'ArXiv', summary));
-    });
-  }
-
-  /* ── Hero highlight rows → navigate to digest ───────── */
-  var heroHighlights = document.querySelector('.hero-highlights[data-href]');
-  if (heroHighlights) {
-    var digestHref = heroHighlights.getAttribute('data-href');
-    heroHighlights.querySelectorAll('li').forEach(function (li) {
-      li.addEventListener('click', function () { window.location.href = digestHref; });
     });
   }
 
