@@ -112,6 +112,29 @@
     }
     .back-link:hover { color: var(--accent); text-decoration: none; }
 
+    .sibling-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .sibling-link, .sibling-current {
+      font-family: var(--sans);
+      font-size: 0.6875rem;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .sibling-link {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .sibling-link:hover { color: var(--accent); text-decoration: none; }
+    .sibling-current {
+      color: var(--accent);
+    }
+
     /* ── Main layout ────────────────────────────────────── */
     main {
       max-width: 780px;
@@ -271,6 +294,7 @@
       color: var(--accent);
       margin: 0 0 0.5rem;
     }
+
     .hero-highlights ul {
       list-style: none;
       padding: 0; margin: 0 0 0.25rem;
@@ -333,20 +357,26 @@
       letter-spacing: 0.04em;
     }
 
-    /* ── Archive list (home page) ────────────────────────── */
-    .content.is-index > ul {
-      list-style: none; padding: 0; margin: 0;
+    /* ── Archive (home page) ─────────────────────────────── */
+    .archive-section h2 {
+      font-family: var(--serif);
+      font-size: 1.4375rem;
+      font-weight: 700;
+      margin: 3rem 0 0;
+      padding-top: 1rem;
+      border-top: 2px solid var(--text);
     }
-    .content.is-index > ul > li {
-      margin: 0;
+    .archive-row {
       padding: 1.125rem 0;
       border-bottom: 1px solid var(--border);
+    }
+    .archive-row:first-of-type { border-top: 1px solid var(--border); }
+    .archive-row-header {
       display: flex;
       align-items: baseline;
       gap: 0.75rem;
     }
-    .content.is-index > ul > li:first-child { border-top: 1px solid var(--border); }
-    .content.is-index > ul > li > strong {
+    .archive-date {
       font-family: var(--sans);
       font-size: 0.9375rem;
       font-weight: 600;
@@ -356,7 +386,8 @@
       margin-right: auto;
       color: var(--text-muted);
     }
-    .content.is-index > ul > li a {
+    .archive-links { display: flex; gap: 0.75rem; }
+    .archive-links a {
       font-family: var(--sans);
       font-size: 0.6875rem;
       font-weight: 700;
@@ -366,12 +397,16 @@
       text-decoration: underline;
       text-underline-offset: 2px;
       text-decoration-color: color-mix(in srgb, var(--accent) 40%, transparent);
-      transition: color 0.15s, text-decoration-color 0.15s;
+      transition: text-decoration-color 0.15s;
       white-space: nowrap;
-      padding: 0; border: none; border-radius: 0;
     }
-    .content.is-index > ul > li a:hover {
-      text-decoration-color: var(--accent);
+    .archive-links a:hover { text-decoration-color: var(--accent); }
+    .archive-preview {
+      font-family: var(--sans);
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      margin: 0.4rem 0 0;
+      line-height: 1.55;
     }
 
     /* ── Footer ─────────────────────────────────────────── */
@@ -570,8 +605,8 @@
       main { padding: 1.75rem 1.25rem 4rem; }
       .site-header { padding: 0 1.25rem; }
       h1 { font-size: 1.875rem; }
-      .is-index .content > ul > li {
-        flex-direction: column; align-items: flex-start; gap: 0.5rem;
+      .archive-row-header {
+        flex-direction: column; align-items: flex-start; gap: 0.35rem;
       }
     }
   </style>
@@ -585,7 +620,33 @@
     </a>
     {% assign url = page.url | remove: 'index.html' %}
     {% if url != '/' and url != '' %}
+    {% assign path_parts = page.url | remove_first: '/' | split: '/' %}
+    {% assign page_date = path_parts[0] %}
+    {% assign page_type = path_parts[1] %}
+    {% if page_date contains '-' %}
+    <nav class="sibling-nav">
+      {% assign digest_url = site.baseurl | append: '/' | append: page_date | append: '/digest' %}
+      {% assign papers_url = site.baseurl | append: '/' | append: page_date | append: '/papers' %}
+      {% assign security_url = site.baseurl | append: '/' | append: page_date | append: '/security' %}
+      {% assign has_papers   = site.pages | where: 'url', papers_url   | first %}
+      {% assign has_security = site.pages | where: 'url', security_url | first %}
+      {% if page_type == 'digest' %}
+        <span class="sibling-current">Digest</span>
+      {% else %}
+        <a href="{{ digest_url }}" class="sibling-link">Digest</a>
+      {% endif %}
+      {% if has_papers %}
+        {% if page_type == 'papers' %}<span class="sibling-current">Papers</span>
+        {% else %}<a href="{{ papers_url }}" class="sibling-link">Papers</a>{% endif %}
+      {% endif %}
+      {% if has_security %}
+        {% if page_type == 'security' %}<span class="sibling-current">Security</span>
+        {% else %}<a href="{{ security_url }}" class="sibling-link">Security</a>{% endif %}
+      {% endif %}
+    </nav>
+    {% else %}
     <a href="{{ site.baseurl }}/" class="back-link">← All digests</a>
+    {% endif %}
     {% endif %}
   </div>
 </header>
@@ -694,8 +755,8 @@
   savedBtn.className = 'saved-count-btn';
   savedBtn.innerHTML = 'Saved <span class="saved-badge" id="saved-badge"></span>';
   savedBtn.addEventListener('click', openPanel);
-  var backLink = headerInner && headerInner.querySelector('.back-link');
-  if (backLink) { headerInner.insertBefore(savedBtn, backLink); }
+  var navEl = headerInner && (headerInner.querySelector('.sibling-nav') || headerInner.querySelector('.back-link'));
+  if (navEl) { headerInner.insertBefore(savedBtn, navEl); }
   else if (headerInner) { headerInner.appendChild(savedBtn); }
 
   function updateHeaderCount() {
