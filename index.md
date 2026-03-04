@@ -16,7 +16,7 @@ archive:
   - date: "2026-03-03"
     has_papers: true
     has_security: false
-    highlight: "OpenAI and Google both shipped new models on the same day: GPT-5.3 Instant targets smoother everyday conversation with less 'cringe' over-caution, while Gemini"
+    highlight: "OpenAI and Google both shipped new models on the same day: GPT-5.3 Instant targets smoother everyday conversation with less 'cringe' over-caution, while Gemini…"
   - date: "2026-03-02"
     has_papers: true
     has_security: false
