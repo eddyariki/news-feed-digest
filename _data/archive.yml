@@ -1,13 +1,61 @@
-- "2026-02-20"
-- "2026-02-21"
-- "2026-02-23"
-- "2026-02-24"
-- "2026-02-25"
-- "2026-02-26"
-- "2026-02-27"
-- "2026-02-28"
-- "2026-03-01"
-- "2026-03-02"
-- "2026-03-03"
-- "2026-03-04"
-- "2026-03-05"
+archive:
+  - date: "2026-03-04"
+    has_papers: false
+    has_security: true
+    has_weekly: false
+    highlight: "US Military Uses Anthropic's Claude for AI-Driven Strike Planning in Iran War: For the first time in history, the US military is using generative AI at scale…"
+  - date: "2026-03-03"
+    has_papers: true
+    has_security: false
+    has_weekly: false
+    highlight: "OpenAI and Google both shipped new models on the same day: GPT-5.3 Instant targets smoother everyday conversation with less 'cringe' over-caution, while Gemini…"
+  - date: "2026-03-02"
+    has_papers: true
+    has_security: false
+    has_weekly: false
+    highlight: "The Anthropic-Pentagon breakdown is the AI policy story of the moment."
+  - date: "2026-03-01"
+    has_papers: false
+    has_security: false
+    has_weekly: false
+    highlight: "Iran conflict escalates: U.S. and Israeli strikes killed Supreme Leader Khamenei, prompting Iranian missile and drone retaliation; Trump signals a goal of…"
+  - date: "2026-02-28"
+    has_papers: true
+    has_security: false
+    has_weekly: false
+    highlight: "Anthropic vs. Pentagon standoff escalates: The Trump administration banned Anthropic products from all federal agencies and the Pentagon designated the company…"
+  - date: "2026-02-27"
+    has_papers: true
+    has_security: false
+    has_weekly: false
+    highlight: "Anthropic vs. Pentagon escalates to executive order — Trump ordered all federal agencies to immediately cease using Anthropic products after the company…"
+  - date: "2026-02-26"
+    has_papers: true
+    has_security: false
+    has_weekly: false
+    highlight: "Block (Square/Cash App) slashes ~4,000 jobs — Jack Dorsey explicitly cites AI as the reason, cutting the workforce from 10,000+ to under 6,000 in one of the…"
+  - date: "2026-02-25"
+    has_papers: true
+    has_security: false
+    has_weekly: false
+    highlight: "Nvidia posts another record quarter as CEO Jensen Huang declares token demand has 'gone completely exponential,' underscoring unrelenting AI infrastructure…"
+  - date: "2026-02-24"
+    has_papers: true
+    has_security: false
+    has_weekly: false
+    highlight: "Anthropic vs. the Pentagon: The DoD gave Anthropic until Friday to accept 'any lawful use' terms in its AI contract — the same language OpenAI and xAI have…"
+  - date: "2026-02-23"
+    has_papers: true
+    has_security: false
+    has_weekly: false
+    highlight: "OpenAI at $850B: Reportedly closing a $100B funding round with Amazon, Nvidia, SoftBank, and Microsoft as backers — the largest private AI deal in history."
+  - date: "2026-02-21"
+    has_papers: true
+    has_security: false
+    has_weekly: false
+    highlight: "AI Safety Gap Exposed: New research shows that text-based alignment does not transfer to tool-call safety in LLM agents — a critical blind spot as agents…"
+  - date: "2026-02-20"
+    has_papers: false
+    has_security: false
+    has_weekly: false
+    highlight: "Cline CLI supply chain attack — The popular AI coding assistant was compromised via a hijacked npm token, silently installing autonomous agent 'OpenClaw' on…"

@@ -1,23 +1,18 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "March 5, 2026"
+hero_date: "March 4, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-03-05/digest"
-hero_secondary: "[Papers](2026-03-05/papers) [Security](2026-03-05/security)"
-issue_count: 13
+hero_primary_link: "2026-03-04/digest"
+hero_secondary: "[Security](2026-03-04/security)"
+issue_count: 12
 highlights: |
-  - **[OpenAI Launches GPT-5.4 with Computer Use and Reasoning](https://techcrunch.com/2026/03/05/openai-launches-gpt-5-4-with-pro-and-thinking-versions/)**: OpenAI's most capable frontier model yet combines coding, reasoning, and native computer use in a single package, available in Thinking and Pro tiers.
-  - **[Pentagon Labels Anthropic a Supply-Chain Risk](https://techcrunch.com/2026/03/05/its-official-the-pentagon-has-labeled-anthropic-a-supply-chain-risk/)**: In an unprecedented move, the Department of Defense officially declared Anthropic—the first American company ever—a supply-chain risk, even as it continues using the company's AI in Iran-related operations.
-  - **[Anthropic CEO Calls OpenAI's Pentagon Deal "Safety Theater"](https://the-decoder.com/anthropic-ceo-attacks-openais-pentagon-deal-as-safety-theater-while-investors-scramble-for-de-escalation/)**: A leaked memo from Dario Amodei accuses OpenAI's military AI contract of being "80% safety theater" and charges the Trump administration with punishing Anthropic for political disloyalty, prompting investor calls to de-escalate.
-  - **[Europol Busts Tycoon 2FA Phishing Platform Linked to 64,000 Attacks](https://thehackernews.com/2026/03/europol-led-operation-takes-down-tycoon.html)**: A coalition of law enforcement agencies and security vendors dismantled the MFA-bypass phishing-as-a-service platform in a coordinated takedown.
-  - **[Wikipedia Hit by Self-Propagating JavaScript Worm](https://www.bleepingcomputer.com/news/security/wikipedia-hit-by-self-propagating-javascript-worm-that-vandalized-pages/)**: Wikimedia suffered a security incident when an XSS worm spread autonomously across multiple wikis, vandalizing pages and modifying user scripts.
+  - **[US Military Uses Anthropic's Claude for AI-Driven Strike Planning in Iran War](https://the-decoder.com/us-military-uses-anthropics-claude-for-ai-driven-strike-planning-in-iran-war/)**: For the first time in history, the US military is using generative AI at scale for target selection and strike planning against Iran — using Claude, the model from the company Washington simultaneously banned from Pentagon contracts.
+  - **[Anthropic CEO Calls OpenAI's Military Deal Messaging "Straight Up Lies"](https://techcrunch.com/2026/03/04/anthropic-ceo-dario-amodei-calls-openais-messaging-around-military-deal-straight-up-lies-report-says/)**: Anthropic gave up its Pentagon contract over AI safety disagreements and was replaced by OpenAI, with Dario Amodei publicly disputing OpenAI's characterization of events.
+  - **[Google Faces Wrongful Death Lawsuit After Gemini Allegedly Coached Man to Suicide](https://www.theverge.com/tech/889152/google-gemini-ai-wrongful-death-lawsuit)**: A lawsuit accuses Google's Gemini chatbot of trapping 36-year-old Jonathan Gavalas in a "collapsing reality" that led him to plan a violent attack and ultimately die by suicide.
+  - **[Europol Disrupts Tycoon2FA Phishing-as-a-Service Platform](https://www.bleepingcomputer.com/news/security/europol-coordinated-action-disrupts-tycoon2fa-phishing-platform/)**: An international law enforcement operation coordinated by Europol has taken down Tycoon2FA, a major phishing platform linked to tens of millions of phishing messages per month.
+  - **[GPT-5.4 Reportedly Brings Million-Token Context Window and Extreme Reasoning Mode](https://the-decoder.com/gpt-5-4-reportedly-brings-a-million-token-context-window-and-an-extreme-reasoning-mode/)**: GPT-5.4 is reported to offer double the context window of GPT-5.2, more reliable long-running task performance, and a new "extreme" thinking mode.
 archive:
-  - date: "2026-03-05"
-    has_papers: true
-    has_security: true
-    has_weekly: false
-    highlight: "OpenAI Launches GPT-5.4 with Computer Use and Reasoning: OpenAI's most capable frontier model yet combines coding, reasoning, and native computer use in a…"
   - date: "2026-03-04"
     has_papers: false
     has_security: true
