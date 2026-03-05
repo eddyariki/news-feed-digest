@@ -1,5 +1,10 @@
 # AI News Digest
 
+Visit the page [here](https://eddyariki.github.io/news-feed-digest/) 
+
+<img width="1439" height="790" alt="Screenshot 2026-03-05 at 10 27 39" src="https://github.com/user-attachments/assets/690c1120-1924-4453-bef3-1ea8a795c284" />
+
+
 Daily curated digest of AI research papers, news, and security articles. Generated automatically each morning by an automated pipeline.
 
 ## Structure
