@@ -728,8 +728,10 @@
   {% assign _latest = site.data.archive | last %}
   {% assign _tab_papers_path   = _latest | append: '/papers.md' %}
   {% assign _tab_security_path = _latest | append: '/security.md' %}
+  {% assign _tab_podcast_path  = _latest | append: '/podcast.md' %}
   {% assign _tab_has_papers   = site.pages | where: 'path', _tab_papers_path   | first %}
   {% assign _tab_has_security = site.pages | where: 'path', _tab_security_path | first %}
+  {% assign _tab_has_podcast  = site.pages | where: 'path', _tab_podcast_path  | first %}
   <nav class="tab-nav">
     <div class="tab-nav-inner">
       {% assign _cur = page.url | remove: 'index.html' %}
@@ -767,7 +769,17 @@
       {% else %}
         <span class="tab-item is-disabled">Today's Research</span>
       {% endif %}
-      <span class="tab-item is-disabled">Podcast</span>
+      {% if _tab_has_podcast %}
+        {% assign _pod_url  = site.baseurl | append: '/' | append: _latest | append: '/podcast' %}
+        {% assign _pod_path = _latest | append: '/podcast.md' %}
+        {% if page.path == _pod_path %}
+          <span class="tab-item is-active">Podcast</span>
+        {% else %}
+          <a href="{{ _pod_url }}" class="tab-item">Podcast</a>
+        {% endif %}
+      {% else %}
+        <span class="tab-item is-disabled">Podcast</span>
+      {% endif %}
     </div>
   </nav>
   {% endif %}
@@ -1079,6 +1091,26 @@
     fetch(audioSrc, { method: 'HEAD' })
       .then(function (r) { if (r.ok) { injectAudioPlayer(); } else { injectTTSButton(); } })
       .catch(injectTTSButton);
+  }
+
+  /* ── Podcast audio player ────────────────────────────────── */
+  if (/\/podcast\/?$/.test(window.location.pathname) && !window._podcastAudioLoaded) {
+    window._podcastAudioLoaded = true;
+    var podSrc = window.location.pathname.replace(/\/podcast\/?$/, '/podcast-audio.mp3');
+    fetch(podSrc, { method: 'HEAD' })
+      .then(function (r) {
+        if (!r.ok) return;
+        var bar = document.createElement('div');
+        bar.className = 'listen-bar';
+        var audio = document.createElement('audio');
+        audio.src = podSrc;
+        audio.controls = true;
+        audio.className = 'papers-audio-player';
+        bar.appendChild(audio);
+        var header = document.querySelector('.site-header');
+        if (header) header.insertAdjacentElement('afterend', bar);
+      })
+      .catch(function () {});
   }
 }());
 </script>
