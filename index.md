@@ -4,19 +4,20 @@ layout: home
 hero_date: "March 5, 2026"
 hero_primary_label: "Read Today's News Digest"
 hero_primary_link: "2026-03-05/digest"
-hero_secondary: "[Papers](2026-03-05/papers)"
+hero_secondary: "[Papers](2026-03-05/papers) [Security](2026-03-05/security)"
 issue_count: 13
 highlights: |
-  - **[U.S. Sinks Iranian Warship, NATO Intercepts Missile Targeting Turkey](https://www.japantimes.co.jp/news/2026/03/05/world/us-iran-warship-nato-missile-turkey/)**: A major military escalation in the U.S.-Iran conflict saw a U.S. strike sink an Iranian warship while NATO forces intercepted an Iranian missile headed for Turkey, as a power succession struggle begins inside Iran.
-  - **[Seven Tech Giants Sign Trump's Data Center Rate Payer Protection Pledge](https://www.theverge.com/news/889578/data-center-power-pledge-white-house-google-meta-microsoft)**: Google, Meta, Microsoft, Oracle, OpenAI, Amazon, and xAI committed to a White House pledge aimed at preventing AI data center buildout from driving up consumer electricity costs.
-  - **[Check Point Exposes Critical Claude Code Vulnerabilities](https://www.itmedia.co.jp/enterprise/articles/2603/05/news035.html)**: Researchers found that malicious project configuration files can trigger remote code execution and API key exfiltration in Claude Code — simply opening an untrusted project is enough to initiate an attack.
-  - **[Cloudflare: 2.3 Trillion Threat Observations Reveal Attacks Now Come From Within](https://www.itmedia.co.jp/enterprise/articles/2603/05/news037.html)**: Cloudflare's global threat report details the evolution of cyberattack methods and attacker use of AI, warning that conventional defenses are reaching their limits.
+  - **[OpenAI Launches GPT-5.4 with Computer Use and Reasoning](https://techcrunch.com/2026/03/05/openai-launches-gpt-5-4-with-pro-and-thinking-versions/)**: OpenAI's most capable frontier model yet combines coding, reasoning, and native computer use in a single package, available in Thinking and Pro tiers.
+  - **[Pentagon Labels Anthropic a Supply-Chain Risk](https://techcrunch.com/2026/03/05/its-official-the-pentagon-has-labeled-anthropic-a-supply-chain-risk/)**: In an unprecedented move, the Department of Defense officially declared Anthropic—the first American company ever—a supply-chain risk, even as it continues using the company's AI in Iran-related operations.
+  - **[Anthropic CEO Calls OpenAI's Pentagon Deal "Safety Theater"](https://the-decoder.com/anthropic-ceo-attacks-openais-pentagon-deal-as-safety-theater-while-investors-scramble-for-de-escalation/)**: A leaked memo from Dario Amodei accuses OpenAI's military AI contract of being "80% safety theater" and charges the Trump administration with punishing Anthropic for political disloyalty, prompting investor calls to de-escalate.
+  - **[Europol Busts Tycoon 2FA Phishing Platform Linked to 64,000 Attacks](https://thehackernews.com/2026/03/europol-led-operation-takes-down-tycoon.html)**: A coalition of law enforcement agencies and security vendors dismantled the MFA-bypass phishing-as-a-service platform in a coordinated takedown.
+  - **[Wikipedia Hit by Self-Propagating JavaScript Worm](https://www.bleepingcomputer.com/news/security/wikipedia-hit-by-self-propagating-javascript-worm-that-vandalized-pages/)**: Wikimedia suffered a security incident when an XSS worm spread autonomously across multiple wikis, vandalizing pages and modifying user scripts.
 archive:
   - date: "2026-03-05"
     has_papers: true
-    has_security: false
+    has_security: true
     has_weekly: false
-    highlight: "U.S. Sinks Iranian Warship, NATO Intercepts Missile Targeting Turkey: A major military escalation in the U.S.-Iran conflict saw a U.S."
+    highlight: "OpenAI Launches GPT-5.4 with Computer Use and Reasoning: OpenAI's most capable frontier model yet combines coding, reasoning, and native computer use in a…"
   - date: "2026-03-04"
     has_papers: false
     has_security: true
