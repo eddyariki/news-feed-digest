@@ -141,6 +141,11 @@
       color: var(--text-muted); transition: color 0.15s;
     }
     .listen-btn:hover, .listen-btn.is-playing { color: var(--accent); }
+    .listen-bar {
+      background: var(--surface); border-bottom: 1px solid var(--border);
+      padding: 0.5rem 1.5rem;
+    }
+    .papers-audio-player { width: 100%; height: 36px; display: block; }
 
     /* ── Main layout ────────────────────────────────────── */
     main {
@@ -914,78 +919,86 @@
 
   updateHeaderCount();
 
-  /* ── Listen (TTS) for papers page ──────────────────────── */
-  if (/\/papers\/?$/.test(window.location.pathname) && 'speechSynthesis' in window) {
-    var synth = window.speechSynthesis;
-    var ttsPlaying = false;
-    var listenBtn = document.createElement('button');
-    listenBtn.className = 'listen-btn';
-    listenBtn.textContent = '\u25b6 Listen';
-    var sibNav = document.querySelector('.sibling-nav');
-    if (sibNav) { sibNav.appendChild(listenBtn); }
+  /* ── Listen for papers page ─────────────────────────────── */
+  if (/\/papers\/?$/.test(window.location.pathname)) {
+    var audioSrc = window.location.pathname.replace(/\/papers\/?$/, '/papers-audio.mp3');
 
-    function getBestVoice() {
-      var voices = synth.getVoices().filter(function (v) { return /^en/i.test(v.lang); });
-      // 1. Enhanced/neural voices (macOS Siri-quality)
-      var enhanced = voices.filter(function (v) { return /enhanced|neural/i.test(v.name); });
-      if (enhanced.length) return enhanced[0];
-      // 2. Google voices (Chrome)
-      var google = voices.filter(function (v) { return /^google/i.test(v.name); });
-      if (google.length) return google[0];
-      // 3. Any en-US voice
-      var enUS = voices.filter(function (v) { return /en[-_]US/i.test(v.lang); });
-      if (enUS.length) return enUS[0];
-      // 4. Whatever's available
-      return voices[0] || null;
+    function injectAudioPlayer() {
+      var bar = document.createElement('div');
+      bar.className = 'listen-bar';
+      var audio = document.createElement('audio');
+      audio.src = audioSrc;
+      audio.controls = true;
+      audio.className = 'papers-audio-player';
+      bar.appendChild(audio);
+      var header = document.querySelector('.site-header');
+      if (header) header.insertAdjacentElement('afterend', bar);
     }
 
-    function getPapersText() {
-      var content = document.querySelector('.content');
-      if (!content) return '';
-      var clone = content.cloneNode(true);
-      clone.querySelectorAll('a').forEach(function (a) {
-        a.replaceWith(document.createTextNode(a.textContent));
-      });
-      return clone.innerText.split('\n').filter(function (line) {
-        var t = line.trim();
-        return t &&
-          !/^(Authors|Link|Tags):/i.test(t) &&
-          !/https?:\/\//.test(t) &&
-          !/^Papers selected from/i.test(t) &&
-          !/^-{3,}$/.test(t);
-      }).join('. ');
-    }
-
-    function resetBtn() {
-      ttsPlaying = false;
+    function injectTTSButton() {
+      if (!('speechSynthesis' in window)) return;
+      var synth = window.speechSynthesis;
+      var ttsPlaying = false;
+      var listenBtn = document.createElement('button');
+      listenBtn.className = 'listen-btn';
       listenBtn.textContent = '\u25b6 Listen';
-      listenBtn.classList.remove('is-playing');
+      var sibNav = document.querySelector('.sibling-nav');
+      if (sibNav) { sibNav.appendChild(listenBtn); }
+
+      function getBestVoice() {
+        var voices = synth.getVoices().filter(function (v) { return /^en/i.test(v.lang); });
+        var enhanced = voices.filter(function (v) { return /enhanced|neural/i.test(v.name); });
+        if (enhanced.length) return enhanced[0];
+        var google = voices.filter(function (v) { return /^google/i.test(v.name); });
+        if (google.length) return google[0];
+        var enUS = voices.filter(function (v) { return /en[-_]US/i.test(v.lang); });
+        if (enUS.length) return enUS[0];
+        return voices[0] || null;
+      }
+
+      function getPapersText() {
+        var content = document.querySelector('.content');
+        if (!content) return '';
+        var clone = content.cloneNode(true);
+        clone.querySelectorAll('a').forEach(function (a) { a.replaceWith(document.createTextNode(a.textContent)); });
+        return clone.innerText.split('\n').filter(function (line) {
+          var t = line.trim();
+          return t && !/^(Authors|Link|Tags):/i.test(t) && !/https?:\/\//.test(t) &&
+                 !/^Papers selected from/i.test(t) && !/^-{3,}$/.test(t);
+        }).join('. ');
+      }
+
+      function resetBtn() {
+        ttsPlaying = false;
+        listenBtn.textContent = '\u25b6 Listen';
+        listenBtn.classList.remove('is-playing');
+      }
+
+      listenBtn.addEventListener('click', function () {
+        if (ttsPlaying) { synth.cancel(); resetBtn(); }
+        else {
+          var text = getPapersText();
+          if (!text) return;
+          var utt = new SpeechSynthesisUtterance(text);
+          var voice = getBestVoice();
+          if (voice) utt.voice = voice;
+          utt.rate = 0.92; utt.pitch = 1.0;
+          utt.onend = utt.onerror = resetBtn;
+          synth.speak(utt);
+          ttsPlaying = true;
+          listenBtn.textContent = '\u23f9 Stop';
+          listenBtn.classList.add('is-playing');
+        }
+      });
+
+      if (synth.onvoiceschanged !== undefined) { synth.onvoiceschanged = function () {}; }
+      window.addEventListener('beforeunload', function () { synth.cancel(); });
     }
 
-    listenBtn.addEventListener('click', function () {
-      if (ttsPlaying) {
-        synth.cancel();
-        resetBtn();
-      } else {
-        var text = getPapersText();
-        if (!text) return;
-        var utt = new SpeechSynthesisUtterance(text);
-        var voice = getBestVoice();
-        if (voice) utt.voice = voice;
-        utt.rate = 0.92;
-        utt.pitch = 1.0;
-        utt.onend = utt.onerror = resetBtn;
-        synth.speak(utt);
-        ttsPlaying = true;
-        listenBtn.textContent = '\u23f9 Stop';
-        listenBtn.classList.add('is-playing');
-      }
-    });
-
-    // Voices load asynchronously — re-resolve on change
-    if (synth.onvoiceschanged !== undefined) { synth.onvoiceschanged = function () {}; }
-
-    window.addEventListener('beforeunload', function () { synth.cancel(); });
+    // Prefer pre-generated Google TTS audio; fall back to browser TTS
+    fetch(audioSrc, { method: 'HEAD' })
+      .then(function (r) { if (r.ok) { injectAudioPlayer(); } else { injectTTSButton(); } })
+      .catch(injectTTSButton);
   }
 }());
 </script>
