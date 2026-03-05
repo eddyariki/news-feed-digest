@@ -920,7 +920,8 @@
   updateHeaderCount();
 
   /* ── Listen for papers page ─────────────────────────────── */
-  if (/\/papers\/?$/.test(window.location.pathname)) {
+  if (/\/papers\/?$/.test(window.location.pathname) && !window._papersAudioLoaded) {
+    window._papersAudioLoaded = true;
     var audioSrc = window.location.pathname.replace(/\/papers\/?$/, '/papers-audio.mp3');
 
     function injectAudioPlayer() {
