@@ -634,10 +634,42 @@
     }
     .saved-clear-btn:hover { color: var(--accent); }
 
+    /* ── Tab nav ─────────────────────────────────────────── */
+    .tab-nav {
+      border-top: 1px solid var(--border);
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .tab-nav::-webkit-scrollbar { display: none; }
+    .tab-nav-inner {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+    }
+    .tab-item {
+      font-family: var(--sans);
+      font-size: 0.6875rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0.55rem 0.85rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      white-space: nowrap;
+      transition: color 0.15s, border-color 0.15s;
+      display: block;
+    }
+    .tab-item:hover { color: var(--text); text-decoration: none; }
+    .tab-item.is-active { color: var(--accent); border-bottom-color: var(--accent); }
+    .tab-item.is-disabled { color: var(--border-strong); cursor: default; pointer-events: none; }
+
     /* ── Responsive ─────────────────────────────────────── */
     @media (max-width: 640px) {
       main { padding: 1.75rem 1.25rem 4rem; }
       .site-header { padding: 0 1.25rem; }
+      .tab-nav-inner { padding: 0 1.25rem; }
       h1 { font-size: 1.875rem; }
       .archive-row-header {
         flex-direction: column; align-items: flex-start; gap: 0.35rem;
@@ -692,6 +724,53 @@
     {% endif %}
     {% endif %}
   </div>
+  {% if site.data.archive %}
+  {% assign _latest = site.data.archive | last %}
+  {% assign _tab_papers_path   = _latest | append: '/papers.md' %}
+  {% assign _tab_security_path = _latest | append: '/security.md' %}
+  {% assign _tab_has_papers   = site.pages | where: 'path', _tab_papers_path   | first %}
+  {% assign _tab_has_security = site.pages | where: 'path', _tab_security_path | first %}
+  <nav class="tab-nav">
+    <div class="tab-nav-inner">
+      {% assign _cur = page.url | remove: 'index.html' %}
+      {% if _cur == '/' or _cur == '' %}
+        <span class="tab-item is-active">Home</span>
+      {% else %}
+        <a href="{{ site.baseurl }}/" class="tab-item">Home</a>
+      {% endif %}
+      {% assign _news_url = site.baseurl | append: '/' | append: _latest | append: '/digest' %}
+      {% assign _news_path = _latest | append: '/digest.md' %}
+      {% if page.path == _news_path %}
+        <span class="tab-item is-active">Today's News</span>
+      {% else %}
+        <a href="{{ _news_url }}" class="tab-item">Today's News</a>
+      {% endif %}
+      {% if _tab_has_security %}
+        {% assign _sec_url  = site.baseurl | append: '/' | append: _latest | append: '/security' %}
+        {% assign _sec_path = _latest | append: '/security.md' %}
+        {% if page.path == _sec_path %}
+          <span class="tab-item is-active">Today's Security</span>
+        {% else %}
+          <a href="{{ _sec_url }}" class="tab-item">Today's Security</a>
+        {% endif %}
+      {% else %}
+        <span class="tab-item is-disabled">Today's Security</span>
+      {% endif %}
+      {% if _tab_has_papers %}
+        {% assign _pap_url  = site.baseurl | append: '/' | append: _latest | append: '/papers' %}
+        {% assign _pap_path = _latest | append: '/papers.md' %}
+        {% if page.path == _pap_path %}
+          <span class="tab-item is-active">Today's Research</span>
+        {% else %}
+          <a href="{{ _pap_url }}" class="tab-item">Today's Research</a>
+        {% endif %}
+      {% else %}
+        <span class="tab-item is-disabled">Today's Research</span>
+      {% endif %}
+      <span class="tab-item is-disabled">Podcast</span>
+    </div>
+  </nav>
+  {% endif %}
 </header>
 
 <main>
