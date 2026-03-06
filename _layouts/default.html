@@ -780,6 +780,12 @@
       {% else %}
         <span class="tab-item is-disabled">Podcast</span>
       {% endif %}
+      {% assign _podcasts_url = site.baseurl | append: '/podcasts' %}
+      {% if page.path == 'podcasts.md' %}
+        <span class="tab-item is-active">All Episodes</span>
+      {% else %}
+        <a href="{{ _podcasts_url }}" class="tab-item">All Episodes</a>
+      {% endif %}
     </div>
   </nav>
   {% endif %}

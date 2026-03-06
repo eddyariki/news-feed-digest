@@ -17,7 +17,7 @@ archive:
     has_papers: true
     has_security: true
     has_weekly: false
-    has_podcast: false
+    has_podcast: true
     highlight: "Anthropic Officially Deemed Supply Chain Risk, CEO Announces Legal Challenge: The Pentagon formally notified Anthropic that it and its products are a national…"
   - date: "2026-03-05"
     has_papers: true
