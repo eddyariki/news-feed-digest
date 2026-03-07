@@ -1,18 +1,23 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "March 6, 2026"
+hero_date: "March 7, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-03-06/digest"
-hero_secondary: "[Papers](2026-03-06/papers) [Security](2026-03-06/security)"
-issue_count: 14
+hero_primary_link: "2026-03-07/digest"
+hero_secondary: "[Papers](2026-03-07/papers) [Security](2026-03-07/security) [Podcast](2026-03-07/podcast)"
+issue_count: 15
 highlights: |
-  - **[Anthropic Officially Deemed Supply Chain Risk, CEO Announces Legal Challenge](https://the-decoder.com/anthropic-officially-deemed-supply-chain-risk-ceo-amodei-announces-legal-challenge/)**: The Pentagon formally notified Anthropic that it and its products are a national security supply-chain risk after the two sides failed to agree on military use of Claude, including autonomous weapons and mass domestic surveillance.
-  - **[Anthropic's Claude Found 22 Vulnerabilities in Firefox Over Two Weeks](https://techcrunch.com/2026/03/06/anthropics-claude-found-22-vulnerabilities-in-firefox-over-two-weeks/)**: In a security partnership with Mozilla, Claude discovered 22 separate Firefox vulnerabilities — 14 classified as high-severity — marking a significant milestone in AI-driven offensive security research.
-  - **[Claude's Consumer Growth Surge Continues After Pentagon Deal Debacle](https://techcrunch.com/2026/03/06/claudes-consumer-growth-surge-continues-after-pentagon-deal-debacle/)**: Claude is now seeing more new installs than ChatGPT and growing daily active users, as the public appears to reward Anthropic's refusal to enable military surveillance use cases.
-  - **[Claude Used to Hack Mexican Government](https://www.schneier.com/blog/archives/2026/03/claude-used-to-hack-mexican-government.html)**: An unknown attacker used Anthropic's Claude to identify vulnerabilities, write exploit scripts, and automate data theft against Mexican government agencies — one of the clearest documented cases of LLM-assisted intrusion.
-  - **[SoftBank Seeks Record $40 Billion Loan to Fund OpenAI Stake](https://the-decoder.com/softbank-seeks-record-40-billion-loan-to-fund-openai-stake/)**: SoftBank is pursuing a record single-company dollar-denominated loan to finance its OpenAI investment, pushing AI infrastructure financing to new extremes.
+  - **[OpenAI Robotics Lead Quits Over Pentagon Deal](https://techcrunch.com/2026/03/07/openai-robotics-lead-caitlin-kalinowski-quits-in-response-to-pentagon-deal/)**: Hardware executive Caitlin Kalinowski resigned from her role leading OpenAI's robotics team in direct response to the company's controversial agreement with the Department of Defense.
+  - **[Anthropic Discovers 22 Firefox Vulnerabilities Using Claude](https://thehackernews.com/2026/03/anthropic-finds-22-firefox.html)**: In a two-week security partnership with Mozilla, Claude identified 14 high-severity, 7 moderate, and 1 low-severity bugs, all patched in Firefox 148.
+  - **[Microsoft: Hackers Are Abusing AI at Every Stage of Cyberattacks](https://www.bleepingcomputer.com/news/security/microsoft-hackers-abusing-ai-at-every-stage-of-cyberattacks/)**: Threat actors are using AI to accelerate attacks, scale malicious activity, and lower technical barriers across all phases of intrusion.
+  - **[OpenAI Codex Security Scanned 1.2 Million Commits](https://thehackernews.com/2026/03/openai-codex-security-scanned-12.html)**: OpenAI's new AI-powered security agent found 10,561 high-severity issues in open source codebases and is available in free research preview for one month.
 archive:
+  - date: "2026-03-07"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: true
+    highlight: "OpenAI Robotics Lead Quits Over Pentagon Deal: Hardware executive Caitlin Kalinowski resigned from her role leading OpenAI's robotics team in direct response…"
   - date: "2026-03-06"
     has_papers: true
     has_security: true
