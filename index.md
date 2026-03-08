@@ -7,17 +7,17 @@ hero_primary_link: "2026-03-07/digest"
 hero_secondary: "[Papers](2026-03-07/papers) [Security](2026-03-07/security) [Podcast](2026-03-07/podcast)"
 issue_count: 15
 highlights: |
-  - **[OpenAI Robotics Lead Quits Over Pentagon Deal](https://techcrunch.com/2026/03/07/openai-robotics-lead-caitlin-kalinowski-quits-in-response-to-pentagon-deal/)**: Hardware executive Caitlin Kalinowski resigned from her role leading OpenAI's robotics team in direct response to the company's controversial agreement with the Department of Defense.
-  - **[Anthropic Discovers 22 Firefox Vulnerabilities Using Claude](https://thehackernews.com/2026/03/anthropic-finds-22-firefox.html)**: In a two-week security partnership with Mozilla, Claude identified 14 high-severity, 7 moderate, and 1 low-severity bugs, all patched in Firefox 148.
-  - **[Microsoft: Hackers Are Abusing AI at Every Stage of Cyberattacks](https://www.bleepingcomputer.com/news/security/microsoft-hackers-abusing-ai-at-every-stage-of-cyberattacks/)**: Threat actors are using AI to accelerate attacks, scale malicious activity, and lower technical barriers across all phases of intrusion.
-  - **[OpenAI Codex Security Scanned 1.2 Million Commits](https://thehackernews.com/2026/03/openai-codex-security-scanned-12.html)**: OpenAI's new AI-powered security agent found 10,561 high-severity issues in open source codebases and is available in free research preview for one month.
+  - **[Anthropic's Claude AI uncovers over 100 security vulnerabilities in Firefox](https://the-decoder.com/anthropics-claude-ai-uncovers-over-100-security-vulnerabilities-in-firefox/)**: Claude found more than 100 bugs in Firefox — including flaws that had survived decades of conventional testing — marking a milestone in AI-assisted vulnerability discovery.
+  - **[Trump administration drafts AI contract rules requiring "all lawful use" licensing](https://the-decoder.com/trump-administration-drafts-ai-contract-rules-requiring-companies-to-license-systems-for-all-lawful-use/)**: New US procurement guidelines would force AI vendors to grant the government irrevocable licenses and ban ideologically biased outputs — a requirement critics note mirrors China's approach to AI governance.
+  - **[Despite Pentagon ban, Google, AWS, and Microsoft stick with Anthropic's AI models](https://the-decoder.com/despite-pentagon-ban-google-aws-and-microsoft-stick-with-anthropics-ai-models/)**: All three cloud giants are maintaining commercial partnerships with Anthropic, signaling confidence in the company despite its exclusion from Defense Department contracts.
+  - **[Claude Code's $200 subscription may cost Anthropic up to $5,000 in compute per user](https://the-decoder.com/anthropics-claude-code-subscription-may-consume-up-to-5000-in-compute-per-month-while-charging-the-user-just-200/)**: An internal Cursor analysis cited by Forbes reveals a 25x compute subsidy, raising questions about long-term pricing once AI coding tools become indispensable.
 archive:
   - date: "2026-03-07"
     has_papers: true
     has_security: true
     has_weekly: false
     has_podcast: true
-    highlight: "OpenAI Robotics Lead Quits Over Pentagon Deal: Hardware executive Caitlin Kalinowski resigned from her role leading OpenAI's robotics team in direct response…"
+    highlight: "Anthropic's Claude AI uncovers over 100 security vulnerabilities in Firefox: Claude found more than 100 bugs in Firefox — including flaws that had survived…"
   - date: "2026-03-06"
     has_papers: true
     has_security: true
