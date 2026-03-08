@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "AI Research Podcast \u2014 2026-03-07"
+title: "AI Research Podcast — 2026-03-07"
 ---
-# AI Research Podcast \u2014 2026-03-07
+# AI Research Podcast — 2026-03-07
 
 *A conversation about today's research papers.*
 
