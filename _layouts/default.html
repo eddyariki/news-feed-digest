@@ -732,6 +732,9 @@
   {% assign _tab_has_papers   = site.pages | where: 'path', _tab_papers_path   | first %}
   {% assign _tab_has_security = site.pages | where: 'path', _tab_security_path | first %}
   {% assign _tab_has_podcast  = site.pages | where: 'path', _tab_podcast_path  | first %}
+  {% assign _dow = _latest | date: "%w" %}
+  {% assign _is_weekend = false %}
+  {% if _dow == "0" or _dow == "6" %}{% assign _is_weekend = true %}{% endif %}
   <nav class="tab-nav">
     <div class="tab-nav-inner">
       {% assign _cur = page.url | remove: 'index.html' %}
@@ -766,6 +769,8 @@
         {% else %}
           <a href="{{ _pap_url }}" class="tab-item">Today's Research</a>
         {% endif %}
+      {% elsif _is_weekend %}
+        <span class="tab-item is-disabled">Today's Research · Skipped weekends</span>
       {% else %}
         <span class="tab-item is-disabled">Today's Research</span>
       {% endif %}
@@ -777,6 +782,8 @@
         {% else %}
           <a href="{{ _pod_url }}" class="tab-item">Podcast</a>
         {% endif %}
+      {% elsif _is_weekend %}
+        <span class="tab-item is-disabled">Podcast · Skipped weekends</span>
       {% else %}
         <span class="tab-item is-disabled">Podcast</span>
       {% endif %}
