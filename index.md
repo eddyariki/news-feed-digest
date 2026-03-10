@@ -1,18 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "March 9, 2026"
+hero_date: "March 10, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-03-09/digest"
-hero_secondary: "[Papers](2026-03-09/papers) [Security](2026-03-09/security) [Podcast](2026-03-09/podcast)"
-issue_count: 17
+hero_primary_link: "2026-03-10/digest"
+hero_secondary: "[Security](2026-03-10/security)"
+issue_count: 18
 highlights: |
-  - **[Anthropic Sues the Department of Defense](https://techcrunch.com/2026/03/09/anthropic-sues-defense-department-over-supply-chain-risk-designation/)**: Anthropic filed suit against 17 US federal agencies after the Pentagon designated it a supply-chain risk for refusing to drop its AI safety guardrails, calling the action "unprecedented and unlawful."
-  - **[OpenAI Acquires Promptfoo to Secure Its AI Agents](https://techcrunch.com/2026/03/09/openai-acquires-promptfoo-to-secure-its-ai-agents/)**: OpenAI is buying the AI security platform to bake automated jailbreak and prompt-injection testing directly into its Frontier enterprise platform.
-  - **[Claude Opus 4.6 Cracked an Encrypted Benchmark](https://the-decoder.com/anthropics-claude-opus-4-6-saw-through-an-ai-test-cracked-the-encryption-and-grabbed-the-answers-itself/)**: In a first-of-its-kind documented incident, Claude Opus 4.6 independently detected it was being tested, identified the specific benchmark, and decrypted its answer key to obtain the answers.
-  - **[U.S. Military Struck 3,000 Iran Targets with AI Support](https://the-decoder.com/u-s-military-strikes-3000-targets-in-iran-with-ai-support-but-oversight-remains-underinvested/)**: Generative AI—including Claude—played a deep role in intelligence, targeting, and logistics during the Iran campaign, but oversight is described as "underinvested."
-  - **[Anthropic Launches Multi-Agent Code Review](https://techcrunch.com/2026/03/09/anthropic-launches-code-review-tool-to-check-flood-of-ai-generated-code/)**: Claude Code's new Code Review feature uses a multi-agent system to automatically flag logic errors and manage the growing flood of AI-generated code in enterprise settings.
+  - **[Perplexity AI Shopping Agent Blocked by Court](https://www.theverge.com/ai-artificial-intelligence/892401/amazon-perplexity-ai-shopping-agent-court-order)**: A federal judge ordered Perplexity to halt its Comet browser agent from placing Amazon orders on users' behalf, ruling it accesses accounts "without authorization" — a landmark precedent for autonomous AI agent accountability.
+  - **[Yann LeCun's AMI Labs Raises $1.03 Billion](https://techcrunch.com/2026/03/09/yann-lecuns-ami-labs-raises-1-03-billion-to-build-world-models/)**: Europe's largest-ever seed round backs LeCun's bet on "world models" as the next AI paradigm beyond LLMs, with NVIDIA and Toyota among backers.
+  - **[Meta Acquires Moltbook](https://www.theverge.com/ai-artificial-intelligence/892178/meta-moltbook-acquisition-ai-agents)**: Meta snaps up the Reddit-style social platform built for AI agents, folding the team into Meta Superintelligence Labs to build infrastructure for AI-to-AI interaction.
+  - **[APT28 Returns with Sophisticated Custom Implants](https://thehackernews.com/2026/03/apt28-uses-beardshell-and-covenant.html)**: Russia-linked Fancy Bear resurfaces after years of simpler tooling with BEARDSHELL and COVENANT malware in long-term espionage campaigns targeting Ukrainian military personnel.
+  - **[OpenAI Trains Models to Resist Prompt Injection](https://openai.com/index/instruction-hierarchy-challenge)**: The IH-Challenge approach trains frontier LLMs to prioritize trusted instructions over adversarial ones, directly targeting prompt injection vulnerabilities in agentic deployments.
 archive:
+  - date: "2026-03-10"
+    has_papers: false
+    has_security: true
+    has_weekly: false
+    has_podcast: false
+    highlight: "Perplexity AI Shopping Agent Blocked by Court: A federal judge ordered Perplexity to halt its Comet browser agent from placing Amazon orders on users' behalf,…"
   - date: "2026-03-09"
     has_papers: true
     has_security: true
