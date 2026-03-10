@@ -4,21 +4,21 @@ layout: home
 hero_date: "March 10, 2026"
 hero_primary_label: "Read Today's News Digest"
 hero_primary_link: "2026-03-10/digest"
-hero_secondary: "[Security](2026-03-10/security)"
+hero_secondary: "[Papers](2026-03-10/papers) [Security](2026-03-10/security) [Podcast](2026-03-10/podcast)"
 issue_count: 18
 highlights: |
-  - **[Perplexity AI Shopping Agent Blocked by Court](https://www.theverge.com/ai-artificial-intelligence/892401/amazon-perplexity-ai-shopping-agent-court-order)**: A federal judge ordered Perplexity to halt its Comet browser agent from placing Amazon orders on users' behalf, ruling it accesses accounts "without authorization" — a landmark precedent for autonomous AI agent accountability.
-  - **[Yann LeCun's AMI Labs Raises $1.03 Billion](https://techcrunch.com/2026/03/09/yann-lecuns-ami-labs-raises-1-03-billion-to-build-world-models/)**: Europe's largest-ever seed round backs LeCun's bet on "world models" as the next AI paradigm beyond LLMs, with NVIDIA and Toyota among backers.
-  - **[Meta Acquires Moltbook](https://www.theverge.com/ai-artificial-intelligence/892178/meta-moltbook-acquisition-ai-agents)**: Meta snaps up the Reddit-style social platform built for AI agents, folding the team into Meta Superintelligence Labs to build infrastructure for AI-to-AI interaction.
-  - **[APT28 Returns with Sophisticated Custom Implants](https://thehackernews.com/2026/03/apt28-uses-beardshell-and-covenant.html)**: Russia-linked Fancy Bear resurfaces after years of simpler tooling with BEARDSHELL and COVENANT malware in long-term espionage campaigns targeting Ukrainian military personnel.
-  - **[OpenAI Trains Models to Resist Prompt Injection](https://openai.com/index/instruction-hierarchy-challenge)**: The IH-Challenge approach trains frontier LLMs to prioritize trusted instructions over adversarial ones, directly targeting prompt injection vulnerabilities in agentic deployments.
+  - **[Yann LeCun's AMI Labs Raises $1.03 Billion](https://techcrunch.com/2026/03/09/yann-lecuns-ami-labs-raises-1-03-billion-to-build-world-models/)**: LeCun's startup secures a landmark $1B+ round backed by Nvidia and Toyota to develop world models as an alternative path to general intelligence beyond large language models.
+  - **[OpenAI Acquires AI Security Startup Promptfoo](https://gigazine.net/news/20260310-openai-to-acquire-promptfoo/)**: OpenAI buys Promptfoo to bolster security testing for its Frontier agentic platform, signaling a major push to harden AI systems against adversarial exploitation.
+  - **[Microsoft March 2026 Patch Tuesday: 2 Zero-Days, 79 Flaws](https://www.bleepingcomputer.com/news/microsoft/microsoft-march-2026-patch-tuesday-fixes-2-zero-days-79-flaws/)**: This month's Patch Tuesday patches two actively exploited zero-day vulnerabilities alongside 79 total flaws, including critical issues addressed in Windows 10 and 11 extended security updates.
+  - **[Anthropic Sues US Government Amid Escalating AI Legal Battles](https://www.technologyreview.com/2026/03/10/1134077/the-download-ai-iran-war-theater-anthropic-sues-us/)**: Anthropic has filed suit against the US government, with OpenAI and Google employees publicly voicing support; the filing escalates a broader confrontation over AI use in military and government contexts.
+  - **[Amazon Gets Court Order Blocking Perplexity's AI Shopping Agent](https://the-decoder.com/amazon-gets-court-order-blocking-perplexitys-ai-shopping-agent/)**: A court granted Amazon an injunction against Perplexity's AI-powered shopping agent, setting a significant precedent for the legality of autonomous agents scraping and transacting on commercial platforms.
 archive:
   - date: "2026-03-10"
-    has_papers: false
+    has_papers: true
     has_security: true
     has_weekly: false
-    has_podcast: false
-    highlight: "Perplexity AI Shopping Agent Blocked by Court: A federal judge ordered Perplexity to halt its Comet browser agent from placing Amazon orders on users' behalf,…"
+    has_podcast: true
+    highlight: "Yann LeCun's AMI Labs Raises $1.03 Billion: LeCun's startup secures a landmark $1B+ round backed by Nvidia and Toyota to develop world models as an alternative…"
   - date: "2026-03-09"
     has_papers: true
     has_security: true

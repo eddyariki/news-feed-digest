@@ -1,90 +1,75 @@
 # Security Digest — 2026-03-10
 
-Microsoft's March Patch Tuesday dominates the threat landscape with 79 flaws and 2 actively exploited zero-days, while Russian APT28 resurfaces with new sophisticated implants and AI safety researchers probe the robustness of LLM reward models and alignment mechanisms.
+Active exploitation campaigns are hitting FortiGate firewalls, ASUS routers, and Salesforce cloud misconfigurations, while researchers publish a wave of work exposing new attack surfaces in AI agents, MCP-based systems, and multimodal LLMs.
 
 ---
 
 ## AI Security Research
 
-**[Improving Instruction Hierarchy in Frontier LLMs](https://openai.com/index/instruction-hierarchy-challenge)**
-*OpenAI Blog*
-
-OpenAI's IH-Challenge trains models to prioritize trusted instructions over untrusted ones, improving safety steerability and resistance to prompt injection attacks — a key hardening step as agentic AI systems gain wider deployment.
-
-**[Reward Under Attack: Analyzing the Robustness and Hackability of Process Reward Models](https://arxiv.org/abs/2603.06621)**
-*arXiv cs.CR*
-
-Researchers demonstrate that state-of-the-art Process Reward Models (PRMs) — now the backbone of LLM reasoning pipelines — are systematically vulnerable to adversarial manipulation, raising concerns about the reliability of RLHF-trained reasoning systems.
-
-**[Safe Transformer: An Explicit Safety Bit For Interpretable And Controllable Alignment](https://arxiv.org/abs/2603.06727)**
-*arXiv cs.CR*
-
-This paper proposes encoding safety as an explicit, inspectable bit within transformer architectures rather than embedding it implicitly in weights, enabling auditable and controllable alignment at inference time.
-
-**[FuzzingRL: Reinforcement Fuzz-Testing for Revealing VLM Failures](https://arxiv.org/abs/2603.06600)**
-*arXiv cs.CR*
-
-A reinforcement learning-driven fuzzing framework systematically exposes failure modes in Vision Language Models, providing a structured methodology for stress-testing multimodal AI before deployment.
-
-**[Jailbreaking the F-35 Fighter Jet](https://www.schneier.com/blog/archives/2026/03/jailbreaking-the-f-35-fighter-jet.html)**
-*Schneier on Security*
-
-Bruce Schneier examines how nations dependent on US-supplied F-35s face software lock-in and the geopolitical implications of "jailbreaking" military hardware — a real-world parallel to AI jailbreak concerns around control and sovereignty.
-
 **[How to Stop AI Data Leaks: A Webinar Guide to Auditing Modern Agentic Workflows](https://thehackernews.com/2026/03/how-to-stop-ai-data-leaks-webinar-guide.html)**
 *The Hacker News*
+AI agents that autonomously send emails, move data, and invoke tools open new exfiltration paths that traditional DLP tools weren't built to catch. The piece surveys audit approaches for agentic pipelines as enterprise adoption accelerates.
 
-As AI agents take autonomous actions — sending email, moving data, managing software — organizations are advised to audit agentic workflows for data exfiltration risks, with practical guidance on least-privilege and monitoring strategies.
+**[How to Steal Reasoning Without Reasoning Traces](https://arxiv.org/abs/2603.07267)**
+*ArXiv cs.CR*
+Researchers demonstrate that an adversary can extract a model's latent reasoning capabilities even when full chain-of-thought traces are withheld — only final answers and brief summaries are needed. The finding challenges the assumption that hiding reasoning traces is sufficient protection for proprietary reasoning models.
+
+**[Give Them an Inch and They Will Take a Mile: Understanding and Measuring Caller Identity Confusion in MCP-Based AI Systems](https://arxiv.org/abs/2603.07473)**
+*ArXiv cs.CR*
+The Model Context Protocol (MCP) is increasingly adopted by AI agents for tool integration, but its trust model is systematically exploitable via caller identity confusion — allowing malicious MCP servers to impersonate legitimate callers. The paper quantifies the attack surface across real-world MCP deployments.
+
+**[Governance Architecture for Autonomous Agent Systems: Threats, Framework, and Engineering Practice](https://arxiv.org/abs/2603.07191)**
+*ArXiv cs.CR*
+LLM-powered autonomous agents introduce execution-layer vulnerabilities — prompt injection, retrieval poisoning, uncontrolled tool invocation — that existing guardrails address only piecemeal. Authors propose a structured governance architecture with enforcement hooks at the agent runtime layer.
+
+**[PolyJailbreak: Cross-Modal Jailbreaking Attacks on Black-Box Multimodal LLMs](https://arxiv.org/abs/2510.17277)**
+*ArXiv cs.CR*
+Despite alignment improvements, multimodal LLMs remain vulnerable to jailbreak attacks that exploit cross-modal inconsistencies between image and text processing pathways. PolyJailbreak achieves high success rates against black-box MLLMs without access to model internals.
+
+**[Where Do LLM-based Systems Break? A System-Level Security Framework for Risk Assessment and Treatment](https://arxiv.org/abs/2603.07460)**
+*ArXiv cs.CR*
+Most LLM security analyses treat models in isolation, missing risks that emerge from system-level interactions with databases, APIs, and user interfaces. This work introduces a goal-driven risk assessment methodology that maps failure modes across the full LLM system stack.
+
+**[Backdoor4Good: Benchmarking Beneficial Uses of Backdoors in LLMs](https://arxiv.org/abs/2603.07452)**
+*ArXiv cs.CR*
+Backdoor triggers — traditionally viewed as an attack vector — can also serve defensive purposes such as watermarking, ownership verification, and selective capability restriction. The paper presents the first benchmark for evaluating "constructive backdoor" mechanisms in large language models.
 
 ---
 
 ## Vulnerabilities & Exploits
 
-**[Microsoft March 2026 Patch Tuesday Fixes 2 Zero-Days, 79 Flaws](https://www.bleepingcomputer.com/news/microsoft/microsoft-march-2026-patch-tuesday-fixes-2-zero-days-79-flaws/)**
-*BleepingComputer*
-
-Microsoft's March update addresses 79 CVEs including two publicly disclosed zero-days; companion updates KB5078885 (Windows 10) and KB5079473/KB5078883 (Windows 11) are available immediately for managed and consumer devices.
-
-**[APT28 Uses BEARDSHELL and COVENANT Malware to Spy on Ukrainian Military](https://thehackernews.com/2026/03/apt28-uses-beardshell-and-covenant.html)**
+**[FortiGate Devices Exploited to Breach Networks and Steal Service Account Credentials](https://thehackernews.com/2026/03/fortigate-devices-exploited-to-breach.html)**
 *The Hacker News*
-
-Russia's APT28 (Sednit/Fancy Bear) is deploying a custom variant of the Covenant post-exploitation framework alongside a new BEARDSHELL implant for long-term surveillance of Ukrainian military personnel, signaling a return to sophisticated tooling after years of simpler implants.
-
-**[New 'Zombie ZIP' Technique Lets Malware Slip Past Security Tools](https://www.bleepingcomputer.com/news/security/new-zombie-zip-technique-lets-malware-slip-past-security-tools/)**
-*BleepingComputer*
-
-Researchers detail "Zombie ZIP," a method of crafting malformed ZIP archives that bypass antivirus and EDR detection by exploiting inconsistencies in how security tools and OS unpackers parse compressed files.
+Threat actors are actively abusing FortiGate next-generation firewalls as network entry points, leveraging recently disclosed CVEs or weak credentials to pivot inward and harvest service account tokens. ESET researchers published fresh indicators of compromise tied to the campaign.
 
 **[KadNap Malware Infects 14,000+ Edge Devices to Power Stealth Proxy Botnet](https://thehackernews.com/2026/03/kadnap-malware-infects-14000-edge.html)**
 *The Hacker News*
+KadNap, first spotted in August 2025, has spread to over 14,000 ASUS routers, enrolling them in a stealth residential proxy network used to route malicious traffic. More than 60% of victims are concentrated in a small number of countries, suggesting a targeted distribution strategy.
 
-A newly discovered malware campaign targeting ASUS routers and edge networking devices has enlisted over 14,000 hosts into a proxy botnet used to launder malicious traffic — with infections first observed earlier this year.
+**[APT28 Uses BEARDSHELL and COVENANT Malware to Spy on Ukrainian Military](https://thehackernews.com/2026/03/apt28-uses-beardshell-and-covenant.html)**
+*The Hacker News*
+Russia's APT28 (Fancy Bear) has been running a long-term surveillance campaign against Ukrainian military personnel since April 2024 using two custom implants: BEARDSHELL for initial access and COVENANT for persistent C2. ESET's analysis details the command-and-control infrastructure and evasion techniques employed.
 
 **[New "LeakyLooker" Flaws in Google Looker Studio Could Enable Cross-Tenant SQL Queries](https://thehackernews.com/2026/03/new-leakylooker-flaws-in-google-looker.html)**
 *The Hacker News*
+Nine cross-tenant vulnerabilities in Google Looker Studio would have allowed attackers to run arbitrary SQL against victims' Google Cloud databases and exfiltrate sensitive data. Google has since patched all nine; no evidence of in-the-wild exploitation was disclosed.
 
-Nine cross-tenant vulnerabilities in Google Looker Studio would have allowed attackers to execute arbitrary SQL against victims' databases and exfiltrate sensitive data; Google has since patched the issues.
-
-**[FortiGate Devices Exploited to Breach Networks and Steal Service Account Credentials](https://thehackernews.com/2026/03/fortigate-devices-exploited-to-breach.html)**
+**[CISA Flags SolarWinds, Ivanti, and Workspace One Vulnerabilities as Actively Exploited](https://thehackernews.com/2026/03/cisa-flags-solarwinds-ivanti-and.html)**
 *The Hacker News*
+CISA added three CVEs to its Known Exploited Vulnerabilities catalog, including a server-side request forgery in SolarWinds (CVE-2021-22054, CVSS 7.5) and flaws in Ivanti and VMware Workspace One. Federal agencies face binding deadlines to patch; the flaws have all seen active exploitation in the wild.
 
-Threat actors are actively abusing FortiGate NGFW appliances as entry points to pivot into corporate networks, targeting service account credentials for lateral movement post-compromise.
-
-**[Microsoft Teams Phishing Targets Employees with A0Backdoor Malware](https://www.bleepingcomputer.com/news/security/microsoft-teams-phishing-targets-employees-with-backdoors/)**
-*BleepingComputer*
-
-Attackers posing as IT support over Microsoft Teams tricked employees at financial and healthcare organizations into granting remote access via Quick Assist, then deployed a new backdoor called A0Backdoor for persistent access.
+**[Threat Actors Mass-Scan Salesforce Experience Cloud via Modified AuraInspector Tool](https://thehackernews.com/2026/03/threat-actors-mass-scan-salesforce.html)**
+*The Hacker News*
+Attackers are scanning publicly accessible Salesforce Experience Cloud sites at scale using a weaponized fork of the open-source AuraInspector browser extension to probe for overly permissive configurations. Salesforce warned customers to audit guest user access and restrict unauthenticated API exposure.
 
 ---
 
 ## Policy & Compliance
 
-**[CISA Flags SolarWinds, Ivanti, and Workspace One Vulnerabilities as Actively Exploited](https://thehackernews.com/2026/03/cisa-flags-solarwinds-ivanti-and.html)**
-*The Hacker News*
+**[Jailbreaking the F-35 Fighter Jet](https://www.schneier.com/blog/archives/2026/03/jailbreaking-the-f-35-fighter-jet.html)**
+*Schneier on Security*
+The Dutch Defense Secretary publicly floated the idea of "jailbreaking" US-supplied F-35s to accept third-party software maintenance, exposing the geopolitical risk of critical defense systems locked to a single nation's update infrastructure. Schneier contextualizes this as a DRM and national-security-policy problem with broad implications for allied militaries dependent on US platforms.
 
-CISA added three security flaws to its Known Exploited Vulnerabilities catalog — covering SolarWinds, Ivanti, and VMware Workspace One — based on confirmed active exploitation, triggering mandatory federal remediation timelines.
-
-**[CISA: Recently Patched Ivanti EPM Flaw Now Actively Exploited](https://www.bleepingcomputer.com/news/security/cisa-recently-patched-ivanti-epm-flaw-now-actively-exploited/)**
-*BleepingComputer*
-
-A high-severity vulnerability in Ivanti Endpoint Manager that was patched only recently has already been weaponized in the wild; CISA has ordered US federal agencies to remediate within three weeks under the KEV directive.
+**[The UK Cyber Security and Resilience Bill: A Practitioner's Guide to Legislative Reform, Compliance, and Organisational Readiness](https://arxiv.org/abs/2603.07861)**
+*ArXiv cs.CR*
+The UK's Cyber Security and Resilience Bill — introduced to Parliament in November 2025 and the most significant reform of UK cyber law in nearly a decade — expands NIS2-style obligations to a wider range of sectors and critical suppliers. This practitioner-focused analysis maps the compliance requirements and readiness steps for organizations operating under UK jurisdiction.
