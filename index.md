@@ -1,18 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "March 10, 2026"
+hero_date: "March 11, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-03-10/digest"
-hero_secondary: "[Papers](2026-03-10/papers) [Security](2026-03-10/security) [Podcast](2026-03-10/podcast)"
-issue_count: 18
+hero_primary_link: "2026-03-11/digest"
+hero_secondary: "[Papers](2026-03-11/papers) [Security](2026-03-11/security) [Podcast](2026-03-11/podcast)"
+issue_count: 19
 highlights: |
-  - **[Yann LeCun's AMI Labs Raises $1.03 Billion](https://techcrunch.com/2026/03/09/yann-lecuns-ami-labs-raises-1-03-billion-to-build-world-models/)**: LeCun's startup secures a landmark $1B+ round backed by Nvidia and Toyota to develop world models as an alternative path to general intelligence beyond large language models.
-  - **[OpenAI Acquires AI Security Startup Promptfoo](https://gigazine.net/news/20260310-openai-to-acquire-promptfoo/)**: OpenAI buys Promptfoo to bolster security testing for its Frontier agentic platform, signaling a major push to harden AI systems against adversarial exploitation.
-  - **[Microsoft March 2026 Patch Tuesday: 2 Zero-Days, 79 Flaws](https://www.bleepingcomputer.com/news/microsoft/microsoft-march-2026-patch-tuesday-fixes-2-zero-days-79-flaws/)**: This month's Patch Tuesday patches two actively exploited zero-day vulnerabilities alongside 79 total flaws, including critical issues addressed in Windows 10 and 11 extended security updates.
-  - **[Anthropic Sues US Government Amid Escalating AI Legal Battles](https://www.technologyreview.com/2026/03/10/1134077/the-download-ai-iran-war-theater-anthropic-sues-us/)**: Anthropic has filed suit against the US government, with OpenAI and Google employees publicly voicing support; the filing escalates a broader confrontation over AI use in military and government contexts.
-  - **[Amazon Gets Court Order Blocking Perplexity's AI Shopping Agent](https://the-decoder.com/amazon-gets-court-order-blocking-perplexitys-ai-shopping-agent/)**: A court granted Amazon an injunction against Perplexity's AI-powered shopping agent, setting a significant precedent for the legality of autonomous agents scraping and transacting on commercial platforms.
+  - **[AI agent hacked McKinsey's internal AI platform in two hours](https://the-decoder.com/an-ai-agent-hacked-mckinseys-internal-ai-platform-in-two-hours-using-a-decades-old-technique/)**: An offensive AI agent breached McKinsey's Lilli platform — used by 43,000+ employees — gaining full database read/write access with no credentials or human assistance, using a decades-old exploit technique.
+  - **[Iran-linked wiper malware takes Stryker offline, sends 5,000 Irish workers home](https://krebsonsecurity.com/2026/03/iran-backed-hackers-claim-wiper-attack-on-medtech-firm-stryker/)**: The Handala hacktivist group, linked to Iran's intelligence ministry, claimed a destructive wiper attack on global medtech giant Stryker, forcing thousands of employees home and triggering a building emergency at U.S. headquarters.
+  - **[Replit hits $9B valuation six months after $3B, targets $1B ARR](https://techcrunch.com/2026/03/11/replit-snags-9b-valuation-6-months-after-hitting-3b/)**: The AI coding platform raised $400 million in a new round, reflecting explosive investor appetite for "vibe coding" tools as AI-assisted development goes mainstream.
+  - **[Anthropic launches internal think tank, fights Pentagon blacklist](https://www.theverge.com/ai-artificial-intelligence/892478/anthropic-institute-think-tank-claude-pentagon-jack-clark)**: Anthropic announced the Anthropic Institute — merging three research teams to study AI's societal impact — while Microsoft, OpenAI and Google employees, and civil rights groups filed amicus briefs in its escalating legal battle against the Department of Defense.
+  - **[OpenAI releases training dataset to teach AI models which instructions to trust](https://the-decoder.com/openais-new-training-dataset-teaches-ai-models-which-instructions-to-trust/)**: IH-Challenge is designed to harden AI models against prompt injection, yielding measurable gains in security and instruction-priority reliability in early results.
 archive:
+  - date: "2026-03-11"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: true
+    highlight: "AI agent hacked McKinsey's internal AI platform in two hours: An offensive AI agent breached McKinsey's Lilli platform — used by 43,000+ employees — gaining…"
   - date: "2026-03-10"
     has_papers: true
     has_security: true
