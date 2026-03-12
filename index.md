@@ -1,18 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "March 11, 2026"
+hero_date: "March 12, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-03-11/digest"
-hero_secondary: "[Papers](2026-03-11/papers) [Security](2026-03-11/security) [Podcast](2026-03-11/podcast)"
-issue_count: 19
+hero_primary_link: "2026-03-12/digest"
+hero_secondary: "[Papers](2026-03-12/papers) [Security](2026-03-12/security) [Podcast](2026-03-12/podcast)"
+issue_count: 20
 highlights: |
-  - **[AI agent hacked McKinsey's internal AI platform in two hours](https://the-decoder.com/an-ai-agent-hacked-mckinseys-internal-ai-platform-in-two-hours-using-a-decades-old-technique/)**: An offensive AI agent breached McKinsey's Lilli platform — used by 43,000+ employees — gaining full database read/write access with no credentials or human assistance, using a decades-old exploit technique.
-  - **[Iran-linked wiper malware takes Stryker offline, sends 5,000 Irish workers home](https://krebsonsecurity.com/2026/03/iran-backed-hackers-claim-wiper-attack-on-medtech-firm-stryker/)**: The Handala hacktivist group, linked to Iran's intelligence ministry, claimed a destructive wiper attack on global medtech giant Stryker, forcing thousands of employees home and triggering a building emergency at U.S. headquarters.
-  - **[Replit hits $9B valuation six months after $3B, targets $1B ARR](https://techcrunch.com/2026/03/11/replit-snags-9b-valuation-6-months-after-hitting-3b/)**: The AI coding platform raised $400 million in a new round, reflecting explosive investor appetite for "vibe coding" tools as AI-assisted development goes mainstream.
-  - **[Anthropic launches internal think tank, fights Pentagon blacklist](https://www.theverge.com/ai-artificial-intelligence/892478/anthropic-institute-think-tank-claude-pentagon-jack-clark)**: Anthropic announced the Anthropic Institute — merging three research teams to study AI's societal impact — while Microsoft, OpenAI and Google employees, and civil rights groups filed amicus briefs in its escalating legal battle against the Department of Defense.
-  - **[OpenAI releases training dataset to teach AI models which instructions to trust](https://the-decoder.com/openais-new-training-dataset-teaches-ai-models-which-instructions-to-trust/)**: IH-Challenge is designed to harden AI models against prompt injection, yielding measurable gains in security and instruction-priority reliability in early results.
+  - **[Pentagon Labels Anthropic a "Supply Chain Risk"](https://the-decoder.com/us-military-chief-says-anthropics-ai-models-pollute-the-supply-chain-with-built-in-ethics/)**: The US War Department CTO claims Claude's built-in ethics "pollute" its AI supply chain, prompting Anthropic to file a legal challenge.
+  - **[AI-Generated Slopoly Malware Deployed in Ransomware Attack](https://www.bleepingcomputer.com/news/security/ai-generated-slopoly-malware-used-in-interlock-ransomware-attack/)**: Threat actor Hive0163 used generative AI to build a novel malware strain that persisted on a compromised server for over a week before triggering an Interlock ransomware payload.
+  - **[Atlassian Cuts 1,600 Jobs in Name of AI](https://techcrunch.com/2026/03/12/atlassian-follows-blocks-footsteps-and-cuts-staff-in-the-name-of-ai/)**: The Jira and Confluence maker is laying off 10% of its workforce to redirect funds toward AI development, following a similar move by Block.
+  - **[Grok 4.20 Sets Hallucination Record — But Trails Gemini and GPT-5.4](https://the-decoder.com/grok-4-20-trails-gemini-and-gpt-5-4-by-a-wide-margin-but-sets-a-new-record-for-not-hallucinating/)**: xAI's latest model is the least-hallucinating model yet tested, but still lags well behind the top tier on standard benchmarks.
+  - **[NAND Flash Prices Jump 50% Overnight](https://gigazine.net/news/20260312-nand-prices-jumped-overnight/)**: Phison's CEO reveals some NAND flash memory makers raised prices by up to 50% overnight, a sudden shock that will ripple through consumer and data-center hardware costs.
 archive:
+  - date: "2026-03-12"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: true
+    highlight: "Pentagon Labels Anthropic a 'Supply Chain Risk': The US War Department CTO claims Claude's built-in ethics 'pollute' its AI supply chain, prompting Anthropic…"
   - date: "2026-03-11"
     has_papers: true
     has_security: true
