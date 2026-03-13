@@ -1,18 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "March 12, 2026"
+hero_date: "March 13, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-03-12/digest"
-hero_secondary: "[Papers](2026-03-12/papers) [Security](2026-03-12/security) [Podcast](2026-03-12/podcast)"
-issue_count: 20
+hero_primary_link: "2026-03-13/digest"
+hero_secondary: "[Papers](2026-03-13/papers) [Security](2026-03-13/security) [Podcast](2026-03-13/podcast)"
+issue_count: 21
 highlights: |
-  - **[Pentagon Labels Anthropic a "Supply Chain Risk"](https://the-decoder.com/us-military-chief-says-anthropics-ai-models-pollute-the-supply-chain-with-built-in-ethics/)**: The US War Department CTO claims Claude's built-in ethics "pollute" its AI supply chain, prompting Anthropic to file a legal challenge.
-  - **[AI-Generated Slopoly Malware Deployed in Ransomware Attack](https://www.bleepingcomputer.com/news/security/ai-generated-slopoly-malware-used-in-interlock-ransomware-attack/)**: Threat actor Hive0163 used generative AI to build a novel malware strain that persisted on a compromised server for over a week before triggering an Interlock ransomware payload.
-  - **[Atlassian Cuts 1,600 Jobs in Name of AI](https://techcrunch.com/2026/03/12/atlassian-follows-blocks-footsteps-and-cuts-staff-in-the-name-of-ai/)**: The Jira and Confluence maker is laying off 10% of its workforce to redirect funds toward AI development, following a similar move by Block.
-  - **[Grok 4.20 Sets Hallucination Record — But Trails Gemini and GPT-5.4](https://the-decoder.com/grok-4-20-trails-gemini-and-gpt-5-4-by-a-wide-margin-but-sets-a-new-record-for-not-hallucinating/)**: xAI's latest model is the least-hallucinating model yet tested, but still lags well behind the top tier on standard benchmarks.
-  - **[NAND Flash Prices Jump 50% Overnight](https://gigazine.net/news/20260312-nand-prices-jumped-overnight/)**: Phison's CEO reveals some NAND flash memory makers raised prices by up to 50% overnight, a sudden shock that will ripple through consumer and data-center hardware costs.
+  - **[Invisible Unicode Supply-Chain Attack Hits GitHub](https://arstechnica.com/security/2026/03/supply-chain-attack-using-invisible-code-hits-github-and-other-repositories/)**: Attackers are exploiting Unicode characters invisible to human reviewers to inject malicious code into open-source repositories, reviving a largely abandoned technique at serious scale.
+  - **[Anthropic Drops Million-Token Context Surcharge](https://the-decoder.com/anthropic-drops-the-surcharge-for-million-token-context-windows-making-opus-4-6-and-sonnet-4-6-far-cheaper/)**: Requests exceeding 200K tokens on Claude Opus 4.6 and Sonnet 4.6 no longer carry a price premium, dramatically reducing costs for long-context enterprise use cases.
+  - **[US Military Considers Using AI to Rank and Recommend Airstrike Targets](https://www.technologyreview.com/2026/03/13/1134278/the-download-defense-official-ai-chatbots-targeting-pentagon-claude-pollute-military-supply-chain/)**: A Defense Department official confirmed generative AI systems may be used to prioritize targets and recommend strike order, while separately the Pentagon's procurement of Claude is under political scrutiny.
+  - **[ByteDance Routes 36,000 Nvidia Blackwell Chips Through Malaysia](https://the-decoder.com/bytedance-secures-access-to-nvidia-blackwell-cluster-in-malaysia-circumventing-us-export-ban-on-china/)**: TikTok's parent company is standing up a major Blackwell cluster in Malaysia, explicitly circumventing US export controls that block these chips from entering China — even under the Trump administration's recent relaxations.
+  - **[INTERPOL Operation Synergia III Sinkholes 45,000 Malicious IPs](https://thehackernews.com/2026/03/interpol-dismantles-45000-malicious-ips.html)**: A 72-country law enforcement effort dismantled tens of thousands of servers tied to phishing, malware, and ransomware campaigns, and arrested 94 individuals worldwide.
 archive:
+  - date: "2026-03-13"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: true
+    highlight: "Invisible Unicode Supply-Chain Attack Hits GitHub: Attackers are exploiting Unicode characters invisible to human reviewers to inject malicious code into…"
   - date: "2026-03-12"
     has_papers: true
     has_security: true
