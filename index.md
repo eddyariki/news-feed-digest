@@ -1,17 +1,17 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "March 13, 2026"
+hero_date: "March 12, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-03-13/digest"
-hero_secondary: "[Papers](2026-03-13/papers) [Security](2026-03-13/security) [Podcast](2026-03-13/podcast)"
+hero_primary_link: "2026-03-12/digest"
+hero_secondary: "[Papers](2026-03-12/papers) [Security](2026-03-12/security) [Podcast](2026-03-12/podcast)"
 issue_count: 21
 highlights: |
-  - **[Anthropic Drops Long-Context Surcharge for Claude](https://the-decoder.com/anthropic-drops-the-surcharge-for-million-token-context-windows-making-opus-4-6-and-sonnet-4-6-far-cheaper/)**: Requests with more than 200,000 tokens on Claude Opus 4.6 and Sonnet 4.6 no longer cost up to twice as much, making million-token context dramatically cheaper for developers.
-  - **[AI Chatbots Linked to Mass Casualty Cases, Lawyer Warns](https://techcrunch.com/2026/03/13/lawyer-behind-ai-psychosis-cases-warns-of-mass-casualty-risks/)**: A lawyer representing victims of AI-induced psychosis says the technology — including ChatGPT and Gemini — is now showing up in mass casualty incidents, with safeguards far behind the pace of deployment.
-  - **[Bytedance Secures Nvidia Blackwell Access in Malaysia, Bypassing US Export Ban](https://the-decoder.com/bytedance-secures-access-to-nvidia-blackwell-cluster-in-malaysia-circumventing-us-export-ban-on-china/)**: TikTok's parent company plans to use ~36,000 Nvidia Blackwell chips in Malaysia, sidestepping US export controls that explicitly exclude these chips even under Trump's recent relaxations.
-  - **[Google Patches Two Chrome Zero-Days Actively Exploited in the Wild](https://www.bleepingcomputer.com/news/google/google-fixes-two-new-chrome-zero-days-exploited-in-attacks/)**: Emergency updates patch high-severity flaws in Skia and V8, with both vulnerabilities having already been used in attacks before fixes were available.
-  - **[INTERPOL Dismantles 45,000 Malicious IPs in Global Cybercrime Op](https://thehackernews.com/2026/03/interpol-dismantles-45000-malicious-ips.html)**: Operation Synergia III, spanning 72 countries, sinkholed tens of thousands of servers tied to phishing, malware, and ransomware, arresting 94 suspects.
+  - **[Pentagon Labels Anthropic a "Supply Chain Risk"](https://the-decoder.com/us-military-chief-says-anthropics-ai-models-pollute-the-supply-chain-with-built-in-ethics/)**: The US War Department CTO claims Claude's built-in ethics "pollute" its AI supply chain, prompting Anthropic to file a legal challenge.
+  - **[AI-Generated Slopoly Malware Deployed in Ransomware Attack](https://www.bleepingcomputer.com/news/security/ai-generated-slopoly-malware-used-in-interlock-ransomware-attack/)**: Threat actor Hive0163 used generative AI to build a novel malware strain that persisted on a compromised server for over a week before triggering an Interlock ransomware payload.
+  - **[Atlassian Cuts 1,600 Jobs in Name of AI](https://techcrunch.com/2026/03/12/atlassian-follows-blocks-footsteps-and-cuts-staff-in-the-name-of-ai/)**: The Jira and Confluence maker is laying off 10% of its workforce to redirect funds toward AI development, following a similar move by Block.
+  - **[Grok 4.20 Sets Hallucination Record — But Trails Gemini and GPT-5.4](https://the-decoder.com/grok-4-20-trails-gemini-and-gpt-5-4-by-a-wide-margin-but-sets-a-new-record-for-not-hallucinating/)**: xAI's latest model is the least-hallucinating model yet tested, but still lags well behind the top tier on standard benchmarks.
+  - **[NAND Flash Prices Jump 50% Overnight](https://gigazine.net/news/20260312-nand-prices-jumped-overnight/)**: Phison's CEO reveals some NAND flash memory makers raised prices by up to 50% overnight, a sudden shock that will ripple through consumer and data-center hardware costs.
 archive:
   - date: "2026-03-13"
     has_papers: true
