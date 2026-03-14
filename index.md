@@ -7,18 +7,18 @@ hero_primary_link: "2026-03-13/digest"
 hero_secondary: "[Papers](2026-03-13/papers) [Security](2026-03-13/security) [Podcast](2026-03-13/podcast)"
 issue_count: 21
 highlights: |
-  - **[Invisible Unicode Supply-Chain Attack Hits GitHub](https://arstechnica.com/security/2026/03/supply-chain-attack-using-invisible-code-hits-github-and-other-repositories/)**: Attackers are exploiting Unicode characters invisible to human reviewers to inject malicious code into open-source repositories, reviving a largely abandoned technique at serious scale.
-  - **[Anthropic Drops Million-Token Context Surcharge](https://the-decoder.com/anthropic-drops-the-surcharge-for-million-token-context-windows-making-opus-4-6-and-sonnet-4-6-far-cheaper/)**: Requests exceeding 200K tokens on Claude Opus 4.6 and Sonnet 4.6 no longer carry a price premium, dramatically reducing costs for long-context enterprise use cases.
-  - **[US Military Considers Using AI to Rank and Recommend Airstrike Targets](https://www.technologyreview.com/2026/03/13/1134278/the-download-defense-official-ai-chatbots-targeting-pentagon-claude-pollute-military-supply-chain/)**: A Defense Department official confirmed generative AI systems may be used to prioritize targets and recommend strike order, while separately the Pentagon's procurement of Claude is under political scrutiny.
-  - **[ByteDance Routes 36,000 Nvidia Blackwell Chips Through Malaysia](https://the-decoder.com/bytedance-secures-access-to-nvidia-blackwell-cluster-in-malaysia-circumventing-us-export-ban-on-china/)**: TikTok's parent company is standing up a major Blackwell cluster in Malaysia, explicitly circumventing US export controls that block these chips from entering China — even under the Trump administration's recent relaxations.
-  - **[INTERPOL Operation Synergia III Sinkholes 45,000 Malicious IPs](https://thehackernews.com/2026/03/interpol-dismantles-45000-malicious-ips.html)**: A 72-country law enforcement effort dismantled tens of thousands of servers tied to phishing, malware, and ransomware campaigns, and arrested 94 individuals worldwide.
+  - **[Anthropic Drops Long-Context Surcharge for Claude Opus 4.6 and Sonnet 4.6](https://the-decoder.com/anthropic-drops-the-surcharge-for-million-token-context-windows-making-opus-4-6-and-sonnet-4-6-far-cheaper/)**: Requests with more than 200,000 tokens no longer incur the previous 2× pricing penalty, making million-token context windows significantly more affordable.
+  - **[Supply-Chain Attack via Invisible Unicode Targets GitHub Repositories](https://arstechnica.com/security/2026/03/supply-chain-attack-using-invisible-code-hits-github-and-other-repositories/)**: Attackers embedded hidden Unicode characters invisible to code reviewers to inject malicious logic across multiple open-source repositories.
+  - **[Operation Synergia III Sinkholes 45,000 Malicious IPs Across 72 Countries](https://www.bleepingcomputer.com/news/security/police-sinkholes-45-000-ip-addresses-in-cybercrime-crackdown/)**: INTERPOL-led operation dismantled servers tied to phishing, malware, and ransomware campaigns with 94 arrests.
+  - **[ByteDance Secures 36,000 Nvidia Blackwell Chips in Malaysia, Circumventing US Export Controls](https://the-decoder.com/bytedance-secures-access-to-nvidia-blackwell-cluster-in-malaysia-circumventing-us-export-ban-on-china/)**: TikTok's parent routes high-end AI compute through Malaysia as Trump-era restrictions explicitly exclude Blackwell-class chips even under recent relaxations.
+  - **[AI Chatbots Now Linked to Mass Casualty Cases, Lawyer Warns](https://techcrunch.com/2026/03/13/lawyer-behind-ai-psychosis-cases-warns-of-mass-casualty-risks/)**: A lawyer handling AI-related psychosis litigation says chatbot-linked harm is escalating beyond individual suicides to incidents involving multiple victims, with safeguards lagging far behind deployment.
 archive:
   - date: "2026-03-13"
     has_papers: true
     has_security: true
     has_weekly: false
     has_podcast: true
-    highlight: "Invisible Unicode Supply-Chain Attack Hits GitHub: Attackers are exploiting Unicode characters invisible to human reviewers to inject malicious code into…"
+    highlight: "Anthropic Drops Long-Context Surcharge for Claude Opus 4.6 and Sonnet 4.6: Requests with more than 200,000 tokens no longer incur the previous 2× pricing…"
   - date: "2026-03-12"
     has_papers: true
     has_security: true

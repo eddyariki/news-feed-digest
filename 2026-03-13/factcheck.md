@@ -5,21 +5,15 @@
 
 #### Issues Found
 
-**[Academia and the "AI Brain Drain"]** — The digest attributes specific figures to the Schneier blog entry: "$380B AI spend in 2025 (projected $650B this year)" and "Meta reportedly offering individual researchers nine-figure packages." These precise numbers are not present in the source title or summary snippet and cannot be verified from available source data. They may come from the article body but are flagged as unverifiable from the captured source.
+**[Japan Defense Agency to Deploy AI Intelligence Analysis System…]** — Source title says "**Develop**" not "Deploy". Developing a new system and deploying an existing one are meaningfully different. *Correction: "Deploy" → "Develop".*
 
-**[Will AI Save Consumers From Smartphone-Based Phishing?]** — The digest attributes the findings to "New Omdia research." The source title and summary contain no mention of Omdia. This attribution may come from the article body, but it is not verifiable from the captured source data.
+**[AI Avatar of Philosopher Yōrō Takeshi Appointed Professor at Tokyo Institute of Technology]** — Source (東京工科大) is **Tokyo University of Technology** (東京工科大学, Tōkyō Kōka Daigaku), not Tokyo Institute of Technology (東京工業大学, Tōkyō Kōgyō Daigaku / TITech). These are entirely different institutions. The abbreviated form "TITech" in the body text is the abbreviation for Tokyo Institute of Technology and is also wrong. *Correction: "Tokyo Institute of Technology" → "Tokyo University of Technology"; "TITech" → "Tokyo University of Technology (TUT)".*
 
-**[US Military Plans to Use Generative AI for Target Ranking]** — The source title is "The Download: how AI is used for military targeting, and the Pentagon's war on Claude." The digest paraphrase is accurate in substance, but the Highlights section adds "while separately the Pentagon's procurement of Claude is under political scrutiny" — consistent with the source title's "Pentagon's war on Claude" reference. No error.
+**[AI Bot Traffic Now Accounts for 80% of Web Requests; Meta Crawlers Generate Over Half]** — The title misrepresents the Fastly finding. The source states that **80% of AI bot traffic consists of crawlers** (with Meta accounting for over half of that). The digest title implies 80% of all web requests are AI bots, which is a much larger and unsupported claim. The body description is correct ("roughly 80% of bot traffic comes from crawlers"). *Correction: title changed to reflect the actual stat.*
 
-**[ByteDance Secures Nvidia Blackwell Cluster in Malaysia]** — The digest summary adds "even under the Trump administration's recent relaxations," a contextual claim not present in the source title or summary snippet. Cannot verify from source data.
+**[LABSHIELD: A Multimodal Benchmark for Safety-Critical Reasoning in Scientific Laboratories]** — Source paper title includes "**and Planning**": *LABSHIELD: A Multimodal Benchmark for Safety-Critical Reasoning and Planning in Scientific Laboratories*. *Correction: add "and Planning" to title.*
 
-**[INTERPOL Dismantles 45,000 Malicious IPs]** — Both the Highlights section and the News section assert this spanned "72 countries." The source title and summary do not include this figure. It may be present in the article body but is unverifiable from the captured source.
-
-**[Japan Defense Agency to Develop AI Intelligence Analysis System]** — This article (japannews.yomiuri.co.jp, URL slug `20260314-316288`) was **not found in latest.json**. The URL embeds the date 20260314 (March 14), one day after the digest date. While this may reflect JST publication timing, the article cannot be cross-referenced against the source feed data.
-
-**[Mitsubishi Electric Invests in Chinese Startup Lumos Robotics]**, **[Honda Establishes Collaborative AI Research Lab "BRIDGE"]**, **["AI Yoro Takeshi" Avatar Takes Up Visiting Professorship]** — All three ITmedia AI+ articles were **not found in latest.json** and could not be cross-referenced. Titles, sources, and summaries are plausible but unverifiable from captured source data.
-
-All other articles verified: titles are faithful paraphrases of source titles, outlet attributions are correct, URLs match the JSON, and summaries stay within source-documented facts.
+**[COMPASS: An Explainable Agentic Framework for Sovereignty, Sustainability, Compliance, and Ethics]** — Source paper title uses "**The**" not "An": *COMPASS: The explainable agentic framework for Sovereignty, Sustainability, Compliance, and Ethics*. *Correction: "An" → "The".*
 
 ---
 
@@ -28,13 +22,11 @@ All other articles verified: titles are faithful paraphrases of source titles, o
 
 #### Issues Found
 
-**[COMPASS: Explainable Agentic Framework…]** — The digest titles this paper "COMPASS: Explainable Agentic Framework for Sovereignty, Sustainability, Compliance, and Ethics," while papers.md titles it "COMPASS: **The** Explainable Agentic Framework…" (with "The"). Both point to the same ArXiv URL (2603.11277). Minor title inconsistency between the two files; not a factual error.
+**[LABSHIELD]** — The paper summary file correctly uses the full title ("and Planning" included), which differs from the digest entry (Part 1 error). No correction needed in papers-2026-03-13.md.
 
-**[Measuring AI Agents' Progress on Multi-Step Cyber Attack Scenarios]** — The summary contains very specific quantitative claims (e.g., "average steps: 1.7 → 9.8," "best single run: 22 of 32 steps," "equivalent to 6 of 14 expert-hours"). These are internally self-consistent and the paper's abstract is not directly available for verification, but the claims are plausible given the described methodology. No clear fabrication detected.
+**[COMPASS]** — The paper summary file correctly uses "The" in the title, consistent with the ArXiv source. No correction needed in papers-2026-03-13.md.
 
-**[GPT4o-Receipt]** — The summary names "Claude Sonnet 4 and Gemini 2.5 Flash" as the top-performing models. The digest entry only states the general paradox (humans spot artifacts better but detect less accurately overall) without naming specific models. The model names are a detail from within the paper not verifiable from the digest alone, but are plausible and not contradicted by the digest.
-
-All 12 summaries match their digest titles and ArXiv URLs exactly. No abstracts contain claims clearly contradicted by the digest descriptions. No paper not listed in the digest appears in papers.md.
+**[Measuring AI Agents' Progress on Multi-Step Cyber Attack Scenarios]** — The summary includes specific quantitative claims ("average steps completed at 10M tokens rose from 1.7 (GPT-4o, August 2024) to 9.8 (Opus 4.6, February 2026)" and "gains of up to 59%") that are not present in the available abstract excerpt. These figures are plausible and consistent with the abstract's description of "two capability trends" across "seven models over an eighteen-month period at varying inference-time compute budgets," but cannot be confirmed from the abstract alone. Not flagged as an error; noted as detail that originates from the paper body rather than the abstract.
 
 ---
 
@@ -43,10 +35,10 @@ All 12 summaries match their digest titles and ArXiv URLs exactly. No abstracts 
 
 #### Issues Found
 
-None. All verified articles match their source titles, URLs, and outlet attributions in latest.json. Summaries stay within the bounds of source-documented facts. The Chrome zero-days entry uses a The Hacker News URL distinct from the BleepingComputer URL used in the news digest — both cover the same story from different outlets, and both are legitimate attributions.
+None. All checked articles have correct source attributions (The Hacker News, BleepingComputer, Dark Reading, Engineering at Meta, Schneier on Security, TechCrunch AI), URLs that match the source JSON, and summaries that stay within the facts present in the source data. CVE numbers and CVSS scores cited (CVE-2026-3909 CVSS 8.8, CVE-2026-21666 CVSS 9.9) are confirmed against source article data.
 
 ---
 
 ### Overall Summary
 
-The March 13 digest is largely accurate and well-sourced. The primary concerns are unverifiability rather than confirmed errors: four articles (one Japan News defense item and three ITmedia entries) are absent from latest.json and cannot be cross-referenced, a specific "Omdia" attribution in the Dark Reading phishing item and financial figures in the Schneier brain-drain entry are not present in the captured source snippets, and the "72 countries" claim in the INTERPOL highlights cannot be confirmed from source metadata. No URLs are misattributed and no summaries contain claims that clearly contradict their source data. Part 3 (Security Digest) is fully clean. No corrections were applied as no definitive factual errors were identified.
+The news digest is largely accurate and well-sourced, but contains five factual errors in Part 1. Two are significant: the Japan Defense Agency article substitutes "Deploy" for "Develop" (a meaningful distinction), and the Yōrō Takeshi AI avatar item misidentifies the institution as "Tokyo Institute of Technology (TITech)" when the source is Tokyo University of Technology (東京工科大)—entirely different universities. A third error misstates a Fastly statistic in a section title ("80% of web requests" vs. the correct "80% of AI bot traffic consists of crawlers"), though the body description is accurate. Two minor title-accuracy issues affect the LABSHIELD and COMPASS paper entries (truncated subtitle and wrong article "An"/"The"). The paper summaries file is clean—it independently uses the correct paper titles and URLs. The security digest passes cleanly with no issues found.
