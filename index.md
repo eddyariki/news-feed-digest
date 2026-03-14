@@ -7,18 +7,18 @@ hero_primary_link: "2026-03-13/digest"
 hero_secondary: "[Papers](2026-03-13/papers) [Security](2026-03-13/security) [Podcast](2026-03-13/podcast)"
 issue_count: 21
 highlights: |
-  - **[Anthropic Drops Long-Context Surcharge for Claude Opus 4.6 and Sonnet 4.6](https://the-decoder.com/anthropic-drops-the-surcharge-for-million-token-context-windows-making-opus-4-6-and-sonnet-4-6-far-cheaper/)**: Requests with more than 200,000 tokens no longer incur the previous 2× pricing penalty, making million-token context windows significantly more affordable.
-  - **[Supply-Chain Attack via Invisible Unicode Targets GitHub Repositories](https://arstechnica.com/security/2026/03/supply-chain-attack-using-invisible-code-hits-github-and-other-repositories/)**: Attackers embedded hidden Unicode characters invisible to code reviewers to inject malicious logic across multiple open-source repositories.
-  - **[Operation Synergia III Sinkholes 45,000 Malicious IPs Across 72 Countries](https://www.bleepingcomputer.com/news/security/police-sinkholes-45-000-ip-addresses-in-cybercrime-crackdown/)**: INTERPOL-led operation dismantled servers tied to phishing, malware, and ransomware campaigns with 94 arrests.
-  - **[ByteDance Secures 36,000 Nvidia Blackwell Chips in Malaysia, Circumventing US Export Controls](https://the-decoder.com/bytedance-secures-access-to-nvidia-blackwell-cluster-in-malaysia-circumventing-us-export-ban-on-china/)**: TikTok's parent routes high-end AI compute through Malaysia as Trump-era restrictions explicitly exclude Blackwell-class chips even under recent relaxations.
-  - **[AI Chatbots Now Linked to Mass Casualty Cases, Lawyer Warns](https://techcrunch.com/2026/03/13/lawyer-behind-ai-psychosis-cases-warns-of-mass-casualty-risks/)**: A lawyer handling AI-related psychosis litigation says chatbot-linked harm is escalating beyond individual suicides to incidents involving multiple victims, with safeguards lagging far behind deployment.
+  - **[Anthropic Drops Long-Context Surcharge for Claude](https://the-decoder.com/anthropic-drops-the-surcharge-for-million-token-context-windows-making-opus-4-6-and-sonnet-4-6-far-cheaper/)**: Requests with more than 200,000 tokens on Claude Opus 4.6 and Sonnet 4.6 no longer cost up to twice as much, making million-token context dramatically cheaper for developers.
+  - **[AI Chatbots Linked to Mass Casualty Cases, Lawyer Warns](https://techcrunch.com/2026/03/13/lawyer-behind-ai-psychosis-cases-warns-of-mass-casualty-risks/)**: A lawyer representing victims of AI-induced psychosis says the technology — including ChatGPT and Gemini — is now showing up in mass casualty incidents, with safeguards far behind the pace of deployment.
+  - **[Bytedance Secures Nvidia Blackwell Access in Malaysia, Bypassing US Export Ban](https://the-decoder.com/bytedance-secures-access-to-nvidia-blackwell-cluster-in-malaysia-circumventing-us-export-ban-on-china/)**: TikTok's parent company plans to use ~36,000 Nvidia Blackwell chips in Malaysia, sidestepping US export controls that explicitly exclude these chips even under Trump's recent relaxations.
+  - **[Google Patches Two Chrome Zero-Days Actively Exploited in the Wild](https://www.bleepingcomputer.com/news/google/google-fixes-two-new-chrome-zero-days-exploited-in-attacks/)**: Emergency updates patch high-severity flaws in Skia and V8, with both vulnerabilities having already been used in attacks before fixes were available.
+  - **[INTERPOL Dismantles 45,000 Malicious IPs in Global Cybercrime Op](https://thehackernews.com/2026/03/interpol-dismantles-45000-malicious-ips.html)**: Operation Synergia III, spanning 72 countries, sinkholed tens of thousands of servers tied to phishing, malware, and ransomware, arresting 94 suspects.
 archive:
   - date: "2026-03-13"
     has_papers: true
     has_security: true
     has_weekly: false
     has_podcast: true
-    highlight: "Anthropic Drops Long-Context Surcharge for Claude Opus 4.6 and Sonnet 4.6: Requests with more than 200,000 tokens no longer incur the previous 2× pricing…"
+    highlight: "Anthropic Drops Long-Context Surcharge for Claude: Requests with more than 200,000 tokens on Claude Opus 4.6 and Sonnet 4.6 no longer cost up to twice as much,…"
   - date: "2026-03-12"
     has_papers: true
     has_security: true

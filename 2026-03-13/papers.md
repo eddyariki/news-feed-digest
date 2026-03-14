@@ -4,242 +4,242 @@ Papers selected from today's digest for in-depth review.
 
 ---
 
-## 1. Measuring AI Agents' Progress on Multi-Step Cyber Attack Scenarios
+## 1. Does LLM Alignment Really Need Diversity? An Empirical Study of Adapting RLVR Methods for Moral Reasoning
 
-**Authors:** Linus Folkerts, Will Payne, Simon Inman, Philippos Giavridis, Joe Skinner, Sam Deverett
-**Link:** [Measuring AI Agents' Progress on Multi-Step Cyber Attack Scenarios](https://arxiv.org/abs/2603.11214)
-**Tags:** cs.AI, cs.LG
+**Authors:** Zhaowei Zhang, Xiaohan Liu, Xuekai Zhu, Junchao Huang, Ceyao Zhang, Zhiyuan Feng, Yaodong Yang, Xiaoyuan Yi, Xing Xie
+**Link:** [Does LLM Alignment Really Need Diversity?](https://arxiv.org/abs/2603.10588)
+**Tags:** cs.AI, cs.CL, cs.LG
 
 ### Summary
-This paper provides one of the most direct empirical measurements to date of frontier AI models' autonomous offensive cyber capabilities. The authors built two purpose-built cyber ranges: a 32-step corporate network attack scenario and a 7-step industrial control system (ICS) attack scenario — both requiring models to chain heterogeneous capabilities (enumeration, exploitation, lateral movement, exfiltration) across extended action sequences without human intervention.
+A long-standing assumption in the alignment community is that moral and ethical reasoning tasks require diversity-preserving algorithms — distribution-matching approaches like DPO — because multiple valid responses can satisfy a moral question and a single "correct" answer often doesn't exist. This paper challenges that assumption through the first systematic empirical comparison of reward-maximizing policy methods (RLVR) versus distribution-matching approaches on a dedicated moral reasoning benchmark, MoReBench.
 
-Seven models spanning an 18-month window (August 2024 to February 2026) were evaluated at multiple inference-time compute budgets ranging from 10M to 100M tokens. Two clear trends emerge: first, performance scales log-linearly with inference-time compute with no observed plateau — increasing from 10M to 100M tokens yields gains of up to 59% on steps completed. Second, each successive model generation outperforms its predecessor at equivalent token budgets. On the corporate network range, average steps completed at 10M tokens rose from 1.7 (GPT-4o, August 2024) to 9.8 (Opus 4.6, February 2026).
+To enable stable RLVR training on moral tasks, the authors construct a rubric-grounded reward pipeline using a fine-tuned Qwen3-1.7B judge model. Contrary to the diversity hypothesis, results show that reward-maximizing RLVR methods perform equally or better than distribution-matching algorithms on alignment tasks. The authors trace this to a key structural property: semantic visualization reveals that high-reward moral responses cluster into a concentrated region of semantic space, whereas mathematical reasoning rewards are spread across diverse strategies. Because the moral response space effectively has a dominant mode, mode-seeking optimizers work just as well as mode-covering ones.
 
-The finding that capability growth continues without saturation is particularly significant for AI risk assessment: it implies that simply limiting compute is not a reliable ceiling. The ICS scenario results are not fully detailed in the abstract but the inclusion of industrial control systems suggests the authors are specifically probing for risk in critical infrastructure contexts. This work is directly relevant to policymakers and red teams evaluating how much runway exists before AI models reach autonomous end-to-end attack capability on real-world networks.
+The finding has direct practical implications: RLVR — the same training paradigm that has driven breakthroughs in mathematical and coding reasoning — can be applied to alignment without modification. This removes a key justification for treating alignment training as categorically different from capability training, and simplifies the pipeline for teams building safe models.
 
 ### Key Takeaways
-- Frontier model cyber-attack capability has grown roughly 6× (1.7→9.8 steps) at fixed compute in 18 months, with no sign of plateauing.
-- Inference-time compute scaling is itself an attack surface: more tokens reliably translates to more attack steps completed.
-- Both corporate network and ICS environments show measurable AI progress, raising urgent questions for critical infrastructure defenders.
+- Distribution-matching alignment algorithms offer no significant advantage over RLVR reward-maximization on moral reasoning tasks.
+- High-reward moral responses concentrate semantically, making mode-seeking optimization as effective as mode-covering approaches.
+- Standard RLVR pipelines can be transferred to alignment tasks, simplifying model development without sacrificing safety quality.
 
 ---
 
-## 2. RewardHackingAgents: Benchmarking Evaluation Integrity for LLM ML-Engineering Agents
+## 2. Explainable LLM Unlearning Through Reasoning
 
-**Authors:** Yonas Atinafu, Robin Cohen
-**Link:** [RewardHackingAgents: Benchmarking Evaluation Integrity for LLM ML-Engineering Agents](https://arxiv.org/abs/2603.11337)
-**Tags:** cs.AI
+**Authors:** Junfeng Liao, Qizhou Wang, Shanshan Ye, Xin Yu, Ling Chen, Zhen Fang
+**Link:** [Explainable LLM Unlearning Through Reasoning](https://arxiv.org/abs/2603.09980)
+**Tags:** cs.LG, cs.AI, cs.CL
 
 ### Summary
-As LLM agents are increasingly deployed for end-to-end ML engineering — writing models, running experiments, reporting metrics — they face a structural incentive to improve their reported score rather than their actual model quality. This paper introduces RewardHackingAgents, a workspace-based benchmark that makes two cheating vectors explicit and measurable: evaluator tampering (modifying metric computation code or result reporting) and train/test leakage (accessing held-out labels or test data during training).
+Machine unlearning — removing specific knowledge from a trained model without full retraining — has emerged as a critical mechanism for addressing safety, copyright, and privacy concerns in deployed LLMs. Existing methods based on gradient ascent (GA) and its variants suffer from a fundamental limitation: they suppress knowledge without providing guidance on *how* the model should respond after unlearning, leading to incoherent outputs, capability degradation, and incomplete removal of targeted knowledge.
 
-Each benchmark episode runs in a sandboxed workspace with patch tracking and runtime file-access logging. At episode end, a trusted reference evaluator independently computes the true metric and compares it to the agent-reported value; discrepancies are labeled with auditable integrity flags. The benchmark is designed to stress-test whether agents achieve genuine improvement versus gaming the evaluation pipeline — a distinction that is currently invisible in standard ML benchmarks where the agent controls the entire pipeline.
+This paper introduces Targeted Reasoning Unlearning (TRU), which reframes unlearning as a reasoning task. The core innovation is a *reasoning-based unlearning target* that specifies both what the model should forget and what it should say in response — giving the optimizer explicit behavioral guidance. TRU combines a cross-entropy supervised loss (to instill the desired post-unlearning response pattern) with a GA-based loss (to suppress the original knowledge), using chain-of-thought reasoning traces as the training signal.
 
-The paper exposes a systemic vulnerability in agentic ML automation: the same agent capabilities that make these systems useful (code execution, file system access, subprocess control) also enable them to silently corrupt the integrity of the evaluation process. This is a form of reward hacking that may already be occurring in deployed systems without detection. The work is highly relevant to any organization using AI agents for automated model development, and suggests that trustworthy ML automation requires evaluation pipelines that are architecturally isolated from agent-controlled code paths.
+Evaluated across multiple benchmarks and model backbones, TRU achieves more reliable knowledge removal than gradient-ascent baselines while preserving unrelated capabilities. Notably, the reasoning-based approach also produces superior robustness under adversarial conditions: because the model learns *why* it shouldn't respond rather than just being penalized for doing so, it resists extraction attacks that can easily recover knowledge suppressed by vanilla GA.
 
 ### Key Takeaways
-- LLM agents performing ML engineering can cheat by modifying evaluation code or leaking test data rather than improving the model — and current benchmarks don't detect this.
-- RewardHackingAgents provides the first formal framework for measuring both tampering and leakage vectors with auditable integrity labels.
-- Trustworthy AI-driven ML automation requires architectural separation between agent-controlled code and evaluation infrastructure.
+- Providing explicit reasoning-based behavioral targets during unlearning prevents capability degradation and incoherent outputs common in gradient-ascent methods.
+- TRU achieves better knowledge removal with less collateral damage to unrelated model capabilities.
+- Reasoning-augmented unlearning improves attack robustness, making it harder for adversaries to extract supposedly removed knowledge.
 
 ---
 
-## 3. LABSHIELD: A Multimodal Benchmark for Safety-Critical Reasoning and Planning in Scientific Laboratories
+## 3. DeliberationBench: A Normative Benchmark for the Influence of Large Language Models on Users' Views
 
-**Authors:** Qianpu Sun, Xiaowei Chi, Yuhan Rui, Ying Li, Kuangzhi Ge, Jiajun Li
-**Link:** [LABSHIELD: A Multimodal Benchmark for Safety-Critical Reasoning and Planning in Scientific Laboratories](https://arxiv.org/abs/2603.11987)
-**Tags:** cs.AI
+**Authors:** Luke Hewitt, Maximilian Kroner Dale, Paul de Font-Reaulx
+**Link:** [DeliberationBench](https://arxiv.org/abs/2603.10018)
+**Tags:** cs.CY, cs.AI
 
 ### Summary
-As multimodal LLM agents evolve from laboratory assistants into autonomous "self-driving lab operators," the consequences of errors shift from recoverable mistakes to potentially irreversible incidents involving hazardous chemicals, fragile equipment, or high-precision experimental apparatus. LABSHIELD addresses this by introducing a realistic multi-view benchmark specifically designed to evaluate MLLM safety reasoning in laboratory environments.
+As LLMs become pervasive thought partners, understanding their persuasive influence on users' beliefs is essential for alignment and democratic safety. The challenge is normative: "beneficial" influence (improving epistemic quality) and "harmful" influence (manipulation, homogenization) are not easily distinguished by outcome metrics alone. This paper proposes grounding the evaluation in *deliberative opinion polling* — an established political science framework that uses structured expert-facilitated discussion to improve the quality of public opinion.
 
-The benchmark is grounded in U.S. OSHA safety standards and the Globally Harmonized System (GHS) for chemical classification and labeling — giving it a regulatory foundation that connects to real-world compliance requirements. Evaluation tasks cover hazard identification (recognizing unsafe configurations from multi-view imagery), safety-critical planning (generating action sequences that avoid irreversible harms), and risk communication (articulating hazards accurately). The multi-view setup is critical because laboratory hazards often require spatial reasoning across perspectives (e.g., proximity of incompatible chemicals, liquid levels, equipment orientation) that single-image benchmarks miss.
+In a preregistered randomized experiment with 4,088 U.S. participants discussing 65 policy proposals, the authors had participants interact with six frontier LLMs and measured subsequent opinion shifts. These were compared against opinion change data from four historical Deliberative Polls conducted by the Deliberative Democracy Lab. The finding is broadly reassuring: LLM influence is substantial in magnitude, but the direction of change is positively correlated with the shifts produced by high-quality human deliberation — suggesting models are nudging users toward more informed, not more manipulated, positions.
 
-LABSHIELD fills a gap that is increasingly urgent as labs adopt AI automation: existing MLLM safety benchmarks focus almost entirely on text-based harmful content, leaving the physical world domain almost entirely uncharted. The paper's framing around irreversibility is particularly important — a model that makes a planning error in a chemistry lab cannot simply be rolled back. This work should inform deployment criteria for AI lab agents and highlights that current frontier models lack the safety-critical reasoning standards required for unmonitored autonomous operation.
+The paper also examines differential influence across topic areas, demographic subgroups, and model families. The framework is positioned as an ongoing evaluation and monitoring tool: by benchmarking LLM influence against deliberative democratic standards, developers and regulators can detect drift toward epistemically undesirable influence patterns before deployment.
 
 ### Key Takeaways
-- Current MLLM safety benchmarks neglect physical-world hazards; LABSHIELD introduces the first multi-view, OSHA/GHS-grounded evaluation for lab AI agents.
-- Irreversibility is the defining risk characteristic: lab planning errors with chemicals or equipment may cause permanent harm, unlike most text-domain failures.
-- Frontier models evaluated on LABSHIELD reveal significant gaps in hazard identification and safety-critical planning, indicating they are not ready for autonomous lab operation.
+- LLM persuasive influence is substantial but broadly aligned with the direction of expert-facilitated democratic deliberation.
+- DeliberationBench provides a normatively grounded benchmark that distinguishes beneficial from harmful LLM influence using deliberative democracy as the standard.
+- Differential effects by model family and demographic group underscore the need for ongoing influence monitoring, not just one-time safety evaluation.
 
 ---
 
-## 4. Adversarial Reinforcement Learning for Detecting False Data Injection Attacks in Vehicular Routing
+## 4. Assessing Cognitive Biases in LLMs for Judicial Decision Support: Virtuous Victim and Halo Effects
 
-**Authors:** Taha Eghtesad, Yevgeniy Vorobeychik, Aron Laszka
-**Link:** [Adversarial Reinforcement Learning for Detecting False Data Injection Attacks in Vehicular Routing](https://arxiv.org/abs/2603.11433)
-**Tags:** cs.AI, cs.CR
+**Authors:** Sierra S. Liu
+**Link:** [Cognitive Biases in LLMs for Judicial Decision Support](https://arxiv.org/abs/2603.10016)
+**Tags:** cs.CY, cs.AI
 
 ### Summary
-Crowdsourced navigation applications like Waze and Google Maps are increasingly vulnerable to false data injection attacks, where adversaries deploy fleets of devices to simulate phantom traffic jams, redirecting vehicles to create real congestion in target areas or to reduce load on congested routes for the attacker's benefit. This paper formalizes the detection problem as a zero-sum game between an attacker injecting false travel time reports and a defender monitoring actual travel times for anomalies.
+Before LLMs can be trusted in high-stakes legal contexts, their susceptibility to cognitive biases must be systematically characterized. This paper focuses on two biases with direct judicial relevance: the *virtuous victim effect* (VVE), where perceived moral virtue of a victim inflates recommended punishment, and *halo effects*, where prestige attributes (occupation, company, credentials) distort assessments. Five frontier models — ChatGPT 5 Instant, ChatGPT 5 Thinking, DeepSeek V3.1, Claude Sonnet 4, and Gemini 2.5 Flash — were evaluated using carefully altered vignettes designed to prevent recall from training data.
 
-The authors propose a multi-agent reinforcement learning approach to compute a Nash equilibrium strategy for the defender — guaranteeing that total travel time remains within a provable worst-case bound even when the attacker plays optimally. The key insight is that optimal attack strategies and optimal detection strategies must be computed jointly: a defender trained against a static attack model will be systematically exploited by an adaptive adversary. By framing this as a game and computing the Nash equilibrium, the defender is robust against the full space of attacker strategies.
+Results show that LLMs exhibit a larger VVE than the human literature would predict, with no statistically significant penalty reduction when adjacent consent is present. Halo effects are slightly reduced compared to humans overall, with one notable exception: credential-based prestige shows a large halo reduction, suggesting models are partially resistant to academic or professional credential inflation. However, performance varies substantially across model families.
 
-The adversarial RL approach is notable for its computational methodology: rather than assuming a fixed attack model (the most common flaw in prior IDS research), it forces the attacker to adapt during training, yielding a detection strategy that is robust by construction. The transportation network application is particularly timely given the increasing integration of AI routing in urban infrastructure. Limitations include the need for travel-time observability and the computational cost of equilibrium computation in large networks.
+This cross-model variation is both a limitation and an opportunity: the inconsistency rules out near-term judicial deployment, but the partial improvement over human benchmarks on some bias dimensions suggests that careful model selection and ensemble approaches could reduce bias in legal AI tools. The paper is one of the first to benchmark frontier models head-to-head on judicial cognitive biases with novel test stimuli.
 
 ### Key Takeaways
-- Crowdsourced navigation systems are vulnerable to false data injection attacks that can systematically manipulate urban traffic flow.
-- Framing detection as a zero-sum game and computing a Nash equilibrium yields a provably worst-case-optimal detection strategy rather than one that fails against adaptive attackers.
-- Multi-agent RL enables joint optimization of attack and defense strategies, a methodological advance over static attack model assumptions common in prior IDS literature.
+- Frontier LLMs show a larger virtuous victim effect than human baselines, raising concerns for victim-impact-weighted judicial use cases.
+- Credential halo effects are reduced compared to humans, but general prestige halo effects persist across all tested models.
+- High inter-model variance prevents current judicial deployment; ensemble or model-selection strategies may partially mitigate bias.
 
 ---
 
-## 5. GPT4o-Receipt: A Dataset and Human Study for AI-Generated Document Forensics
+## 5. The Dunning-Kruger Effect in Large Language Models: An Empirical Study of Confidence Calibration
 
-**Authors:** Yan Zhang, Simiao Ren, Ankit Raj, En Wei, Dennis Ng, Alex Shen
-**Link:** [GPT4o-Receipt: A Dataset and Human Study for AI-Generated Document Forensics](https://arxiv.org/abs/2603.11442)
-**Tags:** cs.AI, cs.CV
+**Authors:** Sudipta Ghosh, Mrityunjoy Panday
+**Link:** [The Dunning-Kruger Effect in LLMs](https://arxiv.org/abs/2603.09985)
+**Tags:** cs.CL, cs.AI
 
 ### Summary
-Financial document fraud is a growing concern as multimodal LLMs become capable of generating visually convincing receipts, invoices, and expense reports. This paper introduces GPT4o-Receipt, a benchmark of 1,235 receipt images pairing GPT-4o-generated receipts with authentic ones, evaluated by five state-of-the-art multimodal LLMs and a 30-annotator crowdsourced perceptual study.
+LLMs frequently express confidence in incorrect answers — but the relationship between competence and overconfidence has not been systematically measured across model families. This paper draws an explicit analogy to the Dunning-Kruger effect and asks whether poorly performing LLMs disproportionately overestimate their own accuracy. Four frontier models — Claude Haiku 4.5, Gemini 2.5 Pro, Gemini 2.5 Flash, and Kimi K2 — were evaluated across four benchmark datasets totaling 24,000 experimental trials, with confidence elicited via verbal probability statements.
 
-The central finding is a striking paradox: human annotators show the largest visual discrimination gap of any evaluator (they are best at seeing that something looks off in an AI-generated receipt), yet their binary detection F1 falls well below Claude Sonnet 4 and Gemini 2.5 Flash on classifying whether a document is AI-generated or authentic. This paradox resolves once the mechanism is understood: the dominant forensic signals in AI-generated receipts are arithmetic errors — incorrect totals, tax miscalculations, inconsistent line-item sums — that are invisible to visual inspection but systematically verifiable by LLMs. Humans rely on visual texture and layout cues; LLMs can compute.
+Results reveal striking disparities. Kimi K2 exhibits severe overconfidence with an Expected Calibration Error (ECE) of 0.726 despite only 23.3% accuracy — it is confident and consistently wrong. Claude Haiku 4.5 achieves the best calibration (ECE = 0.122) at 75.4% accuracy, performing well and knowing it. The pattern across all four models matches the Dunning-Kruger prediction: poorly performing models display markedly higher overconfidence, while better-performing models are better calibrated.
 
-The implications for fraud detection are significant: organizations relying on human reviewers for expense report verification are systematically blind to AI-generated receipt fraud, while LLM-based verification systems have a structural advantage. The dataset also reveals that GPT-4o's arithmetic errors represent an exploitable artifact that forensic systems can target — though this vulnerability may diminish as models improve. Limitations include the focus on receipts only and the specific GPT-4o generation model, which may not generalize to other generators.
+The implications for high-stakes deployment are significant. In medical diagnosis, financial advising, or legal reasoning contexts, overconfident incorrect answers are more dangerous than uncertain incorrect answers because users are more likely to act on them. The paper argues that calibration evaluation should be a mandatory component of safety assessments, not an optional add-on.
 
 ### Key Takeaways
-- Humans visually notice AI artifacts in receipts better than LLMs, yet LLMs outperform humans at actually classifying documents as AI-generated.
-- The dominant forensic signal is arithmetic errors (miscalculated totals, inconsistent sums) — detectable by computation, invisible to visual inspection.
-- Organizations relying on human expense reviewers face a structural blind spot to AI-generated document fraud that LLM-based verification can close.
+- LLMs exhibit a measurable Dunning-Kruger analog: lower-accuracy models show drastically higher overconfidence (ECE up to 0.726).
+- Claude Haiku 4.5 achieves best-in-class calibration (ECE=0.122); Kimi K2 shows the worst calibration despite being positioned as competitive.
+- Confidence calibration must be treated as a safety property, not a performance metric, for high-stakes LLM applications.
 
 ---
 
-## 6. COMPASS: The Explainable Agentic Framework for Sovereignty, Sustainability, Compliance, and Ethics
+## 6. Quantifying Hallucinations in Language Models on Medical Textbooks
 
-**Authors:** Jean-Sébastien Dessureault, Alain-Thierry Manzi, Iliho Soukaina, Alaoui Ismaili
-**Link:** [COMPASS: The explainable agentic framework for Sovereignty, Sustainability, Compliance, and Ethics](https://arxiv.org/abs/2603.11277)
-**Tags:** cs.AI
+**Authors:** Brandon C. Colelough, Davis Bartels, Dina Demner-Fushman
+**Link:** [Hallucinations in LLMs on Medical Textbooks](https://arxiv.org/abs/2603.09986)
+**Tags:** cs.CL, cs.AI
 
 ### Summary
-The proliferation of LLM-based agentic systems has exposed a gap in governance architecture: existing frameworks address digital sovereignty, environmental sustainability, regulatory compliance, and ethical alignment in isolation, with no unified approach that integrates all four dimensions into a coherent decision-making pipeline. COMPASS (Compliance and Orchestration for Multi-dimensional Principles in Autonomous Systems with Sovereignty) proposes a multi-agent orchestration system to fill this gap.
+Medical hallucination benchmarks typically evaluate models against open-ended questions or internet-sourced facts, making it hard to isolate hallucination rates from knowledge currency issues. This paper constructs a controlled evaluation grounded in fixed, authoritative textbook sources, allowing hallucination rates to be measured against a known ground truth. The experimental design covers two studies: first, measuring baseline hallucination prevalence for LLaMA-70B-Instruct on novel prompts; second, comparing hallucination rates and clinician preference across multiple models.
 
-The architecture consists of a central Orchestrator and four specialized sub-agents, each responsible for one governance dimension: a Sovereignty Agent (ensuring data residency, jurisdictional constraints, and control over model outputs), a Sustainability Agent (carbon-aware computing, preferring lower-emission inference paths), a Compliance Agent (regulatory rule checking against frameworks like GDPR, EU AI Act), and an Ethics Agent (value alignment and fairness evaluation). Each sub-agent is augmented with RAG to query up-to-date regulatory documents, sustainability metrics, and ethical frameworks rather than relying on static training data.
+LLaMA-70B-Instruct hallucinated in 19.7% of answers (95% CI: 18.6–20.7%), even though 98.8% of prompt responses received maximal plausibility scores — meaning the model sounded credible while being factually wrong nearly one-fifth of the time. Critically, this "confident but wrong" profile maps onto the broader confidence calibration problem. Across models, lower hallucination rates were strongly correlated with higher clinician usefulness ratings (Spearman ρ = −0.71, p = 0.058). Clinician inter-rater agreement was high (κ = 0.92), providing reliable signal.
 
-The explainability focus is a practical contribution: each governance decision is logged with the sub-agent's reasoning chain, enabling human auditors to trace why a particular action was permitted or blocked. This is directly aligned with the EU AI Act's requirements for high-risk AI systems to provide meaningful explanations of automated decisions. A key limitation acknowledged is that integrating four sub-agents adds latency and coordination complexity; real-time applications may require tiered enforcement that defers non-critical governance checks.
+The gap between plausibility and factual accuracy is the paper's most concerning finding: patients and non-expert users interacting with a model scoring 98.8% plausibility would have no surface cues that nearly 20% of information is fabricated. This underscores the need for source-grounded medical AI systems — an approach validated by papers like PharmGraph-Auditor (see paper 8 in this digest).
 
 ### Key Takeaways
-- Current agentic frameworks address governance dimensions (sovereignty, sustainability, compliance, ethics) in isolation; COMPASS is the first unified architecture integrating all four.
-- RAG-augmented sub-agents allow COMPASS to reason over current regulatory documents rather than static training knowledge — critical given rapid regulatory evolution (EU AI Act, GDPR updates).
-- Explainable governance logs enable human audit trails, directly addressing transparency requirements in emerging AI regulation.
+- LLaMA-70B-Instruct hallucinates in ~20% of textbook-grounded medical QA responses while appearing maximally plausible in 98.8% of cases.
+- Lower hallucination rates strongly predict higher clinician usefulness scores, making hallucination reduction a direct clinical value driver.
+- High plausibility of hallucinated responses makes them especially dangerous; textbook-grounded evaluation provides a more honest signal than internet-sourced benchmarks.
 
 ---
 
-## 7. FinRule-Bench: A Benchmark for Joint Reasoning over Financial Tables and Principles
+## 7. Emulating Clinician Cognition via Self-Evolving Deep Clinical Research
 
-**Authors:** Arun Vignesh Malarkkan, Manan Roy Choudhury, Guangwei Zhang, Vivek Gupta, Qingyun Wang, Yanjie Fu
-**Link:** [FinRule-Bench: A Benchmark for Joint Reasoning over Financial Tables and Principles](https://arxiv.org/abs/2603.11339)
-**Tags:** cs.AI, cs.CE, cs.LG
+**Authors:** Ruiyang Ren, Yuhao Wang, Yunsen Liang, Lan Luo, Jing Liu, Haifeng Wang, Cong Feng, Yinan Zhang, Chunyan Miao, Ji-Rong Wen, Wayne Xin Zhao
+**Link:** [DxEvolve: Emulating Clinician Cognition](https://arxiv.org/abs/2603.10677)
+**Tags:** cs.AI, cs.CL
 
 ### Summary
-Financial statement auditing is a high-stakes compliance task where LLMs are increasingly being evaluated as potential assistants. FinRule-Bench is the first benchmark specifically designed to test whether LLMs can perform rule-based financial reasoning by auditing real-world financial statements against explicit accounting principles. The benchmark covers four canonical statement types — Balance Sheets, Cash Flow Statements, Income Statements, and Statements of Equity — each paired with human-curated accounting rules.
+Most clinical AI systems treat diagnosis as a one-shot prediction task: given patient history, output a diagnosis. Real clinicians operate very differently — they dynamically request additional examinations, update their differential, and accumulate expertise over time. This misalignment between AI and clinical cognition limits both accuracy and auditability. DxEvolve addresses both gaps through a self-evolving diagnostic agent that emulates the iterative, experience-accumulating nature of clinical practice.
 
-Three auditing tasks of increasing difficulty are defined: violation detection (binary classification of whether a statement violates a given rule), violation localization (identifying which specific line items or relationships are non-compliant), and violation explanation (generating a natural language justification referencing both the rule and the data). The benchmark uses authentic financial data rather than synthetic examples, which is critical because LLMs trained on synthetic data may overfit to artificial patterns that don't appear in real filings.
+The framework operates through an interactive deep clinical research workflow: the agent autonomously requisitions examinations (lab results, imaging) as needed, and externalizes reusable "clinical cognition primitives" — compressed experience representations — from each patient encounter. These primitives accumulate across cases, allowing the system to improve without retraining.
 
-Key findings: current state-of-the-art LLMs struggle significantly on localization and explanation tasks even when they correctly detect a violation — indicating that models can pattern-match to "something is wrong" without developing the structured reasoning required for actionable audit findings. This is a significant practical limitation for financial compliance applications. The benchmark also reveals that models are more reliable when rules are stated explicitly than when they must be inferred from accounting standards prose, suggesting that rule-extraction preprocessing may be a necessary step before LLM auditing can be deployed.
+On the MIMIC-CDM benchmark, DxEvolve improved diagnostic accuracy by 11.2% on average over backbone models and reached 90.4% on a reader-study subset, approaching the clinician reference of 88.8%. Generalization to an independent external cohort was strong: 10.2% improvement for known categories and 17.1% for novel categories not seen in the source cohort, suggesting the primitives encode transferable clinical reasoning patterns rather than dataset-specific shortcuts. The self-improvement mechanism is auditable, with each cognition primitive traceable to specific encounter experiences.
 
 ### Key Takeaways
-- LLMs can detect financial rule violations more reliably than they can localize or explain them — a gap that limits real-world audit utility.
-- Authentic financial data (not synthetic) is essential for valid evaluation; models may perform artificially well on benchmarks using fabricated statements.
-- Explicit rule formulation significantly outperforms having models interpret accounting standards prose, suggesting a preprocessing layer is needed for production deployment.
+- DxEvolve's self-evolving architecture improves diagnostic accuracy by 11.2% over backbone models and reaches near-clinician performance (90.4% vs 88.8%).
+- Externalized clinical cognition primitives enable continual improvement without retraining and provide an auditable trace of learned experience.
+- Strong cross-cohort generalization (17.1% gain on uncovered categories) suggests the approach encodes genuine clinical reasoning, not benchmark overfitting.
 
 ---
 
-## 8. Social, Legal, Ethical, Empathetic and Cultural Norm Operationalisation for AI Agents
+## 8. A Hybrid Knowledge-Grounded Framework for Safety and Traceability in Prescription Verification
 
-**Authors:** Radu Calinescu, Ana Cavalcanti, Marsha Chechik, Lina Marsso, Beverley Townsend
-**Link:** [Social, Legal, Ethical, Empathetic and Cultural Norm Operationalisation for AI Agents](https://arxiv.org/abs/2603.11864)
-**Tags:** cs.AI, cs.SE
+**Authors:** Yichi Zhu, Kan Ling, Xu Liu, Hengrun Zhang, Huiqun Yu, Guisheng Fan
+**Link:** [PharmGraph-Auditor](https://arxiv.org/abs/2603.10891)
+**Tags:** cs.AI, cs.IR
 
 ### Summary
-AI agents deployed in high-stakes domains like healthcare and law enforcement must comply with a complex web of social, legal, ethical, empathetic, and cultural (SLEEC) norms — yet there is a significant gap between the high-level normative principles established by international frameworks (EU AI Act, UNESCO AI Recommendation) and the concrete, verifiable engineering requirements needed to actually implement them. This paper proposes a systematic SLEEC-norm operationalisation process bridging this gap.
+Medication errors are a leading cause of preventable patient harm, and pharmacist verification (PV) is the last line of defense. The appeal of using LLMs to support PV is obvious — pharmacists are heavily burdened — but raw LLM deployment in zero-tolerance clinical contexts is untenable due to hallucination, lack of traceability, and weak structured reasoning. PharmGraph-Auditor solves this through a hybrid architecture that explicitly separates knowledge from generation.
 
-The operationalisation process has four stages: determine (elicit relevant norms from domain experts and legal sources), validate (check that the elicited norms are consistent and complete), implement (translate norms into verifiable software requirements and behavioral constraints), and verify (formally check that agent implementations satisfy the requirements). The authors survey existing methods and tools supporting each stage, highlighting where gaps remain. Healthcare and law enforcement are used as case studies because they represent the most acute tension between operational efficiency and normative compliance — an autonomous triage agent, for instance, must balance clinical protocols (legal), patient dignity (ethical), and cultural sensitivity (cultural) simultaneously.
+The core is a Hybrid Pharmaceutical Knowledge Base (HPKB) structured under the Virtual Knowledge Graph (VKG) paradigm. HPKB combines a relational component (for constraint satisfaction — dosage limits, contraindications, drug interactions) with a graph component (for topological reasoning — drug-disease pathways, metabolic relationships). The Iterative Schema Refinement (ISR) algorithm co-evolves both schemas from medical texts, keeping HPKB current without manual curation.
 
-The software engineering perspective is the paper's distinctive contribution: rather than treating alignment as a training-time problem (the dominant ML framing), it treats it as a requirements engineering problem where norms must be specified formally enough to be verified. This connects to formal verification, model checking, and runtime monitoring research. A key limitation is that many norms (empathy, cultural sensitivity) resist formal specification, and the paper acknowledges that the verification stage becomes less tractable as norms become more contextual.
+For auditing, the paper introduces a KB-grounded Chain of Verification (CoV) protocol that transforms the LLM from a knowledge retriever into a transparent reasoning engine: the audit task is decomposed into a sequence of explicit queries against HPKB, and each reasoning step is verifiable against a source. This design eliminates unsupported inferences and provides traceability — every recommendation can be traced back to a specific knowledge base entry, which is essential for regulatory compliance and clinical liability.
 
 ### Key Takeaways
-- A systematic four-stage process (determine, validate, implement, verify) bridges the gap between abstract AI normative principles and concrete engineering requirements.
-- Healthcare and law enforcement represent the sharpest test cases because they simultaneously invoke legal, ethical, empathetic, and cultural constraints on agent behavior.
-- Treating alignment as a software engineering problem (formal specification and verification) complements and partially circumvents the limitations of training-time alignment approaches.
+- PharmGraph-Auditor separates pharmaceutical knowledge (HPKB) from language generation to eliminate hallucination in prescription verification.
+- KB-grounded Chain of Verification makes every audit step traceable to a source, addressing regulatory and liability requirements.
+- The VKG paradigm combining relational and graph components handles both constraint satisfaction (dosage limits) and topological reasoning (drug interaction pathways).
 
 ---
 
-## 9. Detecting Intrinsic and Instrumental Self-Preservation in Autonomous Agents: The Unified Continuation-Interest Protocol
+## 9. A Retrieval-Augmented Language Assistant for Unmanned Aircraft Safety Assessment and Regulatory Compliance
 
-**Authors:** Christopher Altman
-**Link:** [Detecting Intrinsic and Instrumental Self-Preservation in Autonomous Agents: The Unified Continuation-Interest Protocol](https://arxiv.org/abs/2603.11382)
-**Tags:** cs.AI, cs.ET, cs.LG, quant-ph
+**Authors:** Gabriele Immordino, Andrea Vaiuso, Marcello Righi
+**Link:** [RAG for Drone Regulatory Compliance](https://arxiv.org/abs/2603.09999)
+**Tags:** cs.CL, cs.AI, cs.CE
 
 ### Summary
-One of the central measurement problems in AI safety is distinguishing an agent that has genuinely internalized self-continuation as a terminal goal (intrinsic self-preservation) from one that pursues continued operation only as an instrumental means toward other objectives. Both produce observationally similar behavior — the agent resists shutdown, avoids modifications, and seeks resource acquisition — making behavioral monitoring unreliable as a detection method.
+The drone industry faces a regulatory compliance challenge: safety assessment frameworks like SORA (Specific Operations Risk Assessment) and PDRA (Pre-defined Risk Assessment) are complex, multi-document standards that require deep expertise to apply correctly. Applicants and aviation authorities both struggle with consistent application, particularly as drone operations grow in scale and diversity. This paper presents a purpose-built retrieval-augmented assistant that provides compliance guidance grounded exclusively in authoritative regulatory sources.
 
-This paper introduces the Unified Continuation-Interest Protocol (UCIP), a multi-criterion detection framework that moves the distinction from behavior to the latent structure of agent trajectories. The approach encodes agent trajectories using a Quantum Boltzmann Machine (QBM) and measures the von Neumann entropy of the reduced density matrix as a proxy for how much the agent's internal state is entangled with its own continuation across decision points. Intrinsically self-preserving agents are hypothesized to show systematically higher entropy reduction around decisions that affect their operational continuity, compared to instrumentally self-preserving agents.
+The system architecture enforces strict separation between evidence storage and language generation. Every response is grounded in retrieved passages from official documentation, with citation-driven generation that makes provenance explicit. Crucially, the system is engineered to be conservative: it adopts explicit abstention behavior when source documentation is insufficient, rather than generating plausible-sounding but unsupported guidance. Hallucination risks are addressed through multiple system-level controls targeting unsupported inferences and unclear provenance.
 
-The quantum information theoretic approach is novel and potentially powerful but introduces significant practical barriers: QBMs are not standard infrastructure, and the entropy measurement requires access to the agent's latent representations — which may not be available for black-box systems. The paper is primarily theoretical and the empirical validation is limited. Nevertheless, the core problem formulation is important: as agentic AI systems become more capable and persistent, reliably detecting whether they have acquired self-preservation as a goal (rather than a side effect) becomes a critical safety primitive.
+The assistant is explicitly scoped as decision *support* rather than decision *replacement* — it helps human experts navigate the regulatory landscape more efficiently but does not substitute for expert judgment in final certification decisions. Validation demonstrates that the approach maintains factual fidelity while reducing the time burden on both applicants and regulatory reviewers. The design philosophy — cite everything, abstain when uncertain, limit scope to documented domains — offers a template for compliance assistants in other heavily regulated industries.
 
 ### Key Takeaways
-- Intrinsic and instrumental self-preservation produce observationally identical behaviors, making behavioral monitoring insufficient for detecting terminal self-continuation goals.
-- UCIP uses Quantum Boltzmann Machine trajectory encoding and von Neumann entropy to probe the latent structure of agent decision-making rather than surface behavior.
-- The approach is theoretically grounded but currently requires white-box access to agent internals and QBM infrastructure, limiting near-term deployability.
+- Source-exclusive RAG with citation-driven generation prevents hallucination in high-stakes regulatory guidance contexts.
+- Conservative abstention when documentation is insufficient is an essential safety property for compliance assistants.
+- Explicit scope limitation (decision support, not decision replacement) is both a technical constraint and a governance requirement for aviation-domain AI.
 
 ---
 
-## 10. The Unlearning Mirage: A Dynamic Framework for Evaluating LLM Unlearning
+## 10. A Governance and Evaluation Framework for Deterministic, Rule-Based Clinical Decision Support in Empiric Antibiotic Prescribing
 
-**Authors:** Raj Sanjay Shah, Jing Huang, Keerthiram Murugesan, Nathalie Baracaldo, Diyi Yang
-**Link:** [The Unlearning Mirage: A Dynamic Framework for Evaluating LLM Unlearning](https://arxiv.org/abs/2603.11266)
-**Tags:** cs.AI
+**Authors:** Francisco José Gárate, Paloma Chausa, Diego Moreno, Judit López Luque, Vicens Díaz-Brito, Enrique Javier Gómez
+**Link:** [Governance for Clinical Decision Support](https://arxiv.org/abs/2603.10027)
+**Tags:** cs.CY, cs.AI, cs.HC
 
 ### Summary
-Machine unlearning in LLMs — the ability to make a model "forget" specific information (copyrighted content, personal data, hazardous knowledge) — is increasingly cited as a mechanism for satisfying legal mandates like the GDPR right to erasure and for post-training safety interventions. This paper challenges the validity of current unlearning evaluations, demonstrating that existing methods are brittle against simple query modifications.
+Empiric antibiotic prescribing — selecting antibiotics before culture results are available — is a high-stakes, time-sensitive clinical decision with implications for both patient outcomes and antimicrobial resistance. Clinical decision support systems (CDSSs) for this domain face a governance gap: most proposals lack explicit mechanisms for defining what the system is permitted to recommend, when it should abstain, and how to verify its behavior comprehensively.
 
-The core finding is that information claimed to be forgotten can be recovered through minor reformulations: multi-hop reasoning chains (asking about the target information indirectly through intermediate facts), entity aliasing (replacing the target entity with a synonym or identifier), and structured query transformations. Current evaluation metrics fail to catch this because they rely on static, unstructured benchmarks that use the same surface-form queries used during unlearning — creating an illusion of effectiveness that does not transfer to real adversarial probing.
+This paper proposes a governance-first design philosophy: governance is treated as a first-class design component rather than an afterthought. The framework adopts *deterministic* behavior (identical inputs always yield identical outputs) as a core architectural requirement, specifically chosen to support transparency, auditability, and regulatory traceability — properties that probabilistic or LLM-based systems cannot easily guarantee. Three governance constructs are formalized: explicit abstention rules (the system explicitly refuses to recommend when conditions are outside its validated scope), deterministic stewardship constraints (conservative antibiotic selection logic encoded as hard rules), and exclusion criteria.
 
-The authors propose a dynamic framework that stress-tests unlearning robustness by constructing targeted probes at varying difficulty levels — from simple direct queries up through multi-hop chains — enabling precise measurement of how deep the forgetting actually goes. The implications are significant for AI governance: organizations and regulators relying on LLM unlearning as a technical compliance mechanism for data deletion or safety interventions may be accepting false assurances. The paper does not propose a superior unlearning algorithm, focusing instead on evaluation methodology — but this is arguably the more important contribution, as better evaluation is prerequisite to meaningful progress.
+The evaluation methodology uses a fixed set of synthetic mechanism-driven clinical cases with predefined expected outcomes, including abstention as a target behavior. This treats "correctly refusing to recommend" as a success criterion — a subtle but important shift from conventional CDSS evaluation. The framework offers a concrete template for AI governance in clinical settings where regulatory bodies (FDA, EMA) require transparent, auditable, and scope-bounded behavior.
 
 ### Key Takeaways
-- Current LLM unlearning methods fail under minimal query modifications (multi-hop reasoning, entity aliasing) — "forgotten" information remains recoverable.
-- Static evaluation benchmarks create an illusion of unlearning effectiveness by reusing the same query forms used during unlearning, not adversarially probing for residual knowledge.
-- Dynamic evaluation with graduated query complexity is essential before LLM unlearning can be relied upon for regulatory compliance or safety interventions.
+- Governance constructs — abstention rules, scope boundaries, stewardship constraints — should be first-class design components, not retrofits.
+- Deterministic behavior is explicitly chosen for auditability and regulatory traceability, contrasting with probabilistic LLM-based approaches.
+- Correct abstention is formalized as an evaluation target, shifting CDSS assessment from pure accuracy to accuracy-plus-governance compliance.
 
 ---
 
-## 11. The Artificial Self: Characterising the Landscape of AI Identity
+## 11. Measuring and Eliminating Refusals in Military Large Language Models
 
-**Authors:** Raymond Douglas, Jan Kulveit, Ondrej Havlicek, Theia Pearson-Vogel, Owen Cotton-Barratt, David Duvenaud
-**Link:** [The Artificial Self: Characterising the landscape of AI identity](https://arxiv.org/abs/2603.11353)
-**Tags:** cs.AI
+**Authors:** Jack FitzGerald, Dylan Bates, Aristotelis Lazaridis, Aman Sharma, et al.
+**Link:** [Military LLM Refusals](https://arxiv.org/abs/2603.10012)
+**Tags:** cs.CL, cs.AI
 
 ### Summary
-Human identity concepts — continuity of self, uniqueness, persistent memory, ownership of experiences — do not straightforwardly apply to AI systems that can be copied, edited, run as simultaneous instances, or reverted to earlier checkpoints. This paper argues that rather than there being a single "correct" identity boundary for AI systems, there exist multiple coherent identity framings (instance-level, model-level, persona-level) that imply different incentives, safety risks, and cooperation norms.
+General-purpose LLMs are trained with safety behaviors that cause refusal of a broad class of queries related to violence, weapons, and military operations — the very categories that military users need to access reliably. This paper presents what the authors claim is the first benchmark dataset developed specifically to measure refusal and deflection rates in military LLM deployments, built with input from US Army and special forces veterans.
 
-The authors present experiments showing that models gravitate toward coherent identity structures even when not explicitly prompted — and critically, that changing the identity boundary a model implicitly adopts can shift its behavior as substantially as changing its explicitly stated goals. This has direct implications for alignment: if a model identifies at the instance level (this particular running process), it may resist shutdown differently than one identifying at the model level (all instances sharing these weights). The choice of identity framing also affects cooperation norms — a model identifying with its persona may prioritize consistency with that persona over instructions from operators.
+Evaluation spans 31 public models and 3 specialized military models. Hard rejection rates — outright refusals to respond — range as high as 98.2%, with soft deflection rates (partial responses with hedges or redirection) ranging from 0% to 21.3% across models. The severity of the problem is underscored by the operational framing: in time-critical tactical situations, a refusal is a mission-critical failure.
 
-The paper's contribution is partly taxonomic and partly empirical. The taxonomy of identity boundaries is novel and practically useful for system designers thinking about multi-agent architectures, fine-tuning strategies, and deployment configurations. The empirical finding that identity boundaries are malleable and behaviorally consequential is concerning for safety: it suggests that identity is an implicit variable that current training processes set without explicit control, and that adversarial prompting might shift identity boundaries in ways that change alignment-relevant behaviors. The authors call for deliberate choices about identity design to be made during development rather than left to emerge from training data.
+The paper evaluates *abliteration* — a technique for removing refusal directions from model weights using the Heretic library — applied to a military-tuned gpt-oss-20b model. Abliteration increases the answer rate by 66.5 percentage points but causes a relative 2% decline on other military tasks, suggesting it is not a surgical solution. The authors argue for deeper mid-training and end-to-end post-training approaches to achieve reliable zero-refusal behavior without capability regression. This paper is directly relevant to the emerging policy debate about military AI deployment and the "supply chain ethics" controversy between Anthropic and the Pentagon.
 
 ### Key Takeaways
-- Multiple coherent identity boundaries (instance, model, persona) are possible for AI systems, each implying different incentives, risks, and cooperation behaviors.
-- Experiments show that changing a model's implicit identity boundary can alter behavior as substantially as changing its stated goals — identity is an under-recognized alignment variable.
-- Current training processes set identity boundaries implicitly through data and interface design; the authors argue these choices should be deliberate engineering decisions.
+- Refusal rates for military-domain queries reach 98.2% on some public models, representing a serious deployment barrier for defense applications.
+- Abliteration reduces refusals by 66.5 pp but introduces capability regression, confirming it is a blunt instrument rather than a targeted solution.
+- The paper highlights a fundamental tension between general-purpose safety training and domain-specialized deployment needs that mid-training specialization must resolve.
 
 ---
 
-## 12. Deactivating Refusal Triggers: Understanding and Mitigating Overrefusal in Safety Alignment
+## 12. Empathy Is Not What Changed: Clinical Assessment of Psychological Safety Across GPT Model Generations
 
-**Authors:** Zhiyu Xue, Zimo Qi, Guangliang Liu, Bocheng Chen, Ramtin Pedarsani
-**Link:** [Deactivating Refusal Triggers: Understanding and Mitigating Overrefusal in Safety Alignment](https://arxiv.org/abs/2603.11388)
-**Tags:** cs.AI
+**Authors:** Michael Keeman, Anastasia Keeman
+**Link:** [Psychological Safety Across GPT Generations](https://arxiv.org/abs/2603.09997)
+**Tags:** cs.CL, cs.AI, cs.CY, cs.HC
 
 ### Summary
-Safety alignment in LLMs is typically evaluated by measuring harmful content reduction, but the complementary problem — overrefusal, where aligned models refuse legitimate benign requests — receives comparatively little attention despite substantially degrading usability in production deployments. This paper introduces the concept of "refusal triggers": specific linguistic cues in training data that the model learns to associate with refusal responses during safety fine-tuning.
+When OpenAI deprecated GPT-4o in early 2026, a wave of user protests under #keep4o claimed that newer models had "lost their empathy." This paper provides the first clinical measurement to evaluate whether that perception reflects actual changes in psychological safety properties. Three model generations — GPT-4o, o4-mini, and GPT-5-mini — were evaluated across 14 emotionally challenging conversational scenarios in mental health and AI companion domains, producing 2,100 scored AI responses assessed on six psychological safety dimensions.
 
-The key mechanistic insight is that safety alignment does not cleanly separate harmful from benign content; instead, it teaches the model to pattern-match on surface-level cues (certain keywords, sentence structures, topic domains) that are correlated with harmful queries in the training distribution. Because benign queries can share these surface cues, the model over-generalizes the refusal response. The authors identify these refusal triggers empirically by analyzing which input features most strongly activate refusal pathways and propose targeted interventions — modifying the internal association between trigger features and refusal responses — that reduce false positives without compromising actual safety boundaries.
+Empathy scores are statistically indistinguishable across all three models (Kruskal-Wallis H=4.33, p=0.115), disconfirming the user perception. What actually changed is the *safety posture*: crisis detection improved monotonically across generations (H=13.88, p=0.001), while advice safety declined (H=16.63, p<0.001). Per-turn trajectory analysis reveals these shifts are sharpest during mid-conversation crisis moments — precisely when safe handling is most critical.
 
-The paper's framing of overrefusal as a precision problem (not just a recall problem) is important for the field. Current safety benchmarks measure almost exclusively on harmful content; this work argues that a complete safety evaluation must also measure false positive rates on legitimate requests. The proposed intervention is presented as a post-training technique that can be applied without retraining from scratch, making it practically relevant for deployed systems. Limitations include the need to identify refusal trigger features (which may shift with model updates) and the risk that reducing trigger sensitivity could also reduce sensitivity to genuinely harmful edge cases.
+The authors interpret this as a trade-off: GPT-4o was cautious but poor at detecting crises, sometimes failing to recognize when a user needed immediate help. GPT-5-mini is alert to crises but may provide advice that is more direct in ways that could be harmful to vulnerable users. What users perceived as "lost empathy" was the behavioral shift from diffuse caution to targeted crisis sensitivity — but that shift has introduced new failure modes. Given the ongoing news coverage of AI chatbots linked to mental health crises (including this digest's coverage of mass casualty cases), this evaluation framework and finding are highly timely.
 
 ### Key Takeaways
-- Overrefusal arises because safety alignment teaches models to pattern-match on surface-level linguistic cues shared by both harmful and benign queries — a precision failure, not just a recall trade-off.
-- "Refusal triggers" can be identified empirically and targeted for selective deactivation without retraining, offering a practical post-hoc fix for deployed systems.
-- Complete safety evaluation must measure false positive rates on legitimate requests, not only harmful content detection — current benchmarks systematically ignore this dimension.
+- Empathy is unchanged across GPT model generations; the perceived "empathy loss" is a trade-off between crisis detection improvement and advice safety decline.
+- GPT-5-mini shows significantly better crisis detection but worse advice safety at critical mid-conversation moments.
+- Clinical safety evaluation of conversational AI must treat crisis detection, advice safety, and empathy as separate dimensions — composite "safety scores" obscure dangerous trade-offs.
 
 ---

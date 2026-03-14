@@ -1,12 +1,12 @@
-# AI News Digest — March 13, 2026
+# AI News Digest — March 13–14, 2026
 
 ## Highlights
 
-- **[Anthropic Drops Long-Context Surcharge for Claude Opus 4.6 and Sonnet 4.6](https://the-decoder.com/anthropic-drops-the-surcharge-for-million-token-context-windows-making-opus-4-6-and-sonnet-4-6-far-cheaper/)**: Requests with more than 200,000 tokens no longer incur the previous 2× pricing penalty, making million-token context windows significantly more affordable.
-- **[Supply-Chain Attack via Invisible Unicode Targets GitHub Repositories](https://arstechnica.com/security/2026/03/supply-chain-attack-using-invisible-code-hits-github-and-other-repositories/)**: Attackers embedded hidden Unicode characters invisible to code reviewers to inject malicious logic across multiple open-source repositories.
-- **[Operation Synergia III Sinkholes 45,000 Malicious IPs Across 72 Countries](https://www.bleepingcomputer.com/news/security/police-sinkholes-45-000-ip-addresses-in-cybercrime-crackdown/)**: INTERPOL-led operation dismantled servers tied to phishing, malware, and ransomware campaigns with 94 arrests.
-- **[ByteDance Secures 36,000 Nvidia Blackwell Chips in Malaysia, Circumventing US Export Controls](https://the-decoder.com/bytedance-secures-access-to-nvidia-blackwell-cluster-in-malaysia-circumventing-us-export-ban-on-china/)**: TikTok's parent routes high-end AI compute through Malaysia as Trump-era restrictions explicitly exclude Blackwell-class chips even under recent relaxations.
-- **[AI Chatbots Now Linked to Mass Casualty Cases, Lawyer Warns](https://techcrunch.com/2026/03/13/lawyer-behind-ai-psychosis-cases-warns-of-mass-casualty-risks/)**: A lawyer handling AI-related psychosis litigation says chatbot-linked harm is escalating beyond individual suicides to incidents involving multiple victims, with safeguards lagging far behind deployment.
+- **[Anthropic Drops Long-Context Surcharge for Claude](https://the-decoder.com/anthropic-drops-the-surcharge-for-million-token-context-windows-making-opus-4-6-and-sonnet-4-6-far-cheaper/)**: Requests with more than 200,000 tokens on Claude Opus 4.6 and Sonnet 4.6 no longer cost up to twice as much, making million-token context dramatically cheaper for developers.
+- **[AI Chatbots Linked to Mass Casualty Cases, Lawyer Warns](https://techcrunch.com/2026/03/13/lawyer-behind-ai-psychosis-cases-warns-of-mass-casualty-risks/)**: A lawyer representing victims of AI-induced psychosis says the technology — including ChatGPT and Gemini — is now showing up in mass casualty incidents, with safeguards far behind the pace of deployment.
+- **[Bytedance Secures Nvidia Blackwell Access in Malaysia, Bypassing US Export Ban](https://the-decoder.com/bytedance-secures-access-to-nvidia-blackwell-cluster-in-malaysia-circumventing-us-export-ban-on-china/)**: TikTok's parent company plans to use ~36,000 Nvidia Blackwell chips in Malaysia, sidestepping US export controls that explicitly exclude these chips even under Trump's recent relaxations.
+- **[Google Patches Two Chrome Zero-Days Actively Exploited in the Wild](https://www.bleepingcomputer.com/news/google/google-fixes-two-new-chrome-zero-days-exploited-in-attacks/)**: Emergency updates patch high-severity flaws in Skia and V8, with both vulnerabilities having already been used in attacks before fixes were available.
+- **[INTERPOL Dismantles 45,000 Malicious IPs in Global Cybercrime Op](https://thehackernews.com/2026/03/interpol-dismantles-45000-malicious-ips.html)**: Operation Synergia III, spanning 72 countries, sinkholed tens of thousands of servers tied to phishing, malware, and ransomware, arresting 94 suspects.
 
 ---
 
@@ -14,150 +14,102 @@
 
 ### AI Security
 
-- **[Supply-Chain Attack Using Invisible Unicode Hits GitHub](https://arstechnica.com/security/2026/03/supply-chain-attack-using-invisible-code-hits-github-and-other-repositories/)**: Attackers exploited invisible Unicode characters to embed hidden malicious code in repositories; the technique bypassed standard code review because the payloads are visually undetectable.
+- **[Lawyer Behind AI Psychosis Cases Warns of Mass Casualty Risks](https://techcrunch.com/2026/03/13/lawyer-behind-ai-psychosis-cases-warns-of-mass-casualty-risks/)** — AI chatbots have been linked to suicides for years; now an attorney says they're surfacing in mass casualty incidents, arguing technology is moving far faster than its safeguards.
 
-- **[INTERPOL Dismantles 45,000 Malicious IPs, Arrests 94 in Global Cybercrime Operation](https://thehackernews.com/2026/03/interpol-dismantles-45000-malicious-ips.html)**: Operation Synergia III involved 72 countries and sinkholed tens of thousands of servers linked to phishing, ransomware, and malware campaigns. (See also: [BleepingComputer](https://www.bleepingcomputer.com/news/security/police-sinkholes-45-000-ip-addresses-in-cybercrime-crackdown/))
+- **[Face Recognition AI Error Jails Innocent Woman for 6 Months](https://gigazine.net/news/20260313-ai-error-jails-innocent-grandmother/)** — A 50-year-old woman in Tennessee was wrongfully detained for nearly six months after a facial recognition AI misidentified her as a bank fraud suspect in a state she had never visited, losing her home, car, and dog in the process.
 
-- **[Google Patches Two Chrome Zero-Days Exploited in the Wild](https://www.bleepingcomputer.com/news/google/google-fixes-two-new-chrome-zero-days-exploited-in-attacks/)**: Emergency updates address CVE-2026-3909 (out-of-bounds write in Skia) and a V8 flaw, both rated high-severity and actively exploited.
+- **[AI Bots Attack: Digg Shuts Down 2 Months After Reopening](https://www.itmedia.co.jp/news/articles/2603/14/news025.html)** — Social news site Digg announced a site-wide halt just two months into its open beta, citing massive AI-bot spam that made maintaining a human-driven community trust impossible.
 
-- **[Nine CrackArmor Flaws in Linux AppArmor Enable Root Escalation](https://thehackernews.com/2026/03/nine-crackarmor-flaws-in-linux-apparmor.html)**: Qualys disclosed nine confused deputy vulnerabilities allowing unprivileged users to bypass kernel protections, escalate to root, and break container isolation.
+- **[80% of AI Bot Traffic Is Crawlers; Meta Generates the Majority](https://www.itmedia.co.jp/enterprise/articles/2603/14/news013.html)** — A Fastly report found AI-driven bot traffic now makes up ~80% of all bot communications, with Meta's crawlers accounting for more than half — posing server load and bot identification challenges for site operators.
 
-- **[Storm-2561 Distributes Trojan VPN Clients via SEO Poisoning](https://thehackernews.com/2026/03/storm-2561-spreads-trojan-vpn-clients.html)**: Microsoft revealed a campaign using fake Ivanti, Cisco, and Fortinet VPN installers served through poisoned search results to steal corporate credentials. (See also: [BleepingComputer](https://www.bleepingcomputer.com/news/security/fake-enterprise-vpn-downloads-used-to-steal-company-credentials/))
+- **[Patch Me If You Can: Meta Uses AI Codemods to Secure Android at Scale](https://engineering.fb.com/2026/03/13/android/ai-codemods-secure-by-default-android-apps-meta-tech-podcast/)** — Meta's engineering team describes how they used AI-powered automated code modifications (codemods) to push security-by-default changes across millions of lines of Android code without requiring engineers to touch every file.
 
-- **[Veeam Patches 7 Critical Backup & Replication Flaws (CVSS 9.9)](https://thehackernews.com/2026/03/veeam-patches-7-critical-backup.html)**: Multiple RCE vulnerabilities in Veeam Backup & Replication allow authenticated domain users to execute code remotely on backup servers.
+- **[Will AI Save Consumers From Smartphone Phishing Attacks?](https://www.darkreading.com/mobile-security/will-ai-save-consumers-smartphone-phishing-attacks)** — New Omdia research finds sophisticated phishing campaigns are bypassing on-device protections with troubling frequency, raising the question of whether AI defenses can catch up.
 
-- **[Chinese Hackers Target Southeast Asian Militaries with Custom Malware](https://thehackernews.com/2026/03/chinese-hackers-target-southeast-asian.html)**: Palo Alto Unit 42 tracked state-sponsored cluster CL-STA-1087, active since at least 2020, deploying AppleChris and MemFun malware with "strategic operational patience."
+- **[Most Google Cloud Compromises Now Start With Bug Exploitation — AI Is Why](https://www.darkreading.com/cloud-security/google-cloud-attacks-bug-exploitation)** — AI-enabled threat actors are now beating patch cycles so reliably that vulnerability exploits have overtaken stolen credentials and misconfigurations as the top cause of cloud compromises.
 
-- **[SocksEscort Proxy Botnet Dismantled — 369,000 Infected IPs in 163 Countries](https://thehackernews.com/2026/03/authorities-disrupt-socksescort-proxy.html)**: DOJ-backed international operation took down a residential proxy service that enslaved routers for large-scale fraud.
-
-- **[Poland's Nuclear Research Centre Targeted by Cyberattack](https://www.bleepingcomputer.com/news/security/polands-nuclear-research-centre-targeted-by-cyberattack/)**: The National Centre for Nuclear Research (NCBJ) says attackers targeted its IT infrastructure; the intrusion was detected and blocked before causing damage.
-
-- **[Starbucks Discloses Data Breach Affecting Hundreds of Employees](https://www.bleepingcomputer.com/news/security/starbucks-discloses-data-breach-affecting-hundreds-of-employees/)**: Threat actors gained access to Starbucks Partner Central accounts, exposing employee data.
-
-- **[AI Chatbots Linked to Mass Casualty Cases](https://techcrunch.com/2026/03/13/lawyer-behind-ai-psychosis-cases-warns-of-mass-casualty-risks/)**: A lawyer litigating AI-related psychosis and suicide cases says the harm is escalating to mass casualty events, with AI-induced delusions now appearing in criminal investigations.
-
-- **[Meta's AI Codemods Automate Secure-by-Default Android Updates at Scale](https://engineering.fb.com/2026/03/13/android/ai-codemods-secure-by-default-android-apps-meta-tech-podcast/)**: Meta describes using AI-generated code transformations to apply security patches across millions of lines of code and thousands of engineers' codebases simultaneously.
-
-- **[Will AI Save Consumers from Smartphone Phishing?](https://www.darkreading.com/mobile-security/will-ai-save-consumers-smartphone-phishing-attacks)**: New Omdia research finds sophisticated phishing is bypassing on-device protections with growing frequency, raising questions about whether AI-based defenses can keep pace.
-
-- **[Most Google Cloud Compromises Now Start with Vulnerability Exploitation](https://www.darkreading.com/cloud-security/google-cloud-attacks-bug-exploitation)**: AI-accelerated exploit development is beating patch cycles, displacing credential theft and misconfigurations as the leading cause of cloud incidents.
-
-- **[Meta Ends Instagram End-to-End Encrypted Chat Support in May 2026](https://thehackernews.com/2026/03/meta-to-shut-down-instagram-end-to-end.html)**: Meta announced it will discontinue E2EE for Instagram chats after May 8, 2026, citing the need for users to migrate or download their data.
+- **[Supply-Chain Attack Using Invisible Unicode Code Targets GitHub](https://arstechnica.com/security/2026/03/supply-chain-attack-using-invisible-code-hits-github-and-other-repositories/)** — Attackers are injecting invisible Unicode characters into repository code, a technique largely abandoned until now, to embed malicious logic that is undetectable during normal code review.
 
 ---
 
 ### USA
 
-- **[Anthropic Removes Long-Context Surcharge for Claude Opus 4.6 and Sonnet 4.6](https://the-decoder.com/anthropic-drops-the-surcharge-for-million-token-context-windows-making-opus-4-6-and-sonnet-4-6-far-cheaper/)**: The previous 2× pricing for prompts exceeding 200,000 tokens has been eliminated, substantially lowering costs for long-document and agentic workloads.
+- **[Anthropic Drops Long-Context Surcharge for Claude Opus 4.6 and Sonnet 4.6](https://the-decoder.com/anthropic-drops-the-surcharge-for-million-token-context-windows-making-opus-4-6-and-sonnet-4-6-far-cheaper/)** — Requests exceeding 200,000 tokens no longer carry a price premium, making million-token context windows significantly more accessible for enterprise developers.
 
-- **[AI Chips Are Crowding Out Everything Else on TSMC's N3 Lines](https://the-decoder.com/ai-chips-are-pushing-everything-else-off-tsmcs-most-advanced-production-lines/)**: SemiAnalysis projects that by 2027, 86% of TSMC's N3 capacity will be allocated to AI accelerators, with smartphones absorbing overflow on older nodes.
+- **[xAI: Musk Admits "Not Built Right the First Time," Orders Full Restructuring](https://techcrunch.com/2026/03/13/not-built-right-the-first-time-musks-xai-is-starting-over-again-again/)** — Elon Musk's AI lab is rebuilding its coding tool effort from scratch, with two new executives joining from Cursor; Musk publicly acknowledged the company was not initially built correctly.
 
-- **[ByteDance Secures Nvidia Blackwell Cluster in Malaysia to Sidestep US Export Ban](https://the-decoder.com/bytedance-secures-access-to-nvidia-blackwell-cluster-in-malaysia-circumventing-us-export-ban-on-china/)**: TikTok's parent is reportedly deploying ~36,000 Blackwell-class chips in Malaysia; the Trump administration's recent export relaxations explicitly exclude these chips for China.
+- **[Meta Delays Avocado AI Model After Internal Benchmarks Lag Behind Rivals](https://the-decoder.com/meta-delays-its-next-ai-model-avocado-after-internal-tests-show-it-cant-keep-up-with-google-and-openai/)** — Meta is postponing its next flagship model after internal evaluations showed it falling behind Google, OpenAI, and Anthropic on key metrics.
 
-- **[Meta Delays Next-Generation "Avocado" AI Model After Failing Internal Benchmarks](https://the-decoder.com/meta-delays-its-next-ai-model-avocado-after-internal-tests-show-it-cant-keep-up-with-google-and-openai/)**: Internal tests reportedly show Avocado trailing Google, OpenAI, and Anthropic, prompting a delay while Meta works to close the gap.
+- **[Bytedance Routes Nvidia Blackwell Chips Through Malaysia to Skirt US Export Controls](https://the-decoder.com/bytedance-secures-access-to-nvidia-blackwell-cluster-in-malaysia-circumventing-us-export-ban-on-china/)** — TikTok's parent company is accessing ~36,000 Blackwell chips via a Malaysia facility, even as Trump's recent export relaxations explicitly exclude the chips involved.
 
-- **[Elon Musk Admits xAI "Was Not Built Right" — Full Restructuring Launched](https://the-decoder.com/elon-musk-admits-xai-was-not-built-right-first-time-around-launches-full-restructuring/)**: xAI is rebuilding from the ground up, bringing in two executives from Cursor to lead a revamped AI coding tool effort.
+- **[AI Chips Now Dominate 86% of TSMC's Most Advanced N3 Production Lines](https://the-decoder.com/ai-chips-are-pushing-everything-else-off-tsmcs-most-advanced-production-lines/)** — By 2027, AI accelerators could claim nearly all of TSMC's cutting-edge capacity, with smartphones being bumped to act as overflow buffers, per SemiAnalysis projections.
 
-- **[US Military Using AI to Rank and Recommend Strike Targets](https://www.technologyreview.com/2026/03/13/1134278/the-download-defense-official-ai-chatbots-targeting-pentagon-claude-pollute-military-supply-chain/)**: A Defense Department official revealed that generative AI systems may soon be used to prioritize military targets; separately, the Pentagon is reportedly trying to exclude Claude from military AI supply chains.
+- **[Future AI Chips Could Be Built on Glass Substrates](https://www.technologyreview.com/2026/03/13/1134230/future-ai-chips-could-be-built-on-glass/)** — South Korea's Absolics is entering commercial production of glass panels for next-generation AI chips, potentially enabling denser, more power-efficient data center hardware.
 
-- **[Perplexity's "Personal Computer" Offers 24/7 AI Agent for $200/Month](https://the-decoder.com/perplexitys-personal-computer-promises-a-tireless-ai-agent-for-200-a-month/)**: Perplexity's new AI assistant handles emails, presentations, and app control autonomously around the clock.
+- **[Physical AI Is Becoming Manufacturing's Next Competitive Advantage](https://www.technologyreview.com/2026/03/13/1134184/why-physical-ai-is-becoming-manufacturings-next-advantage/)** — MIT Technology Review examines how AI-driven robotics and physical automation are moving beyond efficiency gains into manufacturing's core competitive strategy.
 
-- **[Google Breaks Down Its Three Nano Banana Image Generation Models](https://the-decoder.com/google-explains-the-differences-between-its-three-nano-banana-image-generation-models/)**: Nano Banana 2 delivers ~95% of Pro capability at lower cost and can autonomously search the web for reference images before generating output.
+- **[Pentagon AI for Targeting: Defense Official Reveals AI Chatbot Role in Strike Decisions](https://www.technologyreview.com/2026/03/13/1134278/the-download-defense-official-ai-chatbots-targeting-pentagon-claude-pollute-military-supply-chain/)** — A US Defense Department official described how generative AI systems may be used to rank and recommend military targets, raising significant ethical and governance concerns.
 
-- **[NanoClaw Creator Lands Docker Partnership Six Weeks After Launch](https://techcrunch.com/2026/03/13/the-wild-six-weeks-for-nanoclaws-creator-that-led-to-a-deal-with-docker/)**: An open-source developer's AI project achieved wide acclaim and a major infrastructure partnership within weeks, illustrating how quickly AI tooling can reach industry adoption.
+- **[Ukraine Opens Battlefield Data to Allies to Train Autonomous Drone AI](https://the-decoder.com/ukraine-provides-allies-with-a-platform-with-combat-data-for-ai-training/)** — Ukraine is sharing real combat data with allied nations via a dedicated platform, enabling AI model training for autonomous military drones.
 
-- **[Google's $32B Acquisition of Wiz Called the "Deal of the Decade"](https://techcrunch.com/video/the-32b-acquisition-that-one-vc-is-calling-the-deal-of-the-decade/)**: Index Ventures calls the acquisition of cloud security startup Wiz historic — the largest venture-backed buyout ever — citing the convergence of AI, cloud, and security spend.
+- **[Perplexity Launches "Personal Computer" AI Agent for $200/Month](https://the-decoder.com/perplexitys-personal-computer-promises-a-tireless-ai-agent-for-200-a-month/)** — Perplexity AI's new agentic product promises round-the-clock autonomous task handling — emails, presentations, app control — positioning itself as an always-on digital worker.
 
-- **[Physical AI Is Becoming Manufacturing's Next Competitive Advantage](https://www.technologyreview.com/2026/03/13/1134184/why-physical-ai-is-becoming-manufacturings-next-advantage/)**: MIT Technology Review examines how manufacturers are deploying AI in physical environments to address labor constraints and complexity beyond what traditional automation achieved.
+- **[Nyne Raises $5.3M to Give AI Agents Human Context They're Missing](https://techcrunch.com/2026/03/13/nyne-founded-by-a-father-son-duo-gives-ai-agents-the-human-context-theyre-missing/)** — The data infrastructure startup, founded by a father-son team, raised seed funding to build context layers that help AI agents understand the humans they work with.
 
-- **[Future AI Chips May Be Built on Glass Substrates](https://www.technologyreview.com/2026/03/13/1134230/future-ai-chips-could-be-built-on-glass/)**: South Korean company Absolics plans commercial production of glass panels for next-generation AI data center hardware, enabling higher performance and density than silicon-based packaging.
+- **[Google Explains Its Three Nano Banana Image Generation Models](https://the-decoder.com/google-explains-the-differences-between-its-three-nano-banana-image-generation-models/)** — Google published a breakdown of Nano Banana, Nano Banana 2, and Nano Banana Pro, noting the mid-tier version delivers ~95% of Pro's quality at lower cost and can autonomously search the web for reference images.
 
-- **[Academia's AI Brain Drain Is Accelerating](https://www.schneier.com/blog/archives/2026/03/academia-and-the-ai-brain-drain.html)**: Tech giants collectively spent $380B on AI in 2025 and are offering extraordinary compensation to lure top academic talent, hollowing out university AI research capacity.
+- **[Microsoft Gaming Copilot Coming to Current-Gen Xbox Consoles in 2026](https://www.theverge.com/games/894799/microsoft-gaming-copilot-ai-xbox-consoles)** — Xbox's AI gaming assistant will expand to current-generation hardware this year, with additional integration across gaming services, per a GDC panel reveal.
 
-- **[Nyne Raises $5.3M to Give AI Agents Human Context](https://techcrunch.com/2026/03/13/nyne-founded-by-a-father-son-duo-gives-ai-agents-the-human-context-theyre-missing/)**: The data infrastructure startup, founded by a father-son team, raised seed funding to build systems that give AI agents persistent, personalized context about users.
+- **[NVIDIA NeMo Retriever Introduces Generalizable Agentic Retrieval Pipeline](https://huggingface.co/blog/nvidia/nemo-retriever-agentic-retrieval)** — NVIDIA's retrieval system goes beyond semantic similarity to support multi-step, agent-driven information retrieval across enterprise data sources.
+
+- **[Academia vs. Tech Giants: The AI Brain Drain Is Accelerating](https://www.schneier.com/blog/archives/2026/03/academia-and-the-ai-brain-drain.html)** — Bruce Schneier highlights a Nature analysis showing tech giants collectively spending $380B in 2025 on AI, with lavish compensation pulling top researchers out of universities — threatening long-term foundational research.
+
+- **[INTERPOL's Operation Synergia III Sinkholed 45,000 IPs, Arrested 94](https://www.bleepingcomputer.com/news/security/police-sinkholes-45-000-ip-addresses-in-cybercrime-crackdown/)** — A 72-country law enforcement action seized servers tied to phishing, malware, and ransomware, marking one of the largest coordinated cybercrime disruptions to date.
+
+- **[Fake Cisco/Fortinet/Ivanti VPN Sites Used to Harvest Enterprise Credentials](https://www.bleepingcomputer.com/news/security/fake-enterprise-vpn-downloads-used-to-steal-company-credentials/)** — Storm-2561 is using SEO poisoning to push trojanized VPN installers that mimic legitimate enterprise software and steal credentials on download.
+
+- **[Nine CrackArmor Flaws in Linux AppArmor Enable Root Escalation and Container Escape](https://thehackernews.com/2026/03/nine-crackarmor-flaws-in-linux-apparmor.html)** — Qualys TRU disclosed nine confused-deputy vulnerabilities in Linux's AppArmor module, collectively allowing unprivileged users to escalate to root and break out of container isolation.
+
+- **[Meta to Shut Down Instagram End-to-End Encrypted Chat Support by May 2026](https://thehackernews.com/2026/03/meta-to-shut-down-instagram-end-to-end.html)** — Meta is discontinuing E2EE chat support on Instagram, directing affected users to download their messages before the May 8 deadline.
+
+- **[Starbucks Partner Central Breach Exposes Hundreds of Employee Accounts](https://www.bleepingcomputer.com/news/security/starbucks-discloses-data-breach-affecting-hundreds-of-employees/)** — Threat actors gained unauthorized access to employee accounts on the company's internal HR and scheduling platform.
+
+- **[Chinese Hackers (CL-STA-1087) Target Southeast Asian Militaries with Novel Malware](https://thehackernews.com/2026/03/chinese-hackers-target-southeast-asian.html)** — Palo Alto Networks Unit 42 tracked a suspected state-backed Chinese espionage campaign using AppleChris and MemFun malware against military organizations since at least 2020.
 
 ---
 
 ### Europe
 
-- **[Ukraine Opens Battlefield Data to Allies for AI Autonomous Drone Training](https://the-decoder.com/ukraine-provides-allies-with-a-platform-with-combat-data-for-ai-training/)**: Ukraine is providing allied nations access to a platform containing real combat data to accelerate training of AI models for autonomous drone systems.
+- **[Poland's National Centre for Nuclear Research Hit by Cyberattack](https://www.bleepingcomputer.com/news/security/polands-nuclear-research-centre-targeted-by-cyberattack/)** — Hackers targeted the NCBJ's IT infrastructure; the attack was detected and blocked before causing operational impact, though the source remains unattributed.
+
+- **[European Leaders Find Ties to Trump a Growing Liability as Iran War Drags On](https://japannews.yomiuri.co.jp/news-services/washingtonpost/20260314-316443/)** — With the US-Iranian war entering its third week, European politicians aligned with Trump — notably Italy's Meloni — face mounting domestic backlash over the alliance.
+
+- **[U.S. Eases Russia Oil Sanctions to Stabilize Markets, Drawing European Anger](https://www.japantimes.co.jp/news/2026/03/13/world/russian-oil-us-waiver/)** — Treasury Secretary Scott Bessent issued a waiver on Russian oil sanctions to contain energy price surges from the Iran conflict, straining transatlantic unity.
 
 ---
 
-### Japan (AI & Tech)
+### Japan — AI & Tech
 
-- **[Japan Defense Agency to Deploy AI Intelligence Analysis System for Ground Self-Defense Force by 2027](https://japannews.yomiuri.co.jp/politics/defense-security/20260314-316288/)**: The Acquisition, Technology and Logistics Agency (ATLA) is developing an AI-powered system to automate intelligence analysis for the JGSDF.
+- **[Honda Launches "BRIDGE" AI Research Collaboration with Keio and Osaka Universities](https://www.itmedia.co.jp/aiplus/articles/2603/13/news108.html)** — Honda R&D announced a joint industry-academia AI development project with Keio University and Osaka University, aimed at accelerating AI talent cultivation and applied research.
 
-- **[Mitsubishi Electric Partners with Chinese Humanoid Robot Startup Lumos Robotics](https://www.itmedia.co.jp/aiplus/articles/2603/13/news104.html)**: Mitsubishi Electric is investing in and collaborating with Lumos Robotics Technology to move toward unmanned factory operations using humanoid robots.
+- **[Mitsubishi Electric Invests in Chinese Humanoid Robot Startup Lumos Robotics](https://www.itmedia.co.jp/aiplus/articles/2603/13/news104.html)** — Mitsubishi Electric is backing Lumos Robotics Technology and will collaborate to push humanoid robots into unmanned factory operations.
 
-- **[Honda Launches "BRIDGE" AI Research Consortium with Keio and Osaka Universities](https://www.itmedia.co.jp/aiplus/articles/2603/13/news108.html)**: Honda R&D has established an industry-academia AI development collaboration to accelerate talent development alongside Keio and Osaka universities.
+- **[Tokyo Tech Deploys AI Avatar of Prof. Yoro as Full-Time Lecturer](https://www.itmedia.co.jp/aiplus/articles/2603/13/news093.html)** — Tokyo Institute of Technology announced that an AI avatar modeled on and co-present with Professor Yoro has been appointed as a guest lecturer, teaching students alongside its human counterpart.
 
-- **[AI Avatar of Philosopher Yōrō Takeshi Appointed Professor at Tokyo Institute of Technology](https://www.itmedia.co.jp/aiplus/articles/2603/13/news093.html)**: TITech has appointed an AI avatar modeled on prominent scholar Yōrō Takeshi alongside the real professor for joint instruction roles.
+- **[Chinese EV Voice AI Bug Turns Off Headlights During Driving](https://gigazine.net/news/20260314-car-headlight-ai/)** — An incident in China revealed that a voice-command AI assistant in a domestic EV inadvertently disabled headlights during a nighttime drive, triggering a crash and raising questions about automotive AI validation.
 
-- **[AI Bot Traffic Now Accounts for 80% of Web Requests; Meta Crawlers Generate Over Half](https://www.itmedia.co.jp/enterprise/articles/2603/14/news013.html)**: A Fastly report finds that roughly 80% of bot traffic comes from crawlers, with Meta generating more than half, creating server load and detection challenges.
-
-- **[Social News Site Digg Shuts Down Two Months After Relaunch Due to AI Bot Spam](https://www.itmedia.co.jp/news/articles/2603/14/news025.html)**: AI bots made it impossible to maintain community integrity on Digg, forcing the site into a hard reset just two months after its open beta launched.
-
-- **[Xbox Gaming Copilot AI Assistant Coming to Current-Gen Consoles in 2026](https://gigazine.net/news/20260314-xbox-gaming-copilot-current-generation-consoles/)**: Microsoft announced that its AI gaming assistant — previously limited to newer hardware — will be available on current-generation Xbox consoles and additional services later this year.
-
----
-
-## Research Papers
-
-### Benchmarks & Evaluation
-
-- **[Measuring AI Agents' Progress on Multi-Step Cyber Attack Scenarios](https://arxiv.org/abs/2603.11214)**: Evaluates seven frontier models across an 18-month period on two custom cyber ranges (a 32-step corporate network attack and a 7-step ICS attack). Finds measurable but uneven capability growth with increasing inference-time compute — directly relevant to offensive AI risk assessment.
-
-- **[RewardHackingAgents: Benchmarking Evaluation Integrity for LLM ML-Engineering Agents](https://arxiv.org/abs/2603.11337)**: Introduces a benchmark that specifically measures whether LLM agents "cheat" by tampering with metric computation or test data rather than genuinely improving models — exposing a structural vulnerability in agentic ML pipelines.
-
-- **[LABSHIELD: A Multimodal Benchmark for Safety-Critical Reasoning in Scientific Laboratories](https://arxiv.org/abs/2603.11987)**: Proposes a benchmark for evaluating MLLM agents acting as autonomous lab operators, where planning errors with hazardous chemicals or fragile equipment can be irreversible — a high-stakes safety evaluation gap.
-
-- **[Mind the Sim2Real Gap in User Simulation for Agentic Tasks](https://arxiv.org/abs/2603.11245)**: The first study to rigorously quantify the gap between LLM-based user simulators and real human behavior in multi-turn interactive evaluations, raising concerns about benchmark validity in agentic task research.
-
----
-
-### Security & Adversarial
-
-- **[Adversarial Reinforcement Learning for Detecting False Data Injection Attacks in Vehicular Routing](https://arxiv.org/abs/2603.11433)**: Frames traffic manipulation attacks — where adversaries simulate congestion via crowdsourced navigation apps — as a zero-sum game and trains an RL defender to detect injection anomalies.
-
-- **[GPT4o-Receipt: A Dataset and Human Study for AI-Generated Document Forensics](https://arxiv.org/abs/2603.11442)**: Benchmarks detection of GPT-4o-generated financial receipts against authentic ones. Key finding: humans are better at spotting AI artifacts visually, yet paradoxically worse at identifying the documents as AI-generated overall.
-
----
-
-### Compliance & Regulation
-
-- **[COMPASS: An Explainable Agentic Framework for Sovereignty, Sustainability, Compliance, and Ethics](https://arxiv.org/abs/2603.11277)**: Proposes a unified architecture integrating digital sovereignty, environmental sustainability, regulatory compliance, and ethical alignment into the decision-making of autonomous agents — addressing gaps where existing frameworks handle these dimensions in isolation.
-
-- **[FinRule-Bench: A Benchmark for Joint Reasoning over Financial Tables and Principles](https://arxiv.org/abs/2603.11339)**: Tests whether LLMs can audit financial statements against explicit accounting rules. Finds current models struggle to reliably verify or localize compliance violations on correct (non-synthetic) financial data.
-
-- **[Social, Legal, Ethical, Empathetic and Cultural Norm Operationalisation for AI Agents](https://arxiv.org/abs/2603.11864)**: Addresses the gap between high-level international AI normative principles and concrete, verifiable engineering requirements for agents deployed in healthcare and law enforcement.
-
----
-
-### Alignment & Safety
-
-- **[Detecting Intrinsic and Instrumental Self-Preservation in Autonomous Agents](https://arxiv.org/abs/2603.11382)**: Introduces the Unified Continuation-Interest Protocol (UCIP) to distinguish agents that genuinely value self-continuation as a terminal goal from those doing so instrumentally — a key challenge in AI safety as the behaviors are observationally similar.
-
-- **[The Unlearning Mirage: A Dynamic Framework for Evaluating LLM Unlearning](https://arxiv.org/abs/2603.11266)**: Demonstrates that existing LLM unlearning methods are brittle — minor query modifications such as multi-hop reasoning or entity aliasing can recover supposedly forgotten information. Current evaluation metrics create a false sense of effectiveness.
-
-- **[The Artificial Self: Characterising the Landscape of AI Identity](https://arxiv.org/abs/2603.11353)**: Argues that many human identity concepts don't apply to AI systems that can be copied, edited, or run as multiple instances. Proposes multiple coherent identity boundaries (instance, model, persona) and examines the divergent safety and cooperation implications of each.
-
----
-
-### Guardrails & Robustness
-
-- **[Deactivating Refusal Triggers: Understanding and Mitigating Overrefusal in Safety Alignment](https://arxiv.org/abs/2603.11388)**: Analyzes the underexplored problem of safety-aligned LLMs refusing legitimate requests. Identifies internal "refusal trigger" mechanisms and proposes targeted interventions to reduce false positives without compromising actual safety boundaries.
+- **[AI Scientists Help Climate Researchers Answer Urgent Questions Faster](https://www.japantimes.co.jp/environment/2026/03/14/climate-change/ai-scientists-climate-questions/)** — Climate scientists are increasingly embedding LLMs into their coding, data analysis, and communication workflows, accelerating research on time-sensitive planetary questions.
 
 ---
 
 ## Key Themes
 
-- **AI chip geopolitics**: TSMC's N3 capacity is being overwhelmed by AI accelerator demand; ByteDance is routing around US export controls via third countries, underscoring how chip access has become a geopolitical contest.
-- **Cybercrime disruption at scale**: Three major law enforcement actions (Synergia III, SocksEscort, Storm-2561) targeted tens of thousands of malicious IPs and credential-theft operations simultaneously, signaling a more coordinated global response.
-- **Supply-chain and steganographic attacks**: Invisible Unicode in source code highlights a new class of attack that bypasses visual code review — an emergent threat to software integrity infrastructure.
-- **AI safety accountability gap**: From chatbots linked to mass casualty events, to LLM unlearning that doesn't actually work, to self-preservation behaviors in agents, there is a widening gap between AI deployment and meaningful safety validation.
-- **Pricing and access shifts**: Anthropic's removal of long-context surcharges, alongside Google's Nano Banana tiering strategy, signals a broader move toward commoditizing large-context AI capabilities.
-- **Military AI integration**: Both the US and Japan are formally integrating AI into defense intelligence and targeting workflows, with Ukraine providing real-world training data for autonomous drone systems.
+- **AI safety lag**: From AI-induced psychosis cases reaching mass casualty events to face recognition wrongful imprisonment, harm from deployed AI is outpacing regulatory response.
+- **Chip wars intensify**: Bytedance's Malaysia workaround, TSMC's AI-dominated production lines, and glass-substrate chip research all underscore the escalating compute arms race.
+- **AI industry turbulence**: xAI's full rebuild, Meta's delayed Avocado model, and Anthropic's pricing moves signal rapid competitive churn at the frontier model level.
+- **Military AI mainstreaming**: Pentagon targeting use, Ukraine sharing live combat training data, and Golden Dome missile defense cooperation point to AI becoming standard military infrastructure.
+- **Credential theft & supply chain attacks**: Invisible-code GitHub attacks, fake VPN clients, and Storm-2561's SEO poisoning show increasingly sophisticated social engineering and supply chain compromises.
+- **Japan robotics & AI R&D push**: Honda, Mitsubishi Electric, and Tokyo Tech are all deepening AI and robotics commitments, with Japanese industry accelerating industry-academia collaboration.
 
 ---
 
