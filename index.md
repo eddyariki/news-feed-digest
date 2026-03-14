@@ -1,18 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "March 12, 2026"
+hero_date: "March 14, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-03-12/digest"
-hero_secondary: "[Papers](2026-03-12/papers) [Security](2026-03-12/security) [Podcast](2026-03-12/podcast)"
-issue_count: 21
+hero_primary_link: "2026-03-14/digest"
+hero_secondary: "[Papers](2026-03-14/papers) [Security](2026-03-14/security) [Podcast](2026-03-14/podcast)"
+issue_count: 22
 highlights: |
-  - **[Pentagon Labels Anthropic a "Supply Chain Risk"](https://the-decoder.com/us-military-chief-says-anthropics-ai-models-pollute-the-supply-chain-with-built-in-ethics/)**: The US War Department CTO claims Claude's built-in ethics "pollute" its AI supply chain, prompting Anthropic to file a legal challenge.
-  - **[AI-Generated Slopoly Malware Deployed in Ransomware Attack](https://www.bleepingcomputer.com/news/security/ai-generated-slopoly-malware-used-in-interlock-ransomware-attack/)**: Threat actor Hive0163 used generative AI to build a novel malware strain that persisted on a compromised server for over a week before triggering an Interlock ransomware payload.
-  - **[Atlassian Cuts 1,600 Jobs in Name of AI](https://techcrunch.com/2026/03/12/atlassian-follows-blocks-footsteps-and-cuts-staff-in-the-name-of-ai/)**: The Jira and Confluence maker is laying off 10% of its workforce to redirect funds toward AI development, following a similar move by Block.
-  - **[Grok 4.20 Sets Hallucination Record — But Trails Gemini and GPT-5.4](https://the-decoder.com/grok-4-20-trails-gemini-and-gpt-5-4-by-a-wide-margin-but-sets-a-new-record-for-not-hallucinating/)**: xAI's latest model is the least-hallucinating model yet tested, but still lags well behind the top tier on standard benchmarks.
-  - **[NAND Flash Prices Jump 50% Overnight](https://gigazine.net/news/20260312-nand-prices-jumped-overnight/)**: Phison's CEO reveals some NAND flash memory makers raised prices by up to 50% overnight, a sudden shock that will ripple through consumer and data-center hardware costs.
+  - **[US Army Awards Anduril $20B Contract](https://techcrunch.com/2026/03/14/us-army-announces-contract-with-anduril-worth-up-to-20b/)**: The Army consolidates 120+ procurement actions into a single enterprise contract with the defense AI startup, marking one of the largest AI-defense deals to date.
+  - **[OpenClaw AI Agent Flaws Enable Prompt Injection and Data Exfiltration](https://thehackernews.com/2026/03/openclaw-ai-agent-flaws-could-enable.html)**: China's CNCERT warns that weak default security configurations in the widely-used OpenClaw autonomous AI agent platform expose users to serious attack vectors.
+  - **[Meta Considering 20% Workforce Reduction](https://techcrunch.com/2026/03/14/meta-reportedly-considering-layoffs-that-could-affect-20-of-the-company/)**: Reported layoffs would help offset Meta's aggressive AI infrastructure spending and AI-related acquisitions.
+  - **[GlassWorm Supply-Chain Attack Abuses 72 Open VSX Extensions](https://thehackernews.com/2026/03/glassworm-supply-chain-attack-abuses-72.html)**: A significant escalation in the GlassWorm campaign now propagates malware transitively through extension dependency chains, broadening the attack surface for developers.
+  - **[China Funds OpenClaw "One-Person Companies" with Millions in Subsidies](https://the-decoder.com/china-pushes-openclaw-one-person-companies-with-millions-in-ai-agent-subsidies/)**: At least seven Chinese local governments launch million-dollar programs to back solo founders using AI agents as a full workforce.
 archive:
+  - date: "2026-03-14"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: true
+    highlight: "US Army Awards Anduril $20B Contract: The Army consolidates 120+ procurement actions into a single enterprise contract with the defense AI startup, marking one…"
   - date: "2026-03-13"
     has_papers: true
     has_security: true
