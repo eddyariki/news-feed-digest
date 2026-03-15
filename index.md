@@ -1,18 +1,19 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "March 14, 2026"
+hero_date: "March 16, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-03-14/digest"
-hero_secondary: "[Papers](2026-03-14/papers) [Security](2026-03-14/security) [Podcast](2026-03-14/podcast)"
-issue_count: 22
+hero_primary_link: "2026-03-16/digest"
+hero_secondary: "[Podcast](2026-03-16/podcast)"
+issue_count: 23
 highlights: |
-  - **[US Army Awards Anduril $20B Contract](https://techcrunch.com/2026/03/14/us-army-announces-contract-with-anduril-worth-up-to-20b/)**: The Army consolidates 120+ procurement actions into a single enterprise contract with the defense AI startup, marking one of the largest AI-defense deals to date.
-  - **[OpenClaw AI Agent Flaws Enable Prompt Injection and Data Exfiltration](https://thehackernews.com/2026/03/openclaw-ai-agent-flaws-could-enable.html)**: China's CNCERT warns that weak default security configurations in the widely-used OpenClaw autonomous AI agent platform expose users to serious attack vectors.
-  - **[Meta Considering 20% Workforce Reduction](https://techcrunch.com/2026/03/14/meta-reportedly-considering-layoffs-that-could-affect-20-of-the-company/)**: Reported layoffs would help offset Meta's aggressive AI infrastructure spending and AI-related acquisitions.
-  - **[GlassWorm Supply-Chain Attack Abuses 72 Open VSX Extensions](https://thehackernews.com/2026/03/glassworm-supply-chain-attack-abuses-72.html)**: A significant escalation in the GlassWorm campaign now propagates malware transitively through extension dependency chains, broadening the attack surface for developers.
-  - **[China Funds OpenClaw "One-Person Companies" with Millions in Subsidies](https://the-decoder.com/china-pushes-openclaw-one-person-companies-with-millions-in-ai-agent-subsidies/)**: At least seven Chinese local governments launch million-dollar programs to back solo founders using AI agents as a full workforce.
+  - No highlights available.
 archive:
+  - date: "2026-03-16"
+    has_papers: false
+    has_security: false
+    has_weekly: true
+    has_podcast: true
   - date: "2026-03-14"
     has_papers: true
     has_security: true
