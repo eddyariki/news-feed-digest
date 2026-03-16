@@ -1,14 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "March 16, 2026"
+hero_date: "March 17, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-03-16/digest"
-hero_secondary: "[Podcast](2026-03-16/podcast)"
-issue_count: 23
+hero_primary_link: "2026-03-17/digest"
+hero_secondary: "[Papers](2026-03-17/papers) [Security](2026-03-17/security) [Podcast](2026-03-17/podcast)"
+issue_count: 24
 highlights: |
-  - No highlights available.
+  - **[Warren Presses Pentagon Over xAI Access to Classified Networks](https://techcrunch.com/2026/03/16/warren-presses-pentagon-over-decision-to-grant-xai-access-to-classified-networks/)**: Sen. Elizabeth Warren is demanding accountability after the DoD granted Elon Musk's xAI access to classified systems, citing Grok's history of harmful outputs and national security risks.
+  - **[GlassWorm Attack Uses Stolen GitHub Tokens to Inject Malware Into Python Repos](https://thehackernews.com/2026/03/glassworm-attack-uses-stolen-github.html)**: A sophisticated malware campaign is leveraging stolen GitHub tokens to force-push obfuscated code into hundreds of Python repositories, targeting Django apps, ML research code, and PyPI packages.
+  - **[Encyclopedia Britannica and Merriam-Webster Sue OpenAI for Copyright Infringement](https://techcrunch.com/2026/03/16/merriam-webster-openai-encyclopedia-brittanica-lawsuit/)**: The publishers allege OpenAI "memorized" nearly 100,000 of their articles to train GPT-4 and is generating outputs substantially similar to their copyrighted content.
+  - **[Meta Signs $27 Billion Cloud Deal with Nebius for AI Infrastructure](https://the-decoder.com/meta-signs-27-billion-cloud-deal-with-nebius-in-one-of-the-largest-ai-infrastructure-bets-yet/)**: In one of the largest AI infrastructure investments to date, Meta is partnering with Dutch cloud provider Nebius, including an early deployment of Nvidia's new Vera Rubin chips.
+  - **[NVIDIA Unveils Vera Rubin Platform and NemoClaw at GTC 2026](https://the-decoder.com/gtc-2026-nvidia-wants-to-swap-robotics-data-problem-for-a-compute-problem/)**: Nvidia's GTC keynote unveiled the Vera Rubin AI infrastructure platform and NemoClaw software stack, with plans to deploy autonomous vehicles with Uber in LA by 2027 and bring AI brains to industrial robots from FANUC and ABB.
 archive:
+  - date: "2026-03-17"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: true
+    highlight: "Warren Presses Pentagon Over xAI Access to Classified Networks: Sen."
   - date: "2026-03-16"
     has_papers: false
     has_security: false
