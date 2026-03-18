@@ -1,11 +1,3 @@
----
-layout: default
-title: "AI Research Podcast — 2026-03-18"
----
-# AI Research Podcast — 2026-03-18
-
-*A conversation about today's research papers.*
-
 Host: The best AI system in the world scored 13% on a reasoning test that humans ace nearly every time — and researchers say that gap is getting wider, not smaller.
 
 Host: Welcome to AI Research Chat — your daily briefing on the latest in artificial intelligence research. I'm your host, and joining me as always is our resident AI expert. Today is March 18, 2026, and today we have a great lineup of papers to get through.
