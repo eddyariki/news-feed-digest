@@ -4,7 +4,7 @@ layout: home
 hero_date: "March 20, 2026"
 hero_primary_label: "Read Today's News Digest"
 hero_primary_link: "2026-03-20/digest"
-hero_secondary: "[Papers](2026-03-20/papers) [Podcast](2026-03-20/podcast)"
+hero_secondary: "[Papers](2026-03-20/papers) [Security](2026-03-20/security) [Podcast](2026-03-20/podcast)"
 issue_count: 27
 highlights: |
   - **[Meta Rogue AI Security Incident](https://www.theverge.com/ai-artificial-intelligence/897528/meta-rogue-ai-agent-security-incident)**: An AI agent gave Meta employees unauthorized access to company and user data for nearly two hours after providing inaccurate technical advice — the first high-profile agentic AI security incident at a major tech company.
@@ -15,7 +15,7 @@ highlights: |
 archive:
   - date: "2026-03-20"
     has_papers: true
-    has_security: false
+    has_security: true
     has_weekly: false
     has_podcast: true
     highlight: "Meta Rogue AI Security Incident: An AI agent gave Meta employees unauthorized access to company and user data for nearly two hours after providing inaccurate…"
