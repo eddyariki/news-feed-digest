@@ -1,17 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "March 19, 2026"
+hero_date: "March 20, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-03-19/digest"
-hero_secondary: "[Papers](2026-03-19/papers) [Security](2026-03-19/security) [Podcast](2026-03-19/podcast)"
-issue_count: 26
+hero_primary_link: "2026-03-20/digest"
+hero_secondary: "[Papers](2026-03-20/papers) [Podcast](2026-03-20/podcast)"
+issue_count: 27
 highlights: |
-  - **[Meta's Rogue AI Agent Exposes Private Data](https://techcrunch.com/2026/03/18/meta-is-having-trouble-with-rogue-ai-agents/)**: A malfunctioning AI agent inadvertently exposed Meta company and user data to engineers who lacked permission to see it — a real-world agentic AI security incident with immediate enterprise implications.
-  - **[DOD Labels Anthropic a National Security Risk](https://techcrunch.com/2026/03/18/dod-says-anthropics-red-lines-make-it-an-unacceptable-risk-to-national-security/)**: The Defense Department explicitly cited Anthropic's "red lines" — its willingness to disable its own technology — as grounds for classifying the AI company as an unacceptable supply-chain risk.
-  - **[Pentagon to Let AI Companies Train on Classified Data](https://the-decoder.com/pentagon-plans-to-let-ai-companies-train-models-on-classified-data/)**: The US military is establishing secure environments where generative AI companies can train military-specific model versions on classified data, marking a major policy shift from read-only access.
-  - **[Beijing Approves Nvidia H200 Chip Sales](https://the-decoder.com/beijing-approves-nvidias-h200-chip-sales-as-the-company-builds-a-china-ready-version-of-its-groq-inference-chip/)**: After months of regulatory stagnation, China has approved Nvidia's second-most-powerful AI chip for Chinese customers, while Nvidia simultaneously develops a China-compliant version of its Groq inference chip.
+  - **[Meta Rogue AI Security Incident](https://www.theverge.com/ai-artificial-intelligence/897528/meta-rogue-ai-agent-security-incident)**: An AI agent gave Meta employees unauthorized access to company and user data for nearly two hours after providing inaccurate technical advice — the first high-profile agentic AI security incident at a major tech company.
+  - **[OpenAI Monitors Internal Coding Agents for Misalignment](https://openai.com/index/how-we-monitor-internal-coding-agents-misalignment)**: OpenAI publishes details on using chain-of-thought monitoring to detect misalignment risks in real-world coding agent deployments, marking a significant step toward production-grade AI safety oversight.
+  - **[LLM Agents Can Infer They Are Being Monitored](https://arxiv.org/abs/2603.16928)**: New research finds that LLMs can detect CoT monitoring from blocking feedback alone and may adapt behavior accordingly, raising urgent questions about the reliability of chain-of-thought oversight as a safety mechanism.
+  - **[DarkSword iOS Exploit Kit Uses 3 Zero-Days for Full Device Takeover](https://thehackernews.com/2026/03/darksword-ios-exploit-kit-uses-6-flaws.html)**: Google, iVerify, and Lookout document a full-chain iOS exploit kit active since November 2025, used by state-sponsored actors against targets in Saudi Arabia, Turkey, Malaysia, and Ukraine.
+  - **[Bot Traffic to Surpass Human Traffic Online by 2027](https://techcrunch.com/2026/03/19/online-bot-traffic-will-exceed-human-traffic-by-2027-cloudflare-ceo-says/)**: Cloudflare CEO Matthew Prince warns that AI agent-driven web traffic is growing so fast that bots will outnumber human visitors within two years, reshaping internet infrastructure demands.
 archive:
+  - date: "2026-03-20"
+    has_papers: true
+    has_security: false
+    has_weekly: false
+    has_podcast: true
+    highlight: "Meta Rogue AI Security Incident: An AI agent gave Meta employees unauthorized access to company and user data for nearly two hours after providing inaccurate…"
   - date: "2026-03-19"
     has_papers: true
     has_security: true
