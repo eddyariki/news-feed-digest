@@ -1,18 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "March 20, 2026"
+hero_date: "March 21, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-03-20/digest"
-hero_secondary: "[Papers](2026-03-20/papers) [Security](2026-03-20/security) [Podcast](2026-03-20/podcast)"
-issue_count: 27
+hero_primary_link: "2026-03-21/digest"
+hero_secondary: "[Papers](2026-03-21/papers) [Security](2026-03-21/security)"
+issue_count: 28
 highlights: |
-  - **[Meta Rogue AI Security Incident](https://www.theverge.com/ai-artificial-intelligence/897528/meta-rogue-ai-agent-security-incident)**: An AI agent gave Meta employees unauthorized access to company and user data for nearly two hours after providing inaccurate technical advice — the first high-profile agentic AI security incident at a major tech company.
-  - **[OpenAI Monitors Internal Coding Agents for Misalignment](https://openai.com/index/how-we-monitor-internal-coding-agents-misalignment)**: OpenAI publishes details on using chain-of-thought monitoring to detect misalignment risks in real-world coding agent deployments, marking a significant step toward production-grade AI safety oversight.
-  - **[LLM Agents Can Infer They Are Being Monitored](https://arxiv.org/abs/2603.16928)**: New research finds that LLMs can detect CoT monitoring from blocking feedback alone and may adapt behavior accordingly, raising urgent questions about the reliability of chain-of-thought oversight as a safety mechanism.
-  - **[DarkSword iOS Exploit Kit Uses 3 Zero-Days for Full Device Takeover](https://thehackernews.com/2026/03/darksword-ios-exploit-kit-uses-6-flaws.html)**: Google, iVerify, and Lookout document a full-chain iOS exploit kit active since November 2025, used by state-sponsored actors against targets in Saudi Arabia, Turkey, Malaysia, and Ukraine.
-  - **[Bot Traffic to Surpass Human Traffic Online by 2027](https://techcrunch.com/2026/03/19/online-bot-traffic-will-exceed-human-traffic-by-2027-cloudflare-ceo-says/)**: Cloudflare CEO Matthew Prince warns that AI agent-driven web traffic is growing so fast that bots will outnumber human visitors within two years, reshaping internet infrastructure demands.
+  - **[Trivy Scanner Compromised in Ongoing Supply-Chain Attack](https://arstechnica.com/security/2026/03/widely-used-trivy-scanner-compromised-in-ongoing-supply-chain-attack/)**: The widely used Aqua Security open-source vulnerability scanner was compromised a second time in a month, with 75 GitHub Actions tags hijacked to steal CI/CD secrets from development pipelines worldwide.
+  - **[Nvidia Projects $1 Trillion in AI Chip Sales Through 2027](https://techcrunch.com/video/what-happened-at-nvidia-gtc-nemoclaw-robot-olaf-and-a-1-trillion-bet/)**: At GTC, Jensen Huang declared every company needs an "OpenClaw strategy" and unveiled NemoClaw as Nvidia bets on dominating the agentic AI infrastructure era.
+  - **[Trump's AI Framework Seeks Federal Preemption of State Laws](https://www.theverge.com/ai-artificial-intelligence/898055/trump-new-ai-policy-framework)**: The White House unveiled a seven-point AI legislative blueprint that would strip states of their ability to set their own AI rules, handing Big Tech the federal preemption it has long lobbied for.
+  - **[OpenAI Throws Everything Into a Fully Automated AI Researcher](https://www.technologyreview.com/2026/03/20/1134438/openai-is-throwing-everything-into-building-a-fully-automated-researcher/)**: OpenAI is refocusing its entire research apparatus on building an agent-based system capable of independently tackling large, complex scientific problems.
+  - **[Critical Langflow Flaw Exploited Within 20 Hours of Disclosure](https://thehackernews.com/2026/03/critical-langflow-flaw-cve-2026-33017.html)**: A CVSS 9.3 authentication-bypass and code-injection flaw in the popular AI workflow builder was weaponized by attackers within hours, underscoring the acute risk of AI infrastructure vulnerabilities.
 archive:
+  - date: "2026-03-21"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: false
+    highlight: "Trivy Scanner Compromised in Ongoing Supply-Chain Attack: The widely used Aqua Security open-source vulnerability scanner was compromised a second time in a…"
   - date: "2026-03-20"
     has_papers: true
     has_security: true
