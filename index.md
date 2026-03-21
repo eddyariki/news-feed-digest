@@ -7,18 +7,18 @@ hero_primary_link: "2026-03-21/digest"
 hero_secondary: "[Papers](2026-03-21/papers) [Security](2026-03-21/security)"
 issue_count: 28
 highlights: |
-  - **[Trivy Scanner Compromised in Ongoing Supply-Chain Attack](https://arstechnica.com/security/2026/03/widely-used-trivy-scanner-compromised-in-ongoing-supply-chain-attack/)**: The widely used Aqua Security open-source vulnerability scanner was compromised a second time in a month, with 75 GitHub Actions tags hijacked to steal CI/CD secrets from development pipelines worldwide.
-  - **[Nvidia Projects $1 Trillion in AI Chip Sales Through 2027](https://techcrunch.com/video/what-happened-at-nvidia-gtc-nemoclaw-robot-olaf-and-a-1-trillion-bet/)**: At GTC, Jensen Huang declared every company needs an "OpenClaw strategy" and unveiled NemoClaw as Nvidia bets on dominating the agentic AI infrastructure era.
-  - **[Trump's AI Framework Seeks Federal Preemption of State Laws](https://www.theverge.com/ai-artificial-intelligence/898055/trump-new-ai-policy-framework)**: The White House unveiled a seven-point AI legislative blueprint that would strip states of their ability to set their own AI rules, handing Big Tech the federal preemption it has long lobbied for.
-  - **[OpenAI Throws Everything Into a Fully Automated AI Researcher](https://www.technologyreview.com/2026/03/20/1134438/openai-is-throwing-everything-into-building-a-fully-automated-researcher/)**: OpenAI is refocusing its entire research apparatus on building an agent-based system capable of independently tackling large, complex scientific problems.
-  - **[Critical Langflow Flaw Exploited Within 20 Hours of Disclosure](https://thehackernews.com/2026/03/critical-langflow-flaw-cve-2026-33017.html)**: A CVSS 9.3 authentication-bypass and code-injection flaw in the popular AI workflow builder was weaponized by attackers within hours, underscoring the acute risk of AI infrastructure vulnerabilities.
+  - **[Pentagon Told Anthropic the Two Sides Were "Nearly Aligned"](https://techcrunch.com/2026/03/20/new-court-filing-reveals-pentagon-told-anthropic-the-two-sides-were-nearly-aligned-a-week-after-trump-declared-the-relationship-kaput/)**: Court filings show the Pentagon privately said negotiations with Anthropic were nearly complete just one week before Trump publicly declared the relationship "kaput," directly contradicting the government's "unacceptable national security risk" claim.
+  - **[Trump's AI Framework Preempts State-Level Regulation](https://www.theverge.com/ai-artificial-intelligence/898055/trump-new-ai-policy-framework)**: The White House released a seven-point AI legislative blueprint that would bar states from setting their own AI rules, delivering exactly what Big Tech had lobbied for — while largely limiting federal oversight to child safety.
+  - **[Trivy Supply-Chain Attack Hijacks 75 GitHub Actions Tags](https://thehackernews.com/2026/03/trivy-security-scanner-github-actions.html)**: The popular Aqua Security vulnerability scanner was compromised for the second time in a month; attackers hijacked CI/CD pipeline tags to steal secrets from downstream builds.
+  - **[Nvidia Projects $1 Trillion in AI Chip Sales by 2027](https://techcrunch.com/video/what-happened-at-nvidia-gtc-nemoclaw-robot-olaf-and-a-1-trillion-bet/)**: At GTC 2026 Jensen Huang introduced the OpenClaw strategy, NemoClaw, and a humanoid robot demo — betting the entire company on physical AI at massive scale.
+  - **[OpenAI Pivots to Building a Fully Automated AI Researcher](https://www.technologyreview.com/2026/03/20/1134438/openai-is-throwing-everything-into-building-a-fully-automated-researcher/)**: OpenAI is refocusing its research organization around a single grand challenge: an agentic system capable of independently conducting and publishing scientific research.
 archive:
   - date: "2026-03-21"
     has_papers: true
     has_security: true
     has_weekly: false
     has_podcast: false
-    highlight: "Trivy Scanner Compromised in Ongoing Supply-Chain Attack: The widely used Aqua Security open-source vulnerability scanner was compromised a second time in a…"
+    highlight: "Pentagon Told Anthropic the Two Sides Were 'Nearly Aligned': Court filings show the Pentagon privately said negotiations with Anthropic were nearly complete…"
   - date: "2026-03-20"
     has_papers: true
     has_security: true
