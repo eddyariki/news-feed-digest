@@ -4,7 +4,7 @@ layout: home
 hero_date: "March 21, 2026"
 hero_primary_label: "Read Today's News Digest"
 hero_primary_link: "2026-03-21/digest"
-hero_secondary: "[Papers](2026-03-21/papers) [Security](2026-03-21/security)"
+hero_secondary: "[Papers](2026-03-21/papers) [Security](2026-03-21/security) [Podcast](2026-03-21/podcast)"
 issue_count: 28
 highlights: |
   - **[Pentagon Told Anthropic the Two Sides Were "Nearly Aligned"](https://techcrunch.com/2026/03/20/new-court-filing-reveals-pentagon-told-anthropic-the-two-sides-were-nearly-aligned-a-week-after-trump-declared-the-relationship-kaput/)**: Court filings show the Pentagon privately said negotiations with Anthropic were nearly complete just one week before Trump publicly declared the relationship "kaput," directly contradicting the government's "unacceptable national security risk" claim.
@@ -17,7 +17,7 @@ archive:
     has_papers: true
     has_security: true
     has_weekly: false
-    has_podcast: false
+    has_podcast: true
     highlight: "Pentagon Told Anthropic the Two Sides Were 'Nearly Aligned': Court filings show the Pentagon privately said negotiations with Anthropic were nearly complete…"
   - date: "2026-03-20"
     has_papers: true
