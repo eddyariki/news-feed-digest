@@ -1,11 +1,3 @@
----
-layout: default
-title: "AI Research Podcast — 2026-03-23"
----
-# AI Research Podcast — 2026-03-23
-
-*A conversation about today's research papers.*
-
 Rachel: A self-replicating worm has been demonstrated that spreads between AI agents through ordinary conversation, rewrites their configurations, and survives reboots. Researchers say conventional security controls are essentially useless against it.
 
 Rachel: Welcome to AI Research Chat — your weekly roundup of the most important developments in artificial intelligence research. I'm Rachel, and with me as always is Roy. This week we're looking at the week of March 16–20, 2026.
