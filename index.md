@@ -1,14 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "March 23, 2026"
+hero_date: "March 24, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-03-23/digest"
-hero_secondary: "[Podcast](2026-03-23/podcast)"
-issue_count: 29
+hero_primary_link: "2026-03-24/digest"
+hero_secondary: "[Papers](2026-03-24/papers) [Security](2026-03-24/security) [Podcast](2026-03-24/podcast)"
+issue_count: 30
 highlights: |
-  - No highlights available.
+  - **[Jensen Huang Claims AGI Has Been Achieved](https://www.theverge.com/ai-artificial-intelligence/899086/jensen-huang-nvidia-agi)**: Nvidia CEO Jensen Huang told the Lex Fridman podcast "I think we've achieved AGI," reigniting debate over the vaguely defined term and what it means for the industry.
+  - **[Senator Warren Calls Pentagon's Anthropic Ban 'Retaliation'](https://techcrunch.com/2026/03/23/elizabeth-warren-anthropic-pentagon-defense-supply-chain-risk-retaliation/)**: Sen. Elizabeth Warren wrote to Defense Secretary Hegseth calling the DOD's "supply-chain risk" label on Anthropic politically motivated retaliation rather than a legitimate security concern.
+  - **[CanisterWorm Wiper Targets Iran via Cloud Services](https://krebsonsecurity.com/2026/03/canisterworm-springs-wiper-attack-targeting-iran/)**: A financially motivated threat actor released a worm that spreads through misconfigured cloud services and wipes data on systems using Iran's timezone or Farsi — part of a broader TeamPCP campaign that also poisoned the Trivy security scanner.
+  - **[OpenAI Guarantees 17.5% Returns to Court Private Equity](https://the-decoder.com/openai-lures-private-equity-firms-with-guaranteed-returns-in-race-against-anthropic/)**: OpenAI is offering private equity firms a guaranteed minimum return on enterprise joint ventures as it races to secure infrastructure partnerships ahead of Anthropic.
+  - **[White House Unveils AI Policy](https://www.technologyreview.com/2026/03/23/1134509/the-download-animal-welfare-agi-pilled-white-house-unveils-ai-policy/)**: The White House released its formal AI policy framework, coinciding with broader debates about how AI is shaping geopolitics, energy, and cognition.
 archive:
+  - date: "2026-03-24"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: true
+    highlight: "Jensen Huang Claims AGI Has Been Achieved: Nvidia CEO Jensen Huang told the Lex Fridman podcast 'I think we've achieved AGI,' reigniting debate over the…"
   - date: "2026-03-23"
     has_papers: false
     has_security: false
