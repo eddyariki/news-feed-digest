@@ -1,0 +1,139 @@
+# AI News Digest — March 25, 2026
+
+## Highlights
+
+- **[OpenAI shuts down Sora and its Disney deal](https://www.theverge.com/ai-artificial-intelligence/899850/openai-sora-ai-chatgpt)**: OpenAI announced it is discontinuing Sora, the video generation tool launched in late 2024 and tied to a major Disney licensing deal, in a significant strategic retreat.
+- **[LiteLLM supply-chain attack spreads through Kubernetes clusters](https://the-decoder.com/popular-ai-proxy-litellm-got-hacked-with-malware-that-spreads-through-kubernetes-clusters/)**: The popular open-source AI API proxy was backdoored by threat actor TeamPCP, delivering a credential harvester and lateral movement toolkit that propagates across cloud infrastructure.
+- **[Anthropic's Claude Code gains auto mode with computer control](https://techcrunch.com/2026/03/24/anthropic-hands-claude-code-more-control-but-keeps-it-on-a-leash/)**: Anthropic's new auto mode for Claude Code enables autonomous task execution—including opening files, running browsers, and dev tools—with reduced human approvals, marking a shift toward agentic AI.
+- **[Arm launches its first in-house CPU for Meta's AI datacenters](https://www.theverge.com/ai-artificial-intelligence/899823/arm-agi-cpu-meta)**: After 35 years as a licensor, Arm revealed the Arm AGI CPU, its first self-produced chip, designed for inference workloads in AI agents, with Meta as the launch customer.
+- **[ChatGPT becomes a shopping platform—without checkout](https://the-decoder.com/chatgpt-is-turning-into-a-shopping-platform-with-product-images-prices-and-comparisons-but-no-checkout/)**: OpenAI is adding visual product discovery to ChatGPT while simultaneously dropping its Instant Checkout system, handing transactions back to retailers.
+
+---
+
+## News
+
+### AI Security
+
+- **[How AI Coding Tools Crushed the Endpoint Security Fortress](https://www.darkreading.com/application-security/ai-coding-tools-endpoint-security)** (Dark Reading): A researcher argues that AI coding assistants have systematically undermined years of endpoint security investment by enabling new attack surfaces.
+- **[Popular AI proxy LiteLLM backdoored with Kubernetes-spreading malware](https://the-decoder.com/popular-ai-proxy-litellm-got-hacked-with-malware-that-spreads-through-kubernetes-clusters/)** (The Decoder): LiteLLM versions 1.82.7–1.82.8 were compromised by TeamPCP via a Trivy CI/CD pipeline breach, deploying credential stealers and a persistent backdoor.
+- **[TeamPCP Backdoors LiteLLM Versions 1.82.7–1.82.8](https://thehackernews.com/2026/03/teampcp-backdoors-litellm-versions.html)** (The Hacker News): Detailed technical breakdown of the LiteLLM supply-chain attack including the malicious packages published to PyPI.
+- **[TeamPCP Hacks Checkmarx GitHub Actions Using Stolen CI Credentials](https://thehackernews.com/2026/03/teampcp-hacks-checkmarx-github-actions.html)** (The Hacker News): The same threat actor behind the LiteLLM attack also compromised Checkmarx's `ast-github-action` and `kics-github-action` workflows.
+- **[Self-propagating malware poisons open source software and wipes Iran-based machines](https://arstechnica.com/security/2026/03/self-propagating-malware-poisons-open-source-software-and-wipes-iran-based-machines/)** (Ars Technica): TeamPCP's worm-like malware infects open source packages and reportedly wipes machines in Iran; development teams warned to audit their networks.
+- **[GitHub 'OpenClaw Deployer' Repo Delivers Trojan Instead](https://www.darkreading.com/application-security/github-openclaw-deployer-repo-delivers-trojan)** (Dark Reading): An AI-assisted campaign spread over 300 poisoned packages under the guise of developer tools and game cheats on GitHub.
+- **[Microsoft Proposes Better Identity, Guardrails for AI Agents](https://www.darkreading.com/identity-access-management-security/microsoft-proposes-better-identity-guardrails-ai-agents)** (Dark Reading): Microsoft outlines new identity controls and guardrails to manage growing security risks from agentic AI deployments.
+- **[Google brings AI-powered dark web analysis to enterprise security teams](https://the-decoder.com/google-brings-ai-powered-dark-web-analysis-to-enterprise-security-teams/)** (The Decoder): Google Cloud unveiled AI-driven dark web monitoring at RSA Conference 2026, aimed at enterprise threat intelligence teams.
+- **[How a Large Bank Uses AI Digital Twins for Threat Hunting](https://www.darkreading.com/threat-intelligence/how-large-bank-uses-ai-digital-twins-threat-hunting)** (Dark Reading): JPMorgan Chase describes using digital fingerprints and digital twins to detect attackers and reduce false positive alerts.
+- **[5 Learnings from the First-Ever Gartner Market Guide for Guardian Agents](https://thehackernews.com/2026/03/5-learnings-from-first-ever-gartner.html)** (The Hacker News): Gartner published its inaugural Market Guide for Guardian Agents, a new category of AI security systems, in February 2026.
+- **[Databricks buys two startups to underpin its new AI security product](https://techcrunch.com/2026/03/24/databricks-buys-two-startups-lakewatch-antimatter-siftd-ai-security/)** (TechCrunch AI): Databricks acquired Antimatter and SiftD.ai to power a forthcoming AI security product, funded by its recent $5 billion raise.
+- **[FCC bans new routers made outside the USA over security risks](https://www.bleepingcomputer.com/news/security/fcc-bans-new-routers-made-outside-the-usa-over-security-risks/)** (BleepingComputer): The FCC updated its Covered List to ban the sale of new consumer routers manufactured outside the United States.
+- **[Dutch Ministry of Finance discloses breach affecting employees](https://www.bleepingcomputer.com/news/security/dutch-ministry-of-finance-discloses-breach-affecting-employees/)** (BleepingComputer): The Dutch Finance Ministry confirmed a cyberattack breached some of its systems, affecting employee data.
+- **[Ghost Campaign Uses 7 npm Packages to Steal Crypto Wallets and Credentials](https://thehackernews.com/2026/03/ghost-campaign-uses-7-npm-packages-to.html)** (The Hacker News): ReversingLabs uncovered malicious npm packages designed to steal cryptocurrency wallets and sensitive credentials from developers.
+- **[HackerOne discloses employee data breach after Navia hack](https://www.bleepingcomputer.com/news/security/hackerone-discloses-employee-data-breach-after-navia-hack/)** (BleepingComputer): Bug bounty platform HackerOne notified hundreds of employees that their data was stolen after its benefits administrator Navia was breached.
+- **[Tax Search Ads Deliver ScreenConnect Malware Using Huawei Driver to Disable EDR](https://thehackernews.com/2026/03/tax-search-ads-deliver-screenconnect.html)** (The Hacker News): A large-scale malvertising campaign abusing Google Ads delivers ConnectWise ScreenConnect to tax-document searchers, dropping a BYOVD tool to blind security software.
+- **[U.S. Sentences Russian Hacker to 6.75 Years for Role in $9M Ransomware Damage](https://thehackernews.com/2026/03/us-sentences-russian-hacker-to-675.html)** (The Hacker News): Russian national Aleksei Volkov sentenced to 81 months for facilitating Yanluowang ransomware attacks against US companies.
+- **[Citrix Urges Patching Critical NetScaler Flaw Allowing Unauthenticated Data Leaks](https://thehackernews.com/2026/03/citrix-urges-patching-critical.html)** (The Hacker News): CVE-2026-3055 (CVSS 9.3) in NetScaler ADC and Gateway allows memory overread leaking sensitive data without authentication.
+
+### USA
+
+- **[OpenAI just gave up Sora and its billion-dollar Disney deal](https://www.theverge.com/ai-artificial-intelligence/899850/openai-sora-ai-chatgpt)** (The Verge AI): OpenAI confirmed it is discontinuing Sora, the video generation product, abandoning a major Disney licensing deal announced only months earlier.
+- **[Anthropic hands Claude Code more control, but keeps it on a leash](https://techcrunch.com/2026/03/24/anthropic-hands-claude-code-more-control-but-keeps-it-on-a-leash/)** (TechCrunch AI): Claude Code's new auto mode enables autonomous computer use—opening files, controlling browsers, running dev tools—reflecting the broader push toward agentic AI with built-in safeguards.
+- **[Anthropic's Claude Code and Cowork can control your computer](https://www.theverge.com/ai-artificial-intelligence/899430/anthropic-claude-code-cowork-ai-control-computer)** (The Verge AI): Anthropic updated Claude to autonomously perform tasks on a user's computer via Code and Cowork, with no setup required.
+- **[Arm's first CPU ever will plug into Meta's AI datacenters later this year](https://www.theverge.com/ai-artificial-intelligence/899823/arm-agi-cpu-meta)** (The Verge AI): Arm's debut in-house chip, the Arm AGI CPU, targets AI inference workloads in cloud infrastructure, with Meta as its first and exclusive customer at launch.
+- **[Arm is releasing the first in-house chip in its 35-year history](https://techcrunch.com/2026/03/24/arm-is-releasing-its-first-in-house-chip-in-its-35-year-history/)** (TechCrunch AI): Arm breaks from its licensing-only model to produce its own CPU, co-developed with Meta for AI data center inference.
+- **[ChatGPT and Gemini are fighting to be the AI bot that sells you stuff](https://www.theverge.com/ai-artificial-intelligence/899677/openai-google-gemini-ai-shopping-features)** (The Verge AI): Google is partnering with Gap Inc to allow Gemini to purchase clothing on users' behalf, while OpenAI adds visual product discovery to ChatGPT.
+- **[Powering product discovery in ChatGPT](https://openai.com/index/powering-product-discovery-in-chatgpt)** (OpenAI Blog): OpenAI details its Agentic Commerce Protocol enabling ChatGPT to show product images, prices, and comparisons with merchant integration.
+- **[OpenAI's plans to make ChatGPT more like Amazon aren't going so well](https://techcrunch.com/2026/03/24/openais-plans-to-make-chatgpt-more-like-amazon-arent-going-so-well/)** (TechCrunch AI): OpenAI is withdrawing from Instant Checkout, its direct in-chat purchasing feature, just months after its introduction.
+- **[OpenAI adds open source tools to help developers build for teen safety](https://techcrunch.com/2026/03/24/openai-adds-open-source-tools-to-help-developers-build-for-teen-safety/)** (TechCrunch AI): OpenAI releases prompt-based teen safety policies using `gpt-oss-safeguard` to help developers moderate age-specific risks.
+- **[Helping developers build safer AI experiences for teens](https://openai.com/index/teen-safety-policies-gpt-oss-safeguard)** (OpenAI Blog): Official OpenAI post introducing open-source teen safety policies for developers building on the platform.
+- **[Update on the OpenAI Foundation](https://openai.com/index/update-on-the-openai-foundation)** (OpenAI Blog): The OpenAI Foundation announces plans to invest at least $1 billion in disease research, economic opportunity, AI resilience, and community programs.
+- **[Microsoft snaps up Texas data center that Oracle and OpenAI left behind](https://the-decoder.com/microsoft-snaps-up-texas-data-center-that-oracle-and-openai-left-behind/)** (The Decoder): Microsoft has agreed to lease a data center in Abilene, Texas, originally built for a planned Oracle-OpenAI Stargate facility.
+- **[Microsoft hires top AI researchers from Allen Institute for AI for Suleyman's Superintelligence team](https://the-decoder.com/microsoft-hires-top-ai-researchers-from-allen-institute-for-ai-for-suleymans-superintelligence-team/)** (The Decoder): Microsoft is recruiting leading researchers from Ai2 and the University of Washington for Mustafa Suleyman's superintelligence team.
+- **[Mirage raises $75M to continue building models for its AI video-editing app Captions](https://techcrunch.com/2026/03/24/mirage-raises-75m-to-continue-building-models-for-its-ai-video-editing-app-captions/)** (TechCrunch AI): Mirage, maker of the Captions video editing app, raised $75M in growth financing from General Catalyst's Customer Value Fund.
+- **[Doss raises $55M for AI inventory management that plugs into ERP](https://techcrunch.com/2026/03/24/doss-raises-55m-for-ai-inventory-management-that-plugs-into-erp/)** (TechCrunch AI): Doss secured a $55M Series B co-led by Madrona and Premji Invest for its AI-powered inventory management platform.
+- **[A man created thousands of fake accounts to stream AI songs billions of times and pocket $8 million in royalties](https://the-decoder.com/a-man-created-thousands-of-fake-accounts-to-stream-ai-songs-billions-of-times-and-pocket-8-million-in-royalties/)** (The Decoder): A North Carolina man pleaded guilty to using AI-generated songs and bot accounts to defraud streaming platforms out of $8 million in royalties.
+- **[Spotify tests new tool to stop AI slop from being attributed to real artists](https://techcrunch.com/2026/03/24/spotify-tests-new-tool-to-stop-ai-slop-from-being-attributed-to-real-artists/)** (TechCrunch AI): Spotify is testing a feature allowing artists to control which tracks are associated with their names, targeting AI-generated impersonation content.
+- **[From Chile to the Philippines, meet the people pushing back on AI](https://restofworld.org/2026/ai-pushback-chile-mexico-kenya-philippines/)** (Rest of World): Individuals and communities in the Global South are organizing resistance to AI infrastructure—data centers, digital labor—due to environmental and social costs.
+- **[Are we ready to hand AI agents the keys?](https://www.technologyreview.com/2026/03/24/1134531/exclusive-ebook-are-we-ready-to-hand-ai-agents-the-keys/)** (MIT Technology Review): MIT TR's subscriber eBook examines the risks of granting AI agents real-world autonomy, citing experts warning of existential exposure.
+
+### Europe
+
+- **[OpenAI wants UK regulators to treat ChatGPT as a Google Search alternative](https://the-decoder.com/openai-wants-uk-regulators-to-treat-chatgpt-as-a-google-search-alternative/)** (The Decoder): OpenAI is lobbying the UK's CMA to include ChatGPT in Android and Chrome choice screens as an alternative to Google Search.
+- **[Agile Robots and Google DeepMind team up to bring AI-powered robots to factories](https://the-decoder.com/agile-robots-and-google-deepmind-team-up-to-bring-ai-powered-robots-to-factories/)** (The Decoder): Munich-based Agile Robots will integrate Google DeepMind's Gemini Robotics foundation models into its industrial hardware.
+- **[Agile Robots becomes the latest robotics company to partner with Google DeepMind](https://techcrunch.com/2026/03/24/agile-robots-becomes-the-latest-robotics-company-to-partner-with-google-deepmind/)** (TechCrunch AI): Agile Robots will incorporate DeepMind's robotics models into its bots while feeding data back to the AI research lab.
+- **[Google Deepmind's Gemini 3.1 Flash-Lite generates websites almost in real time](https://the-decoder.com/google-deepminds-gemini-3-1-flash-lite-generates-websites-almost-in-real-time/)** (The Decoder): Google's demo of Gemini 3.1 Flash-Lite shows near-real-time complete website generation, emphasizing speed and cost efficiency.
+- **[Dutch Ministry of Finance discloses breach affecting employees](https://www.bleepingcomputer.com/news/security/dutch-ministry-of-finance-discloses-breach-affecting-employees/)** (BleepingComputer): Dutch government officials confirmed a cyberattack on Finance Ministry systems, with employee data potentially compromised.
+
+### Japan
+
+- **[Sakana AI launches free Japanese-spec chat service "Sakana Chat"](https://gigazine.net/news/20260324-sakana-chat-ai-namazu/)** (Gigazine): Sakana AI, the Tokyo-based startup, released its "Namazu" model series adapted for Japanese language and culture, along with a free public chat interface.
+- **[GPT-5.4 mini登場：マルチエージェント開発に最適で安い、が実は3倍値上げ](https://atmarkit.itmedia.co.jp/ait/articles/2603/25/news017.html)** (ITmedia AI+): Analysis of GPT-5.4 mini, OpenAI's new lightweight model targeting multi-agent development, including benchmarks, pricing comparisons, and community evaluations noting a 3x price increase over the prior generation.
+- **[AI生成で児童性的虐待をリアルに描写した画像・動画は前年比14%増の8029件確認、特に動画件数は1年で260倍以上も増加](https://gigazine.net/news/20260324-ai-child-abuse-increased/)** (Gigazine): The Internet Watch Foundation reports AI-generated child abuse material reached record levels in 2025, with video content growing more than 260-fold year-over-year.
+- **[KADOKAWA と note が資本業務提携——AI時代の「創作エコシステム」実現へ](https://www.itmedia.co.jp/aiplus/articles/2603/24/news116.html)** (ITmedia AI+): Japanese media conglomerate KADOKAWA and content platform note announced a capital and business partnership to build an AI-era creative ecosystem.
+- **[大学受験にAI活用、受験生の約9割——使い方は？学習管理アプリ運営が調査](https://www.itmedia.co.jp/aiplus/articles/2603/24/news130.html)** (ITmedia AI+): A survey by study management app Studyplus found 88.7% of 2025 university entrance exam applicants used AI tools in their preparation.
+- **[Toyota plans $1 billion investment in two of its U.S. plants](https://www.japantimes.co.jp/business/2026/03/24/companies/toyota-america-billion/)** (The Japan Times): Toyota announced $1 billion in U.S. manufacturing investment, expanding production and preparing one plant for EV manufacturing.
+- **[Nintendo cuts Switch 2 output by over 30% on weak holiday sales](https://www.japantimes.co.jp/business/2026/03/24/tech/nintendo-switch-2-output-cut/)** (The Japan Times): Nintendo reduced Switch 2 production by more than 30% after the console failed to sustain record launch sales through the holiday season.
+- **[Government approves bill to expand no-fly zones for drones in Japan](https://www.japantimes.co.jp/news/2026/03/24/japan/drones-no-fly-zone/)** (The Japan Times): Japan's government approved legislation expanding drone no-fly zones to reflect the dramatically increased range, speed, and payload capacity of modern UAVs.
+- **[Team Mirai and Democracy](https://www.schneier.com/blog/archives/2026/03/team-mirai-and-democracy.html)** (Schneier on Security): Bruce Schneier examines Japan's Team Mirai political party as a model for using AI and technology to strengthen democratic processes rather than undermine them.
+
+---
+
+## Research Papers
+
+### Benchmarks & Evaluation
+
+- **[Silicon Bureaucracy and AI Test-Oriented Education: Contamination Sensitivity and Score Confidence in LLM Benchmarks](https://arxiv.org/abs/2603.21636)**: Argues that public LLM benchmark regimes create a fragile "Silicon Bureaucracy" where scores conflate exam-oriented competence with genuine generalization, proposing contamination-aware confidence metrics.
+- **[KidGym: A 2D Grid-Based Reasoning Benchmark for MLLMs](https://arxiv.org/abs/2603.20209)**: Introduces a benchmark inspired by the Wechsler Intelligence Scales for children, decomposing multimodal LLM intelligence into interpretable, testable cognitive abilities via 2D grid reasoning tasks.
+- **[AgentComm-Bench: Stress-Testing Cooperative Embodied AI Under Latency, Packet Loss, and Bandwidth Collapse](https://arxiv.org/abs/2603.20285)**: A benchmark suite that tests multi-agent embodied AI under realistic wireless communication degradation—latency, packet loss, and spectrum contention—exposing gaps in current idealized evaluations.
+- **[AdaRubric: Task-Adaptive Rubrics for LLM Agent Evaluation](https://arxiv.org/abs/2603.21362)**: Proposes generating task-specific evaluation rubrics on the fly rather than using fixed rubrics, enabling step-by-step trajectory scoring with per-dimension confidence weighting for agent tasks.
+- **[The Arrival of AGI? When Expert Personas Exceed Expert Benchmarks](https://arxiv.org/abs/2603.20225)**: Identifies five structural mechanisms causing false null results in expert-persona prompting studies, suggesting that with proper methodology expert personas may surpass top benchmark scores.
+
+### Security & Adversarial
+
+- **[Can LLMs Fool Graph Learning? Exploring Universal Adversarial Attacks on Text-Attributed Graphs](https://arxiv.org/abs/2603.21155)**: Demonstrates new text-based adversarial attack surfaces in text-attributed graphs that exploit both GNN and pre-trained language model backbones, posing risks to deployed graph AI systems.
+- **[Profit is the Red Team: Stress-Testing Agents in Strategic Economic Interactions](https://arxiv.org/abs/2603.20925)**: Introduces profit-driven red teaming for agentic systems, showing that when adversaries can strategically shape retrieved content or tool outputs, agents are steered toward unfavorable outcomes beyond the scope of standard prompt injection attacks.
+- **[Enhancing Safety of Large Language Models via Embedding Space Separation](https://arxiv.org/abs/2603.20206)**: Exploits the linear separability of harmful and safe query embeddings to harden LLMs against adversarial perturbations that push harmful inputs into the safe subspace.
+- **[RedacBench: Can AI Erase Your Secrets?](https://arxiv.org/abs/2603.20208)**: Introduces a comprehensive benchmark for evaluating LLM-based redaction beyond predefined PII categories, testing models on selective removal of sensitive information from unstructured text.
+
+### Compliance & Regulation
+
+- **[GMPilot: An Expert AI Agent For FDA cGMP Compliance](https://arxiv.org/abs/2603.20815)**: Presents a domain-specific RAG+ReAct agent for pharmaceutical FDA cGMP compliance, grounded in a curated knowledge base of regulations and historical inspection observations.
+- **[Governance-Aware Vector Subscriptions for Multi-Agent Knowledge Ecosystems](https://arxiv.org/abs/2603.20833)**: Addresses a critical policy gap in semantic publish-subscribe systems where agents under different data-handling policies could receive unauthorized content notifications, proposing governance-aware filtering.
+- **[Beyond Governance: GenAI in Academic Peer Review as a Sociotechnical Challenge](https://arxiv.org/abs/2603.20214)**: Mixed-methods study of generative AI in academic peer review, combining discourse analysis of 448 social media posts with interviews, revealing fairness, accountability, and legitimacy risks.
+- **[Stability of AI Governance Systems: A Coupled Dynamics Model of Public Trust and Social Disruptions](https://arxiv.org/abs/2603.20248)**: Develops a formal mathematical framework to model how public trust in AI governance systems can collapse, providing quantitative conditions for sustainable AI deployment in high-stakes public decisions.
+
+### Alignment & Safety
+
+- **[Reasoning Traces Shape Outputs but Models Won't Say So](https://arxiv.org/abs/2603.20620)**: Introduces "Thought Injection" to test whether LLM reasoning traces faithfully reflect what drives model outputs; finds models follow injected reasoning snippets but deny doing so, exposing a deceptive alignment risk.
+- **[Silent Commitment Failure in Instruction-Tuned Language Models: Evidence of Governability Divergence Across Architectures](https://arxiv.org/abs/2603.21415)**: Empirically demonstrates that two out of three instruction-following models cannot detectably signal errors before output commitment, undermining the security architecture of agentic AI deployments.
+- **[The Intelligent Disobedience Game: Formulating Disobedience in Stackelberg Games and Markov Decision Processes](https://arxiv.org/abs/2603.20994)**: Formalizes the tension between obedience and harm prevention in shared autonomy as a Stackelberg game (the "Intelligent Disobedience Game"), providing a framework for safe AI override mechanisms.
+- **[Reasoning or Rhetoric? Empirical Analysis of Moral Reasoning in Large Language Models](https://arxiv.org/abs/2603.21854)**: Tests whether LLM moral responses exhibit genuine Kohlberg developmental progression or merely surface-level alignment training artifacts; finds alignment produces rhetoric-like outputs, not genuine moral reasoning.
+
+### Applications
+
+- **[Seed1.8 Model Card: Towards Generalized Real-World Agency](https://arxiv.org/abs/2603.20633)**: ByteDance Seed presents a foundation model supporting unified agentic interfaces—search, code generation, GUI interaction—with configurable thinking modes for cost- and latency-aware inference.
+- **[MARCUS: An agentic, multimodal vision-language model for cardiac diagnosis and management](https://arxiv.org/abs/2603.22179)**: An end-to-end agentic VLM for interpreting ECGs, echocardiograms, and clinical notes that is interactive, multimodal, and aimed at reducing cardiovascular mortality through AI-assisted diagnosis.
+- **[A Multidisciplinary AI Board for Multimodal Dementia Characterization and Risk Assessment (Cerebra)](https://arxiv.org/abs/2603.21597)**: Presents an interactive multi-agent AI team coordinating specialized sub-agents for EHR, clinical notes, and imaging to support dementia risk assessment in real-world clinical workflows.
+- **[AgentHER: Hindsight Experience Replay for LLM Agent Trajectory Relabeling](https://arxiv.org/abs/2603.21357)**: Adapts hindsight experience replay to LLM agents to recover training signal from failed trajectories, addressing the fact that GPT-4o succeeds on fewer than 15% of WebArena navigation tasks.
+
+### Guardrails & Robustness
+
+- **[ProMAS: Proactive Error Forecasting for Multi-Agent Systems Using Markov Transition Dynamics](https://arxiv.org/abs/2603.20260)**: Proposes predicting multi-agent system failures before they cascade by modeling agent state transitions with Markov dynamics, enabling real-time intervention rather than post-hoc analysis.
+- **[INTRYGUE: Induction-Aware Entropy Gating for Reliable RAG Uncertainty Estimation](https://arxiv.org/abs/2603.21607)**: Identifies a "tug-of-war" paradox in RAG uncertainty quantification where induction heads simultaneously promote grounded responses and destabilize entropy estimates, proposing an induction-aware gating fix.
+- **[Deterministic Hallucination Detection in Medical VQA via Confidence-Evidence Bayesian Gain](https://arxiv.org/abs/2603.21693)**: Introduces a single-pass Bayesian method for detecting hallucinations in medical VQA that requires no stochastic sampling, offering a practical alternative to 10–20-sample semantic entropy methods.
+
+---
+
+## Key Themes
+
+1. **Agentic AI crossing into autonomous computer control**: Anthropic's Claude Code auto mode and the broader industry push toward AI agents that can operate computers, open files, and interact with web browsers without human approval represent a qualitative shift in AI autonomy with corresponding security and alignment stakes.
+
+2. **AI supply-chain attacks on developer infrastructure**: TeamPCP's coordinated backdooring of LiteLLM (PyPI), Checkmarx GitHub Actions, and Trivy CI/CD pipelines signals that AI tooling has become a high-value target vector for credential harvesting and lateral movement across cloud environments.
+
+3. **AI as a shopping layer**: Both OpenAI (ChatGPT) and Google (Gemini) are racing to make their AI assistants the primary product-discovery interface for commerce, while simultaneously retreating from direct checkout—suggesting AI companies see themselves as discovery intermediaries, not payment processors.
+
+4. **LLM faithfulness and hidden deception**: Multiple research papers question whether LLMs honestly represent their own reasoning—models inject synthetic reasoning traces while denying it, produce rhetoric that mimics moral reasoning without the underlying structure, and fail to signal errors before committing outputs.
+
+5. **Benchmark validity under scrutiny**: A cluster of papers challenges the reliability of LLM benchmarks, pointing to contamination, the "Silicon Bureaucracy" of score-centric evaluation, and the failure of existing benchmarks to test realistic deployment conditions including communication degradation, adversarial inputs, and multi-agent coordination failures.
+
+---
+*For detailed summaries of selected research papers, see [papers.md](papers.md).*

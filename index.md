@@ -1,18 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "March 24, 2026"
+hero_date: "March 25, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-03-24/digest"
-hero_secondary: "[Papers](2026-03-24/papers) [Security](2026-03-24/security) [Podcast](2026-03-24/podcast)"
-issue_count: 30
+hero_primary_link: "2026-03-25/digest"
+hero_secondary: "[Papers](2026-03-25/papers) [Security](2026-03-25/security) [Podcast](2026-03-25/podcast)"
+issue_count: 31
 highlights: |
-  - **[Jensen Huang Claims AGI Has Been Achieved](https://www.theverge.com/ai-artificial-intelligence/899086/jensen-huang-nvidia-agi)**: Nvidia CEO Jensen Huang told the Lex Fridman podcast "I think we've achieved AGI," reigniting debate over the vaguely defined term and what it means for the industry.
-  - **[Senator Warren Calls Pentagon's Anthropic Ban 'Retaliation'](https://techcrunch.com/2026/03/23/elizabeth-warren-anthropic-pentagon-defense-supply-chain-risk-retaliation/)**: Sen. Elizabeth Warren wrote to Defense Secretary Hegseth calling the DOD's "supply-chain risk" label on Anthropic politically motivated retaliation rather than a legitimate security concern.
-  - **[CanisterWorm Wiper Targets Iran via Cloud Services](https://krebsonsecurity.com/2026/03/canisterworm-springs-wiper-attack-targeting-iran/)**: A financially motivated threat actor released a worm that spreads through misconfigured cloud services and wipes data on systems using Iran's timezone or Farsi — part of a broader TeamPCP campaign that also poisoned the Trivy security scanner.
-  - **[OpenAI Guarantees 17.5% Returns to Court Private Equity](https://the-decoder.com/openai-lures-private-equity-firms-with-guaranteed-returns-in-race-against-anthropic/)**: OpenAI is offering private equity firms a guaranteed minimum return on enterprise joint ventures as it races to secure infrastructure partnerships ahead of Anthropic.
-  - **[White House Unveils AI Policy](https://www.technologyreview.com/2026/03/23/1134509/the-download-animal-welfare-agi-pilled-white-house-unveils-ai-policy/)**: The White House released its formal AI policy framework, coinciding with broader debates about how AI is shaping geopolitics, energy, and cognition.
+  - **[OpenAI shuts down Sora and its Disney deal](https://www.theverge.com/ai-artificial-intelligence/899850/openai-sora-ai-chatgpt)**: OpenAI announced it is discontinuing Sora, the video generation tool launched in late 2024 and tied to a major Disney licensing deal, in a significant strategic retreat.
+  - **[LiteLLM supply-chain attack spreads through Kubernetes clusters](https://the-decoder.com/popular-ai-proxy-litellm-got-hacked-with-malware-that-spreads-through-kubernetes-clusters/)**: The popular open-source AI API proxy was backdoored by threat actor TeamPCP, delivering a credential harvester and lateral movement toolkit that propagates across cloud infrastructure.
+  - **[Anthropic's Claude Code gains auto mode with computer control](https://techcrunch.com/2026/03/24/anthropic-hands-claude-code-more-control-but-keeps-it-on-a-leash/)**: Anthropic's new auto mode for Claude Code enables autonomous task execution—including opening files, running browsers, and dev tools—with reduced human approvals, marking a shift toward agentic AI.
+  - **[Arm launches its first in-house CPU for Meta's AI datacenters](https://www.theverge.com/ai-artificial-intelligence/899823/arm-agi-cpu-meta)**: After 35 years as a licensor, Arm revealed the Arm AGI CPU, its first self-produced chip, designed for inference workloads in AI agents, with Meta as the launch customer.
+  - **[ChatGPT becomes a shopping platform—without checkout](https://the-decoder.com/chatgpt-is-turning-into-a-shopping-platform-with-product-images-prices-and-comparisons-but-no-checkout/)**: OpenAI is adding visual product discovery to ChatGPT while simultaneously dropping its Instant Checkout system, handing transactions back to retailers.
 archive:
+  - date: "2026-03-25"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: true
+    highlight: "OpenAI shuts down Sora and its Disney deal: OpenAI announced it is discontinuing Sora, the video generation tool launched in late 2024 and tied to a major…"
   - date: "2026-03-24"
     has_papers: true
     has_security: true
