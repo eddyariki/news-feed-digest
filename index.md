@@ -1,18 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "March 25, 2026"
+hero_date: "March 26, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-03-25/digest"
-hero_secondary: "[Papers](2026-03-25/papers) [Security](2026-03-25/security) [Podcast](2026-03-25/podcast)"
-issue_count: 31
+hero_primary_link: "2026-03-26/digest"
+hero_secondary: "[Papers](2026-03-26/papers) [Security](2026-03-26/security) [Podcast](2026-03-26/podcast)"
+issue_count: 32
 highlights: |
-  - **[OpenAI shuts down Sora and its Disney deal](https://www.theverge.com/ai-artificial-intelligence/899850/openai-sora-ai-chatgpt)**: OpenAI announced it is discontinuing Sora, the video generation tool launched in late 2024 and tied to a major Disney licensing deal, in a significant strategic retreat.
-  - **[LiteLLM supply-chain attack spreads through Kubernetes clusters](https://the-decoder.com/popular-ai-proxy-litellm-got-hacked-with-malware-that-spreads-through-kubernetes-clusters/)**: The popular open-source AI API proxy was backdoored by threat actor TeamPCP, delivering a credential harvester and lateral movement toolkit that propagates across cloud infrastructure.
-  - **[Anthropic's Claude Code gains auto mode with computer control](https://techcrunch.com/2026/03/24/anthropic-hands-claude-code-more-control-but-keeps-it-on-a-leash/)**: Anthropic's new auto mode for Claude Code enables autonomous task execution—including opening files, running browsers, and dev tools—with reduced human approvals, marking a shift toward agentic AI.
-  - **[Arm launches its first in-house CPU for Meta's AI datacenters](https://www.theverge.com/ai-artificial-intelligence/899823/arm-agi-cpu-meta)**: After 35 years as a licensor, Arm revealed the Arm AGI CPU, its first self-produced chip, designed for inference workloads in AI agents, with Meta as the launch customer.
-  - **[ChatGPT becomes a shopping platform—without checkout](https://the-decoder.com/chatgpt-is-turning-into-a-shopping-platform-with-product-images-prices-and-comparisons-but-no-checkout/)**: OpenAI is adding visual product discovery to ChatGPT while simultaneously dropping its Instant Checkout system, handing transactions back to retailers.
+  - **[OpenAI Expands Funding Round Past $120 Billion Ahead of Potential IPO](https://the-decoder.com/openai-expands-its-record-funding-round-to-over-120-billion-as-it-eyes-a-potential-ipo-later-this-year/)**: OpenAI added another $10 billion to its record financing round, pushing the total beyond $120 billion as it eyes a public offering later this year.
+  - **[Google Moves Up "Q-Day" Threat to 2029](https://arstechnica.com/security/2026/03/google-bumps-up-q-day-estimate-to-2029-far-sooner-than-previously-thought/)**: Google is warning the entire industry that quantum computers capable of breaking RSA and elliptic-curve encryption could arrive within three years, far earlier than previously projected.
+  - **[Senate Democrats Move to Codify Anthropic's Red Lines on Autonomous Weapons](https://www.theverge.com/policy/900341/senator-schiff-anthropic-autonomous-weapons-mass-surveillance)**: Senator Schiff is drafting legislation to require human oversight in lethal AI decisions, expanding Anthropic's Pentagon standoff into a congressional battle.
+  - **[Disney Walks Away from OpenAI After Sora Is Killed](https://the-decoder.com/disney-pulls-out-of-openai-partnership-after-sora-app-and-api-gets-killed-just-months-after-launch/)**: OpenAI shut down the Sora app and API just months after Disney signed a $1 billion collaboration deal, prompting Disney to abandon the partnership entirely.
+  - **[MCP Prompt Injection and Tool Poisoning Vulnerabilities Detailed](https://arxiv.org/abs/2603.22489)**: Researchers conducted STRIDE threat modeling of the Model Context Protocol, revealing significant client-side security vulnerabilities that could allow adversaries to hijack AI assistant actions through malicious tool definitions.
 archive:
+  - date: "2026-03-26"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: true
+    highlight: "OpenAI Expands Funding Round Past $120 Billion Ahead of Potential IPO: OpenAI added another $10 billion to its record financing round, pushing the total beyond…"
   - date: "2026-03-25"
     has_papers: true
     has_security: true
