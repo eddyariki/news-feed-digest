@@ -1,18 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "March 26, 2026"
+hero_date: "March 27, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-03-26/digest"
-hero_secondary: "[Papers](2026-03-26/papers) [Security](2026-03-26/security) [Podcast](2026-03-26/podcast)"
-issue_count: 32
+hero_primary_link: "2026-03-27/digest"
+hero_secondary: "[Papers](2026-03-27/papers) [Security](2026-03-27/security) [Podcast](2026-03-27/podcast)"
+issue_count: 33
 highlights: |
-  - **[OpenAI Expands Funding Round Past $120 Billion Ahead of Potential IPO](https://the-decoder.com/openai-expands-its-record-funding-round-to-over-120-billion-as-it-eyes-a-potential-ipo-later-this-year/)**: OpenAI added another $10 billion to its record financing round, pushing the total beyond $120 billion as it eyes a public offering later this year.
-  - **[Google Moves Up "Q-Day" Threat to 2029](https://arstechnica.com/security/2026/03/google-bumps-up-q-day-estimate-to-2029-far-sooner-than-previously-thought/)**: Google is warning the entire industry that quantum computers capable of breaking RSA and elliptic-curve encryption could arrive within three years, far earlier than previously projected.
-  - **[Senate Democrats Move to Codify Anthropic's Red Lines on Autonomous Weapons](https://www.theverge.com/policy/900341/senator-schiff-anthropic-autonomous-weapons-mass-surveillance)**: Senator Schiff is drafting legislation to require human oversight in lethal AI decisions, expanding Anthropic's Pentagon standoff into a congressional battle.
-  - **[Disney Walks Away from OpenAI After Sora Is Killed](https://the-decoder.com/disney-pulls-out-of-openai-partnership-after-sora-app-and-api-gets-killed-just-months-after-launch/)**: OpenAI shut down the Sora app and API just months after Disney signed a $1 billion collaboration deal, prompting Disney to abandon the partnership entirely.
-  - **[MCP Prompt Injection and Tool Poisoning Vulnerabilities Detailed](https://arxiv.org/abs/2603.22489)**: Researchers conducted STRIDE threat modeling of the Model Context Protocol, revealing significant client-side security vulnerabilities that could allow adversaries to hijack AI assistant actions through malicious tool definitions.
+  - **[ARC-AGI-3 Launches with $2M Prize — Every Frontier Model Scores Below 1%](https://the-decoder.com/arc-agi-3-offers-2m-to-any-ai-that-matches-untrained-humans-yet-every-frontier-model-scores-below-1/)**: The new ARC-AGI-3 benchmark places AI in interactive game environments that untrained humans solve perfectly, exposing a stark gap that even the most capable frontier models cannot bridge.
+  - **[EU Backs Nudify App Ban and Delays AI Act Deadlines](https://www.theverge.com/ai-artificial-intelligence/901315/eu-ai-act-delays-ban-nudify-apps)**: The European Parliament voted by a large majority to push back compliance deadlines for high-risk AI systems while simultaneously banning applications that generate non-consensual nude imagery.
+  - **[CISA: Langflow Flaw Actively Exploited to Hijack AI Workflows](https://www.bleepingcomputer.com/news/security/cisa-new-langflow-flaw-actively-exploited-to-hijack-ai-workflows/)**: A critical code-injection vulnerability in the popular AI agent orchestration framework was exploited in the wild within hours of disclosure, prompting an emergency CISA advisory.
+  - **[Claude Chrome Extension Zero-Click XSS Enabled Silent Prompt Injection](https://thehackernews.com/2026/03/claude-extension-flaw-enabled-zero.html)**: A now-patched flaw in Anthropic's Claude browser extension let any webpage silently inject arbitrary prompts into the assistant without any user interaction.
+  - **[Wikipedia Bans AI-Generated Article Text](https://www.theverge.com/tech/901461/wikipedia-ai-generated-article-ban)**: English Wikipedia's new guidelines prohibit editors from using generative AI to write or substantially rewrite articles, citing systematic violations of core content policies.
 archive:
+  - date: "2026-03-27"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: true
+    highlight: "ARC-AGI-3 Launches with $2M Prize — Every Frontier Model Scores Below 1%: The new ARC-AGI-3 benchmark places AI in interactive game environments that untrained…"
   - date: "2026-03-26"
     has_papers: true
     has_security: true
