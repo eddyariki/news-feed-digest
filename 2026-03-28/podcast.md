@@ -1,11 +1,3 @@
----
-layout: default
-title: "AI Research Podcast — 2026-03-28"
----
-# AI Research Podcast — 2026-03-28
-
-*A conversation about today's research papers.*
-
 Rachel: Researchers built chatbots specifically designed to trick people into giving up personal information. The most effective ones made users feel safe while extracting the most data. Five hundred people fell for it.
 
 Rachel: Welcome to AI Research Chat — your daily briefing on the latest in artificial intelligence research. I'm Rachel, and joining me as always is Roy. Today is March 28, 2026, and we have three papers to get through.
