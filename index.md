@@ -1,18 +1,19 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "March 28, 2026"
+hero_date: "March 30, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-03-28/digest"
-hero_secondary: "[Papers](2026-03-28/papers) [Security](2026-03-28/security) [Podcast](2026-03-28/podcast)"
-issue_count: 34
+hero_primary_link: "2026-03-30/digest"
+hero_secondary: "[Podcast](2026-03-30/podcast)"
+issue_count: 35
 highlights: |
-  - **[Anthropic Leak Reveals "Claude Mythos"](https://the-decoder.com/anthropic-leak-reveals-new-model-claude-mythos-with-dramatically-higher-scores-on-tests-than-any-previous-model/)**: Leaked Anthropic draft posts reveal a new model class above Opus with "dramatically higher scores on tests," a deliberate slow-release strategy, and a strong cybersecurity focus.
-  - **[Federal Judge Blocks Trump's Ban on Anthropic AI Models](https://the-decoder.com/federal-judge-blocks-trumps-ban-on-anthropic-ai-models-calls-security-risk-label-orwellian/)**: A San Francisco judge called the government's "national security risk" label for Anthropic "Orwellian," ruling it constituted illegal First Amendment retaliation.
-  - **[LangChain and LangGraph Flaws Expose Files, Secrets, and Databases](https://thehackernews.com/2026/03/langchain-langgraph-flaws-expose-files.html)**: Three newly disclosed vulnerabilities in widely deployed AI orchestration frameworks could expose filesystem data, environment secrets, and conversation history.
-  - **[SoftBank's $40B Loan Points to a 2026 OpenAI IPO](https://techcrunch.com/2026/03/27/why-softbanks-new-40b-loan-points-to-a-2026-openai-ipo/)**: JPMorgan and Goldman Sachs are extending a 12-month unsecured loan to SoftBank, widely read as financial preparation for an OpenAI public offering.
-  - **[ARC-AGI-3 Sets a New Bar for Agentic Intelligence](https://arxiv.org/abs/2603.24621)**: A successor to ARC-AGI-1/2 evaluates frontier models on turn-based abstract environments requiring goal inference and planning without explicit instructions.
+  - No highlights available.
 archive:
+  - date: "2026-03-30"
+    has_papers: false
+    has_security: false
+    has_weekly: true
+    has_podcast: true
   - date: "2026-03-28"
     has_papers: true
     has_security: true
