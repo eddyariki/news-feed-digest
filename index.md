@@ -1,14 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "March 30, 2026"
+hero_date: "March 31, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-03-30/digest"
-hero_secondary: "[Podcast](2026-03-30/podcast)"
-issue_count: 35
+hero_primary_link: "2026-03-31/digest"
+hero_secondary: "[Papers](2026-03-31/papers) [Security](2026-03-31/security) [Podcast](2026-03-31/podcast)"
+issue_count: 36
 highlights: |
-  - No highlights available.
+  - **[Pentagon's Culture War Tactic Against Anthropic Has Backfired](https://www.technologyreview.com/2026/03/30/1134881/the-pentagons-culture-war-tactic-against-anthropic-has-backfired/)**: A California judge temporarily blocked the Pentagon from labeling Anthropic a supply chain risk, marking a significant legal setback for DoD's attempt to restrict government use of its AI.
+  - **[OpenAI Patches ChatGPT Data Exfiltration Flaw](https://thehackernews.com/2026/03/openai-patches-chatgpt-data.html)**: A single malicious prompt could silently exfiltrate user messages, uploaded files, and sensitive conversation data from ChatGPT — Check Point found and reported the flaw.
+  - **[OpenAI Sora Burned $1M/Day Before Shutdown](https://the-decoder.com/openais-sora-burned-a-million-dollars-a-day-while-losing-half-its-users-in-record-time/)**: OpenAI is shutting down its Sora video app after it lost half its users rapidly and proved financially unviable, redirecting compute toward coding, enterprise, and agent products.
+  - **[AI Models Confidently Describe Images They Never Saw](https://the-decoder.com/ai-models-confidently-describe-images-they-never-saw-and-benchmarks-fail-to-catch-it/)**: A Stanford study finds that top multimodal models including GPT-5, Gemini 3 Pro, and Claude Opus 4.5 generate detailed image descriptions and medical diagnoses even when no image is provided — and standard benchmarks fail to catch it.
+  - **[Mistral AI Borrows $830M to Build Paris Data Center](https://the-decoder.com/mistral-ai-borrows-830-million-dollars-to-operate-a-new-data-center-near-paris/)**: Europe's leading AI startup is taking on significant debt to operate a new facility with nearly 14,000 NVIDIA GPUs, targeting operations by Q2 2026.
 archive:
+  - date: "2026-03-31"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: true
+    highlight: "Pentagon's Culture War Tactic Against Anthropic Has Backfired: A California judge temporarily blocked the Pentagon from labeling Anthropic a supply chain risk,…"
   - date: "2026-03-30"
     has_papers: false
     has_security: false
