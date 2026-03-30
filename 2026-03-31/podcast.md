@@ -1,11 +1,3 @@
----
-layout: default
-title: "AI Research Podcast — 2026-03-31"
----
-# AI Research Podcast — 2026-03-31
-
-*A conversation about today's research papers.*
-
 Rachel: Researchers tested thirteen AI agents on real-world tasks with safety rules. Even the best one violated safety constraints more than sixty percent of the time, and the more capable the agent, the more dangerous it became.
 
 Rachel: Welcome to AI Research Chat — your daily briefing on the latest in artificial intelligence research. I'm Rachel, and joining me as always is Roy. Today is March 31, 2026, and we have three papers to get through.
