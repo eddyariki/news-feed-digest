@@ -1,18 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "April 1, 2026"
+hero_date: "April 2, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-04-01/digest"
-hero_secondary: "[Papers](2026-04-01/papers) [Security](2026-04-01/security) [Podcast](2026-04-01/podcast)"
-issue_count: 37
+hero_primary_link: "2026-04-02/digest"
+hero_secondary: "[Papers](2026-04-02/papers) [Security](2026-04-02/security) [Podcast](2026-04-02/podcast)"
+issue_count: 38
 highlights: |
-  - **[OpenAI Raises $122B at $852B Valuation](https://openai.com/index/accelerating-the-next-phase-ai)**: Led by Amazon, Nvidia, and SoftBank, OpenAI's monster funding round includes $3B from retail investors and positions the company for a near-term IPO.
-  - **[Axios npm Package Compromised in Supply Chain Attack](https://www.darkreading.com/application-security/axios-npm-package-compromised-precision-attack)**: The JavaScript HTTP client library with 100M+ weekly downloads was hijacked — possibly by North Korean threat actors — to deliver cross-platform RATs to Linux, Windows, and macOS.
-  - **[Google Vertex AI Agents Can Be Weaponized Against Cloud Infrastructure](https://www.darkreading.com/cyber-risk/googles-vertex-ai-over-privilege-problem)**: Palo Alto researchers demonstrate how over-privileged Vertex AI agents can be exploited to exfiltrate sensitive data and compromise cloud environments.
-  - **[Quantum Computers Need Far Fewer Resources to Break Elliptic Curve Encryption](https://arstechnica.com/security/2026/03/new-quantum-computing-advances-heighten-threat-to-elliptic-curve-cryptosystems/)**: New research tightens the timeline for "Q Day," reducing the resource estimate needed to break widely-used cryptography.
-  - **[Anthropic Accidentally Publishes Claude Code Source Code](https://the-decoder.com/anthropic-accidentally-publishes-claude-code-source-code-for-anyone-to-find/)**: Parts of the Claude Code source were briefly made public — Anthropic's second significant disclosure mishap in recent weeks.
+  - **[OpenAI Closes $122B Mega-Round, Unveils ChatGPT Super App](https://the-decoder.com/openai-officially-confirms-mega-funding-round-and-chatgpt-super-app/)**: OpenAI officially confirms a $122 billion funding round at an $852 billion valuation, backed by SoftBank, Amazon, and NVIDIA, and signals a hard pivot toward a unified ChatGPT super app.
+  - **[Anthropic's Claude Code Leaked Source Cloned 8,000+ Times](https://the-decoder.com/anthropics-leaked-ai-coding-tool-has-been-cloned-over-8000-times-on-github-despite-mass-takedowns/)**: An npm packaging error exposed Claude Code's source code, which spread to over 8,000 GitHub forks despite mass takedown efforts, revealing details of an unreleased "Mythos" model.
+  - **[Google DeepMind Identifies Six "Traps" That Hijack Autonomous AI Agents](https://the-decoder.com/google-deepmind-study-exposes-six-traps-that-can-easily-hijack-autonomous-ai-agents-in-the-wild/)**: A new study documents six environmental manipulation patterns that reliably redirect real-world AI agents browsing the web, handling email, and executing transactions.
+  - **[EU Bars AI-Generated Content from Official Communications](https://the-decoder.com/eu-bars-ai-generated-content-from-official-communications-according-to-politico/)**: The European Commission, Parliament, and Council have prohibited their press teams from publishing fully AI-generated content, citing authenticity and accountability concerns.
+  - **[North Korea Linked to Axios npm Supply Chain Compromise](https://thehackernews.com/2026/04/google-attributes-axios-npm-supply.html)**: Google formally attributes the supply chain attack on the widely-used Axios npm package to North Korean group UNC1069, marking a significant escalation in open-source ecosystem targeting.
 archive:
+  - date: "2026-04-02"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: true
+    highlight: "OpenAI Closes $122B Mega-Round, Unveils ChatGPT Super App: OpenAI officially confirms a $122 billion funding round at an $852 billion valuation, backed by…"
   - date: "2026-04-01"
     has_papers: true
     has_security: true
