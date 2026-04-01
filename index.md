@@ -1,18 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "March 31, 2026"
+hero_date: "April 1, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-03-31/digest"
-hero_secondary: "[Papers](2026-03-31/papers) [Security](2026-03-31/security) [Podcast](2026-03-31/podcast)"
-issue_count: 36
+hero_primary_link: "2026-04-01/digest"
+hero_secondary: "[Papers](2026-04-01/papers) [Security](2026-04-01/security) [Podcast](2026-04-01/podcast)"
+issue_count: 37
 highlights: |
-  - **[Pentagon's Culture War Tactic Against Anthropic Has Backfired](https://www.technologyreview.com/2026/03/30/1134881/the-pentagons-culture-war-tactic-against-anthropic-has-backfired/)**: A California judge temporarily blocked the Pentagon from labeling Anthropic a supply chain risk, marking a significant legal setback for DoD's attempt to restrict government use of its AI.
-  - **[OpenAI Patches ChatGPT Data Exfiltration Flaw](https://thehackernews.com/2026/03/openai-patches-chatgpt-data.html)**: A single malicious prompt could silently exfiltrate user messages, uploaded files, and sensitive conversation data from ChatGPT — Check Point found and reported the flaw.
-  - **[OpenAI Sora Burned $1M/Day Before Shutdown](https://the-decoder.com/openais-sora-burned-a-million-dollars-a-day-while-losing-half-its-users-in-record-time/)**: OpenAI is shutting down its Sora video app after it lost half its users rapidly and proved financially unviable, redirecting compute toward coding, enterprise, and agent products.
-  - **[AI Models Confidently Describe Images They Never Saw](https://the-decoder.com/ai-models-confidently-describe-images-they-never-saw-and-benchmarks-fail-to-catch-it/)**: A Stanford study finds that top multimodal models including GPT-5, Gemini 3 Pro, and Claude Opus 4.5 generate detailed image descriptions and medical diagnoses even when no image is provided — and standard benchmarks fail to catch it.
-  - **[Mistral AI Borrows $830M to Build Paris Data Center](https://the-decoder.com/mistral-ai-borrows-830-million-dollars-to-operate-a-new-data-center-near-paris/)**: Europe's leading AI startup is taking on significant debt to operate a new facility with nearly 14,000 NVIDIA GPUs, targeting operations by Q2 2026.
+  - **[OpenAI Raises $122B at $852B Valuation](https://openai.com/index/accelerating-the-next-phase-ai)**: Led by Amazon, Nvidia, and SoftBank, OpenAI's monster funding round includes $3B from retail investors and positions the company for a near-term IPO.
+  - **[Axios npm Package Compromised in Supply Chain Attack](https://www.darkreading.com/application-security/axios-npm-package-compromised-precision-attack)**: The JavaScript HTTP client library with 100M+ weekly downloads was hijacked — possibly by North Korean threat actors — to deliver cross-platform RATs to Linux, Windows, and macOS.
+  - **[Google Vertex AI Agents Can Be Weaponized Against Cloud Infrastructure](https://www.darkreading.com/cyber-risk/googles-vertex-ai-over-privilege-problem)**: Palo Alto researchers demonstrate how over-privileged Vertex AI agents can be exploited to exfiltrate sensitive data and compromise cloud environments.
+  - **[Quantum Computers Need Far Fewer Resources to Break Elliptic Curve Encryption](https://arstechnica.com/security/2026/03/new-quantum-computing-advances-heighten-threat-to-elliptic-curve-cryptosystems/)**: New research tightens the timeline for "Q Day," reducing the resource estimate needed to break widely-used cryptography.
+  - **[Anthropic Accidentally Publishes Claude Code Source Code](https://the-decoder.com/anthropic-accidentally-publishes-claude-code-source-code-for-anyone-to-find/)**: Parts of the Claude Code source were briefly made public — Anthropic's second significant disclosure mishap in recent weeks.
 archive:
+  - date: "2026-04-01"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: true
+    highlight: "OpenAI Raises $122B at $852B Valuation: Led by Amazon, Nvidia, and SoftBank, OpenAI's monster funding round includes $3B from retail investors and positions…"
   - date: "2026-03-31"
     has_papers: true
     has_security: true
