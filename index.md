@@ -1,18 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "April 2, 2026"
+hero_date: "April 3, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-04-02/digest"
-hero_secondary: "[Papers](2026-04-02/papers) [Security](2026-04-02/security) [Podcast](2026-04-02/podcast)"
-issue_count: 38
+hero_primary_link: "2026-04-03/digest"
+hero_secondary: "[Papers](2026-04-03/papers) [Security](2026-04-03/security) [Podcast](2026-04-03/podcast)"
+issue_count: 39
 highlights: |
-  - **[OpenAI Closes $122B Mega-Round, Unveils ChatGPT Super App](https://the-decoder.com/openai-officially-confirms-mega-funding-round-and-chatgpt-super-app/)**: OpenAI officially confirms a $122 billion funding round at an $852 billion valuation, backed by SoftBank, Amazon, and NVIDIA, and signals a hard pivot toward a unified ChatGPT super app.
-  - **[Anthropic's Claude Code Leaked Source Cloned 8,000+ Times](https://the-decoder.com/anthropics-leaked-ai-coding-tool-has-been-cloned-over-8000-times-on-github-despite-mass-takedowns/)**: An npm packaging error exposed Claude Code's source code, which spread to over 8,000 GitHub forks despite mass takedown efforts, revealing details of an unreleased "Mythos" model.
-  - **[Google DeepMind Identifies Six "Traps" That Hijack Autonomous AI Agents](https://the-decoder.com/google-deepmind-study-exposes-six-traps-that-can-easily-hijack-autonomous-ai-agents-in-the-wild/)**: A new study documents six environmental manipulation patterns that reliably redirect real-world AI agents browsing the web, handling email, and executing transactions.
-  - **[EU Bars AI-Generated Content from Official Communications](https://the-decoder.com/eu-bars-ai-generated-content-from-official-communications-according-to-politico/)**: The European Commission, Parliament, and Council have prohibited their press teams from publishing fully AI-generated content, citing authenticity and accountability concerns.
-  - **[North Korea Linked to Axios npm Supply Chain Compromise](https://thehackernews.com/2026/04/google-attributes-axios-npm-supply.html)**: Google formally attributes the supply chain attack on the widely-used Axios npm package to North Korean group UNC1069, marking a significant escalation in open-source ecosystem targeting.
+  - **[Google releases Gemma 4 with Apache 2.0 licensing](https://deepmind.google/blog/gemma-4-byte-for-byte-the-most-capable-open-models/)**: Google's most capable open model family debuts with a permissive Apache 2.0 license for the first time, broadening commercial use.
+  - **[Claude Code leak exploited to distribute infostealer malware via GitHub](https://www.bleepingcomputer.com/news/security/claude-code-leak-used-to-push-infostealer-malware-on-github/)**: Threat actors used leaked Claude Code credentials to push infostealer payloads through GitHub repositories, marking one of the first high-profile AI tool supply chain attacks.
+  - **[Microsoft unveils three new foundational AI models](https://techcrunch.com/2026/04/02/microsoft-takes-on-ai-rivals-with-three-new-foundational-models/)**: Microsoft's "superintelligence" strategy takes shape with MAI-DS-R1, MAI-Transcribe-1, and a third model aimed directly at competing with OpenAI and Google.
+  - **[Chinese chipmakers capture 41% of domestic AI accelerator market](https://the-decoder.com/chinese-chipmakers-now-control-41-percent-of-chinas-ai-accelerator-market/)**: Domestic firms have rapidly displaced Nvidia amid US export controls, a milestone reshaping the global AI hardware landscape.
+  - **[New Rowhammer attacks grant full control of systems running Nvidia GPUs](https://arstechnica.com/security/2026/04/new-rowhammer-attacks-give-complete-control-of-machines-running-nvidia-gpus/)**: Researchers demonstrate a novel Rowhammer variant targeting GPU memory, enabling privilege escalation on AI inference hardware.
 archive:
+  - date: "2026-04-03"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: true
+    highlight: "Google releases Gemma 4 with Apache 2.0 licensing: Google's most capable open model family debuts with a permissive Apache 2.0 license for the first time,…"
   - date: "2026-04-02"
     has_papers: true
     has_security: true
