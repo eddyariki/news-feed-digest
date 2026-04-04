@@ -1,11 +1,3 @@
----
-layout: default
-title: "AI Research Podcast — 2026-04-04"
----
-# AI Research Podcast — 2026-04-04
-
-*A conversation about today's research papers.*
-
 Rachel: Researchers asked four frontier AI models whether they'd refuse a dangerous request — and the models got it wrong most often on exactly the questions where getting it right matters most.
 
 Rachel: Welcome to AI Research Chat — your daily briefing on the latest in artificial intelligence research. I'm Rachel, and joining me as always is Roy. Today is April 4, 2026, and we have three papers to get through.
