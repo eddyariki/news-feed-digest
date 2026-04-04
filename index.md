@@ -1,18 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "April 3, 2026"
+hero_date: "April 4, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-04-03/digest"
-hero_secondary: "[Papers](2026-04-03/papers) [Security](2026-04-03/security) [Podcast](2026-04-03/podcast)"
-issue_count: 39
+hero_primary_link: "2026-04-04/digest"
+hero_secondary: "[Papers](2026-04-04/papers) [Security](2026-04-04/security)"
+issue_count: 40
 highlights: |
-  - **[Google releases Gemma 4 with Apache 2.0 licensing](https://deepmind.google/blog/gemma-4-byte-for-byte-the-most-capable-open-models/)**: Google's most capable open model family debuts with a permissive Apache 2.0 license for the first time, broadening commercial use.
-  - **[Claude Code leak exploited to distribute infostealer malware via GitHub](https://www.bleepingcomputer.com/news/security/claude-code-leak-used-to-push-infostealer-malware-on-github/)**: Threat actors used leaked Claude Code credentials to push infostealer payloads through GitHub repositories, marking one of the first high-profile AI tool supply chain attacks.
-  - **[Microsoft unveils three new foundational AI models](https://techcrunch.com/2026/04/02/microsoft-takes-on-ai-rivals-with-three-new-foundational-models/)**: Microsoft's "superintelligence" strategy takes shape with MAI-DS-R1, MAI-Transcribe-1, and a third model aimed directly at competing with OpenAI and Google.
-  - **[Chinese chipmakers capture 41% of domestic AI accelerator market](https://the-decoder.com/chinese-chipmakers-now-control-41-percent-of-chinas-ai-accelerator-market/)**: Domestic firms have rapidly displaced Nvidia amid US export controls, a milestone reshaping the global AI hardware landscape.
-  - **[New Rowhammer attacks grant full control of systems running Nvidia GPUs](https://arstechnica.com/security/2026/04/new-rowhammer-attacks-give-complete-control-of-machines-running-nvidia-gpus/)**: Researchers demonstrate a novel Rowhammer variant targeting GPU memory, enabling privilege escalation on AI inference hardware.
+  - **[Anthropic Acquires Biotech Startup Coefficient Bio in $400M Deal](https://techcrunch.com/2026/04/03/anthropic-buys-biotech-startup-coefficient-bio-in-400m-deal-reports/)**: Anthropic makes its largest-ever acquisition, buying a stealth biotech AI startup in a $400 million stock deal, signaling an aggressive push into life sciences.
+  - **[OpenClaw Agentic AI Tool Left Attackers with Silent Admin Access](https://arstechnica.com/security/2026/04/heres-why-its-prudent-for-openclaw-users-to-assume-compromise/)**: The viral agentic AI tool harbored a critical unauthenticated privilege-escalation vulnerability, giving attackers admin access without any user interaction.
+  - **[DeepSeek v4 to Run Entirely on Huawei Chips](https://the-decoder.com/deepseek-v4-will-reportedly-run-entirely-on-huawei-chips-in-a-major-win-for-chinas-ai-independence-push/)**: China's leading AI lab will launch its next model exclusively on domestic Huawei hardware, a milestone in China's drive for semiconductor independence from Nvidia.
+  - **[Microsoft Commits $10 Billion to Japan's AI Ecosystem](https://the-decoder.com/microsoft-is-betting-10-billion-on-japans-ai-future/)**: Microsoft's largest-ever country investment (2026–2029) targets AI infrastructure and research in Japan, competing directly with Amazon and Google.
+  - **[Claude Source Code Leak Exposes Deep Software Supply Chain Risks](https://www.darkreading.com/application-security/source-code-leaks-highlight-lack-supply-chain-oversight)**: A leak of Anthropic's Claude source code prompted industry-wide calls to treat the software supply chain as critical infrastructure.
 archive:
+  - date: "2026-04-04"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: false
+    highlight: "Anthropic Acquires Biotech Startup Coefficient Bio in $400M Deal: Anthropic makes its largest-ever acquisition, buying a stealth biotech AI startup in a $400…"
   - date: "2026-04-03"
     has_papers: true
     has_security: true
