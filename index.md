@@ -4,7 +4,7 @@ layout: home
 hero_date: "April 4, 2026"
 hero_primary_label: "Read Today's News Digest"
 hero_primary_link: "2026-04-04/digest"
-hero_secondary: "[Papers](2026-04-04/papers) [Security](2026-04-04/security)"
+hero_secondary: "[Papers](2026-04-04/papers) [Security](2026-04-04/security) [Podcast](2026-04-04/podcast)"
 issue_count: 40
 highlights: |
   - **[Anthropic Acquires Biotech Startup Coefficient Bio in $400M Deal](https://techcrunch.com/2026/04/03/anthropic-buys-biotech-startup-coefficient-bio-in-400m-deal-reports/)**: Anthropic makes its largest-ever acquisition, buying a stealth biotech AI startup in a $400 million stock deal, signaling an aggressive push into life sciences.
@@ -17,7 +17,7 @@ archive:
     has_papers: true
     has_security: true
     has_weekly: false
-    has_podcast: false
+    has_podcast: true
     highlight: "Anthropic Acquires Biotech Startup Coefficient Bio in $400M Deal: Anthropic makes its largest-ever acquisition, buying a stealth biotech AI startup in a $400…"
   - date: "2026-04-03"
     has_papers: true
