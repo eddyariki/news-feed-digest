@@ -1,18 +1,19 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "April 4, 2026"
+hero_date: "April 6, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-04-04/digest"
-hero_secondary: "[Papers](2026-04-04/papers) [Security](2026-04-04/security) [Podcast](2026-04-04/podcast)"
-issue_count: 40
+hero_primary_link: "2026-04-06/digest"
+hero_secondary: "[Podcast](2026-04-06/podcast)"
+issue_count: 41
 highlights: |
-  - **[Anthropic Acquires Biotech Startup Coefficient Bio in $400M Deal](https://techcrunch.com/2026/04/03/anthropic-buys-biotech-startup-coefficient-bio-in-400m-deal-reports/)**: Anthropic makes its largest-ever acquisition, buying a stealth biotech AI startup in a $400 million stock deal, signaling an aggressive push into life sciences.
-  - **[OpenClaw Agentic AI Tool Left Attackers with Silent Admin Access](https://arstechnica.com/security/2026/04/heres-why-its-prudent-for-openclaw-users-to-assume-compromise/)**: The viral agentic AI tool harbored a critical unauthenticated privilege-escalation vulnerability, giving attackers admin access without any user interaction.
-  - **[DeepSeek v4 to Run Entirely on Huawei Chips](https://the-decoder.com/deepseek-v4-will-reportedly-run-entirely-on-huawei-chips-in-a-major-win-for-chinas-ai-independence-push/)**: China's leading AI lab will launch its next model exclusively on domestic Huawei hardware, a milestone in China's drive for semiconductor independence from Nvidia.
-  - **[Microsoft Commits $10 Billion to Japan's AI Ecosystem](https://the-decoder.com/microsoft-is-betting-10-billion-on-japans-ai-future/)**: Microsoft's largest-ever country investment (2026–2029) targets AI infrastructure and research in Japan, competing directly with Amazon and Google.
-  - **[Claude Source Code Leak Exposes Deep Software Supply Chain Risks](https://www.darkreading.com/application-security/source-code-leaks-highlight-lack-supply-chain-oversight)**: A leak of Anthropic's Claude source code prompted industry-wide calls to treat the software supply chain as critical infrastructure.
+  - No highlights available.
 archive:
+  - date: "2026-04-06"
+    has_papers: false
+    has_security: false
+    has_weekly: true
+    has_podcast: true
   - date: "2026-04-04"
     has_papers: true
     has_security: true
