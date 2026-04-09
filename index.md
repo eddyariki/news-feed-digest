@@ -1,18 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "April 9, 2026"
+hero_date: "April 10, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-04-09/digest"
-hero_secondary: "[Papers](2026-04-09/papers) [Security](2026-04-09/security) [Podcast](2026-04-09/podcast)"
-issue_count: 44
+hero_primary_link: "2026-04-10/digest"
+hero_secondary: "[Papers](2026-04-10/papers) [Security](2026-04-10/security) [Podcast](2026-04-10/podcast)"
+issue_count: 45
 highlights: |
-  - **[Claude Mythos Finds Thousands of Zero-Day Flaws Across Major Systems](https://thehackernews.com/2026/04/anthropics-claude-mythos-finds.html)**: Anthropic's Project Glasswing deploys a restricted preview of its next-gen model to autonomously discover vulnerabilities at a scale no human team could review, in partnership with AWS, Apple, Broadcom, Cisco, and CrowdStrike.
-  - **[Meta Launches Muse Spark — Its First Frontier Model Without Open Weights](https://the-decoder.com/metas-muse-spark-is-its-first-frontier-model-and-its-first-without-open-weights/)**: Meta Superintelligence Labs debuts a closed-weight frontier model that independent tests show is closing the gap to OpenAI, Anthropic, and Google.
-  - **[HackerOne Pauses Bug Bounties Amid AI-Led Remediation Crisis](https://www.darkreading.com/application-security/ai-led-remediation-crisis-prompts-hackerone-pause-bug-bounties)**: Automated vulnerability discovery has outpaced developers' ability to fix bugs, shifting the real bottleneck from finding flaws to remediating them — a cost bounties don't fund.
-  - **[Iran-Linked Hackers Disrupt U.S. Critical Infrastructure via Exposed PLCs](https://thehackernews.com/2026/04/iran-linked-hackers-disrupt-us-critical.html)**: Iran-affiliated actors compromise internet-facing industrial controllers across critical infrastructure sectors, causing display manipulation and operational disruption.
-  - **[OpenAI Releases Child Safety Blueprint](https://techcrunch.com/2026/04/08/openai-releases-a-new-safety-blueprint-to-address-the-rise-in-child-sexual-exploitation/)**: OpenAI outlines AI safeguards, age-appropriate design principles, and collaborative commitments in response to rising AI-enabled child exploitation.
+  - **[Anthropic limits Mythos model over cybersecurity weapon risk](https://techcrunch.com/2026/04/09/is-anthropic-limiting-the-release-of-mythos-to-protect-the-internet-or-anthropic/)**: Anthropic restricted access to its most capable new model, citing its unprecedented ability to discover exploitable software vulnerabilities at scale — raising questions about where AI safety ends and competitive caution begins.
+  - **[US appeals court lets Pentagon blacklisting of Anthropic stand](https://the-decoder.com/us-appeals-court-refuses-to-block-pentagons-blacklisting-of-anthropic/)**: A federal appeals court declined to block the Department of Defense's designation of Anthropic as a national security risk, leaving a cloud over the company's government business.
+  - **[Adobe Reader zero-day exploited in the wild since December 2025](https://www.bleepingcomputer.com/news/security/hackers-exploiting-acrobat-reader-zero-day-flaw-since-december/)**: A highly sophisticated PDF exploit weaponizing an unpatched Adobe Reader flaw has been used in targeted attacks for at least four months before disclosure.
+  - **[OpenAI halves Pro tier price to $100/month](https://techcrunch.com/2026/04/09/chatgpt-pro-plan-100-month-codex/)**: OpenAI introduces a $100/month tier aimed at heavy Codex users, cutting the previous jump from $20 to $200 and directly undercutting rivals Anthropic and Google.
+  - **[Anthropic launches managed infrastructure for autonomous AI agents](https://the-decoder.com/anthropic-launches-managed-infrastructure-for-autonomous-ai-agents/)**: Claude Managed Agents gives developers a hosted platform for building and running long-running autonomous agents, with Notion and Rakuten among early adopters.
 archive:
+  - date: "2026-04-10"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: true
+    highlight: "Anthropic limits Mythos model over cybersecurity weapon risk: Anthropic restricted access to its most capable new model, citing its unprecedented ability to…"
   - date: "2026-04-09"
     has_papers: true
     has_security: true
