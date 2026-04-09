@@ -1,18 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "April 8, 2026"
+hero_date: "April 9, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-04-08/digest"
-hero_secondary: "[Papers](2026-04-08/papers) [Security](2026-04-08/security) [Podcast](2026-04-08/podcast)"
-issue_count: 43
+hero_primary_link: "2026-04-09/digest"
+hero_secondary: "[Papers](2026-04-09/papers) [Security](2026-04-09/security) [Podcast](2026-04-09/podcast)"
+issue_count: 44
 highlights: |
-  - **[Anthropic's Project Glasswing AI Found Vulnerabilities in Every Major OS and Browser](https://www.theverge.com/ai-artificial-intelligence/908114/anthropic-project-glasswing-cybersecurity)**: Anthropic debuted a specialized cybersecurity model ("Mythos") that autonomously identified security flaws across operating systems and browsers as part of a defensive partnership with Nvidia, Google, AWS, Apple, and Microsoft.
-  - **[Flowise LLM Platform Hit by CVSS 10.0 RCE Zero-Day, 12,000+ Instances Exposed](https://thehackernews.com/2026/04/flowise-ai-agent-builder-under-active.html)**: Attackers are actively exploiting a maximum-severity code-injection flaw in Flowise, a popular open-source LLM/agent builder, with over 12,000 internet-exposed instances at risk.
-  - **[APT28's FrostArmada Router Hijacking Campaign Disrupted by International Operation](https://www.bleepingcomputer.com/news/security/authorities-disrupt-dns-hijacks-used-to-steal-microsoft-365-logins/)**: Law enforcement and private partners dismantled a Russian GRU-linked campaign that hijacked MikroTik and TP-Link routers on 18,000+ networks to silently steal Microsoft 365 credentials.
-  - **[Anthropic Hits $30B Run-Rate Revenue, Signs Multi-Gigawatt TPU Deal](https://techcrunch.com/2026/04/07/anthropic-compute-deal-google-broadcom-tpus/)**: As demand surges, Anthropic expanded its compute agreement with Google and Broadcom for multiple gigawatts of TPU capacity coming online from 2027.
-  - **[Intel Signs On to Elon Musk's Terafab AI Chip Factory in Texas](https://www.theverge.com/transportation/907976/elon-musk-terafab-intel-ai-chip-spacex-tesla)**: Intel joined SpaceX and Tesla to help design and build the Terafab semiconductor facility in Austin, which would supply AI chips for Musk's companies.
+  - **[Claude Mythos Finds Thousands of Zero-Day Flaws Across Major Systems](https://thehackernews.com/2026/04/anthropics-claude-mythos-finds.html)**: Anthropic's Project Glasswing deploys a restricted preview of its next-gen model to autonomously discover vulnerabilities at a scale no human team could review, in partnership with AWS, Apple, Broadcom, Cisco, and CrowdStrike.
+  - **[Meta Launches Muse Spark — Its First Frontier Model Without Open Weights](https://the-decoder.com/metas-muse-spark-is-its-first-frontier-model-and-its-first-without-open-weights/)**: Meta Superintelligence Labs debuts a closed-weight frontier model that independent tests show is closing the gap to OpenAI, Anthropic, and Google.
+  - **[HackerOne Pauses Bug Bounties Amid AI-Led Remediation Crisis](https://www.darkreading.com/application-security/ai-led-remediation-crisis-prompts-hackerone-pause-bug-bounties)**: Automated vulnerability discovery has outpaced developers' ability to fix bugs, shifting the real bottleneck from finding flaws to remediating them — a cost bounties don't fund.
+  - **[Iran-Linked Hackers Disrupt U.S. Critical Infrastructure via Exposed PLCs](https://thehackernews.com/2026/04/iran-linked-hackers-disrupt-us-critical.html)**: Iran-affiliated actors compromise internet-facing industrial controllers across critical infrastructure sectors, causing display manipulation and operational disruption.
+  - **[OpenAI Releases Child Safety Blueprint](https://techcrunch.com/2026/04/08/openai-releases-a-new-safety-blueprint-to-address-the-rise-in-child-sexual-exploitation/)**: OpenAI outlines AI safeguards, age-appropriate design principles, and collaborative commitments in response to rising AI-enabled child exploitation.
 archive:
+  - date: "2026-04-09"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: true
+    highlight: "Claude Mythos Finds Thousands of Zero-Day Flaws Across Major Systems: Anthropic's Project Glasswing deploys a restricted preview of its next-gen model to…"
   - date: "2026-04-08"
     has_papers: true
     has_security: true
