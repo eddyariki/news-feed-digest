@@ -1,18 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "April 10, 2026"
+hero_date: "April 11, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-04-10/digest"
-hero_secondary: "[Papers](2026-04-10/papers) [Security](2026-04-10/security) [Podcast](2026-04-10/podcast)"
-issue_count: 45
+hero_primary_link: "2026-04-11/digest"
+hero_secondary: "[Papers](2026-04-11/papers) [Security](2026-04-11/security) [Podcast](2026-04-11/podcast)"
+issue_count: 46
 highlights: |
-  - **[Anthropic limits Mythos model over cybersecurity weapon risk](https://techcrunch.com/2026/04/09/is-anthropic-limiting-the-release-of-mythos-to-protect-the-internet-or-anthropic/)**: Anthropic restricted access to its most capable new model, citing its unprecedented ability to discover exploitable software vulnerabilities at scale — raising questions about where AI safety ends and competitive caution begins.
-  - **[US appeals court lets Pentagon blacklisting of Anthropic stand](https://the-decoder.com/us-appeals-court-refuses-to-block-pentagons-blacklisting-of-anthropic/)**: A federal appeals court declined to block the Department of Defense's designation of Anthropic as a national security risk, leaving a cloud over the company's government business.
-  - **[Adobe Reader zero-day exploited in the wild since December 2025](https://www.bleepingcomputer.com/news/security/hackers-exploiting-acrobat-reader-zero-day-flaw-since-december/)**: A highly sophisticated PDF exploit weaponizing an unpatched Adobe Reader flaw has been used in targeted attacks for at least four months before disclosure.
-  - **[OpenAI halves Pro tier price to $100/month](https://techcrunch.com/2026/04/09/chatgpt-pro-plan-100-month-codex/)**: OpenAI introduces a $100/month tier aimed at heavy Codex users, cutting the previous jump from $20 to $200 and directly undercutting rivals Anthropic and Google.
-  - **[Anthropic launches managed infrastructure for autonomous AI agents](https://the-decoder.com/anthropic-launches-managed-infrastructure-for-autonomous-ai-agents/)**: Claude Managed Agents gives developers a hosted platform for building and running long-running autonomous agents, with Notion and Rakuten among early adopters.
+  - **[Can Anthropic Keep Its Exploit-Writing AI Out of the Wrong Hands?](https://www.darkreading.com/application-security/anthropic-exploit-writing-mythos-ai-safe)**: Anthropic's "Mythos Preview" model can allegedly find and exploit critical zero-days — raising urgent questions about access controls for AI-powered offensive security tools.
+  - **[Stalking victim sues OpenAI, claims ChatGPT fueled her abuser's delusions and ignored her warnings](https://techcrunch.com/2026/04/10/stalking-victim-sues-openai-claims-chatgpt-fueled-her-abusers-delusions-and-ignored-her-warnings/)**: A lawsuit alleges OpenAI ignored three escalating warnings — including its own mass-casualty flag — while a ChatGPT user stalked and harassed his ex-girlfriend.
+  - **[CIA plans to integrate AI assistants into all analysis platforms](https://the-decoder.com/cia-plans-to-integrate-ai-assistants-into-all-analysis-platforms/)**: The agency has already produced its first fully autonomous intelligence report using AI, with Deputy Director Michael Ellis signaling system-wide rollout.
+  - **[Deepmind CEO Hassabis says AGI will hit like ten industrial revolutions compressed into a single decade](https://the-decoder.com/deepmind-ceo-hassabis-says-agi-will-hit-like-ten-industrial-revolutions-compressed-into-a-single-decade/)**: Hassabis predicts AGI within five years, calling the impact simultaneously overhyped in the short term and vastly underestimated over the next decade.
+  - **[20-year-old man arrested for allegedly throwing a Molotov cocktail at Sam Altman's house](https://www.theverge.com/ai-artificial-intelligence/910393/openai-sam-altman-house-molotov-cocktail)**: The suspect was caught on surveillance cameras and later seen making threats outside OpenAI's offices, marking a stark escalation in AI-related civil tensions.
 archive:
+  - date: "2026-04-11"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: true
+    highlight: "Can Anthropic Keep Its Exploit-Writing AI Out of the Wrong Hands?: Anthropic's 'Mythos Preview' model can allegedly find and exploit critical zero-days —…"
   - date: "2026-04-10"
     has_papers: true
     has_security: true
