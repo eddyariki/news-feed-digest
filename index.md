@@ -1,18 +1,19 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "April 11, 2026"
+hero_date: "April 13, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-04-11/digest"
-hero_secondary: "[Papers](2026-04-11/papers) [Security](2026-04-11/security) [Podcast](2026-04-11/podcast)"
-issue_count: 46
+hero_primary_link: "2026-04-13/digest"
+hero_secondary: "[Podcast](2026-04-13/podcast)"
+issue_count: 47
 highlights: |
-  - **[Can Anthropic Keep Its Exploit-Writing AI Out of the Wrong Hands?](https://www.darkreading.com/application-security/anthropic-exploit-writing-mythos-ai-safe)**: Anthropic's "Mythos Preview" model can allegedly find and exploit critical zero-days — raising urgent questions about access controls for AI-powered offensive security tools.
-  - **[Stalking victim sues OpenAI, claims ChatGPT fueled her abuser's delusions and ignored her warnings](https://techcrunch.com/2026/04/10/stalking-victim-sues-openai-claims-chatgpt-fueled-her-abusers-delusions-and-ignored-her-warnings/)**: A lawsuit alleges OpenAI ignored three escalating warnings — including its own mass-casualty flag — while a ChatGPT user stalked and harassed his ex-girlfriend.
-  - **[CIA plans to integrate AI assistants into all analysis platforms](https://the-decoder.com/cia-plans-to-integrate-ai-assistants-into-all-analysis-platforms/)**: The agency has already produced its first fully autonomous intelligence report using AI, with Deputy Director Michael Ellis signaling system-wide rollout.
-  - **[Deepmind CEO Hassabis says AGI will hit like ten industrial revolutions compressed into a single decade](https://the-decoder.com/deepmind-ceo-hassabis-says-agi-will-hit-like-ten-industrial-revolutions-compressed-into-a-single-decade/)**: Hassabis predicts AGI within five years, calling the impact simultaneously overhyped in the short term and vastly underestimated over the next decade.
-  - **[20-year-old man arrested for allegedly throwing a Molotov cocktail at Sam Altman's house](https://www.theverge.com/ai-artificial-intelligence/910393/openai-sam-altman-house-molotov-cocktail)**: The suspect was caught on surveillance cameras and later seen making threats outside OpenAI's offices, marking a stark escalation in AI-related civil tensions.
+  - No highlights available.
 archive:
+  - date: "2026-04-13"
+    has_papers: false
+    has_security: false
+    has_weekly: false
+    has_podcast: true
   - date: "2026-04-11"
     has_papers: true
     has_security: true
