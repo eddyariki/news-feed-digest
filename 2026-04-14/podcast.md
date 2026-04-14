@@ -1,11 +1,3 @@
----
-layout: default
-title: "AI Research Podcast — 2026-04-14"
----
-# AI Research Podcast — 2026-04-14
-
-*A conversation about today's research papers.*
-
 Rachel: A single, perfectly polite request broke the safety guardrails of a multi-agent AI system 71 percent of the time — and the smarter the AI, the worse it got.
 
 Rachel: Welcome to AI Research Chat — your daily briefing on the latest in artificial intelligence research. I'm Rachel, and joining me as always is Roy. Today is April 14, 2026, and we have three papers to get through.
