@@ -1,18 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "April 14, 2026"
+hero_date: "April 15, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-04-14/digest"
-hero_secondary: "[Papers](2026-04-14/papers) [Security](2026-04-14/security) [Podcast](2026-04-14/podcast)"
-issue_count: 48
+hero_primary_link: "2026-04-15/digest"
+hero_secondary: "[Papers](2026-04-15/papers) [Security](2026-04-15/security) [Podcast](2026-04-15/podcast)"
+issue_count: 49
 highlights: |
-  - **[Anthropic's Claude Mythos Preview and Project Glasswing](https://www.schneier.com/blog/archives/2026/04/on-anthropics-mythos-preview-and-project-glasswing.html)**: Anthropic restricted a new frontier model after it autonomously discovered and exploited zero-days across major OSes and browsers, launching Project Glasswing to patch vulnerabilities before wider release.
-  - **[OpenAI "Spud" Model and Internal Strategy Memo](https://www.theverge.com/ai-artificial-intelligence/911118/openai-memo-cro-ai-competition-anthropic)**: A leaked OpenAI memo reveals a new model codenamed "Spud," a push to lock in enterprise users, and a claim that Anthropic is overstating its revenue by $8 billion.
-  - **[The AI Industry Is Running Out of Compute](https://the-decoder.com/the-ai-industry-is-running-out-of-compute-with-outages-rationing-and-rising-gpu-prices/)**: Surging demand from agentic workloads is colliding with capacity limits — Anthropic is experiencing outages, OpenAI shut down Sora, and GPU prices have jumped nearly 50%.
-  - **[Stanford AI Index 2026: Widening Insider/Public Divide](https://techcrunch.com/2026/04/13/stanford-report-highlights-growing-disconnect-between-ai-insiders-and-everyone-else/)**: Stanford's annual AI Index documents a growing gap between AI experts and the public, with rising public anxiety over jobs, healthcare, and the economy.
-  - **[Japan's Industrial Giants Plan Domestic AI Foundation](https://the-decoder.com/steel-giants-automakers-and-banks-plan-to-build-japans-answer-to-us-and-chinese-ai-dominance/)**: SoftBank is uniting Japan's steel, auto, and banking sectors to build a sovereign AI foundation model, reducing dependence on US and Chinese platforms.
+  - **[Claude Mythos Can Autonomously Compromise Enterprise Networks End-to-End](https://the-decoder.com/claude-mythos-can-autonomously-compromise-weakly-defended-enterprise-networks-end-to-end/)**: The UK AI Safety Institute found Anthropic's Claude Mythos capable of executing complete, autonomous network intrusions against weakly defended enterprise targets.
+  - **[Anthropic Briefed the Trump Administration on Mythos](https://techcrunch.com/2026/04/14/anthropic-co-founder-confirms-the-company-briefed-the-trump-administration-on-mythos/)**: Co-founder Jack Clark confirmed Anthropic proactively engaged U.S. government officials on the national security implications of its most capable model.
+  - **[Stanford AI Index 2026: Rapid Progress, Declining Public Trust](https://the-decoder.com/stanfords-ai-index-2026-shows-rapid-progress-growing-safety-concerns-and-declining-public-trust/)**: Stanford HAI's annual report documents unprecedented AI capability gains alongside mounting safety concerns and a broad global decline in public confidence in AI.
+  - **[Physical Attack on Sam Altman's Home Signals New Threat to AI Leaders](https://www.theverge.com/ai-artificial-intelligence/911778/ai-violence-sam-altman-home)**: A molotov cocktail attack on the OpenAI CEO's residence by someone motivated by fears of AI-caused extinction marks a dangerous new phase of real-world backlash.
+  - **[Ukraine Seizes Russian Position Using Only Drones and Ground Robots](https://the-decoder.com/ukraine-captures-a-russian-position-using-only-drones-and-ground-robots/)**: In a historic first, Ukrainian forces captured a Russian-held position with entirely unmanned systems — no human soldiers deployed — marking a new inflection point in AI-enabled warfare.
 archive:
+  - date: "2026-04-15"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: true
+    highlight: "Claude Mythos Can Autonomously Compromise Enterprise Networks End-to-End: The UK AI Safety Institute found Anthropic's Claude Mythos capable of executing…"
   - date: "2026-04-14"
     has_papers: true
     has_security: true
