@@ -1,18 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "April 15, 2026"
+hero_date: "April 16, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-04-15/digest"
-hero_secondary: "[Papers](2026-04-15/papers) [Security](2026-04-15/security) [Podcast](2026-04-15/podcast)"
-issue_count: 49
+hero_primary_link: "2026-04-16/digest"
+hero_secondary: "[Papers](2026-04-16/papers) [Security](2026-04-16/security) [Podcast](2026-04-16/podcast)"
+issue_count: 50
 highlights: |
-  - **[Claude Mythos Can Autonomously Compromise Enterprise Networks End-to-End](https://the-decoder.com/claude-mythos-can-autonomously-compromise-weakly-defended-enterprise-networks-end-to-end/)**: The UK AI Safety Institute found Anthropic's Claude Mythos capable of executing complete, autonomous network intrusions against weakly defended enterprise targets.
-  - **[Anthropic Briefed the Trump Administration on Mythos](https://techcrunch.com/2026/04/14/anthropic-co-founder-confirms-the-company-briefed-the-trump-administration-on-mythos/)**: Co-founder Jack Clark confirmed Anthropic proactively engaged U.S. government officials on the national security implications of its most capable model.
-  - **[Stanford AI Index 2026: Rapid Progress, Declining Public Trust](https://the-decoder.com/stanfords-ai-index-2026-shows-rapid-progress-growing-safety-concerns-and-declining-public-trust/)**: Stanford HAI's annual report documents unprecedented AI capability gains alongside mounting safety concerns and a broad global decline in public confidence in AI.
-  - **[Physical Attack on Sam Altman's Home Signals New Threat to AI Leaders](https://www.theverge.com/ai-artificial-intelligence/911778/ai-violence-sam-altman-home)**: A molotov cocktail attack on the OpenAI CEO's residence by someone motivated by fears of AI-caused extinction marks a dangerous new phase of real-world backlash.
-  - **[Ukraine Seizes Russian Position Using Only Drones and Ground Robots](https://the-decoder.com/ukraine-captures-a-russian-position-using-only-drones-and-ground-robots/)**: In a historic first, Ukrainian forces captured a Russian-held position with entirely unmanned systems — no human soldiers deployed — marking a new inflection point in AI-enabled warfare.
+  - **[Microsoft Patches 169 Flaws Including Actively Exploited SharePoint Zero-Day](https://thehackernews.com/2026/04/microsoft-issues-patches-for-sharepoint.html)**: April's record-breaking Patch Tuesday includes a SharePoint zero-day under active exploitation and over 90 privilege-escalation bugs.
+  - **[OpenAI Launches GPT-5.4-Cyber for Defensive Security Teams](https://thehackernews.com/2026/04/openai-launches-gpt-54-cyber-with.html)**: OpenAI's new cybersecurity-optimized model variant is being released to vetted researchers under a Trusted Access for Cyber program, mirroring Anthropic's earlier Claude Mythos initiative.
+  - **[Microsoft Commits $10 Billion to Japan AI and Cybersecurity](https://www.darkreading.com/cloud-security/microsoft-bets-10-billion-to-boost-japan-s-ai-cybersecurity)**: The investment aims to accelerate AI adoption, workforce training, and cybersecurity partnerships across Japan, the largest hyperscaler bet yet on the country's AI sovereignty.
+  - **[Anthropic Overhauls Claude Code: Routines and Parallel Agents](https://www.itmedia.co.jp/aiplus/articles/2604/15/news080.html)**: Claude Code's desktop app gains parallel agent support and multitasking, while a new "Routines" feature lets scheduled cloud execution continue even when the developer's machine is off.
+  - **[SoftBank Seeks More Banks for $40 Billion OpenAI Loan](https://www.japantimes.co.jp/business/2026/04/15/companies/softbank-lenders-openai-loan/)**: The deal is one of the largest tests yet of market confidence in SoftBank's debt-fueled AI strategy and OpenAI's ability to sustain a $1+ trillion valuation trajectory.
 archive:
+  - date: "2026-04-16"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: true
+    highlight: "Microsoft Patches 169 Flaws Including Actively Exploited SharePoint Zero-Day: April's record-breaking Patch Tuesday includes a SharePoint zero-day under active…"
   - date: "2026-04-15"
     has_papers: true
     has_security: true
