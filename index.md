@@ -1,18 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "April 16, 2026"
+hero_date: "April 17, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-04-16/digest"
-hero_secondary: "[Papers](2026-04-16/papers) [Security](2026-04-16/security) [Podcast](2026-04-16/podcast)"
-issue_count: 50
+hero_primary_link: "2026-04-17/digest"
+hero_secondary: "[Papers](2026-04-17/papers) [Security](2026-04-17/security) [Podcast](2026-04-17/podcast)"
+issue_count: 51
 highlights: |
-  - **[Microsoft Patches 169 Flaws Including Actively Exploited SharePoint Zero-Day](https://thehackernews.com/2026/04/microsoft-issues-patches-for-sharepoint.html)**: April's record-breaking Patch Tuesday includes a SharePoint zero-day under active exploitation and over 90 privilege-escalation bugs.
-  - **[OpenAI Launches GPT-5.4-Cyber for Defensive Security Teams](https://thehackernews.com/2026/04/openai-launches-gpt-54-cyber-with.html)**: OpenAI's new cybersecurity-optimized model variant is being released to vetted researchers under a Trusted Access for Cyber program, mirroring Anthropic's earlier Claude Mythos initiative.
-  - **[Microsoft Commits $10 Billion to Japan AI and Cybersecurity](https://www.darkreading.com/cloud-security/microsoft-bets-10-billion-to-boost-japan-s-ai-cybersecurity)**: The investment aims to accelerate AI adoption, workforce training, and cybersecurity partnerships across Japan, the largest hyperscaler bet yet on the country's AI sovereignty.
-  - **[Anthropic Overhauls Claude Code: Routines and Parallel Agents](https://www.itmedia.co.jp/aiplus/articles/2604/15/news080.html)**: Claude Code's desktop app gains parallel agent support and multitasking, while a new "Routines" feature lets scheduled cloud execution continue even when the developer's machine is off.
-  - **[SoftBank Seeks More Banks for $40 Billion OpenAI Loan](https://www.japantimes.co.jp/business/2026/04/15/companies/softbank-lenders-openai-loan/)**: The deal is one of the largest tests yet of market confidence in SoftBank's debt-fueled AI strategy and OpenAI's ability to sustain a $1+ trillion valuation trajectory.
+  - **[Claude Opus 4.7 Launches with Coding Leap and Reduced Cyber Capabilities](https://www.theverge.com/ai-artificial-intelligence/913184/anthropic-claude-opus-4-7-cybersecurity)**: Anthropic's new flagship model makes a major jump in advanced software engineering while deliberately scaling back cybersecurity attack capabilities during training.
+  - **[OpenAI Codex Becomes an Always-On Coding Agent](https://openai.com/index/codex-for-almost-everything)**: Updated with computer use, image generation, memory, and plugin support for macOS and Windows, Codex is now a direct, persistent rival to Claude Code.
+  - **[Physical Intelligence's π0.7 Robot Brain Figures Out Untaught Tasks](https://techcrunch.com/2026/04/16/physical-intelligence-a-hot-robotics-startup-says-its-new-robot-brain-can-figure-out-tasks-it-was-never-taught/)**: The new model represents an early but meaningful step toward a general-purpose robot brain, capable of generalizing beyond its training distribution.
+  - **[ATHR Vishing Platform Deploys AI Voice Agents for Automated Credential Theft](https://www.bleepingcomputer.com/news/security/new-athr-vishing-platform-uses-ai-voice-agents-for-automated-attacks/)**: A new cybercrime-as-a-service platform weaponizes AI voice agents for fully automated phone phishing at scale, combining human operators with AI for social engineering.
+  - **[AI Traffic to US Retailers Surged 393% in Q1 2026](https://techcrunch.com/2026/04/16/ai-traffic-to-us-retailers-rose-393-in-q1-and-its-boosting-their-revenue-too/)**: Adobe data shows AI-referred visitors convert better and generate more revenue than non-AI shoppers, marking a turning point for agentic commerce.
 archive:
+  - date: "2026-04-17"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: true
+    highlight: "Claude Opus 4.7 Launches with Coding Leap and Reduced Cyber Capabilities: Anthropic's new flagship model makes a major jump in advanced software engineering…"
   - date: "2026-04-16"
     has_papers: true
     has_security: true
