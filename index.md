@@ -1,18 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "April 17, 2026"
+hero_date: "April 18, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-04-17/digest"
-hero_secondary: "[Papers](2026-04-17/papers) [Security](2026-04-17/security) [Podcast](2026-04-17/podcast)"
-issue_count: 51
+hero_primary_link: "2026-04-18/digest"
+hero_secondary: "[Papers](2026-04-18/papers) [Security](2026-04-18/security) [Podcast](2026-04-18/podcast)"
+issue_count: 52
 highlights: |
-  - **[Claude Opus 4.7 Launches with Coding Leap and Reduced Cyber Capabilities](https://www.theverge.com/ai-artificial-intelligence/913184/anthropic-claude-opus-4-7-cybersecurity)**: Anthropic's new flagship model makes a major jump in advanced software engineering while deliberately scaling back cybersecurity attack capabilities during training.
-  - **[OpenAI Codex Becomes an Always-On Coding Agent](https://openai.com/index/codex-for-almost-everything)**: Updated with computer use, image generation, memory, and plugin support for macOS and Windows, Codex is now a direct, persistent rival to Claude Code.
-  - **[Physical Intelligence's π0.7 Robot Brain Figures Out Untaught Tasks](https://techcrunch.com/2026/04/16/physical-intelligence-a-hot-robotics-startup-says-its-new-robot-brain-can-figure-out-tasks-it-was-never-taught/)**: The new model represents an early but meaningful step toward a general-purpose robot brain, capable of generalizing beyond its training distribution.
-  - **[ATHR Vishing Platform Deploys AI Voice Agents for Automated Credential Theft](https://www.bleepingcomputer.com/news/security/new-athr-vishing-platform-uses-ai-voice-agents-for-automated-attacks/)**: A new cybercrime-as-a-service platform weaponizes AI voice agents for fully automated phone phishing at scale, combining human operators with AI for social engineering.
-  - **[AI Traffic to US Retailers Surged 393% in Q1 2026](https://techcrunch.com/2026/04/16/ai-traffic-to-us-retailers-rose-393-in-q1-and-its-boosting-their-revenue-too/)**: Adobe data shows AI-referred visitors convert better and generate more revenue than non-AI shoppers, marking a turning point for agentic commerce.
+  - **[Claude Mythos Preview: Too Dangerous to Release](https://www.schneier.com/blog/archives/2026/04/mythos-and-cybersecurity.html)**: Anthropic's new cybersecurity model is restricted to ~50 vetted organizations under Project Glasswing, while simultaneously thawing its fraught relationship with the Trump administration and the Pentagon.
+  - **[OpenAI Sheds "Side Quests," Loses Two Senior Leaders](https://techcrunch.com/2026/04/17/kevin-weil-and-bill-peebles-exit-openai-as-company-continues-to-shed-side-quests/)**: Sora is shuttered and the OpenAI for Science team folded as the company pivots hard toward enterprise AI; CPO Kevin Weil and Sora lead Bill Peebles are both departing.
+  - **[Claude Doubles Market Share in a Single Month](https://the-decoder.com/chatgpt-bleeds-market-share-as-claude-posts-explosive-monthly-growth/)**: Claude surpassed DeepSeek and Grok in AI traffic share, while ChatGPT continues losing ground to both Claude and Google Gemini, which now captures a quarter of all AI traffic.
+  - **[Cursor Seeks $2B+ Round at $50B Valuation](https://techcrunch.com/2026/04/17/sources-cursor-in-talks-to-raise-2b-at-50b-valuation-as-enterprise-growth-surges/)**: The AI coding editor is in advanced talks led by returning backers a16z and Thrive, reflecting surging enterprise demand for agentic coding tools.
+  - **[AutoRAN: Automated Hijacking of Safety Reasoning in LRMs](https://arxiv.org/abs/2505.10846)**: Researchers demonstrate the first framework to systematically subvert internal safety reasoning in large reasoning models by using a weaker, less-aligned model to simulate and refine attack strategies.
 archive:
+  - date: "2026-04-18"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: true
+    highlight: "Claude Mythos Preview: Too Dangerous to Release: Anthropic's new cybersecurity model is restricted to ~50 vetted organizations under Project Glasswing, while…"
   - date: "2026-04-17"
     has_papers: true
     has_security: true
