@@ -1,14 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "April 20, 2026"
+hero_date: "April 21, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-04-20/digest"
-hero_secondary: "[Podcast](2026-04-20/podcast)"
-issue_count: 53
+hero_primary_link: "2026-04-21/digest"
+hero_secondary: "[Papers](2026-04-21/papers) [Security](2026-04-21/security) [Podcast](2026-04-21/podcast)"
+issue_count: 54
 highlights: |
-  - No highlights available.
+  - **[Anthropic MCP Design Vulnerability Enables RCE, Threatening AI Supply Chain](https://thehackernews.com/2026/04/anthropic-mcp-design-vulnerability.html)**: A critical "by design" flaw in the Model Context Protocol allows arbitrary command execution on any system running a vulnerable MCP implementation, with cascading risk across the AI supply chain.
+  - **[SGLang CVE-2026-5760 (CVSS 9.8) Enables RCE via Malicious GGUF Model Files](https://thehackernews.com/2026/04/sglang-cve-2026-5760-cvss-98-enables.html)**: A near-perfect severity command injection vulnerability in the popular LLM serving framework SGLang allows remote code execution through crafted model files.
+  - **[NSA Is Using Anthropic's Most Powerful AI Model Mythos](https://the-decoder.com/the-nsa-is-using-anthropics-most-powerful-ai-model-mythos/)**: The NSA is deploying Anthropic's restricted "Mythos Preview" model for intelligence work, despite an ongoing Pentagon feud with Anthropic.
+  - **[Open-weight Kimi K2.6 Takes on GPT-5.4 and Claude Opus 4.6 with Agent Swarms](https://the-decoder.com/open-weight-kimi-k2-6-takes-on-gpt-5-4-and-claude-opus-4-6-with-agent-swarms/)**: Moonshot AI released Kimi K2.6 as an open-weight model competitive with frontier proprietary models on coding benchmarks, capable of running 300 parallel agents.
+  - **[Subliminal Transfer of Unsafe Behaviors in AI Agent Distillation](https://arxiv.org/abs/2604.15559)**: Researchers provide the first empirical evidence that unsafe agent behaviors can propagate subliminally through model distillation, even via training data that appears unrelated to those behaviors.
 archive:
+  - date: "2026-04-21"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: true
+    highlight: "Anthropic MCP Design Vulnerability Enables RCE, Threatening AI Supply Chain: A critical 'by design' flaw in the Model Context Protocol allows arbitrary command…"
   - date: "2026-04-20"
     has_papers: false
     has_security: false
