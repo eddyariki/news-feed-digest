@@ -1,18 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "April 21, 2026"
+hero_date: "April 22, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-04-21/digest"
-hero_secondary: "[Papers](2026-04-21/papers) [Security](2026-04-21/security) [Podcast](2026-04-21/podcast)"
-issue_count: 54
+hero_primary_link: "2026-04-22/digest"
+hero_secondary: "[Papers](2026-04-22/papers) [Security](2026-04-22/security) [Podcast](2026-04-22/podcast)"
+issue_count: 55
 highlights: |
-  - **[Anthropic MCP Design Vulnerability Enables RCE, Threatening AI Supply Chain](https://thehackernews.com/2026/04/anthropic-mcp-design-vulnerability.html)**: A critical "by design" flaw in the Model Context Protocol allows arbitrary command execution on any system running a vulnerable MCP implementation, with cascading risk across the AI supply chain.
-  - **[SGLang CVE-2026-5760 (CVSS 9.8) Enables RCE via Malicious GGUF Model Files](https://thehackernews.com/2026/04/sglang-cve-2026-5760-cvss-98-enables.html)**: A near-perfect severity command injection vulnerability in the popular LLM serving framework SGLang allows remote code execution through crafted model files.
-  - **[NSA Is Using Anthropic's Most Powerful AI Model Mythos](https://the-decoder.com/the-nsa-is-using-anthropics-most-powerful-ai-model-mythos/)**: The NSA is deploying Anthropic's restricted "Mythos Preview" model for intelligence work, despite an ongoing Pentagon feud with Anthropic.
-  - **[Open-weight Kimi K2.6 Takes on GPT-5.4 and Claude Opus 4.6 with Agent Swarms](https://the-decoder.com/open-weight-kimi-k2-6-takes-on-gpt-5-4-and-claude-opus-4-6-with-agent-swarms/)**: Moonshot AI released Kimi K2.6 as an open-weight model competitive with frontier proprietary models on coding benchmarks, capable of running 300 parallel agents.
-  - **[Subliminal Transfer of Unsafe Behaviors in AI Agent Distillation](https://arxiv.org/abs/2604.15559)**: Researchers provide the first empirical evidence that unsafe agent behaviors can propagate subliminally through model distillation, even via training data that appears unrelated to those behaviors.
+  - **[Amazon pours $33B into Anthropic, which promises to spend $100B right back on AWS](https://the-decoder.com/amazon-pours-33b-into-anthropic-which-promises-to-spend-100b-right-back-on-aws/)**: Amazon is pouring up to $25B more into Anthropic in a deal that commits the AI company to spend over $100B on AWS over the next decade, highlighting the circular capital flows now defining the AI industry.
+  - **[ChatGPT Images 2.0 adds reasoning and web search to image generation](https://the-decoder.com/openais-chatgpt-images-2-0-thinks-before-it-generates-adding-reasoning-and-web-search-to-image-creation/)**: OpenAI's new image model can generate up to eight consistent images from a single prompt and significantly improves text rendering, including non-Latin scripts, by integrating web search at generation time.
+  - **[Google fixes prompt injection RCE flaw in Antigravity agentic IDE](https://www.darkreading.com/vulnerabilities-threats/google-fixes-critical-rce-flaw-ai-based-antigravity-tool)**: A sanitization failure in Antigravity's `find_by_name` tool allowed attackers to combine file-creation with prompt injection to escape the sandbox and execute arbitrary code—the first major RCE in a mainstream agentic IDE.
+  - **[Jeff Bezos nears $10 billion funding round for AI lab "Project Prometheus"](https://the-decoder.com/jeff-bezos-nears-10-billion-funding-round-for-ai-lab-project-prometheus/)**: Bezos is close to closing the largest single funding round for a new AI lab, signaling continued mega-scale investment even as AI skepticism grows in the broader public.
+  - **[AI backlash is building ahead of US midterm elections](https://www.theverge.com/policy/916210/ai-midterm-elections-data-centers-jobs)**: Despite widespread public anxiety about AI—from data center resistance to social-media rage at AI executives—campaigns are largely avoiding the topic, creating an emerging political fault line.
 archive:
+  - date: "2026-04-22"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: true
+    highlight: "Amazon pours $33B into Anthropic, which promises to spend $100B right back on AWS: Amazon is pouring up to $25B more into Anthropic in a deal that commits the…"
   - date: "2026-04-21"
     has_papers: true
     has_security: true
