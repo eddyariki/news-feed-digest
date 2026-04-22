@@ -1,18 +1,23 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "April 22, 2026"
+hero_date: "April 23, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-04-22/digest"
-hero_secondary: "[Papers](2026-04-22/papers) [Security](2026-04-22/security) [Podcast](2026-04-22/podcast)"
-issue_count: 55
+hero_primary_link: "2026-04-23/digest"
+hero_secondary: "[Papers](2026-04-23/papers) [Security](2026-04-23/security) [Podcast](2026-04-23/podcast)"
+issue_count: 56
 highlights: |
-  - **[Amazon pours $33B into Anthropic, which promises to spend $100B right back on AWS](https://the-decoder.com/amazon-pours-33b-into-anthropic-which-promises-to-spend-100b-right-back-on-aws/)**: Amazon is pouring up to $25B more into Anthropic in a deal that commits the AI company to spend over $100B on AWS over the next decade, highlighting the circular capital flows now defining the AI industry.
-  - **[ChatGPT Images 2.0 adds reasoning and web search to image generation](https://the-decoder.com/openais-chatgpt-images-2-0-thinks-before-it-generates-adding-reasoning-and-web-search-to-image-creation/)**: OpenAI's new image model can generate up to eight consistent images from a single prompt and significantly improves text rendering, including non-Latin scripts, by integrating web search at generation time.
-  - **[Google fixes prompt injection RCE flaw in Antigravity agentic IDE](https://www.darkreading.com/vulnerabilities-threats/google-fixes-critical-rce-flaw-ai-based-antigravity-tool)**: A sanitization failure in Antigravity's `find_by_name` tool allowed attackers to combine file-creation with prompt injection to escape the sandbox and execute arbitrary code—the first major RCE in a mainstream agentic IDE.
-  - **[Jeff Bezos nears $10 billion funding round for AI lab "Project Prometheus"](https://the-decoder.com/jeff-bezos-nears-10-billion-funding-round-for-ai-lab-project-prometheus/)**: Bezos is close to closing the largest single funding round for a new AI lab, signaling continued mega-scale investment even as AI skepticism grows in the broader public.
-  - **[AI backlash is building ahead of US midterm elections](https://www.theverge.com/policy/916210/ai-midterm-elections-data-centers-jobs)**: Despite widespread public anxiety about AI—from data center resistance to social-media rage at AI executives—campaigns are largely avoiding the topic, creating an emerging political fault line.
+  - **[Anthropic's Most Dangerous AI Model Fell Into the Wrong Hands](https://www.theverge.com/ai-artificial-intelligence/916501/anthropic-mythos-unauthorized-users-access-security)**: A "small group of unauthorized users" — including a private online forum reached via a third-party contractor — gained access to Claude Mythos, Anthropic's restricted cybersecurity AI that the company itself warned could be dangerous, raising serious questions about access controls for powerful dual-use models.
+  - **[SpaceX Secures $60B Option to Acquire Cursor](https://techcrunch.com/2026/04/22/how-spacex-preempted-a-2b-fundraise-with-a-60b-buyout-offer/)**: SpaceX halted Cursor's in-progress $2B funding round with a $10B "collaboration fee" and a path to a $60B buyout, filling the coding-tools gap in Elon Musk's xAI portfolio and marking the largest potential AI M&A deal to date.
+  - **[Google Unveils 8th-Gen TPUs, Agent Platform, and Workspace AI at Cloud Next '26](https://the-decoder.com/google-unveils-8th-gen-tpus-agent-platform-and-workspace-ai-layer-at-cloud-next-26/)**: Under the banner "Agentic Enterprise," Google launched two specialized 8th-gen TPU chips, a Gemini Enterprise Agent Platform for IT/technical users, and deep Gemini integration across Workspace — staking its claim as the full-stack enterprise AI provider.
+  - **[Meta Installs Surveillance Software on Employee Computers to Train AI Agents](https://www.theverge.com/tech/916681/meta-ai-agents-employee-tracking)**: Meta is rolling out Model Capability Initiative (MCI) software on US-based employees' machines, capturing mouse movements, clicks, keystrokes, and screenshots from work apps to generate training data for its AI agents — no opt-out reported.
 archive:
+  - date: "2026-04-23"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: true
+    highlight: "Anthropic's Most Dangerous AI Model Fell Into the Wrong Hands: A 'small group of unauthorized users' — including a private online forum reached via a…"
   - date: "2026-04-22"
     has_papers: true
     has_security: true
