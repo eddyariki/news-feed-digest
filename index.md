@@ -1,18 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "April 24, 2026"
+hero_date: "April 25, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-04-24/digest"
-hero_secondary: "[Papers](2026-04-24/papers) [Security](2026-04-24/security) [Podcast](2026-04-24/podcast)"
-issue_count: 57
+hero_primary_link: "2026-04-25/digest"
+hero_secondary: "[Papers](2026-04-25/papers) [Security](2026-04-25/security)"
+issue_count: 58
 highlights: |
-  - **[DeepSeek V4 preview closes the gap with frontier closed models](https://techcrunch.com/2026/04/24/deepseek-previews-new-ai-model-that-closes-the-gap-with-frontier-models/)**: DeepSeek released V4-Pro and V4-Flash (up to 1.6T parameters, 1M-token context) at prices well below OpenAI, Google, and Anthropic, claiming parity with leading closed systems on reasoning.
-  - **[NEC and Anthropic strike Japan-wide Claude partnership](https://www.itmedia.co.jp/business/articles/2604/24/news111.html)**: NEC will roll out Claude Code to 30,000 group employees and co-develop industry-specific AI solutions on Claude Cowork, in a deal finalized just two days before its announcement.
-  - **[LMDeploy CVE exploited within 13 hours of disclosure](https://thehackernews.com/2026/04/lmdeploy-cve-2026-33626-flaw-exploited.html)**: A high-severity SSRF flaw (CVE-2026-33626) in the popular open-source LLM serving toolkit came under active exploitation less than 13 hours after public disclosure.
-  - **[Cohere acquires Germany's Aleph Alpha in $600M Schwarz Group-backed deal](https://the-decoder.com/cohere-takes-over-aleph-alpha-shortly-after-the-german-startup-ousted-its-original-founder/)**: Canada's Cohere takes over the once-flagship "German OpenAI" months after its founder was pushed out, marking a decisive retreat for European frontier AI ambitions.
-  - **[AI phishing becomes the No. 1 cyberattack vector](https://www.darkreading.com/cyber-risk/ai-phishing-no-1-cyberattackers)**: Companies have seen a major influx of AI-powered phishing over the last six months, with attackers now running 1-to-1 personalized campaigns at scale.
+  - **[Google to invest up to $40B in Anthropic in cash and compute](https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/)**: Google commits one of the largest AI capital deals yet, following the limited release of Anthropic's cybersecurity-focused Mythos model.
+  - **[FIRESTARTER backdoor survives Cisco firewall patches on federal device](https://thehackernews.com/2026/04/firestarter-backdoor-hit-federal-cisco.html)**: CISA and NCSC warn that a custom backdoor persisted through updates on a U.S. federal agency's Cisco Firepower appliance, raising urgent supply-chain and patch-integrity concerns.
+  - **[How Project Maven taught the military to love AI](https://www.theverge.com/ai-artificial-intelligence/917996/project-maven-military-ai-katrina-manson)**: In the first 24 hours of the Iran assault, AI-driven targeting helped the U.S. strike over 1,000 targets — nearly double the pace of "shock and awe."
+  - **[GPT-5.5 tops benchmarks but still hallucinates and costs 20% more](https://the-decoder.com/gpt-5-5-tops-benchmarks-but-still-hallucinates-frequently-and-costs-20-percent-more-over-the-api/)**: OpenAI retakes the benchmark crown with GPT-5.5, though chief scientist Jakub Pachocki calls recent progress "surprisingly slow" and promises bigger leaps ahead.
+  - **[ComfyUI hits $500M valuation as creators seek control over AI media](https://techcrunch.com/2026/04/24/comfyui-hits-500m-valuation-as-creators-seek-more-control-over-ai-generated-media/)**: The open-source node-based generative media tool raised $30M amid growing demand for creator-controlled image, video, and audio pipelines.
 archive:
+  - date: "2026-04-25"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: false
+    highlight: "Google to invest up to $40B in Anthropic in cash and compute: Google commits one of the largest AI capital deals yet, following the limited release of…"
   - date: "2026-04-24"
     has_papers: true
     has_security: true
