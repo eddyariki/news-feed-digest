@@ -1,17 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "April 23, 2026"
+hero_date: "April 24, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-04-23/digest"
-hero_secondary: "[Papers](2026-04-23/papers) [Security](2026-04-23/security) [Podcast](2026-04-23/podcast)"
-issue_count: 56
+hero_primary_link: "2026-04-24/digest"
+hero_secondary: "[Papers](2026-04-24/papers) [Security](2026-04-24/security) [Podcast](2026-04-24/podcast)"
+issue_count: 57
 highlights: |
-  - **[Anthropic's Most Dangerous AI Model Fell Into the Wrong Hands](https://www.theverge.com/ai-artificial-intelligence/916501/anthropic-mythos-unauthorized-users-access-security)**: A "small group of unauthorized users" — including a private online forum reached via a third-party contractor — gained access to Claude Mythos, Anthropic's restricted cybersecurity AI that the company itself warned could be dangerous, raising serious questions about access controls for powerful dual-use models.
-  - **[SpaceX Secures $60B Option to Acquire Cursor](https://techcrunch.com/2026/04/22/how-spacex-preempted-a-2b-fundraise-with-a-60b-buyout-offer/)**: SpaceX halted Cursor's in-progress $2B funding round with a $10B "collaboration fee" and a path to a $60B buyout, filling the coding-tools gap in Elon Musk's xAI portfolio and marking the largest potential AI M&A deal to date.
-  - **[Google Unveils 8th-Gen TPUs, Agent Platform, and Workspace AI at Cloud Next '26](https://the-decoder.com/google-unveils-8th-gen-tpus-agent-platform-and-workspace-ai-layer-at-cloud-next-26/)**: Under the banner "Agentic Enterprise," Google launched two specialized 8th-gen TPU chips, a Gemini Enterprise Agent Platform for IT/technical users, and deep Gemini integration across Workspace — staking its claim as the full-stack enterprise AI provider.
-  - **[Meta Installs Surveillance Software on Employee Computers to Train AI Agents](https://www.theverge.com/tech/916681/meta-ai-agents-employee-tracking)**: Meta is rolling out Model Capability Initiative (MCI) software on US-based employees' machines, capturing mouse movements, clicks, keystrokes, and screenshots from work apps to generate training data for its AI agents — no opt-out reported.
+  - **[DeepSeek V4 preview closes the gap with frontier closed models](https://techcrunch.com/2026/04/24/deepseek-previews-new-ai-model-that-closes-the-gap-with-frontier-models/)**: DeepSeek released V4-Pro and V4-Flash (up to 1.6T parameters, 1M-token context) at prices well below OpenAI, Google, and Anthropic, claiming parity with leading closed systems on reasoning.
+  - **[NEC and Anthropic strike Japan-wide Claude partnership](https://www.itmedia.co.jp/business/articles/2604/24/news111.html)**: NEC will roll out Claude Code to 30,000 group employees and co-develop industry-specific AI solutions on Claude Cowork, in a deal finalized just two days before its announcement.
+  - **[LMDeploy CVE exploited within 13 hours of disclosure](https://thehackernews.com/2026/04/lmdeploy-cve-2026-33626-flaw-exploited.html)**: A high-severity SSRF flaw (CVE-2026-33626) in the popular open-source LLM serving toolkit came under active exploitation less than 13 hours after public disclosure.
+  - **[Cohere acquires Germany's Aleph Alpha in $600M Schwarz Group-backed deal](https://the-decoder.com/cohere-takes-over-aleph-alpha-shortly-after-the-german-startup-ousted-its-original-founder/)**: Canada's Cohere takes over the once-flagship "German OpenAI" months after its founder was pushed out, marking a decisive retreat for European frontier AI ambitions.
+  - **[AI phishing becomes the No. 1 cyberattack vector](https://www.darkreading.com/cyber-risk/ai-phishing-no-1-cyberattackers)**: Companies have seen a major influx of AI-powered phishing over the last six months, with attackers now running 1-to-1 personalized campaigns at scale.
 archive:
+  - date: "2026-04-24"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: true
+    highlight: "DeepSeek V4 preview closes the gap with frontier closed models: DeepSeek released V4-Pro and V4-Flash (up to 1.6T parameters, 1M-token context) at prices well…"
   - date: "2026-04-23"
     has_papers: true
     has_security: true
