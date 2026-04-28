@@ -1,18 +1,29 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "April 25, 2026"
+hero_date: "April 28, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-04-25/digest"
-hero_secondary: "[Papers](2026-04-25/papers) [Security](2026-04-25/security)"
-issue_count: 58
+hero_primary_link: "2026-04-28/digest"
+hero_secondary: "[Papers](2026-04-28/papers)"
+issue_count: 60
 highlights: |
-  - **[Google to invest up to $40B in Anthropic in cash and compute](https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/)**: Google commits one of the largest AI capital deals yet, following the limited release of Anthropic's cybersecurity-focused Mythos model.
-  - **[FIRESTARTER backdoor survives Cisco firewall patches on federal device](https://thehackernews.com/2026/04/firestarter-backdoor-hit-federal-cisco.html)**: CISA and NCSC warn that a custom backdoor persisted through updates on a U.S. federal agency's Cisco Firepower appliance, raising urgent supply-chain and patch-integrity concerns.
-  - **[How Project Maven taught the military to love AI](https://www.theverge.com/ai-artificial-intelligence/917996/project-maven-military-ai-katrina-manson)**: In the first 24 hours of the Iran assault, AI-driven targeting helped the U.S. strike over 1,000 targets — nearly double the pace of "shock and awe."
-  - **[GPT-5.5 tops benchmarks but still hallucinates and costs 20% more](https://the-decoder.com/gpt-5-5-tops-benchmarks-but-still-hallucinates-frequently-and-costs-20-percent-more-over-the-api/)**: OpenAI retakes the benchmark crown with GPT-5.5, though chief scientist Jakub Pachocki calls recent progress "surprisingly slow" and promises bigger leaps ahead.
-  - **[ComfyUI hits $500M valuation as creators seek control over AI media](https://techcrunch.com/2026/04/24/comfyui-hits-500m-valuation-as-creators-seek-more-control-over-ai-generated-media/)**: The open-source node-based generative media tool raised $30M amid growing demand for creator-controlled image, video, and audio pipelines.
+  - **[Musk vs. Altman head to court over OpenAI's future](https://www.technologyreview.com/2026/04/27/1136466/elon-musk-and-sam-altman-are-going-to-court-over-openais-future/)**: A Northern California trial opening this week could decide whether OpenAI may operate as a for-profit ahead of its IPO — and could even force out Altman.
+  - **[OpenAI and Microsoft restructure their partnership](https://www.itmedia.co.jp/news/articles/2604/28/news050.html)**: OpenAI is now free to sell its products on AWS and other clouds, ending Azure's API exclusivity, while OpenAI-to-Microsoft revenue sharing continues.
+  - **[GitHub Copilot shifts to token-based metered billing](https://www.itmedia.co.jp/aiplus/articles/2604/28/news051.html)**: With agentic usage frequently exceeding flat plan costs, Copilot is moving to consumption pricing — a likely end of the unlimited-use era for AI dev tools.
+  - **[Fujitsu builds a "Physical OS" to unify physical AI](https://www.itmedia.co.jp/enterprise/articles/2604/27/news049.html)**: A new joint research center with Carnegie Mellon will feed into Fujitsu Kozuchi Physical OS, an integration layer for embodied AI systems.
+  - **[Google tests AI chatbot search inside YouTube](https://www.theverge.com/streaming/919441/google-ask-youtube-ai-chatbot-search)**: A conversational search experiment now rolling out to some Premium users pulls together longform videos, Shorts, and explanatory text.
 archive:
+  - date: "2026-04-28"
+    has_papers: true
+    has_security: false
+    has_weekly: false
+    has_podcast: false
+    highlight: "Musk vs. Altman head to court over OpenAI's future: A Northern California trial opening this week could decide whether OpenAI may operate as a for-profit ahead…"
+  - date: "2026-04-27"
+    has_papers: false
+    has_security: false
+    has_weekly: false
+    has_podcast: false
   - date: "2026-04-25"
     has_papers: true
     has_security: true
