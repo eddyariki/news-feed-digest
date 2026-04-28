@@ -1,18 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "April 28, 2026"
+hero_date: "April 29, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-04-28/digest"
-hero_secondary: "[Papers](2026-04-28/papers)"
-issue_count: 60
+hero_primary_link: "2026-04-29/digest"
+hero_secondary: "[Papers](2026-04-29/papers) [Security](2026-04-29/security) [Podcast](2026-04-29/podcast)"
+issue_count: 61
 highlights: |
-  - **[Musk vs. Altman head to court over OpenAI's future](https://www.technologyreview.com/2026/04/27/1136466/elon-musk-and-sam-altman-are-going-to-court-over-openais-future/)**: A Northern California trial opening this week could decide whether OpenAI may operate as a for-profit ahead of its IPO — and could even force out Altman.
-  - **[OpenAI and Microsoft restructure their partnership](https://www.itmedia.co.jp/news/articles/2604/28/news050.html)**: OpenAI is now free to sell its products on AWS and other clouds, ending Azure's API exclusivity, while OpenAI-to-Microsoft revenue sharing continues.
-  - **[GitHub Copilot shifts to token-based metered billing](https://www.itmedia.co.jp/aiplus/articles/2604/28/news051.html)**: With agentic usage frequently exceeding flat plan costs, Copilot is moving to consumption pricing — a likely end of the unlimited-use era for AI dev tools.
-  - **[Fujitsu builds a "Physical OS" to unify physical AI](https://www.itmedia.co.jp/enterprise/articles/2604/27/news049.html)**: A new joint research center with Carnegie Mellon will feed into Fujitsu Kozuchi Physical OS, an integration layer for embodied AI systems.
-  - **[Google tests AI chatbot search inside YouTube](https://www.theverge.com/streaming/919441/google-ask-youtube-ai-chatbot-search)**: A conversational search experiment now rolling out to some Premium users pulls together longform videos, Shorts, and explanatory text.
+  - **[Anthropic's Mythos reshapes the cybersecurity landscape](https://www.schneier.com/blog/archives/2026/04/what-anthropics-mythos-means-for-the-future-of-cybersecurity.html)**: Bruce Schneier argues Anthropic's new Claude Mythos Preview — which can autonomously find and weaponize software vulnerabilities — collapses the patch-and-protect window that defenders have long relied on.
+  - **[Google signs Pentagon AI deal for "any lawful government purpose"](https://www.theverge.com/ai-artificial-intelligence/919494/google-pentagon-classified-ai-deal)**: Google inked a classified contract giving the DoD broad access to its AI models a day after 600+ employees demanded Sundar Pichai block the deal, and after Anthropic refused similar work.
+  - **[Microsoft and OpenAI end exclusivity; OpenAI lands on AWS](https://techcrunch.com/2026/04/28/amazon-is-already-offering-new-openai-products-on-aws/)**: Within a day of renegotiating the Azure-exclusive pact, OpenAI's GPT models, Codex, and Managed Agents went live on AWS — a dramatic restructuring of the cloud-AI landscape.
+  - **[Musk v. Altman OpenAI trial opens with bitter testimony](https://www.theverge.com/ai-artificial-intelligence/917052/elon-musk-takes-stand-trial-openai-sam-altman)**: Elon Musk took the stand to argue he is trying to "save humanity," kicking off a trial expected to expose the secrets of OpenAI's founding power struggle.
+  - **[Critical flaws in AI infrastructure exploited in the wild](https://thehackernews.com/2026/04/critical-cve-2026-25874-leaves-hugging.html)**: Hugging Face's LeRobot platform has an unpatched CVSS-9.3 unauthenticated RCE, while attackers are actively exploiting a pre-auth SQLi in the LiteLLM gateway (CVE-2026-42208) — AI tooling itself is now a target surface.
 archive:
+  - date: "2026-04-29"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: true
+    highlight: "Anthropic's Mythos reshapes the cybersecurity landscape: Bruce Schneier argues Anthropic's new Claude Mythos Preview — which can autonomously find and…"
   - date: "2026-04-28"
     has_papers: true
     has_security: false
