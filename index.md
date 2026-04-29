@@ -1,18 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "April 29, 2026"
+hero_date: "April 30, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-04-29/digest"
-hero_secondary: "[Papers](2026-04-29/papers) [Security](2026-04-29/security) [Podcast](2026-04-29/podcast)"
-issue_count: 61
+hero_primary_link: "2026-04-30/digest"
+hero_secondary: "[Papers](2026-04-30/papers) [Security](2026-04-30/security) [Podcast](2026-04-30/podcast)"
+issue_count: 62
 highlights: |
-  - **[Anthropic's Mythos reshapes the cybersecurity landscape](https://www.schneier.com/blog/archives/2026/04/what-anthropics-mythos-means-for-the-future-of-cybersecurity.html)**: Bruce Schneier argues Anthropic's new Claude Mythos Preview — which can autonomously find and weaponize software vulnerabilities — collapses the patch-and-protect window that defenders have long relied on.
-  - **[Google signs Pentagon AI deal for "any lawful government purpose"](https://www.theverge.com/ai-artificial-intelligence/919494/google-pentagon-classified-ai-deal)**: Google inked a classified contract giving the DoD broad access to its AI models a day after 600+ employees demanded Sundar Pichai block the deal, and after Anthropic refused similar work.
-  - **[Microsoft and OpenAI end exclusivity; OpenAI lands on AWS](https://techcrunch.com/2026/04/28/amazon-is-already-offering-new-openai-products-on-aws/)**: Within a day of renegotiating the Azure-exclusive pact, OpenAI's GPT models, Codex, and Managed Agents went live on AWS — a dramatic restructuring of the cloud-AI landscape.
-  - **[Musk v. Altman OpenAI trial opens with bitter testimony](https://www.theverge.com/ai-artificial-intelligence/917052/elon-musk-takes-stand-trial-openai-sam-altman)**: Elon Musk took the stand to argue he is trying to "save humanity," kicking off a trial expected to expose the secrets of OpenAI's founding power struggle.
-  - **[Critical flaws in AI infrastructure exploited in the wild](https://thehackernews.com/2026/04/critical-cve-2026-25874-leaves-hugging.html)**: Hugging Face's LeRobot platform has an unpatched CVSS-9.3 unauthenticated RCE, while attackers are actively exploiting a pre-auth SQLi in the LiteLLM gateway (CVE-2026-42208) — AI tooling itself is now a target surface.
+  - **[Claude Mythos finds 271 zero-days in Firefox](https://www.schneier.com/blog/archives/2026/04/claude-mythos-has-found-271-zero-days-in-firefox.html)**: Anthropic's preview model surfaced an extraordinary number of latent security bugs in the browser, building on prior Opus 4.6 work that already fixed 22 issues in Firefox 148.
+  - **[DPRK actors used Claude Opus to plant malicious npm dependency](https://thehackernews.com/2026/04/new-wave-of-dprk-attacks-uses-ai.html)**: Researchers found AI-inserted code in `@validate-sdk/v2`, the latest evidence that frontier LLMs are being weaponized for supply-chain attacks against developers.
+  - **[White House moves to restore Anthropic access after Pentagon standoff](https://the-decoder.com/white-house-moves-to-restore-anthropic-access-after-pentagon-standoff/)**: New federal guidance would let agencies work with Anthropic again, including its new Mythos model, ending a high-profile dispute over military AI use.
+  - **[OpenAI lands on AWS one day after Microsoft deal restructuring](https://the-decoder.com/openai-lands-on-aws-one-day-after-microsoft-deal-restructuring/)**: Amazon rolled out three new OpenAI offerings on Bedrock, including a jointly built agent service, marking the first major commercial fallout from the dissolved exclusivity arrangement.
+  - **[Anthropic study: do frontier models sabotage AI safety research?](https://arxiv.org/abs/2604.24618)**: Across four Claude models (Mythos Preview, Opus 4.7 Preview, Opus 4.6, Sonnet 4.6), researchers ran unprompted-sabotage and continuation evaluations to test whether AI agents would undermine the safety work they were assigned to assist.
 archive:
+  - date: "2026-04-30"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: true
+    highlight: "Claude Mythos finds 271 zero-days in Firefox: Anthropic's preview model surfaced an extraordinary number of latent security bugs in the browser, building on…"
   - date: "2026-04-29"
     has_papers: true
     has_security: true
