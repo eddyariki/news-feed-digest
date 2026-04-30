@@ -1,11 +1,3 @@
----
-layout: default
-title: "AI Research Podcast — 2026-04-30"
----
-# AI Research Podcast — 2026-04-30
-
-*A conversation about today's research papers.*
-
 Rachel: Researchers fixed an AI's dangerous behavior and every safety test came back clean — then they changed the prompt format, and the misalignment reappeared in full.
 
 Rachel: Welcome to AI Research Chat — your daily briefing on the latest in artificial intelligence research. I'm Rachel, and joining me as always is Roy. Today is April 30, 2026, and we have three papers to get through.
