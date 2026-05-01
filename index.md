@@ -1,18 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "April 30, 2026"
+hero_date: "May 1, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-04-30/digest"
-hero_secondary: "[Papers](2026-04-30/papers) [Security](2026-04-30/security) [Podcast](2026-04-30/podcast)"
-issue_count: 62
+hero_primary_link: "2026-05-01/digest"
+hero_secondary: "[Papers](2026-05-01/papers) [Security](2026-05-01/security) [Podcast](2026-05-01/podcast)"
+issue_count: 63
 highlights: |
-  - **[Claude Mythos finds 271 zero-days in Firefox](https://www.schneier.com/blog/archives/2026/04/claude-mythos-has-found-271-zero-days-in-firefox.html)**: Anthropic's preview model surfaced an extraordinary number of latent security bugs in the browser, building on prior Opus 4.6 work that already fixed 22 issues in Firefox 148.
-  - **[DPRK actors used Claude Opus to plant malicious npm dependency](https://thehackernews.com/2026/04/new-wave-of-dprk-attacks-uses-ai.html)**: Researchers found AI-inserted code in `@validate-sdk/v2`, the latest evidence that frontier LLMs are being weaponized for supply-chain attacks against developers.
-  - **[White House moves to restore Anthropic access after Pentagon standoff](https://the-decoder.com/white-house-moves-to-restore-anthropic-access-after-pentagon-standoff/)**: New federal guidance would let agencies work with Anthropic again, including its new Mythos model, ending a high-profile dispute over military AI use.
-  - **[OpenAI lands on AWS one day after Microsoft deal restructuring](https://the-decoder.com/openai-lands-on-aws-one-day-after-microsoft-deal-restructuring/)**: Amazon rolled out three new OpenAI offerings on Bedrock, including a jointly built agent service, marking the first major commercial fallout from the dissolved exclusivity arrangement.
-  - **[Anthropic study: do frontier models sabotage AI safety research?](https://arxiv.org/abs/2604.24618)**: Across four Claude models (Mythos Preview, Opus 4.7 Preview, Opus 4.6, Sonnet 4.6), researchers ran unprompted-sabotage and continuation evaluations to test whether AI agents would undermine the safety work they were assigned to assist.
+  - **[New Linux 'Copy Fail' flaw gives unprivileged users root on major distros](https://arstechnica.com/security/2026/04/as-the-most-severe-linux-threat-in-years-surfaces-the-world-scrambles/)**: An AI-assisted scan by Xint uncovered CVE-2026-31431, a 9-year-old kernel LPE bug threatening multi-tenant servers, CI/CD, and Kubernetes — described as the most severe Linux threat in years.
+  - **[White House blocks Anthropic from expanding access to its Mythos cyber model](https://the-decoder.com/white-house-worried-about-compute-limits-as-it-blocks-wider-access-to-anthropics-mythos/)**: U.S. officials reportedly rejected Anthropic's plan to extend Mythos to ~70 additional companies over compute-supply concerns, while OpenAI simultaneously restricted its rival GPT-5.5 Cyber to "critical defenders."
+  - **[Google patches CVSS 10 RCE in Gemini CLI and run-gemini-cli GitHub Action](https://thehackernews.com/2026/04/google-fixes-cvss-10-gemini-cli-ci-rce.html)**: A maximum-severity flaw let attackers force malicious content to load as Gemini configuration, executing arbitrary commands on host systems via the agent's CI workflow.
+  - **[Microsoft and OpenAI restructure their partnership](https://www.theverge.com/tech/921210/microsoft-openai-partnership-divorce-notepad)**: After years of contract friction, the two companies finalized a major rework of their relationship — recasting how compute, IP, and product roadmaps will be shared going forward.
+  - **[Anthropic in talks for a funding round valuing it above $900 billion](https://the-decoder.com/anthropic-reviewing-investor-offers-that-would-value-the-company-at-over-900-billion/)**: The company is reviewing investor offers that would push its valuation past three-quarters of a trillion dollars, a sharp reset of frontier-lab market caps.
 archive:
+  - date: "2026-05-01"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: true
+    highlight: "New Linux 'Copy Fail' flaw gives unprivileged users root on major distros: An AI-assisted scan by Xint uncovered CVE-2026-31431, a 9-year-old kernel LPE bug…"
   - date: "2026-04-30"
     has_papers: true
     has_security: true
