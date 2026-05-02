@@ -1,18 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "May 1, 2026"
+hero_date: "May 2, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-05-01/digest"
-hero_secondary: "[Papers](2026-05-01/papers) [Security](2026-05-01/security) [Podcast](2026-05-01/podcast)"
-issue_count: 63
+hero_primary_link: "2026-05-02/digest"
+hero_secondary: "[Papers](2026-05-02/papers) [Security](2026-05-02/security) [Podcast](2026-05-02/podcast)"
+issue_count: 64
 highlights: |
-  - **[New Linux 'Copy Fail' flaw gives unprivileged users root on major distros](https://arstechnica.com/security/2026/04/as-the-most-severe-linux-threat-in-years-surfaces-the-world-scrambles/)**: An AI-assisted scan by Xint uncovered CVE-2026-31431, a 9-year-old kernel LPE bug threatening multi-tenant servers, CI/CD, and Kubernetes — described as the most severe Linux threat in years.
-  - **[White House blocks Anthropic from expanding access to its Mythos cyber model](https://the-decoder.com/white-house-worried-about-compute-limits-as-it-blocks-wider-access-to-anthropics-mythos/)**: U.S. officials reportedly rejected Anthropic's plan to extend Mythos to ~70 additional companies over compute-supply concerns, while OpenAI simultaneously restricted its rival GPT-5.5 Cyber to "critical defenders."
-  - **[Google patches CVSS 10 RCE in Gemini CLI and run-gemini-cli GitHub Action](https://thehackernews.com/2026/04/google-fixes-cvss-10-gemini-cli-ci-rce.html)**: A maximum-severity flaw let attackers force malicious content to load as Gemini configuration, executing arbitrary commands on host systems via the agent's CI workflow.
-  - **[Microsoft and OpenAI restructure their partnership](https://www.theverge.com/tech/921210/microsoft-openai-partnership-divorce-notepad)**: After years of contract friction, the two companies finalized a major rework of their relationship — recasting how compute, IP, and product roadmaps will be shared going forward.
-  - **[Anthropic in talks for a funding round valuing it above $900 billion](https://the-decoder.com/anthropic-reviewing-investor-offers-that-would-value-the-company-at-over-900-billion/)**: The company is reviewing investor offers that would push its valuation past three-quarters of a trillion dollars, a sharp reset of frontier-lab market caps.
+  - **[Pentagon strikes classified AI deals with OpenAI, Google, and Nvidia — but not Anthropic](https://www.theverge.com/ai-artificial-intelligence/922113/pentagon-ai-classified-openai-google-nvidia)**: The DOD signed eight vendors (OpenAI, Google, Microsoft, Amazon, Nvidia, xAI, Reflection) to deploy AI on classified networks while excluding Anthropic, which had been flagged as a security risk after rejecting a usage clause.
+  - **[GPT-5.5 matches Claude Mythos in cyber attack tests, UK AI Security Institute finds](https://the-decoder.com/gpt-5-5-matches-claude-mythos-in-cyber-attack-tests-uk-ai-security-institute-finds/)**: GPT-5.5 became the second model to autonomously solve a full network-takeover simulation, signaling that frontier offensive cyber capability is now broadly proliferating to shipping models.
+  - **[Anthropic launches Claude Security to give defenders the same AI edge attackers already have](https://the-decoder.com/anthropic-launches-claude-security-to-give-defenders-the-same-ai-edge-attackers-already-have/)**: Anthropic released a defender-facing security product drawing on offensive capabilities it had previously deemed too dangerous to release in another model.
+  - **[Big tech's AI spending balloons to $725 billion this year](https://the-decoder.com/big-techs-ai-spending-balloons-to-725-billion-this-year/)**: Google, Amazon, Microsoft, and Meta have a combined ~$725B budget for AI infrastructure next year, per FT reporting.
+  - **[Sources: Anthropic potential $900B+ valuation round could happen within 2 weeks](https://techcrunch.com/2026/04/30/anthropic-potential-900b-valuation-round-could-happen-within-two-weeks/)**: Anthropic is reportedly asking investors for allocations in a 48-hour window for a megaround that would push it past $900B.
 archive:
+  - date: "2026-05-02"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: true
+    highlight: "Pentagon strikes classified AI deals with OpenAI, Google, and Nvidia — but not Anthropic: The DOD signed eight vendors (OpenAI, Google, Microsoft, Amazon,…"
   - date: "2026-05-01"
     has_papers: true
     has_security: true
