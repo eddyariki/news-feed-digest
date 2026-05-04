@@ -1,18 +1,19 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "May 2, 2026"
+hero_date: "May 4, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-05-02/digest"
-hero_secondary: "[Papers](2026-05-02/papers) [Security](2026-05-02/security) [Podcast](2026-05-02/podcast)"
-issue_count: 64
+hero_primary_link: "2026-05-04/digest"
+hero_secondary: "[Podcast](2026-05-04/podcast)"
+issue_count: 65
 highlights: |
-  - **[Pentagon strikes classified AI deals with OpenAI, Google, and Nvidia — but not Anthropic](https://www.theverge.com/ai-artificial-intelligence/922113/pentagon-ai-classified-openai-google-nvidia)**: The DOD signed eight vendors (OpenAI, Google, Microsoft, Amazon, Nvidia, xAI, Reflection) to deploy AI on classified networks while excluding Anthropic, which had been flagged as a security risk after rejecting a usage clause.
-  - **[GPT-5.5 matches Claude Mythos in cyber attack tests, UK AI Security Institute finds](https://the-decoder.com/gpt-5-5-matches-claude-mythos-in-cyber-attack-tests-uk-ai-security-institute-finds/)**: GPT-5.5 became the second model to autonomously solve a full network-takeover simulation, signaling that frontier offensive cyber capability is now broadly proliferating to shipping models.
-  - **[Anthropic launches Claude Security to give defenders the same AI edge attackers already have](https://the-decoder.com/anthropic-launches-claude-security-to-give-defenders-the-same-ai-edge-attackers-already-have/)**: Anthropic released a defender-facing security product drawing on offensive capabilities it had previously deemed too dangerous to release in another model.
-  - **[Big tech's AI spending balloons to $725 billion this year](https://the-decoder.com/big-techs-ai-spending-balloons-to-725-billion-this-year/)**: Google, Amazon, Microsoft, and Meta have a combined ~$725B budget for AI infrastructure next year, per FT reporting.
-  - **[Sources: Anthropic potential $900B+ valuation round could happen within 2 weeks](https://techcrunch.com/2026/04/30/anthropic-potential-900b-valuation-round-could-happen-within-two-weeks/)**: Anthropic is reportedly asking investors for allocations in a 48-hour window for a megaround that would push it past $900B.
+  - No highlights available.
 archive:
+  - date: "2026-05-04"
+    has_papers: false
+    has_security: false
+    has_weekly: true
+    has_podcast: true
   - date: "2026-05-02"
     has_papers: true
     has_security: true
