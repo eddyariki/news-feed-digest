@@ -1,14 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "May 4, 2026"
+hero_date: "May 5, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-05-04/digest"
-hero_secondary: "[Podcast](2026-05-04/podcast)"
-issue_count: 65
+hero_primary_link: "2026-05-05/digest"
+hero_secondary: "[Papers](2026-05-05/papers) [Security](2026-05-05/security) [Podcast](2026-05-05/podcast)"
+issue_count: 66
 highlights: |
-  - No highlights available.
+  - **[Musk v. Altman trial opens with Stuart Russell warning of an AGI arms race](https://techcrunch.com/2026/05/04/elon-musks-only-expert-witness-at-the-openai-trial-fears-an-agi-arms-race/)**: Musk's sole AI expert witness argues governments must restrain frontier labs as the OpenAI breach-of-mission trial reaches its first week of testimony.
+  - **[Anthropic and OpenAI both spin up enterprise deployment ventures](https://techcrunch.com/2026/05/04/anthropic-and-openai-are-both-launching-joint-ventures-for-enterprise-ai-services/)**: Anthropic partners with Blackstone, Hellman & Friedman, and Goldman Sachs while OpenAI raises over $4B for "The Deployment Company," signalling that selling AI now requires deep services muscle.
+  - **[Backdoored PyTorch Lightning package on PyPI ships a credential stealer](https://www.bleepingcomputer.com/news/security/backdoored-pytorch-lightning-package-drops-credential-stealer/)**: A malicious copy of a core ML library targeted browsers, env files, and cloud secrets — the latest signal that the AI supply chain itself is now a primary attack surface.
+  - **["Copy Fail" Linux flaw under active exploit hits CISA's KEV catalog](https://www.bleepingcomputer.com/news/security/cisa-says-copy-fail-flaw-now-exploited-to-root-linux-systems/)**: CISA warned that root-access bug CVE-2026-31431 is being exploited in the wild a day after public PoC release.
+  - **[Harvard study finds AI beat two ER doctors on diagnostic accuracy](https://techcrunch.com/2026/05/03/in-harvard-study-ai-offered-more-accurate-diagnoses-than-emergency-room-doctors/)**: A new evaluation of LLMs across medical contexts shows at least one model outperformed human doctors on real emergency-room cases.
 archive:
+  - date: "2026-05-05"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: true
+    highlight: "Musk v. Altman trial opens with Stuart Russell warning of an AGI arms race: Musk's sole AI expert witness argues governments must restrain frontier labs as the…"
   - date: "2026-05-04"
     has_papers: false
     has_security: false
