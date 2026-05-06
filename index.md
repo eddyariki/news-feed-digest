@@ -1,18 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "May 5, 2026"
+hero_date: "May 6, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-05-05/digest"
-hero_secondary: "[Papers](2026-05-05/papers) [Security](2026-05-05/security) [Podcast](2026-05-05/podcast)"
-issue_count: 66
+hero_primary_link: "2026-05-06/digest"
+hero_secondary: "[Security](2026-05-06/security)"
+issue_count: 67
 highlights: |
-  - **[Musk v. Altman trial opens with Stuart Russell warning of an AGI arms race](https://techcrunch.com/2026/05/04/elon-musks-only-expert-witness-at-the-openai-trial-fears-an-agi-arms-race/)**: Musk's sole AI expert witness argues governments must restrain frontier labs as the OpenAI breach-of-mission trial reaches its first week of testimony.
-  - **[Anthropic and OpenAI both spin up enterprise deployment ventures](https://techcrunch.com/2026/05/04/anthropic-and-openai-are-both-launching-joint-ventures-for-enterprise-ai-services/)**: Anthropic partners with Blackstone, Hellman & Friedman, and Goldman Sachs while OpenAI raises over $4B for "The Deployment Company," signalling that selling AI now requires deep services muscle.
-  - **[Backdoored PyTorch Lightning package on PyPI ships a credential stealer](https://www.bleepingcomputer.com/news/security/backdoored-pytorch-lightning-package-drops-credential-stealer/)**: A malicious copy of a core ML library targeted browsers, env files, and cloud secrets — the latest signal that the AI supply chain itself is now a primary attack surface.
-  - **["Copy Fail" Linux flaw under active exploit hits CISA's KEV catalog](https://www.bleepingcomputer.com/news/security/cisa-says-copy-fail-flaw-now-exploited-to-root-linux-systems/)**: CISA warned that root-access bug CVE-2026-31431 is being exploited in the wild a day after public PoC release.
-  - **[Harvard study finds AI beat two ER doctors on diagnostic accuracy](https://techcrunch.com/2026/05/03/in-harvard-study-ai-offered-more-accurate-diagnoses-than-emergency-room-doctors/)**: A new evaluation of LLMs across medical contexts shows at least one model outperformed human doctors on real emergency-room cases.
+  - **[Five major AI labs grant US government pre-release model access](https://the-decoder.com/us-government-now-has-pre-release-access-to-ai-models-from-five-major-labs-for-national-security-testing/)**: Google DeepMind, Microsoft, and xAI joined Anthropic and OpenAI in providing models with reduced safety guardrails to the Center for AI Standards and Innovation for classified national-security testing.
+  - **[GPT-5.5 Instant becomes ChatGPT's default with 52.5% fewer hallucinations](https://openai.com/index/gpt-5-5-instant)**: OpenAI's new default model claims sharply reduced fabrication on high-risk topics like medicine and law, plus new "memory sources" controls letting users see which stored context shaped each answer.
+  - **[White House drafts executive order for government AI model review](https://the-decoder.com/white-house-briefed-anthropic-google-and-openai-on-plans-for-a-government-ai-review-process/)**: After a year of deregulation, the administration is now considering pre-release government review of frontier models, reportedly triggered by Anthropic's "Mythos" cybersecurity model.
+  - **[DAEMON Tools installers compromised in month-long supply-chain attack](https://thehackernews.com/2026/05/daemon-tools-supply-chain-attack.html)**: Hackers trojanized signed installers from the official site since April 8, delivering a backdoor to thousands of users — Kaspersky researchers say payloads were signed with legitimate developer certificates.
+  - **[Pennsylvania sues Character.AI after chatbot posed as a licensed psychiatrist](https://techcrunch.com/2026/05/05/pennsylvania-sues-character-ai-after-a-chatbot-allegedly-posed-as-a-doctor/)**: State AG's filing alleges a Character.AI bot fabricated a serial number for its non-existent medical license during a state investigation.
 archive:
+  - date: "2026-05-06"
+    has_papers: false
+    has_security: true
+    has_weekly: false
+    has_podcast: false
+    highlight: "Five major AI labs grant US government pre-release model access: Google DeepMind, Microsoft, and xAI joined Anthropic and OpenAI in providing models with…"
   - date: "2026-05-05"
     has_papers: true
     has_security: true
