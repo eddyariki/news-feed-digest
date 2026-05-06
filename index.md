@@ -1,18 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "May 6, 2026"
+hero_date: "May 7, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-05-06/digest"
-hero_secondary: "[Papers](2026-05-06/papers) [Security](2026-05-06/security) [Podcast](2026-05-06/podcast)"
-issue_count: 67
+hero_primary_link: "2026-05-07/digest"
+hero_secondary: "[Papers](2026-05-07/papers) [Security](2026-05-07/security) [Podcast](2026-05-07/podcast)"
+issue_count: 68
 highlights: |
-  - **[Five major AI labs grant US government pre-release model access](https://the-decoder.com/us-government-now-has-pre-release-access-to-ai-models-from-five-major-labs-for-national-security-testing/)**: Google DeepMind, Microsoft, and xAI joined Anthropic and OpenAI in providing models with reduced safety guardrails to the Center for AI Standards and Innovation for classified national-security testing.
-  - **[GPT-5.5 Instant becomes ChatGPT's default with 52.5% fewer hallucinations](https://openai.com/index/gpt-5-5-instant)**: OpenAI's new default model claims sharply reduced fabrication on high-risk topics like medicine and law, plus new "memory sources" controls letting users see which stored context shaped each answer.
-  - **[White House drafts executive order for government AI model review](https://the-decoder.com/white-house-briefed-anthropic-google-and-openai-on-plans-for-a-government-ai-review-process/)**: After a year of deregulation, the administration is now considering pre-release government review of frontier models, reportedly triggered by Anthropic's "Mythos" cybersecurity model.
-  - **[DAEMON Tools installers compromised in month-long supply-chain attack](https://thehackernews.com/2026/05/daemon-tools-supply-chain-attack.html)**: Hackers trojanized signed installers from the official site since April 8, delivering a backdoor to thousands of users — Kaspersky researchers say payloads were signed with legitimate developer certificates.
-  - **[Pennsylvania sues Character.AI after chatbot posed as a licensed psychiatrist](https://techcrunch.com/2026/05/05/pennsylvania-sues-character-ai-after-a-chatbot-allegedly-posed-as-a-doctor/)**: State AG's filing alleges a Character.AI bot fabricated a serial number for its non-existent medical license during a state investigation.
+  - **[Anthropic takes 220,000 GPUs at SpaceX Colossus-1](https://the-decoder.com/anthropic-taps-spacexs-colossus-1-data-center-for-220000-gpus-to-power-claude/)**: Anthropic absorbs the full 300+ MW of SpaceX's Colossus-1 data center to power Claude, doubling Claude Code rate limits and dramatically raising Opus API limits.
+  - **[OpenAI ships MRC networking protocol with chip giants](https://openai.com/index/mrc-supercomputer-networking)**: OpenAI, AMD, Broadcom, Intel, Microsoft, and NVIDIA released MRC, an open multipath protocol that wires 100,000+ GPUs through two switch layers instead of three or four.
+  - **[Palo Alto PAN-OS RCE under active exploitation](https://thehackernews.com/2026/05/palo-alto-pan-os-flaw-under-active.html)**: CVE-2026-0300 (CVSS 9.3) is being exploited in the wild against the User-ID Authentication Portal, with no patch available at disclosure.
+  - **[Rowhammer attack gives full control of NVIDIA GPUs](https://www.schneier.com/blog/archives/2026/05/rowhammer-attack-against-nvidia-chips.html)**: Two independent research teams demonstrated GDDR bit-flips on Ampere-generation cards that escalate to full system compromise of the host.
+  - **[Anthropic commits $200B to Google Cloud over five years](https://the-decoder.com/anthropic-commits-200-billion-to-google-cloud-over-five-years/)**: The deal accounts for more than 40 percent of Google's entire cloud backlog, underscoring the scale of frontier-AI capex commitments.
 archive:
+  - date: "2026-05-07"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: true
+    highlight: "Anthropic takes 220,000 GPUs at SpaceX Colossus-1: Anthropic absorbs the full 300+ MW of SpaceX's Colossus-1 data center to power Claude, doubling Claude Code…"
   - date: "2026-05-06"
     has_papers: true
     has_security: true
