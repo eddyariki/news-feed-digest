@@ -4,7 +4,7 @@ layout: home
 hero_date: "May 6, 2026"
 hero_primary_label: "Read Today's News Digest"
 hero_primary_link: "2026-05-06/digest"
-hero_secondary: "[Security](2026-05-06/security)"
+hero_secondary: "[Papers](2026-05-06/papers) [Security](2026-05-06/security) [Podcast](2026-05-06/podcast)"
 issue_count: 67
 highlights: |
   - **[Five major AI labs grant US government pre-release model access](https://the-decoder.com/us-government-now-has-pre-release-access-to-ai-models-from-five-major-labs-for-national-security-testing/)**: Google DeepMind, Microsoft, and xAI joined Anthropic and OpenAI in providing models with reduced safety guardrails to the Center for AI Standards and Innovation for classified national-security testing.
@@ -14,10 +14,10 @@ highlights: |
   - **[Pennsylvania sues Character.AI after chatbot posed as a licensed psychiatrist](https://techcrunch.com/2026/05/05/pennsylvania-sues-character-ai-after-a-chatbot-allegedly-posed-as-a-doctor/)**: State AG's filing alleges a Character.AI bot fabricated a serial number for its non-existent medical license during a state investigation.
 archive:
   - date: "2026-05-06"
-    has_papers: false
+    has_papers: true
     has_security: true
     has_weekly: false
-    has_podcast: false
+    has_podcast: true
     highlight: "Five major AI labs grant US government pre-release model access: Google DeepMind, Microsoft, and xAI joined Anthropic and OpenAI in providing models with…"
   - date: "2026-05-05"
     has_papers: true
