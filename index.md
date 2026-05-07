@@ -1,18 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "May 7, 2026"
+hero_date: "May 8, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-05-07/digest"
-hero_secondary: "[Papers](2026-05-07/papers) [Security](2026-05-07/security) [Podcast](2026-05-07/podcast)"
-issue_count: 68
+hero_primary_link: "2026-05-08/digest"
+hero_secondary: "[Papers](2026-05-08/papers) [Security](2026-05-08/security) [Podcast](2026-05-08/podcast)"
+issue_count: 69
 highlights: |
-  - **[Anthropic takes 220,000 GPUs at SpaceX Colossus-1](https://the-decoder.com/anthropic-taps-spacexs-colossus-1-data-center-for-220000-gpus-to-power-claude/)**: Anthropic absorbs the full 300+ MW of SpaceX's Colossus-1 data center to power Claude, doubling Claude Code rate limits and dramatically raising Opus API limits.
-  - **[OpenAI ships MRC networking protocol with chip giants](https://openai.com/index/mrc-supercomputer-networking)**: OpenAI, AMD, Broadcom, Intel, Microsoft, and NVIDIA released MRC, an open multipath protocol that wires 100,000+ GPUs through two switch layers instead of three or four.
-  - **[Palo Alto PAN-OS RCE under active exploitation](https://thehackernews.com/2026/05/palo-alto-pan-os-flaw-under-active.html)**: CVE-2026-0300 (CVSS 9.3) is being exploited in the wild against the User-ID Authentication Portal, with no patch available at disclosure.
-  - **[Rowhammer attack gives full control of NVIDIA GPUs](https://www.schneier.com/blog/archives/2026/05/rowhammer-attack-against-nvidia-chips.html)**: Two independent research teams demonstrated GDDR bit-flips on Ampere-generation cards that escalate to full system compromise of the host.
-  - **[Anthropic commits $200B to Google Cloud over five years](https://the-decoder.com/anthropic-commits-200-billion-to-google-cloud-over-five-years/)**: The deal accounts for more than 40 percent of Google's entire cloud backlog, underscoring the scale of frontier-AI capex commitments.
+  - **[Anthropic's Mythos surfaces 271 high-severity bugs in Firefox](https://arstechnica.com/information-technology/2026/05/mozilla-says-271-vulnerabilities-found-by-mythos-have-almost-no-false-positives/)**: Mozilla says the AI-assisted vulnerability-discovery tool has "almost no false positives" and the org has "completely bought in" on AI bug hunting.
+  - **[EU pushes most of the AI Act back to 2027–2028](https://the-decoder.com/europes-answer-to-ai-regulation-complexity-is-to-just-delay-most-of-it/)**: The "Digital Omnibus on AI" delays high-risk AI deadlines and eases SME requirements while explicitly banning "nudification" apps.
+  - **[SpaceX commits $55B to "Terafab" AI chip plant in Texas](https://www.theverge.com/ai-artificial-intelligence/926356/spacex-terafab-plant-cost-ai-chips)**: Musk's chip ambitions detailed in a Grimes County hearing notice, alongside Anthropic tapping SpaceX's Colossus 1 supercomputer for compute.
+  - **[PCPJack worm steals cloud credentials, evicts TeamPCP](https://thehackernews.com/2026/05/pcpjack-credential-stealer-exploits-5.html)**: A new credential-theft framework chains five CVEs to spread worm-like across cloud, container, developer, and financial services.
+  - **[OpenAI launches "Trusted Contact" safeguard for self-harm conversations](https://openai.com/index/introducing-trusted-contact-in-chatgpt)**: An optional safety feature notifies designated friends or caregivers when ChatGPT detects serious self-harm signals.
 archive:
+  - date: "2026-05-08"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: true
+    highlight: "Anthropic's Mythos surfaces 271 high-severity bugs in Firefox: Mozilla says the AI-assisted vulnerability-discovery tool has 'almost no false positives' and…"
   - date: "2026-05-07"
     has_papers: true
     has_security: true
