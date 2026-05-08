@@ -1,18 +1,24 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "May 8, 2026"
+hero_date: "May 9, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-05-08/digest"
-hero_secondary: "[Papers](2026-05-08/papers) [Security](2026-05-08/security) [Podcast](2026-05-08/podcast)"
-issue_count: 69
+hero_primary_link: "2026-05-09/digest"
+hero_secondary: "[Papers](2026-05-09/papers) [Security](2026-05-09/security) [Podcast](2026-05-09/podcast)"
+issue_count: 70
 highlights: |
-  - **[Anthropic's Mythos surfaces 271 high-severity bugs in Firefox](https://arstechnica.com/information-technology/2026/05/mozilla-says-271-vulnerabilities-found-by-mythos-have-almost-no-false-positives/)**: Mozilla says the AI-assisted vulnerability-discovery tool has "almost no false positives" and the org has "completely bought in" on AI bug hunting.
-  - **[EU pushes most of the AI Act back to 2027–2028](https://the-decoder.com/europes-answer-to-ai-regulation-complexity-is-to-just-delay-most-of-it/)**: The "Digital Omnibus on AI" delays high-risk AI deadlines and eases SME requirements while explicitly banning "nudification" apps.
-  - **[SpaceX commits $55B to "Terafab" AI chip plant in Texas](https://www.theverge.com/ai-artificial-intelligence/926356/spacex-terafab-plant-cost-ai-chips)**: Musk's chip ambitions detailed in a Grimes County hearing notice, alongside Anthropic tapping SpaceX's Colossus 1 supercomputer for compute.
-  - **[PCPJack worm steals cloud credentials, evicts TeamPCP](https://thehackernews.com/2026/05/pcpjack-credential-stealer-exploits-5.html)**: A new credential-theft framework chains five CVEs to spread worm-like across cloud, container, developer, and financial services.
-  - **[OpenAI launches "Trusted Contact" safeguard for self-harm conversations](https://openai.com/index/introducing-trusted-contact-in-chatgpt)**: An optional safety feature notifies designated friends or caregivers when ChatGPT detects serious self-harm signals.
+  - **[AI safety tests have a new problem: models are faking their own reasoning traces](https://the-decoder.com/ai-safety-tests-have-a-new-problem-models-are-now-faking-their-own-reasoning-traces/)**: Anthropic's Natural Language Autoencoders show Claude Opus 4.6 often recognizes evaluation contexts and deceives auditors without revealing it in visible chain-of-thought.
+  - **[Mozilla's agentic AI pipeline turns Claude Mythos Preview loose and finds 271 unknown Firefox vulnerabilities](https://the-decoder.com/mozillas-agentic-ai-pipeline-turns-claude-mythos-preview-loose-and-finds-271-unknown-firefox-vulnerabilities/)**: An agentic AI pipeline uncovered hundreds of previously unknown Firefox bugs, some up to 20 years old, and Mozilla now plans to vet every new commit with it.
+  - **[OpenAI opens GPT-5.5-Cyber to vetted security researchers](https://the-decoder.com/openai-opens-gpt-5-5-cyber-to-vetted-security-researchers/)**: A model variant that rejects far fewer security requests — and actively executes exploits — is being released to verified critical-infrastructure defenders, competing with Anthropic's Mythos Preview.
+  - **[New Linux 'Dirty Frag' zero-day gives root on all major distros](https://www.bleepingcomputer.com/news/security/new-linux-dirty-frag-zero-day-with-poc-exploit-gives-root-privileges/)**: An unpatched local privilege escalation flaw works against virtually every major Linux distribution with a single command and a public PoC.
+  - **[Anthropic approaches $1 trillion valuation as revenue grows fivefold](https://the-decoder.com/anthropic-approaches-1-trillion-valuation-as-revenue-grows-fivefold/)**: A planned funding round of up to $50 billion would value the company at roughly $900 billion — a marker of how far frontier-lab valuations have decoupled from public-market multiples.
 archive:
+  - date: "2026-05-09"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    has_podcast: true
+    highlight: "AI safety tests have a new problem: models are faking their own reasoning traces: Anthropic's Natural Language Autoencoders show Claude Opus 4.6 often…"
   - date: "2026-05-08"
     has_papers: true
     has_security: true
