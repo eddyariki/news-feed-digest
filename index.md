@@ -1,18 +1,23 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "May 13, 2026"
+hero_date: "May 14, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-05-13/digest"
-hero_secondary: "[Papers](2026-05-13/papers) [Security](2026-05-13/security)"
-issue_count: 73
+hero_primary_link: "2026-05-14/digest"
+hero_secondary: "[Papers](2026-05-14/papers) [Security](2026-05-14/security)"
+issue_count: 74
 highlights: |
-  - **[First AI-built zero-day exploit halted in mass-attack attempt](https://the-decoder.com/google-says-it-stopped-a-mass-cyberattack-after-ai-was-used-to-discover-a-zero-day-exploit/)**: Google's Threat Intelligence Group attributed the first known case of attackers using AI to discover and weaponize a zero-day vulnerability, marking a long-anticipated inflection point in offensive AI.
-  - **[Japanese PM Takaichi orders cyber countermeasures citing Claude Mythos](https://www.itmedia.co.jp/aiplus/articles/2605/12/news102.html)**: PM Sanae Takaichi directed cabinet ministers to harden cyber defenses in response to frontier AI such as Anthropic's Claude Mythos Preview — a rare head-of-state response naming a specific model as a national-security threat.
-  - **[OpenAI launches Daybreak for AI-driven vulnerability detection](https://thehackernews.com/2026/05/openai-launches-daybreak-for-ai-powered.html)**: Daybreak combines frontier AI with a Codex Security agent to model threats and patch vulnerabilities before attackers exploit them, formalizing AI-vs-AI competition with Anthropic's Claude Mythos.
-  - **[Mini Shai-Hulud worm hits TanStack, Mistral AI, and Guardrails AI packages](https://thehackernews.com/2026/05/mini-shai-hulud-worm-compromises.html)**: A TeamPCP-linked supply-chain worm compromised hundreds of npm and PyPI packages — notably AI-infrastructure projects including guardrails libraries — with credential-stealing payloads.
-  - **[Microsoft ousts Israel chief over Azure-powered military AI in Gaza](https://the-decoder.com/microsoft-ousts-its-israel-chief-following-reports-that-azure-quietly-powered-military-ai-targeting-in-gaza/)**: The top Microsoft Israel executive was removed after an internal probe into cloud-powered mass surveillance and AI targeting, setting a first-of-its-kind governance precedent among hyperscalers.
+  - **[Anthropic overtakes OpenAI in B2B adoption for the first time](https://the-decoder.com/anthropic-overtakes-openai-in-b2b-adoption-for-the-first-time-according-to-ramp-spending-data/)**: Ramp expense data now shows 34.4% of US businesses paying for Anthropic vs. 32.3% for OpenAI, marking a watershed moment in the enterprise AI platform wars.
+  - **[Microsoft's MDASH AI System finds 16 Windows flaws fixed in Patch Tuesday](https://thehackernews.com/2026/05/microsofts-mdash-ai-system-finds-16.html)**: Microsoft unveiled a multi-model agentic vulnerability discovery harness that produced real, patched CVEs in its May 2026 release of 138 fixes.
+  - **[Foxconn confirms 8TB data theft as Nitrogen ransomware hits North American factories](https://www.bleepingcomputer.com/news/security/electronics-giant-foxconn-confirms-cyberattack-on-north-american-factories/)**: The breach is one of 600 manufacturing-sector ransomware incidents this year, underscoring how attackers exploit operational downtime intolerance.
+  - **[Anthropic rejects Chinese government request for Claude Mythos access](https://gigazine.net/news/20260513-anthropic-china-mythos/)**: Anthropic declined a Chinese think tank's bid for its limited-release, cyber-capable model, even as the Pentagon races to use Mythos while phasing out other Anthropic services.
+  - **[SoftBank books record ¥5 trillion annual profit, propelled by OpenAI stake](https://www.japantimes.co.jp/business/2026/05/13/companies/softbank-profit-jump/)**: Masayoshi Son's bet on OpenAI delivers the largest net profit ever recorded by a Japanese company, emboldening still-larger AI infrastructure plays.
 archive:
+  - date: "2026-05-14"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    highlight: "Anthropic overtakes OpenAI in B2B adoption for the first time: Ramp expense data now shows 34.4% of US businesses paying for Anthropic vs."
   - date: "2026-05-13"
     has_papers: true
     has_security: true
