@@ -1,18 +1,23 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "May 14, 2026"
+hero_date: "May 15, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-05-14/digest"
-hero_secondary: "[Papers](2026-05-14/papers) [Security](2026-05-14/security)"
-issue_count: 74
+hero_primary_link: "2026-05-15/digest"
+hero_secondary: "[Papers](2026-05-15/papers) [Security](2026-05-15/security)"
+issue_count: 75
 highlights: |
-  - **[Anthropic overtakes OpenAI in B2B adoption for the first time](https://the-decoder.com/anthropic-overtakes-openai-in-b2b-adoption-for-the-first-time-according-to-ramp-spending-data/)**: Ramp expense data now shows 34.4% of US businesses paying for Anthropic vs. 32.3% for OpenAI, marking a watershed moment in the enterprise AI platform wars.
-  - **[Microsoft's MDASH AI System finds 16 Windows flaws fixed in Patch Tuesday](https://thehackernews.com/2026/05/microsofts-mdash-ai-system-finds-16.html)**: Microsoft unveiled a multi-model agentic vulnerability discovery harness that produced real, patched CVEs in its May 2026 release of 138 fixes.
-  - **[Foxconn confirms 8TB data theft as Nitrogen ransomware hits North American factories](https://www.bleepingcomputer.com/news/security/electronics-giant-foxconn-confirms-cyberattack-on-north-american-factories/)**: The breach is one of 600 manufacturing-sector ransomware incidents this year, underscoring how attackers exploit operational downtime intolerance.
-  - **[Anthropic rejects Chinese government request for Claude Mythos access](https://gigazine.net/news/20260513-anthropic-china-mythos/)**: Anthropic declined a Chinese think tank's bid for its limited-release, cyber-capable model, even as the Pentagon races to use Mythos while phasing out other Anthropic services.
-  - **[SoftBank books record ¥5 trillion annual profit, propelled by OpenAI stake](https://www.japantimes.co.jp/business/2026/05/13/companies/softbank-profit-jump/)**: Masayoshi Son's bet on OpenAI delivers the largest net profit ever recorded by a Japanese company, emboldening still-larger AI infrastructure plays.
+  - **[OpenAI confirms security breach in TanStack supply chain attack](https://www.bleepingcomputer.com/news/security/openai-confirms-security-breach-in-tanstack-supply-chain-attack/)**: OpenAI rotated code-signing certificates after two employee devices were compromised in the npm/PyPI "Mini Shai-Hulud" attack — a major supply-chain incident touching one of the most prominent AI labs.
+  - **[Cerebras raises $5.5B with 108% IPO pop](https://techcrunch.com/2026/05/14/cerebras-raises-5-5b-kicking-off-2026s-ipo-season-with-a-bang/)**: The first big AI-hardware IPO of 2026 is a blowout, signaling that public-market appetite for AI-chip pure plays is back with force.
+  - **[Maximum Severity Cisco SD-WAN Bug Exploited in the Wild](https://www.darkreading.com/vulnerabilities-threats/maximum-severity-cisco-sd-wan-bug-exploited)**: A CVSS-10 authentication bypass in Cisco Catalyst SD-WAN (CVE-2026-20182) is the second max-severity Cisco exploit this year, with active zero-day exploitation observed.
+  - **[Cisco announces record revenue and 4,000 layoffs the same day](https://arstechnica.com/information-technology/2026/05/cisco-announces-record-revenue-and-4000-layoffs-in-the-same-day/)**: A high-profile case of the "AI restructure" pattern — cutting headcount even amid record revenue to reallocate spend toward AI.
+  - **[How Dangerous Is Anthropic's Mythos AI?](https://www.schneier.com/blog/archives/2026/05/how-dangerous-is-anthropics-mythos-ai.html)**: Bruce Schneier weighs in on Anthropic restricting Claude Mythos Preview because of its vulnerability-finding power — a landmark moment for AI capability-restriction policy.
 archive:
+  - date: "2026-05-15"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    highlight: "OpenAI confirms security breach in TanStack supply chain attack: OpenAI rotated code-signing certificates after two employee devices were compromised in the…"
   - date: "2026-05-14"
     has_papers: true
     has_security: true
