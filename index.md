@@ -1,18 +1,23 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "May 15, 2026"
+hero_date: "May 16, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-05-15/digest"
-hero_secondary: "[Papers](2026-05-15/papers) [Security](2026-05-15/security)"
-issue_count: 75
+hero_primary_link: "2026-05-16/digest"
+hero_secondary: "[Papers](2026-05-16/papers) [Security](2026-05-16/security)"
+issue_count: 76
 highlights: |
-  - **[OpenAI confirms security breach in TanStack supply chain attack](https://www.bleepingcomputer.com/news/security/openai-confirms-security-breach-in-tanstack-supply-chain-attack/)**: OpenAI rotated code-signing certificates after two employee devices were compromised in the npm/PyPI "Mini Shai-Hulud" attack — a major supply-chain incident touching one of the most prominent AI labs.
-  - **[Cerebras raises $5.5B with 108% IPO pop](https://techcrunch.com/2026/05/14/cerebras-raises-5-5b-kicking-off-2026s-ipo-season-with-a-bang/)**: The first big AI-hardware IPO of 2026 is a blowout, signaling that public-market appetite for AI-chip pure plays is back with force.
-  - **[Maximum Severity Cisco SD-WAN Bug Exploited in the Wild](https://www.darkreading.com/vulnerabilities-threats/maximum-severity-cisco-sd-wan-bug-exploited)**: A CVSS-10 authentication bypass in Cisco Catalyst SD-WAN (CVE-2026-20182) is the second max-severity Cisco exploit this year, with active zero-day exploitation observed.
-  - **[Cisco announces record revenue and 4,000 layoffs the same day](https://arstechnica.com/information-technology/2026/05/cisco-announces-record-revenue-and-4000-layoffs-in-the-same-day/)**: A high-profile case of the "AI restructure" pattern — cutting headcount even amid record revenue to reallocate spend toward AI.
-  - **[How Dangerous Is Anthropic's Mythos AI?](https://www.schneier.com/blog/archives/2026/05/how-dangerous-is-anthropics-mythos-ai.html)**: Bruce Schneier weighs in on Anthropic restricting Claude Mythos Preview because of its vulnerability-finding power — a landmark moment for AI capability-restriction policy.
+  - **[Anthropic's $900B valuation eclipses OpenAI](https://the-decoder.com/anthropics-900-billion-valuation-would-make-it-more-valuable-than-openai-for-the-first-time/)**: Anthropic is raising another $30B just three months after a same-size round, with annualized revenue approaching $45B and surpassing OpenAI's valuation for the first time.
+  - **[Microsoft MDASH pits 100+ AI agents against each other to hunt Windows zero-days](https://the-decoder.com/microsoft-pits-more-than-100-ai-agents-against-each-other-to-find-windows-vulnerabilities/)**: Microsoft's adversarial agent system uncovered 16 vulnerabilities (four critical) on a single Patch Tuesday, signaling defensive AI now matters at OS scale.
+  - **[ArXiv moves to ban authors who upload AI-slop preprints](https://www.theverge.com/science/931766/arxiv-ai-slop-ban-researchers)**: Papers with hallucinated references or leftover LLM "meta-comments" will trigger author bans, marking the strongest action yet by a major preprint server against unchecked LLM output.
+  - **[TanStack supply-chain attack reaches OpenAI employee devices](https://thehackernews.com/2026/05/tanstack-supply-chain-attack-hits-two.html)**: A Mini Shai-Hulud npm-style compromise hit two corporate devices at OpenAI; the company says no production systems or user data were touched but is rotating signing certificates.
+  - **[OpenAI plugs ChatGPT into your bank account via Plaid](https://www.theverge.com/ai-artificial-intelligence/931122/openai-chatgpt-financial-accounts-plaid-connection)**: Pro users in the US can now connect 12,000+ financial institutions to GPT-5.5 Thinking for personalized financial guidance — pushing agentic AI into a heavily regulated, high-trust domain.
 archive:
+  - date: "2026-05-16"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    highlight: "Anthropic's $900B valuation eclipses OpenAI: Anthropic is raising another $30B just three months after a same-size round, with annualized revenue approaching…"
   - date: "2026-05-15"
     has_papers: true
     has_security: true
