@@ -1,18 +1,27 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "May 16, 2026"
+hero_date: "May 19, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-05-16/digest"
-hero_secondary: "[Papers](2026-05-16/papers) [Security](2026-05-16/security)"
-issue_count: 76
+hero_primary_link: "2026-05-19/digest"
+hero_secondary: "[Papers](2026-05-19/papers) [Security](2026-05-19/security)"
+issue_count: 78
 highlights: |
-  - **[Anthropic's $900B valuation eclipses OpenAI](https://the-decoder.com/anthropics-900-billion-valuation-would-make-it-more-valuable-than-openai-for-the-first-time/)**: Anthropic is raising another $30B just three months after a same-size round, with annualized revenue approaching $45B and surpassing OpenAI's valuation for the first time.
-  - **[Microsoft MDASH pits 100+ AI agents against each other to hunt Windows zero-days](https://the-decoder.com/microsoft-pits-more-than-100-ai-agents-against-each-other-to-find-windows-vulnerabilities/)**: Microsoft's adversarial agent system uncovered 16 vulnerabilities (four critical) on a single Patch Tuesday, signaling defensive AI now matters at OS scale.
-  - **[ArXiv moves to ban authors who upload AI-slop preprints](https://www.theverge.com/science/931766/arxiv-ai-slop-ban-researchers)**: Papers with hallucinated references or leftover LLM "meta-comments" will trigger author bans, marking the strongest action yet by a major preprint server against unchecked LLM output.
-  - **[TanStack supply-chain attack reaches OpenAI employee devices](https://thehackernews.com/2026/05/tanstack-supply-chain-attack-hits-two.html)**: A Mini Shai-Hulud npm-style compromise hit two corporate devices at OpenAI; the company says no production systems or user data were touched but is rotating signing certificates.
-  - **[OpenAI plugs ChatGPT into your bank account via Plaid](https://www.theverge.com/ai-artificial-intelligence/931122/openai-chatgpt-financial-accounts-plaid-connection)**: Pro users in the US can now connect 12,000+ financial institutions to GPT-5.5 Thinking for personalized financial guidance — pushing agentic AI into a heavily regulated, high-trust domain.
+  - **[CISA admin leaked AWS GovCloud keys on GitHub](https://krebsonsecurity.com/2026/05/cisa-admin-leaked-aws-govcloud-keys-on-github/)**: A CISA contractor maintained a public GitHub repo exposing credentials to highly privileged AWS GovCloud accounts and internal CISA build/deploy systems — described as one of the most egregious U.S. government data leaks in recent memory.
+  - **[Anthropic to brief global financial regulators on cyber flaws found by Claude Mythos](https://the-decoder.com/anthropic-to-brief-global-financial-regulators-on-cyber-flaws-found-by-claude-mythos/)**: Anthropic's new Claude Mythos Preview model surfaced vulnerabilities in the global financial system's cyber defenses, prompting briefings to finance ministries and central banks.
+  - **[Elon Musk loses $134B lawsuit against OpenAI after jury deliberates just two hours](https://the-decoder.com/elon-musk-loses-his-134-billion-lawsuit-against-openai-after-jury-deliberates-for-just-two-hours/)**: The Oakland jury dismissed all claims unanimously; the judge said she would have dismissed the case immediately. Musk's attorney reserved the right to appeal.
+  - **[Shai-Hulud worm clones spread after code release](https://www.darkreading.com/application-security/shai-hulud-worm-clones-spread-code-release)**: After the worm's source code was leaked, copycat infostealer packages flooded npm within days — confirming researcher fears that the self-replicating worm would scale.
+  - **[Anthropic acquires Stainless, the SDK tooling startup used by OpenAI, Google, and Cloudflare](https://techcrunch.com/2026/05/18/anthropic-has-acquired-the-dev-tools-startup-used-by-openai-google-and-cloudflare/)**: Stainless automates SDK creation and maintenance across the major AI labs; acquisition consolidates developer-platform leverage at Anthropic.
 archive:
+  - date: "2026-05-19"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    highlight: "CISA admin leaked AWS GovCloud keys on GitHub: A CISA contractor maintained a public GitHub repo exposing credentials to highly privileged AWS GovCloud…"
+  - date: "2026-05-18"
+    has_papers: false
+    has_security: false
+    has_weekly: true
   - date: "2026-05-16"
     has_papers: true
     has_security: true
