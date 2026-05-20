@@ -1,18 +1,23 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "May 19, 2026"
+hero_date: "May 20, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-05-19/digest"
-hero_secondary: "[Papers](2026-05-19/papers) [Security](2026-05-19/security)"
-issue_count: 78
+hero_primary_link: "2026-05-20/digest"
+hero_secondary: "[Papers](2026-05-20/papers) [Security](2026-05-20/security)"
+issue_count: 79
 highlights: |
-  - **[CISA admin leaked AWS GovCloud keys on GitHub](https://krebsonsecurity.com/2026/05/cisa-admin-leaked-aws-govcloud-keys-on-github/)**: A CISA contractor maintained a public GitHub repo exposing credentials to highly privileged AWS GovCloud accounts and internal CISA build/deploy systems — described as one of the most egregious U.S. government data leaks in recent memory.
-  - **[Anthropic to brief global financial regulators on cyber flaws found by Claude Mythos](https://the-decoder.com/anthropic-to-brief-global-financial-regulators-on-cyber-flaws-found-by-claude-mythos/)**: Anthropic's new Claude Mythos Preview model surfaced vulnerabilities in the global financial system's cyber defenses, prompting briefings to finance ministries and central banks.
-  - **[Elon Musk loses $134B lawsuit against OpenAI after jury deliberates just two hours](https://the-decoder.com/elon-musk-loses-his-134-billion-lawsuit-against-openai-after-jury-deliberates-for-just-two-hours/)**: The Oakland jury dismissed all claims unanimously; the judge said she would have dismissed the case immediately. Musk's attorney reserved the right to appeal.
-  - **[Shai-Hulud worm clones spread after code release](https://www.darkreading.com/application-security/shai-hulud-worm-clones-spread-code-release)**: After the worm's source code was leaked, copycat infostealer packages flooded npm within days — confirming researcher fears that the self-replicating worm would scale.
-  - **[Anthropic acquires Stainless, the SDK tooling startup used by OpenAI, Google, and Cloudflare](https://techcrunch.com/2026/05/18/anthropic-has-acquired-the-dev-tools-startup-used-by-openai-google-and-cloudflare/)**: Stainless automates SDK creation and maintenance across the major AI labs; acquisition consolidates developer-platform leverage at Anthropic.
+  - **[Google I/O 2026 unveils Gemini 3.5, Omni, and Spark agent](https://www.theverge.com/tech/933415/google-io-2026-biggest-announcements-ai-gemini)**: Google's keynote centered on agentic AI — a new Gemini 3.5 family, multimodal video-generating Gemini Omni, and an always-on personal assistant Gemini Spark with deep Gmail/Workspace integration.
+  - **[Cloudflare validates Anthropic's Mythos Preview as a vulnerability hunter](https://the-decoder.com/cloudflare-says-anthropics-mythos-preview-finds-exploit-chains-that-earlier-frontier-models-missed/)**: Tested across 50+ Cloudflare repos under Project Glasswing, the security-focused Mythos model surfaced exploit chains that earlier frontier models missed — Anthropic is also briefing the Financial Stability Board on systemic risk.
+  - **[AI-built exploit breaks Apple's five-year MIE security in five days](https://www.itmedia.co.jp/news/articles/2605/19/news100.html)**: Researchers at Calif say they used a preview of Anthropic's Mythos to defeat Apple's flagship Memory Integrity Enforcement defense in under a week.
+  - **[Andrej Karpathy joins Anthropic's pre-training team](https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/)**: The OpenAI co-founder and former Tesla Autopilot architect is returning to frontier LLM R&D at Anthropic, citing the next few years as "especially formative."
+  - **[New Shai-Hulud npm wave compromises 600 packages](https://www.bleepingcomputer.com/news/security/new-shai-hulud-malware-wave-compromises-600-npm-packages/)**: A fresh supply-chain campaign published 600+ malicious npm packages, with a parallel "Mini Shai-Hulud" operation hitting AntV via a compromised maintainer account.
 archive:
+  - date: "2026-05-20"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    highlight: "Google I/O 2026 unveils Gemini 3.5, Omni, and Spark agent: Google's keynote centered on agentic AI — a new Gemini 3.5 family, multimodal video-generating…"
   - date: "2026-05-19"
     has_papers: true
     has_security: true
