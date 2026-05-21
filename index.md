@@ -1,18 +1,23 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "May 20, 2026"
+hero_date: "May 21, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-05-20/digest"
-hero_secondary: "[Papers](2026-05-20/papers) [Security](2026-05-20/security)"
-issue_count: 79
+hero_primary_link: "2026-05-21/digest"
+hero_secondary: "[Papers](2026-05-21/papers) [Security](2026-05-21/security)"
+issue_count: 80
 highlights: |
-  - **[Google I/O 2026 unveils Gemini 3.5, Omni, and Spark agent](https://www.theverge.com/tech/933415/google-io-2026-biggest-announcements-ai-gemini)**: Google's keynote centered on agentic AI — a new Gemini 3.5 family, multimodal video-generating Gemini Omni, and an always-on personal assistant Gemini Spark with deep Gmail/Workspace integration.
-  - **[Cloudflare validates Anthropic's Mythos Preview as a vulnerability hunter](https://the-decoder.com/cloudflare-says-anthropics-mythos-preview-finds-exploit-chains-that-earlier-frontier-models-missed/)**: Tested across 50+ Cloudflare repos under Project Glasswing, the security-focused Mythos model surfaced exploit chains that earlier frontier models missed — Anthropic is also briefing the Financial Stability Board on systemic risk.
-  - **[AI-built exploit breaks Apple's five-year MIE security in five days](https://www.itmedia.co.jp/news/articles/2605/19/news100.html)**: Researchers at Calif say they used a preview of Anthropic's Mythos to defeat Apple's flagship Memory Integrity Enforcement defense in under a week.
-  - **[Andrej Karpathy joins Anthropic's pre-training team](https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/)**: The OpenAI co-founder and former Tesla Autopilot architect is returning to frontier LLM R&D at Anthropic, citing the next few years as "especially formative."
-  - **[New Shai-Hulud npm wave compromises 600 packages](https://www.bleepingcomputer.com/news/security/new-shai-hulud-malware-wave-compromises-600-npm-packages/)**: A fresh supply-chain campaign published 600+ malicious npm packages, with a parallel "Mini Shai-Hulud" operation hitting AntV via a compromised maintainer account.
+  - **[Google I/O 2026 unveils Gemini 3.5 and AI-driven Search overhaul](https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/)**: Google unveiled ~100 announcements including the new Gemini 3.5 model family, an AI-rebuilt Search experience, Universal Cart agentic shopping, and Gemini Omni multimodal generation.
+  - **[Anthropic to pay xAI $1.25B per month for compute](https://techcrunch.com/2026/05/20/anthropic-will-pay-xai-1-25-billion-per-month-for-compute/)**: The newly disclosed terms of Anthropic's surprise compute deal with Elon Musk's xAI reshape the economics of frontier training capacity.
+  - **[GitHub confirms breach of ~3,800 internal repos via malicious VS Code extension](https://www.bleepingcomputer.com/news/security/github-confirms-breach-of-3-800-repos-via-malicious-vscode-extension/)**: A single employee device compromise let TeamPCP exfiltrate thousands of internal repositories, exposing source code to sale on a cybercrime forum.
+  - **[Microsoft open-sources RAMPART and Clarity for AI agent security testing](https://thehackernews.com/2026/05/microsoft-open-sources-rampart-and.html)**: A new Pytest-native red-teaming framework and companion tooling target the unique safety and security failure modes of agentic AI systems.
+  - **[OpenAI model disproves an 80-year-old discrete-geometry conjecture](https://openai.com/index/model-disproves-discrete-geometry-conjecture)**: An OpenAI reasoning model resolved the long-open unit-distance problem, with the mathematicians who debunked its last embarrassing math claim now backing the result.
 archive:
+  - date: "2026-05-21"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    highlight: "Google I/O 2026 unveils Gemini 3.5 and AI-driven Search overhaul: Google unveiled ~100 announcements including the new Gemini 3.5 model family, an AI-rebuilt…"
   - date: "2026-05-20"
     has_papers: true
     has_security: true
