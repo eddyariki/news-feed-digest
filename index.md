@@ -1,18 +1,23 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "May 21, 2026"
+hero_date: "May 22, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-05-21/digest"
-hero_secondary: "[Papers](2026-05-21/papers) [Security](2026-05-21/security)"
-issue_count: 80
+hero_primary_link: "2026-05-22/digest"
+hero_secondary: "[Papers](2026-05-22/papers) [Security](2026-05-22/security)"
+issue_count: 81
 highlights: |
-  - **[Google I/O 2026 unveils Gemini 3.5 and AI-driven Search overhaul](https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/)**: Google unveiled ~100 announcements including the new Gemini 3.5 model family, an AI-rebuilt Search experience, Universal Cart agentic shopping, and Gemini Omni multimodal generation.
-  - **[Anthropic to pay xAI $1.25B per month for compute](https://techcrunch.com/2026/05/20/anthropic-will-pay-xai-1-25-billion-per-month-for-compute/)**: The newly disclosed terms of Anthropic's surprise compute deal with Elon Musk's xAI reshape the economics of frontier training capacity.
-  - **[GitHub confirms breach of ~3,800 internal repos via malicious VS Code extension](https://www.bleepingcomputer.com/news/security/github-confirms-breach-of-3-800-repos-via-malicious-vscode-extension/)**: A single employee device compromise let TeamPCP exfiltrate thousands of internal repositories, exposing source code to sale on a cybercrime forum.
-  - **[Microsoft open-sources RAMPART and Clarity for AI agent security testing](https://thehackernews.com/2026/05/microsoft-open-sources-rampart-and.html)**: A new Pytest-native red-teaming framework and companion tooling target the unique safety and security failure modes of agentic AI systems.
-  - **[OpenAI model disproves an 80-year-old discrete-geometry conjecture](https://openai.com/index/model-disproves-discrete-geometry-conjecture)**: An OpenAI reasoning model resolved the long-open unit-distance problem, with the mathematicians who debunked its last embarrassing math claim now backing the result.
+  - **[AI finds a macOS kernel zero-day on Apple M5](https://www.schneier.com/blog/archives/2026/05/macos-kernel-memory-corruption-exploit.html)**: A group used Anthropic's Mythos model to discover and exploit a kernel memory corruption vulnerability on Apple's newest silicon — a concrete data point for the "AI-assisted vulnerability research" curve.
+  - **[US Cyber Command races to deploy AI on top-secret networks](https://the-decoder.com/us-cyber-command-races-to-deploy-ai-on-top-secret-networks/)**: A new task force will run OpenAI, Google, and Anthropic models on Pentagon and NSA classified networks, motivated by AI vulnerability-discovery capabilities Anthropic says could become widely available within 6–24 months.
+  - **[OpenAI model disproves an 80-year-old Erdős conjecture](https://the-decoder.com/openai-shifts-the-boundary-of-automated-reasoning-with-a-milestone-in-ai-mathematics-that-experts-are-now-unpacking/)**: A reasoning model settled an open unit-distance geometry problem from 1946 using algebraic number theory; Fields medalist Tim Gowers calls it "a milestone in AI mathematics."
+  - **[Trump delays AI security executive order](https://techcrunch.com/2026/05/21/trump-delays-ai-security-executive-order-i-dont-want-to-get-in-the-way-of-that-leading/)**: The order that would have required pre-release government security reviews of AI models was pulled at the last minute, citing dissatisfaction with the language and a desire not to "get in the way" of US AI leadership.
+  - **[SpaceX IPO filing exposes $15B/year Anthropic compute deal and $6.4B xAI loss](https://the-decoder.com/spacex-ipo-filing-shows-billions-in-ai-losses-a-2-trillion-valuation-target-and-turbine-spending-that-signals-more-data-center-conflicts-ahead/)**: The $2T-target filing reveals Anthropic is paying Musk roughly $15B annually for Colossus capacity, plus $2.8B in new natural-gas turbines for xAI — signaling more AI-data-center power conflicts ahead.
 archive:
+  - date: "2026-05-22"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    highlight: "AI finds a macOS kernel zero-day on Apple M5: A group used Anthropic's Mythos model to discover and exploit a kernel memory corruption vulnerability on Apple's…"
   - date: "2026-05-21"
     has_papers: true
     has_security: true
