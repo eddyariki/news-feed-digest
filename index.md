@@ -1,18 +1,27 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "May 23, 2026"
+hero_date: "May 26, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-05-23/digest"
-hero_secondary: "[Papers](2026-05-23/papers) [Security](2026-05-23/security)"
-issue_count: 82
+hero_primary_link: "2026-05-26/digest"
+hero_secondary: "[Papers](2026-05-26/papers) [Security](2026-05-26/security)"
+issue_count: 84
 highlights: |
-  - **[Trump pulls AI safety executive order after eleventh-hour calls from Musk, Zuckerberg, and Sacks](https://the-decoder.com/trump-pulls-ai-safety-order-after-last-minute-calls-from-musk-zuckerberg-and-sacks/)**: An EO that would have set up a voluntary 90-day frontier-model review window was killed at the last minute, removing what would have been the first federal pre-release safety check.
-  - **[CISA contractor exposed AWS GovCloud keys and internal secrets on public GitHub](https://krebsonsecurity.com/2026/05/lawmakers-demand-answers-as-cisa-tries-to-contain-data-leak/)**: One of the most egregious US government data leaks in recent memory, and lawmakers in both chambers are demanding answers while CISA struggles to invalidate the leaked credentials.
-  - **[Megalodon attack pushes 5,718 malicious commits to 5,561 GitHub repos in six hours](https://thehackernews.com/2026/05/megalodon-github-attack-targets-5561.html)**: Forged "bot" author identities injected base64-encoded bash payloads via GitHub Actions to exfiltrate CI secrets, an unprecedented-scale supply-chain incident.
-  - **[California signs first US executive order to protect workers from AI-driven job loss](https://the-decoder.com/california-governor-signs-first-us-executive-order-to-protect-workers-from-ai-job-loss/)**: Governor Newsom orders state agencies to build support programs for displaced workers, SMBs, and communities — the first subnational AI labor-policy response in the US.
-  - **[OpenAI burned $1.22 for every dollar earned in Q1, even excluding stock-based comp](https://the-decoder.com/openai-burned-through-1-22-per-dollar-earned-even-after-stripping-out-stock-based-compensation/)**: $5.7B in Q1 revenue against an adjusted operating margin of -122% — a stark reminder of how far frontier-AI unit economics still are from sustainable.
+  - **[Pope Leo XIV's first encyclical centers on AI](https://www.theverge.com/news/936945/pope-leo-letter-encyclical-ai-anthropic-labor-warfare)**: *Magnifica Humanitas* warns of AI-powered warfare, labor displacement, and concentrated technological power, framing the defense of "the human person in the time of artificial intelligence."
+  - **[Anthropic's Claude Mythos uncovers 10,000+ vulnerabilities](https://www.itmedia.co.jp/news/articles/2605/25/news130.html)**: Project Glasswing's first report says ~50 partner firms surfaced over 10,000 high- and critical-severity flaws in a single month, far outpacing the rate at which fixes can be shipped.
+  - **[DeepMind's AlphaProof Nexus cracks decades-old Erdős problems](https://the-decoder.com/google-deepminds-alphaproof-nexus-solves-decades-old-math-problems-for-a-few-hundred-dollars/)**: The system autonomously solved nine open problems — two unsolved for 56 years — at just a few hundred dollars of inference each.
+  - **[ClickUp replaces hundreds of staff with AI agents](https://techcrunch.com/2026/05/25/what-clickups-mass-layoff-tells-us-about-the-future-of-work/)**: The nine-year-old startup's mass layoff, swapping employees for thousands of agents, is being read as a bellwether for the future of work.
+  - **[Taiwan launches first major crackdown on NVIDIA chip smuggling](https://gigazine.net/news/20260525-taiwan-detain-nvidia-chip-smuggling/)**: Authorities raided 12 sites and arrested three suspects for forging documents to smuggle restricted high-performance AI chips into China.
 archive:
+  - date: "2026-05-26"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    highlight: "Pope Leo XIV's first encyclical centers on AI: Magnifica Humanitas warns of AI-powered warfare, labor displacement, and concentrated technological power,…"
+  - date: "2026-05-25"
+    has_papers: false
+    has_security: false
+    has_weekly: true
   - date: "2026-05-23"
     has_papers: true
     has_security: true
