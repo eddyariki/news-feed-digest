@@ -1,18 +1,23 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "May 26, 2026"
+hero_date: "May 27, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-05-26/digest"
-hero_secondary: "[Papers](2026-05-26/papers) [Security](2026-05-26/security)"
-issue_count: 84
+hero_primary_link: "2026-05-27/digest"
+hero_secondary: "[Papers](2026-05-27/papers) [Security](2026-05-27/security)"
+issue_count: 85
 highlights: |
-  - **[Pope Leo XIV's first encyclical centers on AI](https://www.theverge.com/news/936945/pope-leo-letter-encyclical-ai-anthropic-labor-warfare)**: *Magnifica Humanitas* warns of AI-powered warfare, labor displacement, and concentrated technological power, framing the defense of "the human person in the time of artificial intelligence."
-  - **[Anthropic's Claude Mythos uncovers 10,000+ vulnerabilities](https://www.itmedia.co.jp/news/articles/2605/25/news130.html)**: Project Glasswing's first report says ~50 partner firms surfaced over 10,000 high- and critical-severity flaws in a single month, far outpacing the rate at which fixes can be shipped.
-  - **[DeepMind's AlphaProof Nexus cracks decades-old Erdős problems](https://the-decoder.com/google-deepminds-alphaproof-nexus-solves-decades-old-math-problems-for-a-few-hundred-dollars/)**: The system autonomously solved nine open problems — two unsolved for 56 years — at just a few hundred dollars of inference each.
-  - **[ClickUp replaces hundreds of staff with AI agents](https://techcrunch.com/2026/05/25/what-clickups-mass-layoff-tells-us-about-the-future-of-work/)**: The nine-year-old startup's mass layoff, swapping employees for thousands of agents, is being read as a bellwether for the future of work.
-  - **[Taiwan launches first major crackdown on NVIDIA chip smuggling](https://gigazine.net/news/20260525-taiwan-detain-nvidia-chip-smuggling/)**: Authorities raided 12 sites and arrested three suspects for forging documents to smuggle restricted high-performance AI chips into China.
+  - **[Claude Mythos cracks a landmark Erdős conjecture](https://the-decoder.com/claude-mythos-reportedly-solves-openais-landmark-erdos-problem-with-a-cute-simple-proof/)**: Days after OpenAI disproved Erdős' 1946 unit-distance conjecture, Anthropic says its unreleased Claude Mythos model produced a "cute, simple proof" of its own over a weekend.
+  - **[Pope Leo XIV calls for AI to be "disarmed"](https://www.japantimes.co.jp/news/2026/05/26/world/pope-ai-disarmed/)**: In a new encyclical ("Magnifica Humanitas"), the Pope urges regulation, child protection, and limits on autonomous AI weapons, warning of an AI-era "new slavery."
+  - **[Anthropic's Project Glasswing finds 10,000+ critical vulnerabilities in a month](https://www.itmedia.co.jp/aiplus/article/2605/24/2000000019/)**: Using the preview "Claude Mythos" model across ~50 partner firms, the initiative flagged over 10,000 serious flaws in critical software — but patching can't keep pace.
+  - **['Megalodon' malware infects 5,500+ GitHub repositories](https://www.darkreading.com/application-security/megalodon-malware-infects-thousands-github-repos)**: A six-hour campaign quietly pushed thousands of malicious commits to harvest credentials and developer secrets across the open-source ecosystem.
+  - **[AI-hallucinated citations surge 12x in biomedical literature](https://the-decoder.com/ai-hallucinated-citations-are-creeping-into-papers-that-shape-clinical-guidelines-researchers-warn/)**: An audit of 2.5M papers found fabricated references rising twelvefold since 2023, with some now shaping clinical guidelines.
 archive:
+  - date: "2026-05-27"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    highlight: "Claude Mythos cracks a landmark Erdős conjecture: Days after OpenAI disproved Erdős' 1946 unit-distance conjecture, Anthropic says its unreleased Claude Mythos…"
   - date: "2026-05-26"
     has_papers: true
     has_security: true
