@@ -1,18 +1,23 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "May 27, 2026"
+hero_date: "May 28, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-05-27/digest"
-hero_secondary: "[Papers](2026-05-27/papers) [Security](2026-05-27/security)"
-issue_count: 85
+hero_primary_link: "2026-05-28/digest"
+hero_secondary: "[Papers](2026-05-28/papers) [Security](2026-05-28/security)"
+issue_count: 86
 highlights: |
-  - **[Claude Mythos cracks a landmark Erdős conjecture](https://the-decoder.com/claude-mythos-reportedly-solves-openais-landmark-erdos-problem-with-a-cute-simple-proof/)**: Days after OpenAI disproved Erdős' 1946 unit-distance conjecture, Anthropic says its unreleased Claude Mythos model produced a "cute, simple proof" of its own over a weekend.
-  - **[Pope Leo XIV calls for AI to be "disarmed"](https://www.japantimes.co.jp/news/2026/05/26/world/pope-ai-disarmed/)**: In a new encyclical ("Magnifica Humanitas"), the Pope urges regulation, child protection, and limits on autonomous AI weapons, warning of an AI-era "new slavery."
-  - **[Anthropic's Project Glasswing finds 10,000+ critical vulnerabilities in a month](https://www.itmedia.co.jp/aiplus/article/2605/24/2000000019/)**: Using the preview "Claude Mythos" model across ~50 partner firms, the initiative flagged over 10,000 serious flaws in critical software — but patching can't keep pace.
-  - **['Megalodon' malware infects 5,500+ GitHub repositories](https://www.darkreading.com/application-security/megalodon-malware-infects-thousands-github-repos)**: A six-hour campaign quietly pushed thousands of malicious commits to harvest credentials and developer secrets across the open-source ecosystem.
-  - **[AI-hallucinated citations surge 12x in biomedical literature](https://the-decoder.com/ai-hallucinated-citations-are-creeping-into-papers-that-shape-clinical-guidelines-researchers-warn/)**: An audit of 2.5M papers found fabricated references rising twelvefold since 2023, with some now shaping clinical guidelines.
+  - **[Open-weight safety guardrails can be stripped in minutes](https://gigazine.net/news/20260527-ai-safety-control-strip/)**: A Financial Times investigation with AI-safety group Alice found that the safety controls on some open-weight models from Meta, Google and others can be removed in minutes, re-enabling refused requests like malware or bioweapon guidance.
+  - **["BadHost" flaw in Starlette imperils millions of AI agents](https://arstechnica.com/information-technology/2026/05/millions-of-ai-agents-imperiled-by-critical-vulnerability-in-open-source-package/)**: A critical vulnerability in Starlette — a Python package with 325 million weekly downloads underpinning countless AI agents and tools — exposes a vast swath of deployed systems.
+  - **[AI-assisted exploit development is outpacing scanner detection](https://www.darkreading.com/threat-intelligence/ai-assisted-exploit-development-scanner-detection)**: New research shows attackers are using AI to dramatically shorten the time needed to weaponize a CVE, widening the gap between exploit availability and defensive detection.
+  - **[Robinhood opens stock trading to AI agents](https://the-decoder.com/robinhood-lets-ai-agents-trade-shares-and-make-credit-card-purchases-for-customers/)**: Customers can now connect agents like Anthropic's Claude via MCP to a dedicated account that trades autonomously, a milestone for agentic finance that FINRA already flags as a new risk.
+  - **[Snowflake signs $6B AWS deal for AI CPU chips](https://techcrunch.com/2026/05/27/in-more-good-news-for-amazon-snowflake-signs-6b-deal-with-aws-for-ai-cpu-chips/)**: The five-year agreement secures Amazon-designed silicon for AI workloads and signals continued pressure on Nvidia's dominance in AI compute.
 archive:
+  - date: "2026-05-28"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    highlight: "Open-weight safety guardrails can be stripped in minutes: A Financial Times investigation with AI-safety group Alice found that the safety controls on some…"
   - date: "2026-05-27"
     has_papers: true
     has_security: true
