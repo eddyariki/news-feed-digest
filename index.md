@@ -1,18 +1,23 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "May 28, 2026"
+hero_date: "May 29, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-05-28/digest"
-hero_secondary: "[Papers](2026-05-28/papers) [Security](2026-05-28/security)"
-issue_count: 86
+hero_primary_link: "2026-05-29/digest"
+hero_secondary: "[Papers](2026-05-29/papers) [Security](2026-05-29/security)"
+issue_count: 87
 highlights: |
-  - **[Open-weight safety guardrails can be stripped in minutes](https://gigazine.net/news/20260527-ai-safety-control-strip/)**: A Financial Times investigation with AI-safety group Alice found that the safety controls on some open-weight models from Meta, Google and others can be removed in minutes, re-enabling refused requests like malware or bioweapon guidance.
-  - **["BadHost" flaw in Starlette imperils millions of AI agents](https://arstechnica.com/information-technology/2026/05/millions-of-ai-agents-imperiled-by-critical-vulnerability-in-open-source-package/)**: A critical vulnerability in Starlette — a Python package with 325 million weekly downloads underpinning countless AI agents and tools — exposes a vast swath of deployed systems.
-  - **[AI-assisted exploit development is outpacing scanner detection](https://www.darkreading.com/threat-intelligence/ai-assisted-exploit-development-scanner-detection)**: New research shows attackers are using AI to dramatically shorten the time needed to weaponize a CVE, widening the gap between exploit availability and defensive detection.
-  - **[Robinhood opens stock trading to AI agents](https://the-decoder.com/robinhood-lets-ai-agents-trade-shares-and-make-credit-card-purchases-for-customers/)**: Customers can now connect agents like Anthropic's Claude via MCP to a dedicated account that trades autonomously, a milestone for agentic finance that FINRA already flags as a new risk.
-  - **[Snowflake signs $6B AWS deal for AI CPU chips](https://techcrunch.com/2026/05/27/in-more-good-news-for-amazon-snowflake-signs-6b-deal-with-aws-for-ai-cpu-chips/)**: The five-year agreement secures Amazon-designed silicon for AI workloads and signals continued pressure on Nvidia's dominance in AI compute.
+  - **[Anthropic nears a trillion-dollar valuation with $65B Series H](https://the-decoder.com/claude-company-anthropic-nears-a-trillion-dollar-valuation-after-raising-65-billion-in-series-h/)**: Anthropic closes a $65B Series H at a $965B valuation, with annualized revenue at $47B, ahead of an expected IPO.
+  - **[Claude Opus 4.8 ships with Dynamic Workflows for sub-agent swarms](https://the-decoder.com/anthropic-ships-claude-opus-4-8-as-a-modest-but-tangible-improvement-that-tops-gpt-5-5-in-most-benchmarks/)**: New Anthropic model edges out GPT-5.5 and Gemini 3.1 Pro on most benchmarks and catches its own coding errors 4× more often than its predecessor.
+  - **[Google Cloud launches AI Threat Defense to counter AI-accelerated cyberattacks](https://the-decoder.com/google-cloud-responds-to-ai-accelerated-cyberattacks-with-a-platform-that-aims-to-close-security-gaps-in-minutes/)**: A platform that autonomously finds, assesses, and patches enterprise security flaws — Google's answer to attackers operating at machine speed.
+  - **[Anthropic-Pentagon dispute highlights autonomous AI weapons risks](https://gigazine.net/news/20260528-ai-warfare-already/)**: Gigazine analysis argues "autonomous AI warfare" is already underway and uses the friction between Anthropic and the U.S. Department of Defense to spotlight the policy gap around AI weapons.
+  - **[Taiwan arrests three in alleged Nvidia GPU smuggling ring routed via Japan](https://www.japantimes.co.jp/business/2026/05/28/taiwan-china-nvidia-smuggle/)**: Keelung prosecutors accuse the trio of trying to ship Supermicro AI servers carrying restricted Nvidia chips to China through Japanese data-center rentals, exposing a new export-control gap.
 archive:
+  - date: "2026-05-29"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    highlight: "Anthropic nears a trillion-dollar valuation with $65B Series H: Anthropic closes a $65B Series H at a $965B valuation, with annualized revenue at $47B, ahead…"
   - date: "2026-05-28"
     has_papers: true
     has_security: true
