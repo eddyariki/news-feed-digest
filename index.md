@@ -1,18 +1,23 @@
 ---
 title: AI News Digest
 layout: home
-hero_date: "May 29, 2026"
+hero_date: "May 30, 2026"
 hero_primary_label: "Read Today's News Digest"
-hero_primary_link: "2026-05-29/digest"
-hero_secondary: "[Papers](2026-05-29/papers) [Security](2026-05-29/security)"
-issue_count: 87
+hero_primary_link: "2026-05-30/digest"
+hero_secondary: "[Papers](2026-05-30/papers) [Security](2026-05-30/security)"
+issue_count: 88
 highlights: |
-  - **[Anthropic nears a trillion-dollar valuation with $65B Series H](https://the-decoder.com/claude-company-anthropic-nears-a-trillion-dollar-valuation-after-raising-65-billion-in-series-h/)**: Anthropic closes a $65B Series H at a $965B valuation, with annualized revenue at $47B, ahead of an expected IPO.
-  - **[Claude Opus 4.8 ships with Dynamic Workflows for sub-agent swarms](https://the-decoder.com/anthropic-ships-claude-opus-4-8-as-a-modest-but-tangible-improvement-that-tops-gpt-5-5-in-most-benchmarks/)**: New Anthropic model edges out GPT-5.5 and Gemini 3.1 Pro on most benchmarks and catches its own coding errors 4× more often than its predecessor.
-  - **[Google Cloud launches AI Threat Defense to counter AI-accelerated cyberattacks](https://the-decoder.com/google-cloud-responds-to-ai-accelerated-cyberattacks-with-a-platform-that-aims-to-close-security-gaps-in-minutes/)**: A platform that autonomously finds, assesses, and patches enterprise security flaws — Google's answer to attackers operating at machine speed.
-  - **[Anthropic-Pentagon dispute highlights autonomous AI weapons risks](https://gigazine.net/news/20260528-ai-warfare-already/)**: Gigazine analysis argues "autonomous AI warfare" is already underway and uses the friction between Anthropic and the U.S. Department of Defense to spotlight the policy gap around AI weapons.
-  - **[Taiwan arrests three in alleged Nvidia GPU smuggling ring routed via Japan](https://www.japantimes.co.jp/business/2026/05/28/taiwan-china-nvidia-smuggle/)**: Keelung prosecutors accuse the trio of trying to ship Supermicro AI servers carrying restricted Nvidia chips to China through Japanese data-center rentals, exposing a new export-control gap.
+  - **[Anthropic releases Claude Opus 4.8 and confirms Mythos-class rollout](https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-confirms-claude-mythos-class-models-will-roll-out-to-the-public/)**: Opus 4.8 ships with sharply improved "honesty" calibration and a new dynamic-workflows feature for hundreds of parallel subagents, while the higher-capability Mythos tier moves to public rollout within weeks after a safety-driven delay.
+  - **[OpenAI launches Japan Cyber Action Plan, giving GPT-5.5-Cyber to government and major banks](https://www.itmedia.co.jp/aiplus/article/2605/29/2000000037/)**: Tokyo and the largest Japanese financial institutions receive privileged access to a cybersecurity-tuned frontier model to defend against AI-augmented attacks, an explicit national-defense deployment.
+  - **[Dutch authorities dismantle a 17-million-device botnet tied to a Russian residential proxy network](https://arstechnica.com/security/2026/05/botnet-of-more-than-17-million-devices-dismantled/)**: One of the largest known proxy-botnet takedowns; over 200 servers seized at a complicit hosting provider.
+  - **[ChatGPhish turns ChatGPT web summaries into a phishing surface](https://thehackernews.com/2026/05/chatgphish-vulnerability-turns-chatgpt.html)**: Permiso Security shows that ChatGPT's markdown-link renderer implicitly trusts attacker-supplied URLs, enabling prompt-injection-driven phishing inside the chat UI.
+  - **[OpenAI opens its GPT-Rosalind life-sciences model for free via the Rosalind Biodefense program](https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense)**: Partners include Lawrence Livermore, Johns Hopkins, and CEPI, marking an unusual giveaway of a frontier scientific model framed as pandemic-preparedness infrastructure.
 archive:
+  - date: "2026-05-30"
+    has_papers: true
+    has_security: true
+    has_weekly: false
+    highlight: "Anthropic releases Claude Opus 4.8 and confirms Mythos-class rollout: Opus 4.8 ships with sharply improved 'honesty' calibration and a new dynamic-workflows…"
   - date: "2026-05-29"
     has_papers: true
     has_security: true
